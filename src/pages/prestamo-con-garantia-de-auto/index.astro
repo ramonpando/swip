@@ -1,0 +1,294 @@
+---
+import Page from '../../layouts/Page.astro';
+import FAQ from '../../components/FAQ.astro';
+import CTASection from '../../components/CTASection.astro';
+
+const WHATSAPP = 'https://wa.me/525500000000?text=Hola%2C%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20de%20mi%20veh%C3%ADculo';
+
+const faqs = [
+  { q: '¿Qué es un préstamo con garantía de auto?', a: 'Es un financiamiento donde usas tu vehículo como respaldo. Tú recibes el dinero y Swip retiene el auto o lo monitorea durante el plazo acordado. No vendes el auto — lo usas como garantía para obtener liquidez.' },
+  { q: '¿Cuánto me pueden prestar por mi auto?', a: 'El monto depende del valor comercial del vehículo, su año, condición y modelo. En general, Swip presta entre el 50% y el 80% del valor de mercado del vehículo. Para un estimado real, contacta a nuestro equipo con los datos de tu auto.' },
+  { q: '¿Necesito buen historial crediticio?', a: 'No. La garantía es tu vehículo, no tu historial. Swip evalúa el valor del auto, no tu situación en el buró de crédito.' },
+  { q: '¿Qué pasa con mi auto durante el préstamo?', a: 'Depende de la modalidad que elijas. En resguardo, tu auto queda en instalaciones seguras con seguro vigente. En la modalidad sin dejarlo, puedes seguir usando el vehículo bajo ciertas condiciones y monitoreo.' },
+  { q: '¿En cuánto tiempo recibo el dinero?', a: 'Una vez firmado el contrato, la transferencia se realiza en menos de 24 horas. El proceso completo, desde el primer contacto hasta el depósito, suele completarse en el mismo día.' },
+  { q: '¿Qué documentos necesito?', a: 'Los documentos básicos son: factura original del vehículo, identificación oficial vigente, comprobante de domicilio y tarjeta de circulación. En algunos casos se pueden requerir documentos adicionales según el perfil del vehículo.' },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "name": "Préstamo con Garantía de Auto — SWIP",
+  "description": "Préstamo con garantía vehicular en México. Obtén liquidez usando tu auto como respaldo sin venderlo.",
+  "url": "https://swip.mx/prestamo-con-garantia-de-auto/",
+  "provider": { "@id": "https://swip.mx/#organization" },
+  "areaServed": "MX",
+  "currenciesAccepted": "MXN"
+};
+---
+<Page
+  title="Préstamo con Garantía de Auto en México | SWIP"
+  description="Obtén un préstamo con garantía de auto en México. Proceso ágil, trato serio y discreto. Sin vender tu vehículo, sin complicaciones bancarias. Evaluación gratuita."
+  schema={schema}
+>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="hero-inner">
+      <p class="eyebrow">PRÉSTAMO CON GARANTÍA DE AUTO · MÉXICO</p>
+      <h1 class="hero-title">Préstamo con<br />garantía de auto.</h1>
+      <p class="hero-body">
+        Usa tu vehículo como respaldo para obtener el capital que necesitas —
+        sin venderlo, sin procesos bancarios lentos y sin comprometer tu patrimonio.
+        Swip es la alternativa seria al empeño tradicional.
+      </p>
+      <div class="hero-actions">
+        <a href={WHATSAPP} target="_blank" rel="noopener" class="btn-primary">Solicitar evaluación</a>
+        <a href="#como-funciona" class="btn-ghost">Cómo funciona →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUÉ ES -->
+  <section class="content-section">
+    <div class="section-inner two-col">
+      <div>
+        <p class="section-eyebrow">QUÉ ES</p>
+        <h2 class="section-title">Liquidez inteligente<br />con respaldo vehicular.</h2>
+      </div>
+      <div class="section-text">
+        <p>Un préstamo con garantía de auto te permite obtener capital usando tu vehículo como respaldo, sin tener que venderlo. Tú recibes el dinero y Swip retiene el auto o lo monitorea — según la modalidad que elijas — durante el plazo acordado.</p>
+        <p>Es una alternativa más seria, más clara y más adecuada para vehículos de valor que el empeño tradicional. Sin tasas escondidas, sin valuaciones arbitrarias, sin letra chica.</p>
+        <p>Swip está especializado en vehículos de lujo, blindados y de alto valor — los segmentos que otras empresas no saben cómo evaluar correctamente.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section id="como-funciona" class="content-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">PROCESO</p>
+      <h2 class="section-title">Cuatro pasos.<br />Un día.</h2>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3 class="step-title">Contacto inicial</h3>
+          <p class="step-desc">Compartes los datos básicos de tu vehículo — marca, modelo, año y condición. En minutos recibes un estimado del préstamo que puedes obtener.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3 class="step-title">Valuación física</h3>
+          <p class="step-desc">Un valuador Swip revisa el vehículo en tu domicilio o en nuestras instalaciones. Sin cargos ocultos ni compromiso previo.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3 class="step-title">Oferta y contrato</h3>
+          <p class="step-desc">Recibes una oferta clara con monto, tasa y plazo definidos. Contrato transparente sin sorpresas.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <h3 class="step-title">Depósito en tu cuenta</h3>
+          <p class="step-desc">Transferencia directa en menos de 24 horas de firmado el contrato. Rápido, documentado y sin intermediarios.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODALIDADES -->
+  <section class="content-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">MODALIDADES</p>
+      <h2 class="section-title">Elige cómo quieres<br />manejarlo.</h2>
+      <div class="modal-grid">
+        <div class="modal-card">
+          <p class="modal-tag">RESGUARDO</p>
+          <h3 class="modal-title">Dejas el vehículo</h3>
+          <p class="modal-desc">Tu auto queda en instalaciones seguras con seguro vigente. Esta modalidad ofrece mejores montos y tasas por el menor riesgo operativo.</p>
+          <a href="/prestamo-con-garantia-de-auto-con-resguardo/" class="modal-link">Ver condiciones →</a>
+        </div>
+        <div class="modal-card">
+          <p class="modal-tag">SIN DEJARLO</p>
+          <h3 class="modal-title">Sigues usándolo</h3>
+          <p class="modal-desc">Bajo ciertas condiciones y monitoreo GPS, puedes conservar el uso del vehículo durante el plazo del préstamo.</p>
+          <a href="/prestamo-con-garantia-de-auto-sin-dejarlo/" class="modal-link">Ver condiciones →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUÉ SWIP -->
+  <section class="content-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">POR QUÉ SWIP</p>
+      <h2 class="section-title">La diferencia está<br />en los detalles.</h2>
+      <div class="ventajas-grid">
+        <div class="ventaja">
+          <p class="v-tag">VELOCIDAD</p>
+          <h3 class="v-title">Respuesta el mismo día</h3>
+          <p class="v-desc">Desde el primer contacto hasta el depósito en menos de 24 horas.</p>
+        </div>
+        <div class="ventaja">
+          <p class="v-tag">CLARIDAD</p>
+          <h3 class="v-title">Sin letra chica</h3>
+          <p class="v-desc">Monto, tasa y plazo claros desde el inicio. Sin cargos que aparezcan después.</p>
+        </div>
+        <div class="ventaja">
+          <p class="v-tag">DISCRECIÓN</p>
+          <h3 class="v-title">Proceso confidencial</h3>
+          <p class="v-desc">Tu información y la de tu vehículo se manejan con total reserva profesional.</p>
+        </div>
+        <div class="ventaja">
+          <p class="v-tag">ESPECIALIZACIÓN</p>
+          <h3 class="v-title">Autos de alto valor</h3>
+          <p class="v-desc">Experiencia real en lujo, blindados y segmentos especiales que otros no valoran bien.</p>
+        </div>
+        <div class="ventaja">
+          <p class="v-tag">SEGURIDAD</p>
+          <h3 class="v-title">Resguardo certificado</h3>
+          <p class="v-desc">Instalaciones seguras y seguro vigente durante todo el plazo del préstamo.</p>
+        </div>
+        <div class="ventaja">
+          <p class="v-tag">TRATO</p>
+          <h3 class="v-title">Atención premium</h3>
+          <p class="v-desc">Un ejecutivo dedicado te acompaña en cada paso del proceso.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REQUISITOS -->
+  <section class="content-section">
+    <div class="section-inner two-col">
+      <div>
+        <p class="section-eyebrow">REQUISITOS</p>
+        <h2 class="section-title">Lo que<br />necesitas.</h2>
+      </div>
+      <div class="req-list">
+        <div class="req-item">
+          <span class="req-num">—</span>
+          <div>
+            <strong>Factura original del vehículo</strong>
+            <p>A tu nombre o con endosos correspondientes.</p>
+          </div>
+        </div>
+        <div class="req-item">
+          <span class="req-num">—</span>
+          <div>
+            <strong>Identificación oficial vigente</strong>
+            <p>INE, pasaporte o cédula profesional.</p>
+          </div>
+        </div>
+        <div class="req-item">
+          <span class="req-num">—</span>
+          <div>
+            <strong>Comprobante de domicilio</strong>
+            <p>No mayor a 3 meses.</p>
+          </div>
+        </div>
+        <div class="req-item">
+          <span class="req-num">—</span>
+          <div>
+            <strong>Tarjeta de circulación vigente</strong>
+            <p>Del vehículo a empeñar.</p>
+          </div>
+        </div>
+        <a href="/requisitos/" class="modal-link" style="margin-top:8px;display:inline-block;">Ver requisitos completos →</a>
+      </div>
+    </div>
+  </section>
+
+  <FAQ items={faqs} />
+  <CTASection />
+
+</Page>
+
+<style>
+  .page-hero {
+    border-bottom: 1px solid var(--line);
+    background: #0f0f0f;
+  }
+  .hero-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 96px 64px 80px;
+  }
+  .eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.42em;
+    color: rgba(168,168,168,0.45);
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+  .hero-title {
+    font-size: clamp(48px, 5.5vw, 80px);
+    font-weight: 300;
+    color: var(--white);
+    letter-spacing: -0.03em;
+    line-height: 0.95;
+    margin-bottom: 24px;
+  }
+  .hero-body {
+    max-width: 560px;
+    font-size: 15px;
+    color: rgba(168,168,168,0.8);
+    line-height: 1.85;
+    margin-bottom: 32px;
+  }
+  .hero-actions { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+  .btn-primary {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 52px; padding: 16px 40px;
+    border: 1px solid rgba(255,255,255,0.35); color: var(--white);
+    font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase;
+    text-decoration: none; font-family: inherit; transition: all 0.2s;
+  }
+  .btn-primary:hover { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.6); }
+  .btn-ghost {
+    font-size: 11px; letter-spacing: 0.22em; color: rgba(168,168,168,0.6);
+    text-decoration: none; text-transform: uppercase; transition: color 0.2s;
+  }
+  .btn-ghost:hover { color: var(--white); }
+
+  .content-section { border-bottom: 1px solid var(--line); }
+  .section-inner { max-width: 1280px; margin: 0 auto; padding: 96px 64px; }
+  .section-inner.two-col { display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px; align-items: start; }
+  .section-eyebrow { font-size: 9px; letter-spacing: 0.42em; color: rgba(168,168,168,0.4); text-transform: uppercase; margin-bottom: 20px; }
+  .section-title { font-size: clamp(28px, 3.5vw, 48px); font-weight: 300; color: var(--white); letter-spacing: -0.02em; line-height: 1.05; }
+  .section-text p { font-size: 15px; color: rgba(168,168,168,0.72); line-height: 1.85; margin-bottom: 20px; }
+
+  .steps-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; background: var(--line); margin-top: 56px; }
+  .step { background: var(--black); padding: 40px 32px; }
+  .step-num { font-size: 11px; letter-spacing: 0.3em; color: rgba(168,168,168,0.25); margin-bottom: 20px; }
+  .step-title { font-size: 17px; font-weight: 400; color: var(--white); margin-bottom: 12px; letter-spacing: -0.01em; }
+  .step-desc { font-size: 13px; color: rgba(168,168,168,0.6); line-height: 1.7; }
+
+  .modal-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 1px; background: var(--line); margin-top: 56px; }
+  .modal-card { background: var(--black); padding: 48px 40px; }
+  .modal-tag { font-size: 9px; letter-spacing: 0.38em; color: rgba(168,168,168,0.3); text-transform: uppercase; margin-bottom: 20px; }
+  .modal-title { font-size: 24px; font-weight: 300; color: var(--white); letter-spacing: -0.01em; margin-bottom: 14px; }
+  .modal-desc { font-size: 14px; color: rgba(168,168,168,0.65); line-height: 1.8; margin-bottom: 24px; }
+  .modal-link { font-size: 11px; letter-spacing: 0.2em; color: rgba(168,168,168,0.5); text-decoration: none; text-transform: uppercase; transition: color 0.2s; }
+  .modal-link:hover { color: var(--white); }
+
+  .ventajas-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--line); margin-top: 56px; }
+  .ventaja { background: var(--black); padding: 40px 32px; }
+  .v-tag { font-size: 9px; letter-spacing: 0.38em; color: rgba(168,168,168,0.28); text-transform: uppercase; margin-bottom: 16px; }
+  .v-title { font-size: 18px; font-weight: 300; color: var(--white); margin-bottom: 10px; }
+  .v-desc { font-size: 13px; color: rgba(168,168,168,0.6); line-height: 1.7; }
+
+  .req-list { padding-top: 8px; }
+  .req-item { display: flex; gap: 20px; padding: 24px 0; border-bottom: 1px solid var(--line); }
+  .req-num { font-size: 16px; color: rgba(168,168,168,0.3); flex-shrink: 0; margin-top: 2px; }
+  .req-item strong { display: block; font-size: 15px; font-weight: 400; color: var(--white); margin-bottom: 4px; }
+  .req-item p { font-size: 13px; color: rgba(168,168,168,0.6); line-height: 1.6; }
+
+  @media (max-width: 1024px) {
+    .steps-grid { grid-template-columns: repeat(2,1fr); }
+    .ventajas-grid { grid-template-columns: repeat(2,1fr); }
+  }
+  @media (max-width: 768px) {
+    .hero-inner { padding: 64px 24px; }
+    .section-inner { padding: 64px 24px; }
+    .section-inner.two-col { grid-template-columns: 1fr; gap: 40px; }
+    .steps-grid, .modal-grid, .ventajas-grid { grid-template-columns: 1fr; }
+  }
+</style>

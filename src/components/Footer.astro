@@ -1,0 +1,132 @@
+---
+const WHATSAPP = 'https://wa.me/525500000000?text=Hola%2C%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20de%20mi%20veh%C3%ADculo';
+---
+<footer class="swip-footer">
+  <div class="footer-main">
+    <div class="footer-brand">
+      <a href="/">
+        <img src="/assets/logos/logo-light.svg" alt="SWIP" height="30" />
+      </a>
+      <p class="tagline">
+        Liquidez inteligente<br />
+        con respaldo en tu auto.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <p class="col-title">Servicios</p>
+      <a href="/prestamo-con-garantia-de-auto/">Préstamo con garantía de auto</a>
+      <a href="/prestamo-con-garantia-de-auto-sin-dejarlo/">Sin dejarlo</a>
+      <a href="/prestamo-con-garantia-de-auto-con-resguardo/">Con resguardo</a>
+      <a href="/prestamo-con-garantia-de-autos-de-lujo/">Autos de lujo</a>
+      <a href="/prestamo-con-garantia-de-autos-blindados/">Autos blindados</a>
+    </div>
+
+    <div class="footer-col">
+      <p class="col-title">Información</p>
+      <a href="/como-funciona/">Cómo funciona</a>
+      <a href="/requisitos/">Requisitos</a>
+      <a href="/vehiculos-que-aceptamos/">Vehículos que aceptamos</a>
+      <a href="/preguntas-frecuentes/">Preguntas frecuentes</a>
+      <a href="/blog/">Blog</a>
+    </div>
+
+    <div class="footer-col">
+      <p class="col-title">Contacto</p>
+      <a href="mailto:patricia_bernal@swip.mx" style="text-transform:none;letter-spacing:0;">patricia_bernal@swip.mx</a>
+      <a href={WHATSAPP} target="_blank" rel="noopener">WhatsApp</a>
+      <a href="/contacto/">Solicitar evaluación</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span class="copy">© 2026 SWIP. Todos los derechos reservados.</span>
+    <div class="legal">
+      <a href="/aviso-de-privacidad/">Aviso de privacidad</a>
+      <a href="/terminos-de-uso/">Términos de uso</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .swip-footer {
+    border-top: 1px solid var(--line);
+  }
+
+  .footer-main {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1fr;
+    padding: 72px 64px 52px;
+  }
+
+  .footer-brand .tagline {
+    font-size: 12px;
+    color: rgba(168, 168, 168, 0.35);
+    line-height: 1.7;
+    margin-top: 20px;
+  }
+
+  .col-title {
+    font-size: 9px;
+    letter-spacing: 0.38em;
+    color: rgba(168, 168, 168, 0.3);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .footer-col a {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: rgba(168, 168, 168, 0.55);
+    text-decoration: none;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+  .footer-col a:hover { color: var(--white); }
+
+  .footer-bottom {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 24px 64px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .copy {
+    font-size: 11px;
+    color: rgba(168, 168, 168, 0.25);
+    letter-spacing: 0.08em;
+  }
+
+  .legal {
+    display: flex;
+    gap: 32px;
+  }
+
+  .legal a {
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    color: rgba(168, 168, 168, 0.25);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+  .legal a:hover { color: rgba(168, 168, 168, 0.5); }
+
+  @media (max-width: 1024px) {
+    .footer-main { grid-template-columns: 1fr 1fr; gap: 40px; padding: 56px 24px 40px; }
+  }
+
+  @media (max-width: 768px) {
+    .footer-main { grid-template-columns: 1fr; }
+    .footer-bottom { flex-direction: column; text-align: center; padding: 20px 24px; gap: 12px; }
+  }
+</style>

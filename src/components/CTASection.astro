@@ -1,0 +1,116 @@
+---
+export interface Props {
+  title?: string;
+  body?: string;
+  primaryLabel?: string;
+  eyebrow?: string;
+}
+
+const {
+  title = '¿Cuánto puedes\nobtener por tu auto?',
+  body = 'Evaluación sin compromiso. Solo necesitamos los datos básicos de tu vehículo para darte un estimado real.',
+  primaryLabel = 'Solicitar evaluación por WhatsApp',
+  eyebrow = 'SIGUIENTE PASO',
+} = Astro.props;
+
+const WHATSAPP = 'https://wa.me/525500000000?text=Hola%2C%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20de%20mi%20veh%C3%ADculo';
+---
+
+<section class="cta-wrap">
+  <div class="cta-inner">
+    <p class="cta-eyebrow">{eyebrow}</p>
+    <h2 class="cta-title">{title}</h2>
+    <p class="cta-body">{body}</p>
+    <div class="cta-actions">
+      <a href={WHATSAPP} target="_blank" rel="noopener" class="btn-primary">
+        {primaryLabel}
+      </a>
+      <a href="mailto:patricia_bernal@swip.mx" class="btn-ghost">
+        patricia_bernal@swip.mx →
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta-wrap {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .cta-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 120px 64px;
+    text-align: center;
+  }
+
+  .cta-eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.42em;
+    color: rgba(168,168,168,0.38);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .cta-title {
+    font-size: clamp(36px, 4.5vw, 64px);
+    font-weight: 300;
+    color: var(--white);
+    letter-spacing: -0.025em;
+    line-height: 1.05;
+    margin-bottom: 20px;
+    white-space: pre-line;
+  }
+
+  .cta-body {
+    font-size: 16px;
+    color: rgba(168,168,168,0.65);
+    line-height: 1.8;
+    max-width: 500px;
+    margin: 0 auto 48px;
+  }
+
+  .cta-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 16px 40px;
+    border: 1px solid rgba(255,255,255,0.35);
+    color: var(--white);
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: inherit;
+    transition: all 0.2s;
+  }
+
+  .btn-primary:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(255,255,255,0.6);
+  }
+
+  .btn-ghost {
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    color: rgba(168,168,168,0.6);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+  .btn-ghost:hover { color: var(--white); }
+
+  @media (max-width: 768px) {
+    .cta-inner { padding: 80px 24px; }
+  }
+</style>

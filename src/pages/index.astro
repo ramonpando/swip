@@ -1,0 +1,664 @@
+---
+import Page from '../layouts/Page.astro';
+
+const WHATSAPP = 'https://wa.me/525500000000?text=Hola%2C%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20de%20mi%20veh%C3%ADculo';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "@id": "https://swip.mx/#service",
+  "name": "SWIP — Préstamo con Garantía Vehicular",
+  "url": "https://swip.mx",
+  "description": "Liquidez inteligente con respaldo en tu auto. Especialistas en vehículos de lujo, blindados y de alto valor en México.",
+  "areaServed": [
+    { "@type": "City", "name": "Ciudad de México" },
+    { "@type": "City", "name": "Interlomas" },
+    { "@type": "City", "name": "Querétaro" }
+  ],
+  "currenciesAccepted": "MXN",
+  "priceRange": "$$$$"
+};
+---
+<Page
+  title="SWIP — Préstamo con Garantía de Auto en México | Liquidez Premium"
+  description="Obtén liquidez usando tu auto como respaldo. Proceso ágil, trato serio y discreto. Especialistas en autos de lujo, blindados y vehículos de alto valor en México."
+  schema={schema}
+>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-statement">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="hero-eyebrow">SWIP · LIQUIDEZ CON GARANTÍA VEHICULAR · MÉXICO</p>
+          <h1 class="hero-title">
+            Tu auto<br />
+            es tu respaldo.
+            <em>Úsalo con inteligencia.</em>
+          </h1>
+          <p class="hero-body">
+            Obtén liquidez usando tu vehículo como garantía — sin venderlo, sin
+            burocracia bancaria, con atención seria y discreta. Especialistas en
+            autos de lujo, blindados y vehículos de alto valor.
+          </p>
+          <div class="hero-actions">
+            <a href={WHATSAPP} target="_blank" rel="noopener" class="btn-primary">
+              Solicitar evaluación
+            </a>
+            <a href="/como-funciona/" class="btn-ghost">
+              Cómo funciona →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-number">24 h</div>
+        <div class="stat-label">Respuesta y desembolso</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">2</div>
+        <div class="stat-label">Modalidades — con o sin resguardo</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Proceso claro y documentado</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODALIDADES -->
+  <section id="modalidades">
+    <div class="section-inner">
+      <p class="section-eyebrow">MODALIDADES</p>
+      <h2 class="section-title">Dos formas de<br />obtener liquidez.</h2>
+      <p class="section-body">
+        Adaptamos el esquema a tu situación. Elige la modalidad que mejor
+        funcione para ti y tu vehículo.
+      </p>
+      <div class="modal-grid">
+        <div class="modal-card">
+          <p class="modal-tag">RESGUARDO</p>
+          <h3 class="modal-title">Dejas el vehículo,<br />obtienes mejores condiciones.</h3>
+          <p class="modal-desc">
+            Tu auto queda en instalaciones seguras durante el plazo del
+            préstamo. Esta modalidad suele ofrecer montos más altos y mejores
+            tasas por el menor riesgo para ambas partes.
+          </p>
+          <a href="/prestamo-con-garantia-de-auto-con-resguardo/" class="modal-link">
+            Ver modalidad →
+          </a>
+        </div>
+        <div class="modal-card">
+          <p class="modal-tag">SIN DEJARLO</p>
+          <h3 class="modal-title">Sigues usando<br />tu vehículo.</h3>
+          <p class="modal-desc">
+            Bajo ciertas condiciones y monitoreo, puedes conservar el uso de
+            tu vehículo durante el plazo del préstamo. Ideal cuando la
+            movilidad es prioritaria.
+          </p>
+          <a href="/prestamo-con-garantia-de-auto-sin-dejarlo/" class="modal-link">
+            Ver modalidad →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section id="como-funciona">
+    <div class="section-inner">
+      <p class="section-eyebrow">PROCESO</p>
+      <h2 class="section-title">Cuatro pasos.<br />Un día.</h2>
+      <p class="section-body">
+        Diseñamos el proceso para que el trámite no sea el problema. Desde la
+        solicitud hasta el depósito en tu cuenta, en menos de 24 horas.
+      </p>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-title">Contacto inicial</div>
+          <div class="step-desc">Compartes los datos básicos de tu vehículo. En minutos recibes un estimado de lo que puedes obtener.</div>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-title">Valuación física</div>
+          <div class="step-desc">Un valuador SWIP revisa el vehículo en tu domicilio o en nuestras instalaciones. Sin cargos ocultos ni compromisos.</div>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-title">Oferta y contrato</div>
+          <div class="step-desc">Recibes una oferta clara con monto, tasa y plazo definidos. Contrato sin letra chica.</div>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <div class="step-title">Depósito en tu cuenta</div>
+          <div class="step-desc">Transferencia directa en menos de 24 horas de firmado el contrato. Rápido, documentado y sin intermediarios.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESPECIALIDADES -->
+  <section id="especialidades">
+    <div class="section-inner">
+      <p class="section-eyebrow">ESPECIALIDADES</p>
+      <h2 class="section-title">Vehículos que<br />sabemos valorar.</h2>
+      <p class="section-body">
+        Trabajamos con vehículos que otras empresas no saben cómo evaluar.
+        Nuestra especialización en segmentos premium marca la diferencia en
+        el monto y las condiciones que puedes obtener.
+      </p>
+      <div class="spec-grid">
+        <a href="/prestamo-con-garantia-de-autos-de-lujo/" class="spec-card">
+          <p class="spec-tag">ESPECIALIDAD</p>
+          <h3 class="spec-title">Autos de lujo</h3>
+          <p class="spec-desc">BMW, Mercedes, Porsche, Audi, Land Rover y marcas equivalentes. Valuación precisa, trato a la altura del vehículo.</p>
+          <span class="spec-link">Ver más →</span>
+        </a>
+        <a href="/prestamo-con-garantia-de-autos-blindados/" class="spec-card">
+          <p class="spec-tag">ESPECIALIDAD</p>
+          <h3 class="spec-title">Autos blindados</h3>
+          <p class="spec-desc">Los vehículos blindados tienen un valor especial que requiere criterios específicos. Sabemos cómo evaluarlos correctamente.</p>
+          <span class="spec-link">Ver más →</span>
+        </a>
+        <a href="/prestamo-con-garantia-de-auto/" class="spec-card">
+          <p class="spec-tag">GENERAL</p>
+          <h3 class="spec-title">Garantía vehicular</h3>
+          <p class="spec-desc">Si tienes un vehículo de valor y necesitas liquidez, Swip es la alternativa seria al empeño tradicional.</p>
+          <span class="spec-link">Ver más →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUÉ SWIP -->
+  <section id="diferenciadores">
+    <div class="section-inner">
+      <p class="section-eyebrow">POR QUÉ SWIP</p>
+      <h2 class="section-title">La alternativa seria<br />al empeño tradicional.</h2>
+      <div class="ventajas-grid">
+        <div class="ventaja">
+          <div class="ventaja-tag">VELOCIDAD</div>
+          <div class="ventaja-title">Proceso ágil</div>
+          <div class="ventaja-desc">Respuesta en el mismo día. Depósito en menos de 24 horas de firmado el contrato.</div>
+        </div>
+        <div class="ventaja">
+          <div class="ventaja-tag">CLARIDAD</div>
+          <div class="ventaja-title">Sin letra chica</div>
+          <div class="ventaja-desc">Monto, tasa y plazo claros desde el inicio. Sabes exactamente a qué te comprometes.</div>
+        </div>
+        <div class="ventaja">
+          <div class="ventaja-tag">DISCRECIÓN</div>
+          <div class="ventaja-title">Trato confidencial</div>
+          <div class="ventaja-desc">Proceso discreto y profesional. Tu información y la de tu vehículo se manejan con reserva total.</div>
+        </div>
+        <div class="ventaja">
+          <div class="ventaja-tag">ESPECIALIZACIÓN</div>
+          <div class="ventaja-title">Autos de alto valor</div>
+          <div class="ventaja-desc">Experiencia real en vehículos premium, blindados y de segmentos especiales que otros no saben valorar.</div>
+        </div>
+        <div class="ventaja">
+          <div class="ventaja-tag">SEGURIDAD</div>
+          <div class="ventaja-title">Resguardo certificado</div>
+          <div class="ventaja-desc">Tu vehículo queda en instalaciones seguras con cobertura de seguro vigente durante todo el plazo.</div>
+        </div>
+        <div class="ventaja">
+          <div class="ventaja-tag">TRATO</div>
+          <div class="ventaja-title">Atención premium</div>
+          <div class="ventaja-desc">Un ejecutivo dedicado te acompaña en todo el proceso. Sin call centers, sin automatizaciones frías.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section id="contacto">
+    <div class="cta-section">
+      <p class="cta-eyebrow">SIGUIENTE PASO</p>
+      <h2 class="cta-title">¿Cuánto puedes<br />obtener por tu auto?</h2>
+      <p class="cta-body">
+        Evaluación sin compromiso. Solo necesitamos los datos básicos de tu
+        vehículo para darte un estimado real.
+      </p>
+      <div class="cta-actions">
+        <a href={WHATSAPP} target="_blank" rel="noopener" class="btn-primary">
+          Solicitar evaluación por WhatsApp
+        </a>
+        <a href="mailto:patricia_bernal@swip.mx" class="btn-ghost">
+          patricia_bernal@swip.mx →
+        </a>
+      </div>
+    </div>
+  </section>
+
+</Page>
+
+<style>
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background: #0f0f0f center center / cover no-repeat;
+    z-index: 0;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(90deg, rgba(10,10,10,0.95) 0%, rgba(10,10,10,0.75) 45%, rgba(10,10,10,0.25) 100%),
+      linear-gradient(180deg, rgba(10,10,10,0.05) 0%, rgba(10,10,10,0.6) 100%);
+    z-index: 1;
+  }
+
+  .hero-statement {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 56px 64px 44px;
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 680px);
+    min-height: calc(100vh - 220px);
+    align-items: center;
+  }
+
+  .hero-eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.42em;
+    color: rgba(168, 168, 168, 0.5);
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+
+  .hero-title {
+    font-size: clamp(52px, 6.2vw, 84px);
+    font-weight: 300;
+    color: var(--white);
+    letter-spacing: -0.03em;
+    line-height: 0.92;
+    margin-bottom: 24px;
+  }
+
+  .hero-title em {
+    display: block;
+    margin-top: 14px;
+    font-style: normal;
+    font-size: 0.66em;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: -0.02em;
+  }
+
+  .hero-body {
+    max-width: 500px;
+    font-size: 15px;
+    color: rgba(168, 168, 168, 0.8);
+    line-height: 1.85;
+    margin-bottom: 32px;
+  }
+
+  .hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  /* ── STATS BAR ── */
+  .stats-bar {
+    position: relative;
+    z-index: 2;
+    border-top: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .stat-item {
+    padding: 28px 40px;
+    border-right: 1px solid var(--line);
+  }
+
+  .stat-item:last-child { border-right: none; }
+
+  .stat-number {
+    font-size: 28px;
+    font-weight: 300;
+    color: var(--white);
+    letter-spacing: -0.02em;
+    margin-bottom: 4px;
+  }
+
+  .stat-label {
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    color: rgba(168, 168, 168, 0.45);
+    text-transform: uppercase;
+  }
+
+  /* ── BUTTONS ── */
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 16px 40px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    color: var(--white);
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: inherit;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+
+  .btn-primary:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.6);
+  }
+
+  .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    color: rgba(168, 168, 168, 0.6);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: inherit;
+    transition: color 0.2s;
+  }
+
+  .btn-ghost:hover { color: var(--white); }
+
+  /* ── SECTIONS ── */
+  section {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .section-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 96px 64px;
+  }
+
+  .section-eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.42em;
+    color: rgba(168, 168, 168, 0.4);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .section-title {
+    font-size: clamp(32px, 4vw, 56px);
+    font-weight: 300;
+    color: var(--white);
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    margin-bottom: 20px;
+  }
+
+  .section-body {
+    font-size: 15px;
+    color: rgba(168, 168, 168, 0.7);
+    line-height: 1.8;
+    max-width: 560px;
+  }
+
+  /* ── MODALIDADES ── */
+  .modal-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: var(--line);
+    margin-top: 56px;
+  }
+
+  .modal-card {
+    background: var(--black);
+    padding: 48px 40px;
+  }
+
+  .modal-tag {
+    font-size: 9px;
+    letter-spacing: 0.38em;
+    color: rgba(168, 168, 168, 0.3);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .modal-title {
+    font-size: 28px;
+    font-weight: 300;
+    color: var(--white);
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+
+  .modal-desc {
+    font-size: 14px;
+    color: rgba(168, 168, 168, 0.65);
+    line-height: 1.8;
+    margin-bottom: 28px;
+    max-width: 420px;
+  }
+
+  .modal-link {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: rgba(168, 168, 168, 0.5);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+  .modal-link:hover { color: var(--white); }
+
+  /* ── STEPS ── */
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--line);
+    margin-top: 56px;
+  }
+
+  .step {
+    background: var(--black);
+    padding: 40px 32px;
+  }
+
+  .step-num {
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    color: rgba(168, 168, 168, 0.25);
+    margin-bottom: 20px;
+  }
+
+  .step-title {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
+  }
+
+  .step-desc {
+    font-size: 13px;
+    color: rgba(168, 168, 168, 0.6);
+    line-height: 1.7;
+  }
+
+  /* ── ESPECIALIDADES ── */
+  .spec-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--line);
+    margin-top: 56px;
+  }
+
+  .spec-card {
+    background: var(--black);
+    padding: 48px 40px;
+    text-decoration: none;
+    display: block;
+    transition: background 0.2s;
+  }
+
+  .spec-card:hover { background: rgba(168, 168, 168, 0.03); }
+
+  .spec-tag {
+    font-size: 9px;
+    letter-spacing: 0.38em;
+    color: rgba(168, 168, 168, 0.3);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .spec-title {
+    font-size: 22px;
+    font-weight: 300;
+    color: var(--white);
+    margin-bottom: 14px;
+    letter-spacing: -0.01em;
+  }
+
+  .spec-desc {
+    font-size: 13px;
+    color: rgba(168, 168, 168, 0.6);
+    line-height: 1.75;
+    margin-bottom: 24px;
+  }
+
+  .spec-link {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: rgba(168, 168, 168, 0.4);
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+  .spec-card:hover .spec-link { color: var(--white); }
+
+  /* ── VENTAJAS ── */
+  .ventajas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--line);
+    margin-top: 56px;
+  }
+
+  .ventaja {
+    background: var(--black);
+    padding: 48px 40px;
+  }
+
+  .ventaja-tag {
+    font-size: 9px;
+    letter-spacing: 0.38em;
+    color: rgba(168, 168, 168, 0.28);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .ventaja-title {
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--white);
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
+  }
+
+  .ventaja-desc {
+    font-size: 13px;
+    color: rgba(168, 168, 168, 0.6);
+    line-height: 1.75;
+  }
+
+  /* ── CTA FINAL ── */
+  .cta-section {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 120px 64px;
+    text-align: center;
+  }
+
+  .cta-eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.42em;
+    color: rgba(168, 168, 168, 0.38);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .cta-title {
+    font-size: clamp(36px, 4.5vw, 64px);
+    font-weight: 300;
+    color: var(--white);
+    letter-spacing: -0.025em;
+    line-height: 1.05;
+    margin-bottom: 20px;
+  }
+
+  .cta-body {
+    font-size: 16px;
+    color: rgba(168, 168, 168, 0.65);
+    line-height: 1.8;
+    max-width: 500px;
+    margin: 0 auto 48px;
+  }
+
+  .cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1024px) {
+    .steps-grid { grid-template-columns: repeat(2, 1fr); }
+    .ventajas-grid { grid-template-columns: repeat(2, 1fr); }
+    .spec-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 768px) {
+    .hero-statement { padding: 40px 24px 32px; }
+    .hero-title { font-size: clamp(40px, 10vw, 64px); }
+    .stats-bar { grid-template-columns: 1fr; }
+    .stat-item { border-right: none; border-bottom: 1px solid var(--line); }
+    .stat-item:last-child { border-bottom: none; }
+    .section-inner { padding: 64px 24px; }
+    .steps-grid { grid-template-columns: 1fr; }
+    .ventajas-grid { grid-template-columns: 1fr; }
+    .spec-grid { grid-template-columns: 1fr; }
+    .modal-grid { grid-template-columns: 1fr; }
+    .cta-section { padding: 80px 24px; }
+  }
+</style>

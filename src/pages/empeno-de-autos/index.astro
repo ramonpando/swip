@@ -1,0 +1,184 @@
+---
+import Page from '../../layouts/Page.astro';
+import FAQ from '../../components/FAQ.astro';
+import CTASection from '../../components/CTASection.astro';
+
+const WHATSAPP = 'https://wa.me/525500000000?text=Hola%2C%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20de%20mi%20veh%C3%ADculo';
+
+const faqs = [
+  { q: '¿Swip es una casa de empeño?', a: 'No exactamente. Swip es una empresa especializada en préstamos con garantía vehicular. A diferencia del empeño tradicional, trabajamos con vehículos de valor medio-alto y alto, ofrecemos un proceso documentado y transparente, y nos especializamos en autos de lujo y blindados.' },
+  { q: '¿Cuál es la diferencia entre empeño de autos y préstamo con garantía vehicular?', a: 'En esencia, el producto financiero es similar: usas tu auto como garantía para obtener dinero. La diferencia está en cómo se ejecuta: el empeño tradicional suele tener procesos poco transparentes, tasas altas y trato impersonal. Un préstamo con garantía vehicular serio — como el de Swip — tiene contrato claro, tasa fija, valuación profesional y atención dedicada.' },
+  { q: '¿Qué tipos de autos acepta Swip?', a: 'Swip acepta vehículos de valor medio-alto y alto: autos de lujo (BMW, Mercedes, Porsche, Audi, Land Rover), autos blindados, SUVs premium y vehículos en buen estado general. Mientras mayor sea el valor del auto, mejores condiciones puedes obtener.' },
+  { q: '¿Cómo sé si me conviene el empeño o el préstamo con garantía?', a: 'Si tienes un vehículo de valor y buscas liquidez seria, profesional y a un precio justo, Swip es la mejor opción. Si solo necesitas empeñar algo de poco valor de forma rápida, quizá el empeño tradicional sea suficiente. Para vehículos de valor, Swip siempre ofrece mejores condiciones.' },
+  { q: '¿Puedo recuperar mi auto cuando quiera?', a: 'Sí. Puedes liquidar el préstamo anticipadamente en cualquier momento y recuperar tu vehículo. No hay penalización por pago anticipado.' },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "name": "Empeño de Autos Premium — SWIP",
+  "description": "Alternativa premium al empeño de autos en México. Préstamo con garantía vehicular serio, claro y especializado en vehículos de alto valor.",
+  "url": "https://swip.mx/empeno-de-autos/",
+  "provider": { "@id": "https://swip.mx/#organization" },
+  "areaServed": "MX"
+};
+---
+<Page
+  title="Empeño de Autos en México — Alternativa Premium | SWIP"
+  description="¿Buscas empeño de autos? Swip te ofrece una alternativa más seria: préstamo con garantía vehicular, proceso claro, trato premium y especialización en autos de valor. Evaluación gratuita."
+  schema={schema}
+>
+
+  <section class="page-hero">
+    <div class="hero-inner">
+      <p class="eyebrow">EMPEÑO DE AUTOS · ALTERNATIVA PREMIUM · MÉXICO</p>
+      <h1 class="hero-title">Si buscas empeño<br />de autos, esto es<br />mejor.</h1>
+      <p class="hero-body">
+        Swip no es una casa de empeño tradicional. Es una alternativa más seria,
+        más clara y más adecuada para quien tiene un vehículo de valor y necesita
+        liquidez real — con trato profesional y condiciones justas.
+      </p>
+      <div class="hero-actions">
+        <a href={WHATSAPP} target="_blank" rel="noopener" class="btn-primary">Solicitar evaluación</a>
+        <a href="/prestamo-con-garantia-de-auto/" class="btn-ghost">Ver el servicio completo →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARATIVA -->
+  <section class="content-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">LA DIFERENCIA</p>
+      <h2 class="section-title">Empeño tradicional<br />vs. Swip.</h2>
+      <div class="compare-grid">
+        <div class="compare-col col-bad">
+          <p class="col-header">Empeño tradicional</p>
+          <ul>
+            <li>Tasas altas y poco transparentes</li>
+            <li>Valuación arbitraria del vehículo</li>
+            <li>Proceso impersonal y masivo</li>
+            <li>Poca experiencia en autos de lujo</li>
+            <li>Contratos con letra chica</li>
+            <li>Sin atención personalizada</li>
+          </ul>
+        </div>
+        <div class="compare-col col-good">
+          <p class="col-header">SWIP</p>
+          <ul>
+            <li>Tasa fija, clara desde el inicio</li>
+            <li>Valuación profesional y documentada</li>
+            <li>Proceso discreto y personalizado</li>
+            <li>Especialistas en lujo y blindados</li>
+            <li>Contrato transparente sin sorpresas</li>
+            <li>Ejecutivo dedicado en todo el proceso</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section class="content-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">PROCESO</p>
+      <h2 class="section-title">Simple, rápido<br />y documentado.</h2>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3 class="step-title">Contacto inicial</h3>
+          <p class="step-desc">Dinos marca, modelo y año de tu vehículo. En minutos tienes un estimado sin compromiso.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3 class="step-title">Valuación</h3>
+          <p class="step-desc">Un valuador Swip revisa el vehículo de forma profesional. Sin cargos ocultos.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3 class="step-title">Contrato claro</h3>
+          <p class="step-desc">Monto, tasa y plazo definidos. Sin letra chica que te sorprenda.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <h3 class="step-title">Dinero en 24 h</h3>
+          <p class="step-desc">Transferencia directa a tu cuenta en menos de 24 horas de firmado el contrato.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARA QUIÉN ES -->
+  <section class="content-section">
+    <div class="section-inner two-col">
+      <div>
+        <p class="section-eyebrow">PARA QUIÉN ES</p>
+        <h2 class="section-title">¿Tu vehículo<br />tiene valor?</h2>
+      </div>
+      <div class="section-text">
+        <p>Swip está pensado para personas que tienen patrimonio vehicular y necesitan liquidez por razones concretas: capital para un negocio, resolver una urgencia, aprovechar una oportunidad o cubrir un desfase de flujo.</p>
+        <p>Si tu auto vale y quieres tratarlo como lo que es — un activo serio — Swip es la opción correcta. No malbaratas tu patrimonio ni te sometes a procesos poco claros.</p>
+        <div class="tag-list">
+          <span>Autos de lujo</span>
+          <span>SUVs premium</span>
+          <span>Autos blindados</span>
+          <span>Vehículos de alto valor</span>
+          <span>Autos seminuevos</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <FAQ items={faqs} />
+  <CTASection
+    title="¿Tu auto tiene valor?\nÚsalo con inteligencia."
+    body="Evaluación sin compromiso. Cuéntanos sobre tu vehículo y te decimos cuánto puedes obtener."
+  />
+
+</Page>
+
+<style>
+  .page-hero { border-bottom: 1px solid var(--line); background: #0f0f0f; }
+  .hero-inner { max-width: 1280px; margin: 0 auto; padding: 96px 64px 80px; }
+  .eyebrow { font-size: 9px; letter-spacing: 0.42em; color: rgba(168,168,168,0.45); text-transform: uppercase; margin-bottom: 28px; }
+  .hero-title { font-size: clamp(44px, 5.2vw, 76px); font-weight: 300; color: var(--white); letter-spacing: -0.03em; line-height: 0.95; margin-bottom: 24px; }
+  .hero-body { max-width: 560px; font-size: 15px; color: rgba(168,168,168,0.8); line-height: 1.85; margin-bottom: 32px; }
+  .hero-actions { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+  .btn-primary { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 16px 40px; border: 1px solid rgba(255,255,255,0.35); color: var(--white); font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; font-family: inherit; transition: all 0.2s; }
+  .btn-primary:hover { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.6); }
+  .btn-ghost { font-size: 11px; letter-spacing: 0.22em; color: rgba(168,168,168,0.6); text-decoration: none; text-transform: uppercase; transition: color 0.2s; }
+  .btn-ghost:hover { color: var(--white); }
+
+  .content-section { border-bottom: 1px solid var(--line); }
+  .section-inner { max-width: 1280px; margin: 0 auto; padding: 96px 64px; }
+  .section-inner.two-col { display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px; align-items: start; }
+  .section-eyebrow { font-size: 9px; letter-spacing: 0.42em; color: rgba(168,168,168,0.4); text-transform: uppercase; margin-bottom: 20px; }
+  .section-title { font-size: clamp(28px, 3.5vw, 48px); font-weight: 300; color: var(--white); letter-spacing: -0.02em; line-height: 1.05; }
+  .section-text p { font-size: 15px; color: rgba(168,168,168,0.72); line-height: 1.85; margin-bottom: 20px; }
+
+  .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); margin-top: 56px; }
+  .compare-col { background: var(--black); padding: 48px 40px; }
+  .col-header { font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; margin-bottom: 28px; }
+  .col-bad .col-header { color: rgba(168,168,168,0.35); }
+  .col-good .col-header { color: var(--white); }
+  .compare-col ul { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+  .col-bad li { font-size: 14px; color: rgba(168,168,168,0.45); line-height: 1.5; padding-left: 16px; position: relative; }
+  .col-bad li::before { content: '×'; position: absolute; left: 0; color: rgba(168,168,168,0.25); }
+  .col-good li { font-size: 14px; color: rgba(168,168,168,0.8); line-height: 1.5; padding-left: 16px; position: relative; }
+  .col-good li::before { content: '✓'; position: absolute; left: 0; color: rgba(255,255,255,0.5); }
+
+  .steps-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; background: var(--line); margin-top: 56px; }
+  .step { background: var(--black); padding: 40px 32px; }
+  .step-num { font-size: 11px; letter-spacing: 0.3em; color: rgba(168,168,168,0.25); margin-bottom: 20px; }
+  .step-title { font-size: 17px; font-weight: 400; color: var(--white); margin-bottom: 12px; }
+  .step-desc { font-size: 13px; color: rgba(168,168,168,0.6); line-height: 1.7; }
+
+  .tag-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .tag-list span { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(168,168,168,0.5); border: 1px solid var(--line); padding: 6px 14px; }
+
+  @media (max-width: 1024px) { .steps-grid { grid-template-columns: repeat(2,1fr); } }
+  @media (max-width: 768px) {
+    .hero-inner, .section-inner { padding: 64px 24px; }
+    .section-inner.two-col { grid-template-columns: 1fr; gap: 40px; }
+    .steps-grid, .compare-grid { grid-template-columns: 1fr; }
+  }
+</style>

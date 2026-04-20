@@ -85,26 +85,29 @@ swip.mx/lp/*                                         → noindex, para Ads
 | 1.7 | Cambiar A record → 76.76.21.21 (Vercel) | ✅ | |
 | 1.8 | Cambiar CNAME www → cname.vercel-dns.com | ✅ | |
 | 1.9 | SSL automático en Vercel | ✅ | Let's Encrypt automático |
-| 1.10 | Verificar deploy en swip.mx | ⏳ | Propagando DNS — 15-30 min |
+| 1.10 | Repo público en GitHub | ✅ | Necesario para Hobby plan de Vercel |
+| 1.11 | Deploy activo en Vercel | ✅ | swip-tau.vercel.app funcionando |
+| 1.12 | DNS final en Neubox | ✅ | A → 216.198.79.1 / CNAME www → 788b679fd93af8e2.vercel-dns-017.com |
+| 1.13 | Verificación dominio swip.mx | ⏳ | Propagando DNS — hasta 2h |
 
 ---
 
-## Sprint 2 — Páginas comerciales SEO ⏳
+## Sprint 2 — Páginas comerciales SEO 🔄 EN PROGRESO
 **Objetivo:** Las 8 páginas comerciales indexables con contenido real y SEO completo.
 **Orden de prioridad:** pillar → modalidades → especialidades → locales
 
 | # | Tarea | Estado | Notas |
 |---|---|---|---|
-| 2.1 | `/prestamo-con-garantia-de-auto/` | ⏳ | Página pilar principal |
-| 2.2 | `/empeno-de-autos/` | ⏳ | Puente semántico, captura tráfico masivo |
+| 2.1 | `/prestamo-con-garantia-de-auto/` | ✅ | Página pilar — hero, proceso, modalidades, ventajas, FAQ |
+| 2.2 | `/empeno-de-autos/` | ✅ | Puente semántico con comparativa vs empeño tradicional |
 | 2.3 | `/prestamo-con-garantia-de-auto-sin-dejarlo/` | ⏳ | Modalidad GPS |
 | 2.4 | `/prestamo-con-garantia-de-auto-con-resguardo/` | ⏳ | Modalidad resguardo |
 | 2.5 | `/prestamo-con-garantia-de-autos-de-lujo/` | ⏳ | Segmento premium |
 | 2.6 | `/prestamo-con-garantia-de-autos-blindados/` | ⏳ | Nicho blindado, mención Kevant |
 | 2.7 | `/prestamo-con-garantia-de-auto-en-interlomas/` | ⏳ | Local + LocalBusiness schema |
 | 2.8 | `/prestamo-con-garantia-de-auto-en-queretaro/` | ⏳ | Local + LocalBusiness schema |
-| 2.9 | Componente FAQ.astro reutilizable | ⏳ | Con FAQPage schema JSON-LD |
-| 2.10 | Componente CTASection.astro reutilizable | ⏳ | WhatsApp + email |
+| 2.9 | Componente FAQ.astro reutilizable | ✅ | FAQPage schema JSON-LD incluido |
+| 2.10 | Componente CTASection.astro reutilizable | ✅ | WhatsApp + email, props configurables |
 | 2.11 | Componente StepsGrid.astro reutilizable | ⏳ | |
 
 ---
@@ -204,3 +207,9 @@ swip.mx/lp/*                                         → noindex, para Ads
 | 2026-04-20 | 1 | DNS recuperado de AWS (ex-developer) → Neubox |
 | 2026-04-20 | 1 | DNS configurado en Neubox → apunta a Vercel |
 | 2026-04-20 | 1 | swip.mx propagando — Sprint 1 completo |
+| 2026-04-20 | 1 | Repo hecho público — Hobby plan Vercel requiere repo público |
+| 2026-04-20 | 1 | Deploy vivo: swip-tau.vercel.app |
+| 2026-04-20 | 1 | DNS final actualizado en Neubox — propagando |
+| 2026-04-20 | 2 | Componentes FAQ.astro y CTASection.astro creados |
+| 2026-04-20 | 2 | /prestamo-con-garantia-de-auto/ — página pilar completa |
+| 2026-04-20 | 2 | /empeno-de-autos/ — puente semántico con comparativa completa |

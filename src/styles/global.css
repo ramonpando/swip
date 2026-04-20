@@ -12,6 +12,12 @@
   --muted:  #5A5A5A;
   --text:   #D4D4D4;
   --line:   rgba(168, 168, 168, 0.08);
+  --line-strong: rgba(255, 255, 255, 0.18);
+  --panel: rgba(255, 255, 255, 0.03);
+  --panel-hover: rgba(255, 255, 255, 0.05);
+  --white-soft: rgba(255, 255, 255, 0.92);
+  --white-muted: rgba(255, 255, 255, 0.68);
+  --silver-strong: rgba(168, 168, 168, 0.78);
 }
 
 html {
@@ -20,10 +26,15 @@ html {
   font-family: 'Inter Tight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "ss01" 1, "cv05" 1;
 }
 
 body {
   min-height: 100vh;
+  background:
+    radial-gradient(circle at top center, rgba(255, 255, 255, 0.04), transparent 34%),
+    linear-gradient(180deg, #111111 0%, #0a0a0a 38%, #080808 100%);
 }
 
 a {

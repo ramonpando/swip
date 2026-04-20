@@ -45,7 +45,7 @@ const schema = {
           </p>
           <div class="hero-actions">
             <a href={WHATSAPP} target="_blank" rel="noopener" class="btn-primary">
-              Solicitar evaluación
+              Cotiza tu préstamo
             </a>
             <a href="/como-funciona/" class="btn-ghost">
               Cómo funciona →
@@ -226,7 +226,7 @@ const schema = {
       </p>
       <div class="cta-actions">
         <a href={WHATSAPP} target="_blank" rel="noopener" class="btn-primary">
-          Solicitar evaluación por WhatsApp
+          Cotiza tu préstamo
         </a>
         <a href="mailto:patricia_bernal@swip.mx" class="btn-ghost">
           patricia_bernal@swip.mx →
@@ -240,7 +240,8 @@ const schema = {
 <style>
   /* ── HERO ── */
   .hero {
-    min-height: 100vh;
+    height: calc(100vh - 61px);
+    min-height: 600px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -250,8 +251,10 @@ const schema = {
 
   .hero-bg {
     position: absolute;
-    inset: 0;
+    inset: -10%;
     background: url('/assets/images/hero.jpg') center center / cover no-repeat;
+    transform: scale(1.2);
+    transform-origin: center center;
     z-index: 0;
   }
 
@@ -270,9 +273,9 @@ const schema = {
     flex-direction: column;
     justify-content: center;
     padding: 56px 64px 44px;
-    max-width: 1280px;
-    margin: 0 auto;
     width: 100%;
+    max-width: 1280px;
+    align-self: center;
     position: relative;
     z-index: 2;
   }
@@ -280,7 +283,6 @@ const schema = {
   .hero-grid {
     display: grid;
     grid-template-columns: minmax(0, 680px);
-    min-height: calc(100vh - 220px);
     align-items: center;
   }
 
@@ -329,9 +331,13 @@ const schema = {
   .stats-bar {
     position: relative;
     z-index: 2;
-    border-top: 1px solid var(--line);
+    border-top: 1px solid rgba(255,255,255,0.1);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    background: rgba(10,10,10,0.72);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    flex-shrink: 0;
   }
 
   .stat-item {

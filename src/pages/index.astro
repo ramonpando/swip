@@ -88,6 +88,7 @@ const schema = {
             préstamo. Esta modalidad suele ofrecer montos más altos y mejores
             tasas por el menor riesgo para ambas partes.
           </p>
+          <p class="modal-amount">Sin límite de monto</p>
           <a href="/prestamo-con-garantia-de-auto-con-resguardo/" class="modal-link">
             Ver modalidad →
           </a>
@@ -100,6 +101,7 @@ const schema = {
             tu vehículo durante el plazo del préstamo. Ideal cuando la
             movilidad es prioritaria.
           </p>
+          <p class="modal-amount">Hasta $400,000 MXN</p>
           <a href="/prestamo-con-garantia-de-auto-sin-dejarlo/" class="modal-link">
             Ver modalidad →
           </a>
@@ -488,8 +490,18 @@ const schema = {
     font-size: 14px;
     color: rgba(168, 168, 168, 0.72);
     line-height: 1.8;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
     max-width: 420px;
+  }
+
+  .modal-amount {
+    font-size: 10px;
+    letter-spacing: 0.26em;
+    color: rgba(255, 255, 255, 0.28);
+    text-transform: uppercase;
+    border-top: 1px solid var(--line);
+    padding-top: 16px;
+    margin-bottom: 24px;
   }
 
   .modal-link {

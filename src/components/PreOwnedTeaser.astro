@@ -1,0 +1,338 @@
+---
+const INVENTORY_URL = 'https://dashboard.bravix.com.mx/api/carflow/public/inventario?org=cmn0jyqvg0000rk01w30tuwky&limit=3';
+---
+
+<section class="preowned-section">
+  <div class="po-inner">
+    <div class="po-header">
+      <div>
+        <p class="po-eyebrow">PRE-OWNED · SWIP</p>
+        <h2 class="po-title">Vehículos<br />certificados.</h2>
+      </div>
+      <a href="/pre-owned/" class="po-link-all">Ver inventario completo →</a>
+    </div>
+
+    <div class="po-grid" id="po-grid">
+      <!-- skeleton -->
+      <div class="po-card po-skeleton"></div>
+      <div class="po-card po-skeleton"></div>
+      <div class="po-card po-skeleton"></div>
+      <div class="po-card po-cta">
+        <p class="po-cta-label">PRE-OWNED</p>
+        <p class="po-cta-title">Ver inventario<br />completo</p>
+        <p class="po-cta-body">Unidades certificadas con condición confirmada y documentación verificada.</p>
+        <a href="/pre-owned/" class="po-cta-btn">Ir a Pre-Owned →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const API = 'https://dashboard.bravix.com.mx/api/carflow/public/inventario?org=cmn0jyqvg0000rk01w30tuwky&limit=3';
+
+  function formatPrice(n: number) {
+    return '$' + n.toLocaleString('es-MX') + ' MXN';
+  }
+
+  function formatKm(n: number) {
+    return n.toLocaleString('es-MX') + ' km';
+  }
+
+  function cardHTML(v: any) {
+    const title = `${v.marca} ${v.modelo} ${v.año}`;
+    const badges = v.esBlindado
+      ? `<span class="po-badge po-badge--blindado">Blindado${v.nivelBlindaje ? ' ' + v.nivelBlindaje.toUpperCase() : ''}</span>`
+      : `<span class="po-badge">Certificado</span>`;
+
+    return `
+      <a class="po-card po-card--vehicle" href="${v.fichaUrl}" target="_blank" rel="noopener">
+        <div class="po-img-wrap">
+          ${v.fotoPrincipal ? `<img src="${v.fotoPrincipal}" alt="${title}" loading="lazy" />` : '<div class="po-img-placeholder"></div>'}
+          <div class="po-badges">${badges}</div>
+        </div>
+        <div class="po-card-body">
+          <p class="po-vehicle-name">${title}</p>
+          <div class="po-specs">
+            <span>${formatKm(v.kilometraje)}</span>
+            <span>${v.transmision}</span>
+            ${v.color ? `<span>${v.color}</span>` : ''}
+          </div>
+          <p class="po-price">${formatPrice(v.precioVenta)}</p>
+          <span class="po-card-link">Ver ficha →</span>
+        </div>
+      </a>`;
+  }
+
+  async function loadInventory() {
+    const grid = document.getElementById('po-grid');
+    if (!grid) return;
+
+    try {
+      const res = await fetch(API);
+      const data = await res.json();
+      const vehicles = data.vehiculos || [];
+
+      const ctaCard = `
+        <div class="po-card po-cta">
+          <p class="po-cta-label">PRE-OWNED</p>
+          <p class="po-cta-title">Ver inventario<br />completo</p>
+          <p class="po-cta-body">Unidades certificadas con condición confirmada y documentación verificada.</p>
+          <a href="/pre-owned/" class="po-cta-btn">Ir a Pre-Owned →</a>
+        </div>`;
+
+      if (vehicles.length === 0) {
+        grid.innerHTML = ctaCard;
+        return;
+      }
+
+      grid.innerHTML = vehicles.map(cardHTML).join('') + ctaCard;
+    } catch {
+      const grid = document.getElementById('po-grid');
+      if (grid) {
+        grid.innerHTML = `
+          <div class="po-card po-cta po-cta--full">
+            <p class="po-cta-label">PRE-OWNED</p>
+            <p class="po-cta-title">Inventario disponible</p>
+            <p class="po-cta-body">Vehículos certificados con condición confirmada y documentación verificada.</p>
+            <a href="/pre-owned/" class="po-cta-btn">Ver inventario →</a>
+          </div>`;
+      }
+    }
+  }
+
+  loadInventory();
+</script>
+
+<style>
+  .preowned-section {
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .po-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 80px 64px;
+  }
+
+  .po-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 48px;
+  }
+
+  .po-eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.42em;
+    color: rgba(168,168,168,0.38);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .po-title {
+    font-size: clamp(26px, 3vw, 42px);
+    font-weight: 300;
+    color: var(--white);
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+  }
+
+  .po-link-all {
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    color: rgba(168,168,168,0.5);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s;
+    white-space: nowrap;
+    padding-bottom: 4px;
+  }
+
+  .po-link-all:hover { color: var(--white); }
+
+  /* GRID */
+  .po-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    min-height: 340px;
+  }
+
+  /* SKELETON */
+  .po-skeleton {
+    background: var(--black);
+    animation: shimmer 1.6s infinite;
+  }
+
+  @keyframes shimmer {
+    0%, 100% { background: var(--black); }
+    50% { background: rgba(255,255,255,0.02); }
+  }
+
+  /* VEHICLE CARD */
+  .po-card--vehicle {
+    background: var(--black);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+
+  .po-card--vehicle:hover { background: rgba(255,255,255,0.025); }
+
+  .po-img-wrap {
+    position: relative;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    background: rgba(255,255,255,0.03);
+  }
+
+  .po-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  .po-card--vehicle:hover .po-img-wrap img { transform: scale(1.03); }
+
+  .po-img-placeholder {
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.03);
+  }
+
+  .po-badges {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    display: flex;
+    gap: 6px;
+  }
+
+  .po-badge {
+    font-size: 8px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    background: rgba(0,0,0,0.72);
+    color: rgba(168,168,168,0.7);
+    backdrop-filter: blur(4px);
+  }
+
+  .po-badge--blindado {
+    color: var(--green-mid);
+    border: 1px solid rgba(1,254,74,0.2);
+  }
+
+  .po-card-body {
+    padding: 20px 20px 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .po-vehicle-name {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+
+  .po-specs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+
+  .po-specs span {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    color: rgba(168,168,168,0.42);
+    text-transform: uppercase;
+  }
+
+  .po-price {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--white);
+    letter-spacing: -0.01em;
+    margin-top: auto;
+    margin-bottom: 12px;
+  }
+
+  .po-card-link {
+    font-size: 10px;
+    letter-spacing: 0.24em;
+    color: rgba(168,168,168,0.38);
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+  .po-card--vehicle:hover .po-card-link { color: var(--white); }
+
+  /* CTA CARD */
+  .po-cta {
+    background: rgba(255,255,255,0.01);
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .po-cta--full { grid-column: 1 / -1; }
+
+  .po-cta-label {
+    font-size: 9px;
+    letter-spacing: 0.38em;
+    color: rgba(168,168,168,0.28);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .po-cta-title {
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--white);
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+
+  .po-cta-body {
+    font-size: 12px;
+    color: rgba(168,168,168,0.48);
+    line-height: 1.75;
+    margin-bottom: 28px;
+  }
+
+  .po-cta-btn {
+    font-size: 10px;
+    letter-spacing: 0.26em;
+    color: rgba(168,168,168,0.55);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+  .po-cta-btn:hover { color: var(--white); }
+
+  @media (max-width: 1024px) {
+    .po-grid { grid-template-columns: repeat(2, 1fr); }
+    .po-cta { grid-column: 1 / -1; flex-direction: row; align-items: center; gap: 32px; }
+    .po-cta-body { margin-bottom: 0; }
+  }
+
+  @media (max-width: 768px) {
+    .po-inner { padding: 64px 24px; }
+    .po-header { flex-direction: column; align-items: flex-start; gap: 20px; }
+    .po-grid { grid-template-columns: 1fr; }
+    .po-cta { flex-direction: column; align-items: flex-start; }
+    .po-cta-body { margin-bottom: 24px; }
+  }
+</style>

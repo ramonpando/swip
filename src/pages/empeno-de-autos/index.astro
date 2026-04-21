@@ -9,8 +9,10 @@ const faqs = [
   { q: '¿Swip es una casa de empeño?', a: 'No exactamente. Swip es una empresa especializada en préstamos con garantía vehicular. A diferencia del empeño tradicional, trabajamos con vehículos de valor medio-alto y alto, ofrecemos un proceso documentado y transparente, y nos especializamos en autos de lujo y blindados.' },
   { q: '¿Cuál es la diferencia entre empeño de autos y préstamo con garantía vehicular?', a: 'En esencia, el producto financiero es similar: usas tu auto como garantía para obtener dinero. La diferencia está en cómo se ejecuta: el empeño tradicional suele tener procesos poco transparentes, tasas altas y trato impersonal. Un préstamo con garantía vehicular serio — como el de Swip — tiene contrato claro, tasa fija, valuación profesional y atención dedicada.' },
   { q: '¿Qué tipos de autos acepta Swip?', a: 'Swip acepta vehículos de valor medio-alto y alto: autos de lujo (BMW, Mercedes, Porsche, Audi, Land Rover), autos blindados, SUVs premium y vehículos en buen estado general. Mientras mayor sea el valor del auto, mejores condiciones puedes obtener.' },
+  { q: '¿Cuánto puedo obtener por mi auto?', a: 'El monto depende directamente del valor comercial de tu vehículo. En Swip trabajamos con préstamos desde $90,000 hasta $5,000,000 MXN. Un valuador revisa tu auto en persona y te da una oferta precisa sin compromisos previos.' },
   { q: '¿Cómo sé si me conviene el empeño o el préstamo con garantía?', a: 'Si tienes un vehículo de valor y buscas liquidez seria, profesional y a un precio justo, Swip es la mejor opción. Si solo necesitas empeñar algo de poco valor de forma rápida, quizá el empeño tradicional sea suficiente. Para vehículos de valor, Swip siempre ofrece mejores condiciones.' },
   { q: '¿Puedo recuperar mi auto cuando quiera?', a: 'Sí. Puedes liquidar el préstamo anticipadamente en cualquier momento y recuperar tu vehículo. No hay penalización por pago anticipado.' },
+  { q: '¿Swip opera solo en Ciudad de México?', a: 'No. Swip tiene presencia en Ciudad de México — con cobertura en Interlomas, Polanco, Lomas de Chapultepec, Santa Fe y toda la zona metropolitana — y en Querétaro. En ambas plazas ofrecemos valuación en tu domicilio o en nuestras instalaciones.' },
 ];
 
 const schema = {
@@ -107,6 +109,58 @@ const schema = {
     </div>
   </section>
 
+  <!-- MONTOS -->
+  <section class="content-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">MONTOS</p>
+      <h2 class="section-title">De $90,000<br />a $5,000,000 MXN.</h2>
+      <div class="montos-grid">
+        <div class="monto-block">
+          <p class="monto-label">Modalidad sin resguardo</p>
+          <p class="monto-val">Hasta $400,000 MXN</p>
+          <p class="monto-desc">Conservas el uso de tu vehículo. Aplica bajo ciertas condiciones y con monitoreo activo. Ideal cuando la movilidad es prioritaria.</p>
+        </div>
+        <div class="monto-block">
+          <p class="monto-label">Modalidad con resguardo</p>
+          <p class="monto-val">Sin límite de monto</p>
+          <p class="monto-desc">Tu auto queda en instalaciones seguras durante el plazo. Esta modalidad permite acceder a los montos más altos y las mejores condiciones del mercado.</p>
+        </div>
+        <div class="monto-block monto-note">
+          <p class="monto-desc">El monto exacto depende del valor comercial de tu vehículo: marca, modelo, año, kilometraje y estado general. Un valuador Swip revisa el auto en persona y te entrega una oferta precisa — sin compromisos previos y sin costo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VEHÍCULOS -->
+  <section class="content-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">VEHÍCULOS QUE ACEPTAMOS</p>
+      <h2 class="section-title">Sabemos valorar<br />lo que otros no.</h2>
+      <p class="section-body-text">
+        La mayoría de las casas de empeño no tienen criterios claros para vehículos premium. En Swip nos especializamos exactamente en ese segmento: autos cuyo valor real va más allá de la tabla de precios estándar.
+      </p>
+      <div class="vehicles-grid">
+        <div class="vehicle-cat">
+          <p class="vcat-title">Autos de lujo</p>
+          <p class="vcat-brands">BMW · Mercedes-Benz · Porsche · Audi · Lexus · Cadillac · Volvo · Jaguar · Maserati · Land Rover · Range Rover</p>
+        </div>
+        <div class="vehicle-cat">
+          <p class="vcat-title">Autos blindados</p>
+          <p class="vcat-brands">Vehículos con blindaje certificado de cualquier marca. Valuación especializada que reconoce el valor real del blindaje como activo adicional.</p>
+        </div>
+        <div class="vehicle-cat">
+          <p class="vcat-title">Camionetas y SUVs premium</p>
+          <p class="vcat-brands">Toyota Land Cruiser · Ford Expedition · Chevrolet Suburban · Ram 1500 · Ford F-150 · Nissan Patrol y equivalentes de segmento alto.</p>
+        </div>
+        <div class="vehicle-cat">
+          <p class="vcat-title">Clásicos y especiales</p>
+          <p class="vcat-brands">Vehículos clásicos con valor de mercado comprobable, ediciones limitadas y otros casos especiales. Evaluamos cada caso individualmente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- PARA QUIÉN ES -->
   <section class="content-section">
     <div class="section-inner two-col">
@@ -115,8 +169,9 @@ const schema = {
         <h2 class="section-title">¿Tu vehículo<br />tiene valor?</h2>
       </div>
       <div class="section-text">
-        <p>Swip está pensado para personas que tienen patrimonio vehicular y necesitan liquidez por razones concretas: capital para un negocio, resolver una urgencia, aprovechar una oportunidad o cubrir un desfase de flujo.</p>
-        <p>Si tu auto vale y quieres tratarlo como lo que es — un activo serio — Swip es la opción correcta. No malbaratas tu patrimonio ni te sometes a procesos poco claros.</p>
+        <p>Swip está pensado para personas que tienen patrimonio vehicular y necesitan liquidez por razones concretas: capital para un negocio, resolver una urgencia, aprovechar una oportunidad de inversión o cubrir un desfase de flujo sin recurrir a créditos bancarios lentos o con requisitos difíciles de cumplir.</p>
+        <p>Si tu auto vale y quieres tratarlo como lo que es — un activo serio — Swip es la opción correcta. No malbaratas tu patrimonio ni te sometes a procesos poco claros con tasas que no entiendes hasta que ya firmaste.</p>
+        <p>Atendemos empresarios, profesionistas independientes, ejecutivos y cualquier persona con un vehículo de valor que necesita liquidez rápida y discreta.</p>
         <div class="tag-list">
           <span>Autos de lujo</span>
           <span>SUVs premium</span>
@@ -175,10 +230,28 @@ const schema = {
   .tag-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
   .tag-list span { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(168,168,168,0.5); border: 1px solid var(--line); padding: 6px 14px; }
 
-  @media (max-width: 1024px) { .steps-grid { grid-template-columns: repeat(2,1fr); } }
+  /* ── MONTOS ── */
+  .montos-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1px; background: var(--line); margin-top: 56px; }
+  .monto-block { background: var(--black); padding: 40px 36px; }
+  .monto-label { font-size: 9px; letter-spacing: 0.36em; color: rgba(168,168,168,0.3); text-transform: uppercase; margin-bottom: 12px; }
+  .monto-val { font-size: 22px; font-weight: 300; color: var(--white); letter-spacing: -0.02em; margin-bottom: 16px; }
+  .monto-desc { font-size: 13px; color: rgba(168,168,168,0.62); line-height: 1.8; }
+  .monto-note { border-left: 1px solid var(--line); }
+
+  /* ── VEHÍCULOS ── */
+  .section-body-text { font-size: 15px; color: rgba(168,168,168,0.72); line-height: 1.85; max-width: 640px; margin-top: 20px; margin-bottom: 56px; }
+  .vehicles-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .vehicle-cat { background: var(--black); padding: 36px 32px; }
+  .vcat-title { font-size: 13px; font-weight: 500; color: var(--white); margin-bottom: 12px; letter-spacing: -0.01em; }
+  .vcat-brands { font-size: 13px; color: rgba(168,168,168,0.6); line-height: 1.75; }
+
+  @media (max-width: 1024px) {
+    .steps-grid { grid-template-columns: repeat(2,1fr); }
+    .montos-grid { grid-template-columns: 1fr 1fr; }
+  }
   @media (max-width: 768px) {
     .hero-inner, .section-inner { padding: 64px 24px; }
     .section-inner.two-col { grid-template-columns: 1fr; gap: 40px; }
-    .steps-grid, .compare-grid { grid-template-columns: 1fr; }
+    .steps-grid, .compare-grid, .montos-grid, .vehicles-grid { grid-template-columns: 1fr; }
   }
 </style>

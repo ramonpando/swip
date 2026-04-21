@@ -1,0 +1,221 @@
+---
+import Page from '../../layouts/Page.astro';
+import FAQ from '../../components/FAQ.astro';
+import CTASection from '../../components/CTASection.astro';
+
+const WHATSAPP = 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20cotizar%20un%20pr%C3%A9stamo%20sin%20dejar%20mi%20auto';
+
+const faqs = [
+  { q: '¿Cómo funciona el monitoreo GPS?', a: 'Se instala un dispositivo GPS en el vehículo al momento de formalizar el contrato. La instalación es coordinada por Swip, no altera el vehículo de forma permanente y puede retirarse al liquidar el préstamo. El monitoreo es activo durante todo el plazo.' },
+  { q: '¿Puedo viajar fuera de la ciudad con mi auto?', a: 'Existen restricciones de uso definidas en el contrato. En general, el vehículo debe permanecer en territorio nacional y en zonas acordadas. Para viajes específicos, hay que notificar previamente al ejecutivo Swip asignado.' },
+  { q: '¿Qué pasa si el vehículo sufre un accidente?', a: 'El vehículo debe mantenerse asegurado durante todo el plazo del préstamo — es un requisito del contrato. En caso de accidente, debes notificar a Swip de inmediato. La cobertura del seguro aplica según las condiciones de tu póliza.' },
+  { q: '¿El monto es menor que con resguardo?', a: 'Generalmente sí. La modalidad sin resguardo implica mayor riesgo operativo, lo que se refleja en condiciones diferentes. El monto máximo es de $400,000 MXN. Si necesitas un monto mayor, la modalidad con resguardo es la opción.' },
+  { q: '¿Puedo cambiar de modalidad durante el préstamo?', a: 'En algunos casos es posible cambiar a la modalidad con resguardo durante la vigencia del préstamo, lo que puede mejorar las condiciones. Consulta con tu ejecutivo Swip para evaluar tu caso específico.' },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "name": "Préstamo con Garantía de Auto Sin Dejarlo — SWIP",
+  "description": "Obtén liquidez sin dejar tu auto. Préstamo con garantía vehicular con monitoreo GPS. Hasta $400,000 MXN. Especialistas en vehículos de valor en México.",
+  "url": "https://swip.mx/prestamo-con-garantia-de-auto-sin-dejarlo/",
+  "provider": { "@id": "https://swip.mx/#organization" },
+  "areaServed": "MX"
+};
+---
+<Page
+  title="Préstamo con Garantía de Auto Sin Dejarlo | SWIP México"
+  description="Obtén liquidez sin entregar tu auto. Préstamo con garantía vehicular y monitoreo GPS activo. Hasta $400,000 MXN. Especialistas en vehículos de valor. CDMX y Querétaro."
+  schema={schema}
+>
+
+  <section class="page-hero">
+    <div class="hero-inner">
+      <p class="eyebrow">SIN RESGUARDO · PRÉSTAMO CON GARANTÍA · MÉXICO</p>
+      <h1 class="hero-title">Obtén liquidez.<br />Sigue usando<br />tu auto.</h1>
+      <p class="hero-body">
+        La modalidad sin resguardo te permite obtener un préstamo
+        con garantía vehicular conservando el uso de tu vehículo
+        mediante monitoreo GPS activo durante todo el plazo.
+      </p>
+      <div class="hero-actions">
+        <a href={WHATSAPP} target="_blank" rel="noopener" class="btn-primary">Cotiza sin dejar tu auto</a>
+        <a href="/prestamo-con-garantia-de-auto-con-resguardo/" class="btn-ghost">Ver modalidad con resguardo →</a>
+      </div>
+    </div>
+    <div class="hero-stat-bar">
+      <div class="hstat">
+        <span class="hstat-val">Hasta $400k MXN</span>
+        <span class="hstat-label">Monto máximo</span>
+      </div>
+      <div class="hstat">
+        <span class="hstat-val">GPS activo</span>
+        <span class="hstat-label">Monitoreo durante el plazo</span>
+      </div>
+      <div class="hstat">
+        <span class="hstat-val">24 h</span>
+        <span class="hstat-label">Depósito tras firma</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section class="content-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">CÓMO FUNCIONA</p>
+      <h2 class="section-title">Tu auto como garantía,<br />tú al volante.</h2>
+      <div class="how-grid">
+        <div class="how-item">
+          <p class="how-num">01</p>
+          <h3>Evaluación y cotización</h3>
+          <p>Compartes los datos de tu vehículo y recibes un estimado. La valuación física se realiza en tu domicilio o en nuestras instalaciones.</p>
+        </div>
+        <div class="how-item">
+          <p class="how-num">02</p>
+          <h3>Instalación de GPS</h3>
+          <p>Al momento de formalizar el contrato, se instala un dispositivo de monitoreo en el vehículo. La instalación es coordinada por Swip y no altera el auto de forma permanente.</p>
+        </div>
+        <div class="how-item">
+          <p class="how-num">03</p>
+          <h3>Depósito y uso normal</h3>
+          <p>El dinero llega a tu cuenta en menos de 24 horas. Sigues usando tu vehículo normalmente dentro de las condiciones acordadas en el contrato.</p>
+        </div>
+        <div class="how-item">
+          <p class="how-num">04</p>
+          <h3>Liquidación y retiro del GPS</h3>
+          <p>Al liquidar el préstamo, el dispositivo GPS se retira y el vehículo queda completamente libre de cualquier condición.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONDICIONES -->
+  <section class="content-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">CONDICIONES DE USO</p>
+      <h2 class="section-title">Lo que sí y<br />lo que no.</h2>
+      <div class="cond-grid">
+        <div class="cond-col cond-yes">
+          <p class="cond-header">Puedes</p>
+          <ul>
+            <li>Usar el vehículo para traslados cotidianos</li>
+            <li>Circular en toda la ZMVM y zonas acordadas</li>
+            <li>Usar el auto para trabajo o negocios habituales</li>
+            <li>Liquidar el préstamo anticipadamente sin penalización</li>
+            <li>Contactar a tu ejecutivo ante cualquier situación</li>
+          </ul>
+        </div>
+        <div class="cond-col cond-no">
+          <p class="cond-header">No puedes</p>
+          <ul>
+            <li>Vender o transferir el vehículo durante el plazo</li>
+            <li>Deshabilitar o manipular el dispositivo GPS</li>
+            <li>Modificar o transformar el vehículo sustancialmente</li>
+            <li>Sacar el auto del país sin autorización previa</li>
+            <li>Dejar de mantener el seguro vehicular vigente</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VS RESGUARDO -->
+  <section class="content-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">SIN RESGUARDO VS CON RESGUARDO</p>
+      <h2 class="section-title">¿Cuál modalidad<br />te conviene?</h2>
+      <div class="compare-grid">
+        <div class="compare-card compare-active">
+          <p class="compare-tag">SIN RESGUARDO — ESTA MODALIDAD</p>
+          <ul>
+            <li>Conservas el uso del vehículo</li>
+            <li>Monitoreo GPS activo</li>
+            <li>Hasta $400,000 MXN</li>
+            <li>Requiere seguro vigente</li>
+            <li>Ideal si la movilidad es prioritaria</li>
+          </ul>
+        </div>
+        <div class="compare-card">
+          <p class="compare-tag">CON RESGUARDO</p>
+          <ul>
+            <li>El auto queda en instalaciones seguras</li>
+            <li>Sin límite de monto</li>
+            <li>Mejores tasas por menor riesgo</li>
+            <li>Seguro incluido en el resguardo</li>
+            <li>Ideal para montos más altos</li>
+          </ul>
+          <a href="/prestamo-con-garantia-de-auto-con-resguardo/" class="compare-link">Ver modalidad con resguardo →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <FAQ items={faqs} eyebrow="PREGUNTAS SOBRE LA MODALIDAD SIN RESGUARDO" />
+  <CTASection
+    eyebrow="SIN DEJAR TU AUTO"
+    title="Cotiza tu préstamo sin resguardo."
+    body="Dinos los datos de tu vehículo y te confirmamos si aplica para esta modalidad y cuánto puedes obtener."
+  />
+
+</Page>
+
+<style>
+  .page-hero { border-bottom: 1px solid var(--line); display: flex; flex-direction: column; }
+  .hero-inner { max-width: 1280px; margin: 0 auto; padding: 96px 64px 80px; width: 100%; }
+  .eyebrow { font-size: 9px; letter-spacing: 0.42em; color: rgba(168,168,168,0.45); text-transform: uppercase; margin-bottom: 28px; }
+  .hero-title { font-size: clamp(40px, 5vw, 72px); font-weight: 400; color: var(--white); letter-spacing: -0.02em; line-height: 1.0; margin-bottom: 24px; }
+  .hero-body { max-width: 520px; font-size: 15px; color: rgba(168,168,168,0.78); line-height: 1.85; margin-bottom: 32px; }
+  .hero-actions { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+  .btn-primary { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 16px 40px; border: 1px solid rgba(255,255,255,0.35); color: var(--white); font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; font-family: inherit; transition: all 0.2s; }
+  .btn-primary:hover { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.6); }
+  .btn-ghost { font-size: 11px; letter-spacing: 0.22em; color: rgba(168,168,168,0.6); text-decoration: none; text-transform: uppercase; transition: color 0.2s; }
+  .btn-ghost:hover { color: var(--white); }
+
+  .hero-stat-bar { border-top: 1px solid var(--line); display: grid; grid-template-columns: repeat(3,1fr); }
+  .hstat { padding: 24px 40px; border-right: 1px solid var(--line); display: flex; flex-direction: column; gap: 4px; }
+  .hstat:last-child { border-right: none; }
+  .hstat-val { font-size: 18px; font-weight: 300; color: var(--white); letter-spacing: -0.01em; }
+  .hstat-label { font-size: 10px; letter-spacing: 0.24em; color: rgba(168,168,168,0.42); text-transform: uppercase; }
+
+  .content-section { border-bottom: 1px solid var(--line); }
+  .section-inner { max-width: 1280px; margin: 0 auto; padding: 96px 64px; }
+  .section-eyebrow { font-size: 9px; letter-spacing: 0.42em; color: rgba(168,168,168,0.38); text-transform: uppercase; margin-bottom: 20px; }
+  .section-title { font-size: clamp(26px, 3vw, 42px); font-weight: 300; color: var(--white); letter-spacing: -0.02em; line-height: 1.05; margin-bottom: 56px; }
+
+  .how-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .how-item { background: var(--black); padding: 36px 28px; }
+  .how-num { font-size: 11px; letter-spacing: 0.3em; color: rgba(168,168,168,0.22); margin-bottom: 14px; }
+  .how-item h3 { font-size: 15px; font-weight: 400; color: var(--white); margin-bottom: 10px; }
+  .how-item p { font-size: 13px; color: rgba(168,168,168,0.58); line-height: 1.7; }
+
+  .cond-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .cond-col { background: var(--black); padding: 48px 40px; }
+  .cond-header { font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; margin-bottom: 28px; }
+  .cond-yes .cond-header { color: var(--green-mid); }
+  .cond-no .cond-header { color: rgba(168,168,168,0.35); }
+  .cond-col ul { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+  .cond-yes li { font-size: 14px; color: rgba(168,168,168,0.78); padding-left: 20px; position: relative; }
+  .cond-yes li::before { content: '✓'; position: absolute; left: 0; color: var(--green-mid); }
+  .cond-no li { font-size: 14px; color: rgba(168,168,168,0.45); padding-left: 20px; position: relative; }
+  .cond-no li::before { content: '×'; position: absolute; left: 0; color: rgba(168,168,168,0.25); }
+
+  .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .compare-card { background: var(--black); padding: 40px 36px; }
+  .compare-active { background: rgba(255,255,255,0.02); }
+  .compare-tag { font-size: 9px; letter-spacing: 0.34em; color: rgba(168,168,168,0.3); text-transform: uppercase; margin-bottom: 24px; }
+  .compare-card ul { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
+  .compare-card li { font-size: 14px; color: rgba(168,168,168,0.7); padding-left: 16px; position: relative; }
+  .compare-card li::before { content: '—'; position: absolute; left: 0; color: rgba(168,168,168,0.25); }
+  .compare-link { font-size: 11px; letter-spacing: 0.2em; color: rgba(168,168,168,0.5); text-decoration: none; text-transform: uppercase; transition: color 0.2s; }
+  .compare-link:hover { color: var(--white); }
+
+  @media (max-width: 1024px) {
+    .how-grid { grid-template-columns: repeat(2,1fr); }
+  }
+  @media (max-width: 768px) {
+    .hero-inner, .section-inner { padding: 64px 24px; }
+    .hero-stat-bar { grid-template-columns: 1fr; }
+    .hstat { border-right: none; border-bottom: 1px solid var(--line); }
+    .how-grid, .cond-grid, .compare-grid { grid-template-columns: 1fr; }
+  }
+</style>

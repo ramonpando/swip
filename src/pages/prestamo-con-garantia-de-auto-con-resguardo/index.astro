@@ -1,0 +1,165 @@
+---
+import Page from '../../layouts/Page.astro';
+import FAQ from '../../components/FAQ.astro';
+import CTASection from '../../components/CTASection.astro';
+
+const WHATSAPP = 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20cotizar%20un%20pr%C3%A9stamo%20con%20resguardo%20de%20mi%20veh%C3%ADculo';
+
+const faqs = [
+  { q: '¿Dónde queda mi auto durante el resguardo?', a: 'En instalaciones especializadas con acceso controlado, seguro vigente y condiciones de almacenamiento adecuadas para vehículos de valor. Las instalaciones están monitoreadas permanentemente. Para vehículos de lujo o blindados, las condiciones de resguardo son acordes al valor del activo.' },
+  { q: '¿Puedo visitar mi auto durante el plazo?', a: 'Sí, con previo aviso y coordinación. No es un acceso abierto, pero puedes solicitar una visita a tu ejecutivo Swip cuando lo necesites.' },
+  { q: '¿El seguro lo pago yo o lo incluye Swip?', a: 'El vehículo tiene cobertura de seguro activa durante todo el plazo del resguardo. Las condiciones específicas de cobertura se detallan en el contrato.' },
+  { q: '¿Hay un límite de tiempo para el resguardo?', a: 'El plazo se define en el contrato. Al liquidar el préstamo — ya sea al vencimiento o de forma anticipada — el vehículo regresa a tu posesión de inmediato.' },
+  { q: '¿Por qué el resguardo permite montos más altos?', a: 'Con el vehículo en resguardo, el riesgo operativo para Swip es significativamente menor. Esto se traduce en condiciones más favorables: montos más altos, mejores tasas y plazos más flexibles. Es la modalidad preferida para operaciones de mayor monto.' },
+  { q: '¿Qué pasa si no puedo recuperar el auto al vencimiento?', a: 'Comunícate con tu ejecutivo Swip antes del vencimiento. Buscamos soluciones — desde reestructura hasta extensión del plazo — antes de llegar a cualquier escenario de incumplimiento. Tus derechos están protegidos en el contrato desde el inicio.' },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "name": "Préstamo con Garantía de Auto con Resguardo — SWIP",
+  "description": "Préstamo con garantía vehicular en modalidad resguardo. Sin límite de monto, instalaciones seguras, seguro incluido. Especialistas en autos de lujo y blindados en México.",
+  "url": "https://swip.mx/prestamo-con-garantia-de-auto-con-resguardo/",
+  "provider": { "@id": "https://swip.mx/#organization" },
+  "areaServed": "MX"
+};
+---
+<Page
+  title="Préstamo con Garantía de Auto con Resguardo | SWIP México"
+  description="La modalidad con mayor monto y mejores condiciones. Tu auto en resguardo seguro, sin límite de préstamo. Especialistas en vehículos de lujo y blindados. CDMX y Querétaro."
+  schema={schema}
+>
+
+  <section class="page-hero">
+    <div class="hero-inner">
+      <p class="eyebrow">CON RESGUARDO · PRÉSTAMO CON GARANTÍA · MÉXICO</p>
+      <h1 class="hero-title">El monto más alto.<br />Las mejores condiciones.</h1>
+      <p class="hero-body">
+        La modalidad con resguardo es la opción para quienes necesitan
+        montos mayores y las mejores condiciones disponibles. Tu vehículo
+        en instalaciones seguras — tu dinero en cuenta en menos de 24 horas.
+      </p>
+      <div class="hero-actions">
+        <a href={WHATSAPP} target="_blank" rel="noopener" class="btn-primary">Cotizar con resguardo</a>
+        <a href="/prestamo-con-garantia-de-auto-sin-dejarlo/" class="btn-ghost">Ver modalidad sin resguardo →</a>
+      </div>
+    </div>
+    <div class="hero-banner">
+      <p class="banner-text">Sin límite de monto · Seguro activo incluido · Instalaciones monitoreadas · Pago anticipado sin penalización</p>
+    </div>
+  </section>
+
+  <!-- POR QUÉ RESGUARDO -->
+  <section class="content-section">
+    <div class="section-inner two-col">
+      <div>
+        <p class="section-eyebrow">LA LÓGICA DEL RESGUARDO</p>
+        <h2 class="section-title">Por qué esta modalidad<br />da más.</h2>
+      </div>
+      <div class="section-text">
+        <p>Cuando el vehículo queda en resguardo, el riesgo operativo de la operación disminuye significativamente. No hay exposición a accidentes, no hay riesgo de uso inadecuado y el activo está bajo custodia controlada en todo momento.</p>
+        <p>Esa reducción de riesgo se traduce directamente en mejores condiciones para ti: montos más altos sobre el valor del vehículo, tasas más competitivas y plazos más flexibles. Es la modalidad natural para operaciones de mayor monto.</p>
+        <p>Para vehículos de alto valor — autos de lujo, blindados, SUVs premium — la modalidad con resguardo es casi siempre la mejor opción económica, incluso si el uso del vehículo no es una prioridad inmediata.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESGUARDO -->
+  <section class="content-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">LAS INSTALACIONES</p>
+      <h2 class="section-title">Tu activo,<br />cuidado como tal.</h2>
+      <div class="features-grid">
+        <div class="feature">
+          <p class="feature-tag">SEGURIDAD</p>
+          <h3>Acceso controlado</h3>
+          <p>Instalaciones con acceso restringido y monitoreo permanente. Tu vehículo no está expuesto ni mezclado con otros activos sin las medidas adecuadas.</p>
+        </div>
+        <div class="feature">
+          <p class="feature-tag">PROTECCIÓN</p>
+          <h3>Seguro activo</h3>
+          <p>Cobertura de seguro vigente durante todo el plazo del resguardo. Las condiciones específicas se detallan en el contrato — sin sorpresas.</p>
+        </div>
+        <div class="feature">
+          <p class="feature-tag">CONDICIONES</p>
+          <h3>Almacenamiento adecuado</h3>
+          <p>Para vehículos de lujo y blindados, las condiciones de almacenamiento son acordes al valor del activo. No es una bodega genérica.</p>
+        </div>
+        <div class="feature">
+          <p class="feature-tag">ACCESO</p>
+          <h3>Visitas con previo aviso</h3>
+          <p>Puedes visitar tu vehículo durante el plazo coordinando previamente con tu ejecutivo Swip. No es un acceso vedado — es controlado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MONTOS -->
+  <section class="content-section">
+    <div class="section-inner two-col">
+      <div>
+        <p class="section-eyebrow">MONTOS CON RESGUARDO</p>
+        <h2 class="section-title">Sin límite<br />artificial.</h2>
+      </div>
+      <div class="section-text">
+        <p>La modalidad con resguardo no tiene un techo de monto. El préstamo se determina con base en el valor real del vehículo — no en una tabla o límite preestablecido.</p>
+        <p>Para un Porsche Cayenne de año reciente, un Range Rover Autobiography o una Suburban blindada, los montos pueden superar fácilmente $1,000,000 MXN. Para vehículos de muy alto valor, hemos operado préstamos cercanos a $5,000,000 MXN.</p>
+        <p>El monto exacto se determina en la valuación física. El estimado inicial que te damos por WhatsApp o cotizador es un rango — la oferta formal viene después de ver el vehículo en persona.</p>
+        <div class="amount-note">
+          <span>Rango general: $90,000 – $5,000,000 MXN</span>
+          <span>Determinado por valuación en persona</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <FAQ items={faqs} eyebrow="PREGUNTAS SOBRE LA MODALIDAD CON RESGUARDO" />
+  <CTASection
+    eyebrow="MODALIDAD CON RESGUARDO"
+    title="¿Cuánto puedes obtener?"
+    body="Comparte los datos de tu vehículo. Te damos un estimado de rango y coordinamos la valuación en persona."
+  />
+
+</Page>
+
+<style>
+  .page-hero { border-bottom: 1px solid var(--line); display: flex; flex-direction: column; }
+  .hero-inner { max-width: 1280px; margin: 0 auto; padding: 96px 64px 80px; width: 100%; }
+  .eyebrow { font-size: 9px; letter-spacing: 0.42em; color: rgba(168,168,168,0.45); text-transform: uppercase; margin-bottom: 28px; }
+  .hero-title { font-size: clamp(40px, 5vw, 72px); font-weight: 400; color: var(--white); letter-spacing: -0.02em; line-height: 1.0; margin-bottom: 24px; }
+  .hero-body { max-width: 540px; font-size: 15px; color: rgba(168,168,168,0.78); line-height: 1.85; margin-bottom: 32px; }
+  .hero-actions { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+  .btn-primary { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 16px 40px; border: 1px solid rgba(255,255,255,0.35); color: var(--white); font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; font-family: inherit; transition: all 0.2s; }
+  .btn-primary:hover { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.6); }
+  .btn-ghost { font-size: 11px; letter-spacing: 0.22em; color: rgba(168,168,168,0.6); text-decoration: none; text-transform: uppercase; transition: color 0.2s; }
+  .btn-ghost:hover { color: var(--white); }
+
+  .hero-banner { border-top: 1px solid var(--line); padding: 18px 64px; background: rgba(1,254,74,0.03); }
+  .banner-text { font-size: 10px; letter-spacing: 0.26em; color: rgba(1,254,74,0.5); text-transform: uppercase; max-width: 1280px; margin: 0 auto; }
+
+  .content-section { border-bottom: 1px solid var(--line); }
+  .section-inner { max-width: 1280px; margin: 0 auto; padding: 96px 64px; }
+  .section-inner.two-col { display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px; align-items: start; }
+  .section-eyebrow { font-size: 9px; letter-spacing: 0.42em; color: rgba(168,168,168,0.38); text-transform: uppercase; margin-bottom: 20px; }
+  .section-title { font-size: clamp(26px, 3vw, 42px); font-weight: 300; color: var(--white); letter-spacing: -0.02em; line-height: 1.05; }
+  .section-text p { font-size: 15px; color: rgba(168,168,168,0.72); line-height: 1.85; margin-bottom: 16px; }
+
+  .amount-note { display: flex; flex-direction: column; gap: 4px; margin-top: 24px; padding-top: 24px; border-top: 1px solid var(--line); }
+  .amount-note span { font-size: 10px; letter-spacing: 0.24em; color: rgba(168,168,168,0.38); text-transform: uppercase; }
+
+  .features-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 56px; }
+  .feature { background: var(--black); padding: 36px 28px; }
+  .feature-tag { font-size: 9px; letter-spacing: 0.34em; color: rgba(168,168,168,0.3); text-transform: uppercase; margin-bottom: 14px; }
+  .feature h3 { font-size: 15px; font-weight: 400; color: var(--white); margin-bottom: 10px; }
+  .feature p { font-size: 13px; color: rgba(168,168,168,0.58); line-height: 1.7; }
+
+  @media (max-width: 1024px) {
+    .section-inner.two-col { grid-template-columns: 1fr; gap: 40px; }
+    .features-grid { grid-template-columns: repeat(2,1fr); }
+  }
+  @media (max-width: 768px) {
+    .hero-inner, .section-inner { padding: 64px 24px; }
+    .hero-banner { padding: 16px 24px; }
+    .features-grid { grid-template-columns: 1fr; }
+  }
+</style>

@@ -1,0 +1,151 @@
+---
+import Page from '../../layouts/Page.astro';
+import FAQ from '../../components/FAQ.astro';
+import CTASection from '../../components/CTASection.astro';
+
+const WHATSAPP = 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20cotizar%20un%20pr%C3%A9stamo%20con%20garant%C3%ADa%20de%20mi%20auto%20blindado';
+
+const faqs = [
+  { q: '¿Cómo se valúa un vehículo blindado?', a: 'El blindaje certificado representa un valor adicional comprobable: tiene costo de instalación documentado, nivel certificado y vida útil. Swip valúa el vehículo base más el blindaje como componente separado, lo que resulta en un monto de préstamo que refleja el activo real — no solo el valor del auto sin blindaje.' },
+  { q: '¿Qué nivel de blindaje aceptan?', a: 'Aceptamos vehículos con blindaje de nivel II hasta NIJ IV y superiores. El blindaje debe estar instalado por una armadora certificada. Aceptamos cualquier marca de vehículo con blindaje documentado.' },
+  { q: '¿Puedo usar mi auto blindado si lo dejo en resguardo?', a: 'En la modalidad con resguardo el vehículo queda en nuestras instalaciones durante el plazo del préstamo. Si necesitas continuar usando el vehículo, evalúa la modalidad sin resguardo — sujeta a condiciones específicas para vehículos blindados.' },
+  { q: '¿Qué documentos adicionales necesito para un auto blindado?', a: 'Además de los documentos estándar (factura, identificación, comprobante de domicilio), es útil contar con la certificación o documentación del blindaje instalado. Si no la tienes, lo evaluamos directamente en la inspección física.' },
+  { q: '¿Cuánto puedo obtener por un auto blindado?', a: 'Depende del vehículo base y del nivel de blindaje. Un vehículo blindado de segmento premium puede generar préstamos significativamente más altos que el mismo modelo sin blindaje. Para un estimado, contáctanos con marca, modelo, año y nivel de blindaje aproximado.' },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "name": "Préstamo con Garantía de Autos Blindados — SWIP",
+  "description": "Préstamo con garantía de autos blindados en México. Valuación especializada que reconoce el valor real del blindaje. Proceso discreto y profesional.",
+  "url": "https://swip.mx/prestamo-con-garantia-de-autos-blindados/",
+  "provider": { "@id": "https://swip.mx/#organization" },
+  "areaServed": "MX"
+};
+---
+<Page
+  title="Préstamo con Garantía de Autos Blindados en México | SWIP"
+  description="Obtén liquidez con tu auto blindado como garantía. Valuación especializada que reconoce el valor real del blindaje. Proceso discreto. CDMX y Querétaro."
+  schema={schema}
+>
+
+  <section class="page-hero">
+    <div class="hero-inner">
+      <p class="eyebrow">AUTOS BLINDADOS · PRÉSTAMO CON GARANTÍA · MÉXICO</p>
+      <h1 class="hero-title">El blindaje<br />tiene valor.<br /><em>Lo reconocemos.</em></h1>
+      <p class="hero-body">
+        La mayoría de las empresas ignoran el valor del blindaje o lo subestiman.
+        Swip valúa el vehículo base más el blindaje como lo que es:
+        un activo con costo comprobable y valor de mercado real.
+      </p>
+      <div class="hero-actions">
+        <a href={WHATSAPP} target="_blank" rel="noopener" class="btn-primary">Cotiza tu préstamo</a>
+        <a href="/como-funciona/" class="btn-ghost">Cómo funciona →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EL PROBLEMA -->
+  <section class="content-section">
+    <div class="section-inner two-col">
+      <div>
+        <p class="section-eyebrow">EL PROBLEMA DEL MERCADO</p>
+        <h2 class="section-title">Por qué otros<br />subestiman tu blindado.</h2>
+      </div>
+      <div class="section-text">
+        <p>Un vehículo blindado tiene dos componentes de valor: el auto base y el blindaje instalado. El blindaje certificado de nivel III en una Suburban puede representar $400,000–$800,000 MXN adicionales sobre el valor del vehículo sin blindar.</p>
+        <p>La mayoría de las casas de empeño y empresas de préstamo no tienen criterios para valuar el blindaje correctamente. Aplican el valor del auto base y tratan el blindaje como un accesorio secundario — cuando en realidad es una inversión mayor documentada.</p>
+        <p>Swip trabaja con los parámetros correctos: valor del vehículo base + costo del blindaje con depreciación real = monto de préstamo justo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- NIVELES DE BLINDAJE -->
+  <section class="content-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">BLINDAJES QUE ACEPTAMOS</p>
+      <h2 class="section-title">Cualquier nivel,<br />cualquier marca.</h2>
+      <div class="levels-grid">
+        <div class="level-card">
+          <p class="level-tag">NIVEL II – III</p>
+          <h3>Protección básica y media</h3>
+          <p>Blindaje contra arma corta y ciertos rifles. El más común en vehículos civiles de seguridad en México.</p>
+        </div>
+        <div class="level-card">
+          <p class="level-tag">NIVEL III+ – IV</p>
+          <h3>Protección avanzada</h3>
+          <p>Resistencia a rifles de alto poder. Instalación más compleja, mayor peso y mayor valor. Evaluación especializada.</p>
+        </div>
+        <div class="level-card">
+          <p class="level-tag">CUALQUIER MARCA</p>
+          <h3>Vehículo base</h3>
+          <p>Aceptamos vehículos blindados de cualquier marca — desde Suburban y Tahoe hasta BMW, Mercedes y Range Rover blindados.</p>
+        </div>
+        <div class="level-card">
+          <p class="level-tag">REQUISITO</p>
+          <h3>Armadora certificada</h3>
+          <p>El blindaje debe estar instalado por una armadora reconocida. Sin modificaciones caseras o no certificadas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="content-section">
+    <div class="section-inner two-col">
+      <div>
+        <p class="section-eyebrow">DISCRECIÓN TOTAL</p>
+        <h2 class="section-title">El proceso que<br />un blindado merece.</h2>
+      </div>
+      <div class="section-text">
+        <p>Entendemos que quien tiene un vehículo blindado valora la privacidad. Nuestro proceso está diseñado para ser completamente discreto: valuación en tu domicilio o en nuestras instalaciones con acceso controlado, sin exposición innecesaria del vehículo.</p>
+        <p>El resguardo de vehículos blindados se realiza en instalaciones con medidas de seguridad adicionales. Tu vehículo no se mezcla con otros — recibe el tratamiento que corresponde a un activo de ese valor.</p>
+        <p>Desde el primer contacto hasta la firma del contrato, el proceso puede completarse en el mismo día hábil.</p>
+      </div>
+    </div>
+  </section>
+
+  <FAQ items={faqs} eyebrow="PREGUNTAS SOBRE AUTOS BLINDADOS" />
+  <CTASection
+    eyebrow="VALUACIÓN ESPECIALIZADA"
+    title="¿Cuánto vale realmente tu blindado?"
+    body="Dinos marca, modelo, año y nivel de blindaje aproximado. Te damos un estimado que incluye el valor real del blindaje."
+  />
+
+</Page>
+
+<style>
+  .page-hero { border-bottom: 1px solid var(--line); }
+  .hero-inner { max-width: 1280px; margin: 0 auto; padding: 96px 64px 80px; }
+  .eyebrow { font-size: 9px; letter-spacing: 0.42em; color: rgba(168,168,168,0.45); text-transform: uppercase; margin-bottom: 28px; }
+  .hero-title { font-size: clamp(40px, 5vw, 72px); font-weight: 400; color: var(--white); letter-spacing: -0.02em; line-height: 1.0; margin-bottom: 24px; }
+  .hero-title em { display: block; font-style: normal; font-size: 0.75em; color: rgba(168,168,168,0.55); margin-top: 4px; }
+  .hero-body { max-width: 540px; font-size: 15px; color: rgba(168,168,168,0.78); line-height: 1.85; margin-bottom: 32px; }
+  .hero-actions { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+  .btn-primary { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 16px 40px; border: 1px solid rgba(255,255,255,0.35); color: var(--white); font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; font-family: inherit; transition: all 0.2s; }
+  .btn-primary:hover { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.6); }
+  .btn-ghost { font-size: 11px; letter-spacing: 0.22em; color: rgba(168,168,168,0.6); text-decoration: none; text-transform: uppercase; transition: color 0.2s; }
+  .btn-ghost:hover { color: var(--white); }
+
+  .content-section { border-bottom: 1px solid var(--line); }
+  .section-inner { max-width: 1280px; margin: 0 auto; padding: 96px 64px; }
+  .section-inner.two-col { display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px; align-items: start; }
+  .section-eyebrow { font-size: 9px; letter-spacing: 0.42em; color: rgba(168,168,168,0.38); text-transform: uppercase; margin-bottom: 20px; }
+  .section-title { font-size: clamp(26px, 3vw, 42px); font-weight: 300; color: var(--white); letter-spacing: -0.02em; line-height: 1.05; }
+  .section-text p { font-size: 15px; color: rgba(168,168,168,0.72); line-height: 1.85; margin-bottom: 16px; }
+
+  .levels-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 56px; }
+  .level-card { background: var(--black); padding: 36px 28px; }
+  .level-tag { font-size: 9px; letter-spacing: 0.34em; color: rgba(168,168,168,0.3); text-transform: uppercase; margin-bottom: 14px; }
+  .level-card h3 { font-size: 15px; font-weight: 400; color: var(--white); margin-bottom: 10px; }
+  .level-card p { font-size: 13px; color: rgba(168,168,168,0.58); line-height: 1.7; }
+
+  @media (max-width: 1024px) {
+    .section-inner.two-col { grid-template-columns: 1fr; gap: 40px; }
+    .levels-grid { grid-template-columns: repeat(2,1fr); }
+  }
+  @media (max-width: 768px) {
+    .hero-inner, .section-inner { padding: 64px 24px; }
+    .levels-grid { grid-template-columns: 1fr; }
+  }
+</style>

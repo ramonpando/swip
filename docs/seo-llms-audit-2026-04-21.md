@@ -2,6 +2,24 @@
 
 Fecha: 2026-04-21
 
+## Estado Actual
+
+Implementado al cierre de esta iteracion:
+- se creo la URL `/preguntas-frecuentes/` y ya no existe el enlace roto detectado en la auditoria inicial
+- se movieron y ampliaron las FAQs a su page dedicada, incluyendo preguntas comerciales adicionales
+- se reforzo el enlazado interno entre home, money pages, pages de soporte y contacto
+- se activo una capa LLMS con `llms.txt` y `llms-full.txt`
+- se creo el blog real con posts iniciales y rutas indexables bajo `/blog/`
+- se agrego schema especifico para blog index y posts individuales
+- el blog deja de estar excluido del sitemap para que sus URLs puedan descubrirse e indexarse
+
+Pendientes sugeridos para la siguiente jornada:
+- crear 4 a 6 posts adicionales para cubrir variantes de intencion transaccional e informativa
+- revisar Search Console cuando empiece a registrar impresiones y cobertura real
+- definir si `/cotizar/` se mantiene como page `noindex` o se convierte en landing de conversion completa
+- agregar un enlace claro para envio de documentos o registro directo hacia el dashboard de Bravix
+- generar OG images especificas por post y por money page para mejorar CTR social y sharing
+
 Alcance de esta auditoria:
 - Estructura de informacion del sitio
 - SEO tecnico base
@@ -525,4 +543,3 @@ Orden sugerido para manana:
 - [src/pages/cotizar/index.astro](/root/swip/src/pages/cotizar/index.astro:1)
 - [src/components/Footer.astro](/root/swip/src/components/Footer.astro:1)
 - [dist/sitemap-0.xml](/root/swip/dist/sitemap-0.xml:1)
-

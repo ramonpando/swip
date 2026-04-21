@@ -21,10 +21,11 @@ const currentPath = Astro.url.pathname;
         {link.label}
       </a>
     ))}
+    <a href="/cotizar/" class="nav-mobile-cta">Cotiza tu préstamo</a>
   </div>
   <div class="nav-right">
     <a href="/cotizar/" class="nav-cta">Cotiza tu préstamo</a>
-    <button class="nav-hamburger" id="nav-hamburger" aria-label="Menú">
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Menú" aria-expanded="false" aria-controls="nav-links">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -81,6 +82,10 @@ const currentPath = Astro.url.pathname;
     gap: 24px;
   }
 
+  .nav-mobile-cta {
+    display: none;
+  }
+
   .nav-cta {
     display: inline-flex;
     align-items: center;
@@ -135,17 +140,53 @@ const currentPath = Astro.url.pathname;
   @media (max-width: 768px) {
     nav { padding: 18px 24px; }
     .nav-links {
-      display: none;
       position: fixed;
-      top: 61px; left: 0; right: 0;
-      background: rgba(10, 10, 10, 0.98);
+      top: 61px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
       flex-direction: column;
+      justify-content: flex-start;
       gap: 0;
-      padding: 12px 0;
+      padding: 18px 0 32px;
+      background:
+        linear-gradient(180deg, rgba(14, 14, 14, 0.995) 0%, rgba(10, 10, 10, 0.985) 100%);
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
       border-bottom: 1px solid var(--line);
+      transform: none;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      overflow-y: auto;
+      transition: opacity 0.22s ease, visibility 0.22s ease;
     }
-    .nav-links.open { display: flex; }
-    .nav-links a { padding: 14px 24px; }
+    .nav-links.open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+    .nav-links a {
+      display: block;
+      padding: 18px 24px;
+      font-size: 13px;
+      letter-spacing: 0.18em;
+      color: rgba(255, 255, 255, 0.84);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .nav-links a.active {
+      color: var(--white);
+      background: rgba(255, 255, 255, 0.03);
+    }
+    .nav-mobile-cta {
+      display: block;
+      margin: 18px 24px 0;
+      padding: 16px 18px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: var(--white);
+      background: rgba(255, 255, 255, 0.04);
+      text-align: center;
+    }
     .nav-cta { display: none; }
     .nav-hamburger { display: flex; }
   }
@@ -155,7 +196,18 @@ const currentPath = Astro.url.pathname;
   const hamburger = document.getElementById('nav-hamburger');
   const navLinks  = document.getElementById('nav-links');
   hamburger?.addEventListener('click', () => {
-    hamburger.classList.toggle('open');
-    navLinks?.classList.toggle('open');
+    const isOpen = hamburger.classList.toggle('open');
+    navLinks?.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', String(isOpen));
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+
+  navLinks?.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      hamburger?.classList.remove('open');
+      navLinks.classList.remove('open');
+      hamburger?.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    });
   });
 </script>

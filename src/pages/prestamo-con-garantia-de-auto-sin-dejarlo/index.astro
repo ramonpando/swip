@@ -2,6 +2,7 @@
 import Page from '../../layouts/Page.astro';
 import FAQ from '../../components/FAQ.astro';
 import CTASection from '../../components/CTASection.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
 
 const WHATSAPP = 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20cotizar%20un%20pr%C3%A9stamo%20sin%20dejar%20mi%20auto';
 
@@ -36,7 +37,8 @@ const schema = {
       <p class="hero-body">
         La modalidad sin resguardo te permite obtener un préstamo
         con garantía vehicular conservando el uso de tu vehículo
-        mediante monitoreo GPS activo durante todo el plazo.
+        mediante monitoreo GPS activo durante todo el plazo. Si lo que buscas es
+        el monto más alto posible, vale la pena comparar esta opción con <a href="/prestamo-con-garantia-de-auto-con-resguardo/">la modalidad con resguardo</a>.
       </p>
       <div class="hero-actions">
         <a href={WHATSAPP} target="_blank" rel="noopener" class="btn-primary">Cotiza sin dejar tu auto</a>
@@ -149,6 +151,27 @@ const schema = {
       </div>
     </div>
   </section>
+
+  <RelatedLinks
+    title="Aterriza esta modalidad contra tus otras opciones."
+    items={[
+      {
+        href: '/prestamo-con-garantia-de-auto/',
+        label: 'Servicio principal',
+        description: 'Consulta la estructura general del préstamo con garantía vehicular antes de decidir.',
+      },
+      {
+        href: '/prestamo-con-garantia-de-auto-con-resguardo/',
+        label: 'Con resguardo',
+        description: 'Si el monto es prioritario, compara esta opción con la modalidad en custodia.',
+      },
+      {
+        href: '/requisitos/',
+        label: 'Requisitos',
+        description: 'Confirma la documentación y las condiciones operativas para esta modalidad.',
+      },
+    ]}
+  />
 
   <FAQ items={faqs} eyebrow="PREGUNTAS SOBRE LA MODALIDAD SIN RESGUARDO" />
   <CTASection

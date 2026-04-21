@@ -1,5 +1,6 @@
 ---
 import Page from '../../layouts/Page.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
 
 const WHATSAPP = 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20SWIP';
 ---
@@ -14,7 +15,8 @@ const WHATSAPP = 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20m%C3%A1s%2
       <h1 class="hero-title">Habla con<br />un asesor.</h1>
       <p class="hero-body">
         Sin call centers, sin formularios que nadie responde. Contacto
-        directo con el equipo que tomará tu caso.
+        directo con el equipo que tomará tu caso. Si todavía estás comparando
+        opciones, antes puedes revisar <a href="/preguntas-frecuentes/">preguntas frecuentes</a> o <a href="/como-funciona/">cómo funciona</a>.
       </p>
     </div>
   </section>
@@ -73,6 +75,28 @@ const WHATSAPP = 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20m%C3%A1s%2
       </div>
     </div>
   </section>
+
+  <RelatedLinks
+    eyebrow="ANTES DE ESCRIBIRNOS"
+    title="Llega a contacto con mejor contexto."
+    items={[
+      {
+        href: '/como-funciona/',
+        label: 'Cómo funciona',
+        description: 'Entiende el proceso completo antes de hablar con un asesor.',
+      },
+      {
+        href: '/requisitos/',
+        label: 'Requisitos',
+        description: 'Revisa la documentación mínima para que la conversación sea más ágil.',
+      },
+      {
+        href: '/preguntas-frecuentes/',
+        label: 'Preguntas frecuentes',
+        description: 'Resuelve dudas comunes antes de pasar a una evaluación personalizada.',
+      },
+    ]}
+  />
 
 </Page>
 

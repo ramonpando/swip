@@ -2,6 +2,7 @@
 import Page from '../../layouts/Page.astro';
 import FAQ from '../../components/FAQ.astro';
 import CTASection from '../../components/CTASection.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
 
 const WHATSAPP = 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20cotizar%20un%20pr%C3%A9stamo%20con%20resguardo%20de%20mi%20veh%C3%ADculo';
 
@@ -37,7 +38,8 @@ const schema = {
       <p class="hero-body">
         La modalidad con resguardo es la opción para quienes necesitan
         montos mayores y las mejores condiciones disponibles. Tu vehículo
-        en instalaciones seguras — tu dinero en cuenta en menos de 24 horas.
+        en instalaciones seguras — tu dinero en cuenta en menos de 24 horas. Si
+        la movilidad pesa más que el monto, compara esta ruta con <a href="/prestamo-con-garantia-de-auto-sin-dejarlo/">la modalidad sin resguardo</a>.
       </p>
       <div class="hero-actions">
         <a href={WHATSAPP} target="_blank" rel="noopener" class="btn-primary">Cotizar con resguardo</a>
@@ -112,6 +114,27 @@ const schema = {
       </div>
     </div>
   </section>
+
+  <RelatedLinks
+    title="Compara esta modalidad con el resto del servicio."
+    items={[
+      {
+        href: '/prestamo-con-garantia-de-auto/',
+        label: 'Garantía vehicular',
+        description: 'Vuelve a la página madre para entender el servicio completo y su lógica general.',
+      },
+      {
+        href: '/prestamo-con-garantia-de-auto-sin-dejarlo/',
+        label: 'Sin resguardo',
+        description: 'Si necesitas seguir usando el auto, esta es la modalidad que debes contrastar.',
+      },
+      {
+        href: '/como-funciona/',
+        label: 'Cómo funciona',
+        description: 'Revisa proceso, tiempos y documentación antes de decidir entre modalidades.',
+      },
+    ]}
+  />
 
   <FAQ items={faqs} eyebrow="PREGUNTAS SOBRE LA MODALIDAD CON RESGUARDO" />
   <CTASection

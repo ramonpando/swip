@@ -12,7 +12,6 @@ export default defineConfig({
         '/lp/',
         '/aviso-de-privacidad/',
         '/terminos-de-uso/',
-        '/blog/',
         '/cotizar/',
       ].some((path) => page.includes(path)),
     }),

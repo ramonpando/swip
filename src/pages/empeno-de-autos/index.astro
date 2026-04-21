@@ -2,6 +2,7 @@
 import Page from '../../layouts/Page.astro';
 import FAQ from '../../components/FAQ.astro';
 import CTASection from '../../components/CTASection.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
 
 const WHATSAPP = 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20de%20mi%20veh%C3%ADculo';
 
@@ -38,7 +39,8 @@ const schema = {
       <p class="hero-body">
         Swip no es una casa de empeño tradicional. Es una alternativa más seria,
         más clara y más adecuada para quien tiene un vehículo de valor y necesita
-        liquidez real — con trato profesional y condiciones justas.
+        liquidez real — con trato profesional y condiciones justas. Si quieres ver
+        la estructura completa del servicio, entra a <a href="/prestamo-con-garantia-de-auto/">préstamo con garantía de auto</a>.
       </p>
       <div class="hero-actions">
         <a href={WHATSAPP} target="_blank" rel="noopener" class="btn-primary">Cotiza tu préstamo</a>
@@ -182,6 +184,27 @@ const schema = {
       </div>
     </div>
   </section>
+
+  <RelatedLinks
+    title="Desde empeño, muévete a la ruta correcta."
+    items={[
+      {
+        href: '/prestamo-con-garantia-de-auto/',
+        label: 'Servicio completo',
+        description: 'Pasa de la idea de empeño a la página madre del servicio con garantía vehicular.',
+      },
+      {
+        href: '/como-funciona/',
+        label: 'Proceso',
+        description: 'Revisa paso a paso cómo se ejecuta la operación de forma clara y documentada.',
+      },
+      {
+        href: '/requisitos/',
+        label: 'Requisitos',
+        description: 'Confirma qué documentos necesitas antes de pedir una valuación real.',
+      },
+    ]}
+  />
 
   <FAQ items={faqs} />
   <CTASection

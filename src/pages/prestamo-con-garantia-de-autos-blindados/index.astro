@@ -2,6 +2,7 @@
 import Page from '../../layouts/Page.astro';
 import FAQ from '../../components/FAQ.astro';
 import CTASection from '../../components/CTASection.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
 
 const WHATSAPP = 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20cotizar%20un%20pr%C3%A9stamo%20con%20garant%C3%ADa%20de%20mi%20auto%20blindado';
 
@@ -36,7 +37,8 @@ const schema = {
       <p class="hero-body">
         La mayoría de las empresas ignoran el valor del blindaje o lo subestiman.
         Swip valúa el vehículo base más el blindaje como lo que es:
-        un activo con costo comprobable y valor de mercado real.
+        un activo con costo comprobable y valor de mercado real. Si el caso requiere
+        contexto adicional, también puedes revisar <a href="/preguntas-frecuentes/">preguntas frecuentes</a>.
       </p>
       <div class="hero-actions">
         <a href={WHATSAPP} target="_blank" rel="noopener" class="btn-primary">Cotiza tu préstamo</a>
@@ -104,6 +106,27 @@ const schema = {
       </div>
     </div>
   </section>
+
+  <RelatedLinks
+    title="Lleva un blindado a la ruta que sí reconoce su valor."
+    items={[
+      {
+        href: '/vehiculos-que-aceptamos/',
+        label: 'Vehículos aceptados',
+        description: 'Revisa cómo encajan los blindados dentro de la matriz completa de vehículos de valor.',
+      },
+      {
+        href: '/prestamo-con-garantia-de-auto-con-resguardo/',
+        label: 'Con resguardo',
+        description: 'Para blindados de alto valor, esta modalidad suele ser la estructura más sólida.',
+      },
+      {
+        href: '/preguntas-frecuentes/',
+        label: 'Preguntas frecuentes',
+        description: 'Consulta dudas generales sobre montos, documentos y escenarios de pago.',
+      },
+    ]}
+  />
 
   <FAQ items={faqs} eyebrow="PREGUNTAS SOBRE AUTOS BLINDADOS" />
   <CTASection

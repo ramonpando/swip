@@ -5,11 +5,52 @@ import { getCollection } from 'astro:content';
 const posts = (await getCollection('blog'))
   .filter(p => !p.data.draft)
   .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://swip.mx/blog/#webpage",
+    "url": "https://swip.mx/blog/",
+    "name": "Blog de SWIP",
+    "description": "Guías, análisis y contenido educativo sobre préstamos con garantía vehicular, empeño de autos y liquidez con vehículos de lujo en México.",
+    "inLanguage": "es-MX",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://swip.mx/",
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://swip.mx/blog/",
+      },
+    ],
+  },
+  ...(posts.length > 0 ? [{
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": posts.map((post, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "url": `https://swip.mx/blog/${post.data.slug}/`,
+      "name": post.data.title,
+    })),
+  }] : []),
+];
 ---
 <Page
   title="Blog — Guías sobre Préstamos con Garantía de Auto | SWIP"
   description="Guías, análisis y contenido educativo sobre préstamos con garantía vehicular, empeño de autos y liquidez con vehículos de lujo en México."
   noindex={posts.length === 0}
+  schema={schema}
 >
 
   <section class="blog-hero">
@@ -19,6 +60,11 @@ const posts = (await getCollection('blog'))
       <p class="hero-body">
         Todo lo que necesitas saber sobre préstamos con garantía de auto,
         empeño de vehículos y liquidez inteligente en México.
+      </p>
+      <p class="hero-links">
+        Empieza por <a href="/prestamo-con-garantia-de-auto/">la guía principal del servicio</a>,
+        revisa los <a href="/requisitos/">requisitos</a> o resuelve dudas en
+        <a href="/preguntas-frecuentes/">preguntas frecuentes</a>.
       </p>
     </div>
   </section>
@@ -63,6 +109,8 @@ const posts = (await getCollection('blog'))
   .eyebrow { font-size: 9px; letter-spacing: 0.42em; color: rgba(168,168,168,0.45); text-transform: uppercase; margin-bottom: 28px; }
   .hero-title { font-size: clamp(44px, 5.5vw, 80px); font-weight: 400; color: var(--white); letter-spacing: -0.02em; line-height: 1.0; margin-bottom: 24px; }
   .hero-body { max-width: 520px; font-size: 15px; color: rgba(168,168,168,0.78); line-height: 1.85; }
+  .hero-links { max-width: 620px; margin-top: 18px; font-size: 13px; color: rgba(168,168,168,0.62); line-height: 1.8; }
+  .hero-links a { color: var(--white); text-decoration: underline; text-underline-offset: 3px; }
 
   /* POSTS */
   .posts-section { border-bottom: 1px solid var(--line); }

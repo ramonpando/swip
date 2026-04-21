@@ -2,6 +2,7 @@
 import Page from '../../layouts/Page.astro';
 import FAQ from '../../components/FAQ.astro';
 import CTASection from '../../components/CTASection.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
 
 const WHATSAPP = 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20cotizar%20un%20pr%C3%A9stamo%20con%20garant%C3%ADa%20de%20mi%20auto%20de%20lujo';
 
@@ -36,6 +37,7 @@ const schema = {
       <p class="hero-body">
         La mayoría de las empresas no saben cómo valuar correctamente un vehículo
         premium. Swip sí. Valuación especializada, monto justo, proceso discreto.
+        Si todavía no sabes si tu unidad entra en el perfil, revisa <a href="/vehiculos-que-aceptamos/">vehículos que aceptamos</a>.
       </p>
       <div class="hero-actions">
         <a href={WHATSAPP} target="_blank" rel="noopener" class="btn-primary">Cotiza tu préstamo</a>
@@ -159,6 +161,27 @@ const schema = {
       </div>
     </div>
   </section>
+
+  <RelatedLinks
+    title="Conecta la valuación premium con la operación correcta."
+    items={[
+      {
+        href: '/vehiculos-que-aceptamos/',
+        label: 'Vehículos aceptados',
+        description: 'Contrasta tu auto de lujo con el resto de los segmentos que SWIP sabe valuar.',
+      },
+      {
+        href: '/prestamo-con-garantia-de-auto-con-resguardo/',
+        label: 'Con resguardo',
+        description: 'Para autos de lujo de alto valor, esta modalidad suele dar mejores montos y condiciones.',
+      },
+      {
+        href: '/prestamo-con-garantia-de-auto/',
+        label: 'Garantía vehicular',
+        description: 'Vuelve al servicio base para ver modalidades, proceso y propuesta completa.',
+      },
+    ]}
+  />
 
   <FAQ items={faqs} eyebrow="PREGUNTAS SOBRE AUTOS DE LUJO" />
   <CTASection

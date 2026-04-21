@@ -3,21 +3,58 @@ import Page from '../layouts/Page.astro';
 
 const WHATSAPP = 'https://wa.me/525500000000?text=Hola%2C%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20de%20mi%20veh%C3%ADculo';
 
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "FinancialService",
-  "@id": "https://swip.mx/#service",
-  "name": "SWIP — Préstamo con Garantía Vehicular",
-  "url": "https://swip.mx",
-  "description": "Liquidez inteligente con respaldo en tu auto. Especialistas en vehículos de lujo, blindados y de alto valor en México.",
-  "areaServed": [
-    { "@type": "City", "name": "Ciudad de México" },
-    { "@type": "City", "name": "Interlomas" },
-    { "@type": "City", "name": "Querétaro" }
-  ],
-  "currenciesAccepted": "MXN",
-  "priceRange": "$$$$"
-};
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "@id": "https://swip.mx/#service",
+    "name": "SWIP — Préstamo con Garantía Vehicular",
+    "url": "https://swip.mx",
+    "description": "Liquidez inteligente con respaldo en tu auto. Especialistas en vehículos de lujo, blindados y de alto valor en México.",
+    "areaServed": [
+      { "@type": "City", "name": "Ciudad de México" },
+      { "@type": "City", "name": "Querétaro" }
+    ],
+    "currenciesAccepted": "MXN",
+    "priceRange": "$$$$"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cómo se determina el monto de mi préstamo?",
+        "acceptedAnswer": { "@type": "Answer", "text": "El monto depende del valor comercial de tu vehículo: modelo, año, kilometraje y estado general. Trabajamos con préstamos desde $90,000 hasta $5,000,000 MXN. Un valuador SWIP revisa el vehículo en persona para darte una oferta precisa y justa." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Puedo seguir usando mi auto durante el préstamo?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí. En la modalidad Sin Resguardo conservas el uso de tu vehículo bajo ciertas condiciones y monitoreo. En la modalidad Con Resguardo el auto queda en instalaciones seguras, lo que generalmente permite montos más altos y mejores tasas." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué documentos necesito para solicitar?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Identificación oficial vigente, factura original del vehículo a tu nombre, comprobante de domicilio y tarjeta de circulación. El proceso es ágil y sin burocracia innecesaria." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿En cuánto tiempo recibo el dinero?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Una vez firmado el contrato, el depósito se realiza en menos de 24 horas directamente a tu cuenta bancaria. El proceso completo puede completarse en el mismo día hábil." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué tipo de vehículos aceptan?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Nos especializamos en autos de lujo: BMW, Mercedes-Benz, Porsche, Audi, Land Rover, Lexus, Cadillac y equivalentes. También evaluamos vehículos blindados, camionetas de trabajo y clásicos con valor de mercado comprobable." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué pasa si no puedo pagar?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Comunícate de inmediato con tu ejecutivo SWIP. Buscamos soluciones antes de llegar a cualquier escenario de incumplimiento. Tus derechos están protegidos en el contrato desde el inicio." }
+      }
+    ]
+  }
+];
 ---
 <Page
   title="SWIP — Préstamo con Garantía de Auto en México | Liquidez Premium"
@@ -66,6 +103,10 @@ const schema = {
       <div class="stat-item">
         <div class="stat-number">100%</div>
         <div class="stat-label">Proceso claro y documentado</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">$90k–$5M</div>
+        <div class="stat-label">Rango de préstamo en MXN</div>
       </div>
     </div>
   </section>
@@ -217,6 +258,107 @@ const schema = {
     </div>
   </section>
 
+  <!-- COBERTURA -->
+  <section id="cobertura">
+    <div class="section-inner">
+      <p class="section-eyebrow">COBERTURA</p>
+      <h2 class="section-title">Operamos donde<br />están los vehículos.</h2>
+      <p class="section-body">
+        Presencia física en las dos plazas con mayor concentración de vehículos
+        de alto valor en México. Valuación en tu domicilio o en nuestras instalaciones,
+        según prefieras.
+      </p>
+      <div class="cob-grid">
+        <div class="cob-card">
+          <p class="cob-tag">PLAZA PRINCIPAL</p>
+          <h3 class="cob-title">Ciudad de México</h3>
+          <p class="cob-desc">
+            Atendemos toda la zona metropolitana. Con presencia particular en Interlomas,
+            Polanco, Lomas de Chapultepec, Santa Fe, Pedregal, Tecamachalco y Bosques
+            de las Lomas — los corredores con mayor concentración de vehículos de lujo
+            y blindados del país.
+          </p>
+        </div>
+        <div class="cob-card">
+          <p class="cob-tag">PLAZA REGIONAL</p>
+          <h3 class="cob-title">Querétaro</h3>
+          <p class="cob-desc">
+            Querétaro cuenta con un mercado vehicular premium en crecimiento. Atendemos
+            la plaza queretana con el mismo nivel de servicio, tiempos de respuesta y
+            condiciones que ofrecemos en la Ciudad de México.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="preguntas-frecuentes">
+    <div class="section-inner">
+      <p class="section-eyebrow">PREGUNTAS FRECUENTES</p>
+      <h2 class="section-title">Lo que necesitas<br />saber antes de solicitar.</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-q">¿Cómo se determina el monto de mi préstamo?</summary>
+          <p class="faq-a">
+            El monto depende del valor comercial de tu vehículo: modelo, año, kilometraje
+            y estado general. Trabajamos con préstamos desde $90,000 hasta $5,000,000 MXN.
+            Un valuador SWIP revisa el vehículo en persona — sin compromisos previos — para
+            darte una oferta precisa y justa basada en el valor real del auto.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">¿Puedo seguir usando mi auto durante el préstamo?</summary>
+          <p class="faq-a">
+            Sí. En la modalidad Sin Resguardo conservas el uso de tu vehículo bajo
+            ciertas condiciones y con monitoreo activo. En la modalidad Con Resguardo,
+            el auto queda en nuestras instalaciones seguras — lo que generalmente permite
+            obtener montos más altos y mejores tasas por el menor riesgo para ambas partes.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">¿Qué documentos necesito para solicitar?</summary>
+          <p class="faq-a">
+            Los requisitos básicos son: identificación oficial vigente, factura original
+            del vehículo a tu nombre, comprobante de domicilio y tarjeta de circulación.
+            En algunos casos puede requerirse documentación adicional dependiendo de la
+            modalidad y el monto solicitado. El proceso es ágil y sin burocracia innecesaria.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">¿En cuánto tiempo recibo el dinero?</summary>
+          <p class="faq-a">
+            Una vez firmado el contrato, el depósito se realiza en menos de 24 horas
+            directamente a tu cuenta bancaria. El proceso completo — desde el primer
+            contacto hasta el desembolso — puede completarse en el mismo día hábil
+            si toda la documentación está en orden.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">¿Qué tipo de vehículos aceptan?</summary>
+          <p class="faq-a">
+            Nos especializamos en autos de lujo y vehículos de alto valor: BMW, Mercedes-Benz,
+            Porsche, Audi, Land Rover, Lexus, Cadillac, Volvo y equivalentes. También evaluamos
+            camionetas de trabajo, vehículos blindados y clásicos con valor de mercado
+            comprobable. Contáctanos para verificar si tu vehículo aplica.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">¿Qué pasa si no puedo pagar?</summary>
+          <p class="faq-a">
+            Ante cualquier dificultad de pago, lo más importante es comunicarte de inmediato
+            con tu ejecutivo SWIP. Buscamos soluciones antes de llegar a cualquier escenario
+            de incumplimiento. Todo el proceso está documentado y tus derechos están
+            protegidos en el contrato desde el inicio.
+          </p>
+        </details>
+      </div>
+      <div class="faq-footer">
+        <a href="/preguntas-frecuentes/" class="btn-ghost">Ver todas las preguntas →</a>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA FINAL -->
   <section id="contacto">
     <div class="cta-section">
@@ -343,7 +485,7 @@ const schema = {
     z-index: 2;
     border-top: 1px solid rgba(255,255,255,0.1);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     background: rgba(10,10,10,0.72);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
@@ -687,10 +829,109 @@ const schema = {
   }
 
   /* ── RESPONSIVE ── */
+  /* ── COBERTURA ── */
+  .cob-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    margin-top: 56px;
+  }
+
+  .cob-card {
+    background: var(--black);
+    padding: 48px 40px;
+  }
+
+  .cob-tag {
+    font-size: 9px;
+    letter-spacing: 0.38em;
+    color: rgba(168,168,168,0.3);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .cob-title {
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--white);
+    letter-spacing: -0.01em;
+    margin-bottom: 16px;
+  }
+
+  .cob-desc {
+    font-size: 14px;
+    color: rgba(168,168,168,0.7);
+    line-height: 1.85;
+    max-width: 420px;
+  }
+
+  /* ── FAQ ── */
+  .faq-list {
+    margin-top: 56px;
+    border-top: 1px solid var(--line);
+  }
+
+  .faq-item {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .faq-item summary {
+    list-style: none;
+  }
+
+  .faq-item summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-q {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--white-muted);
+    cursor: pointer;
+    letter-spacing: -0.01em;
+    transition: color 0.2s;
+    gap: 24px;
+  }
+
+  .faq-q::after {
+    content: '+';
+    font-size: 20px;
+    font-weight: 300;
+    color: rgba(168,168,168,0.4);
+    flex-shrink: 0;
+    transition: transform 0.25s, color 0.2s;
+    line-height: 1;
+  }
+
+  .faq-item[open] .faq-q { color: var(--white); }
+  .faq-item[open] .faq-q::after { transform: rotate(45deg); color: var(--white); }
+
+  .faq-q:hover { color: var(--white); }
+
+  .faq-a {
+    font-size: 14px;
+    color: rgba(168,168,168,0.7);
+    line-height: 1.9;
+    padding-bottom: 28px;
+    max-width: 720px;
+  }
+
+  .faq-footer {
+    margin-top: 40px;
+    text-align: center;
+  }
+
   @media (max-width: 1024px) {
     .steps-grid { grid-template-columns: repeat(2, 1fr); }
     .ventajas-grid { grid-template-columns: repeat(2, 1fr); }
     .spec-grid { grid-template-columns: repeat(2, 1fr); }
+    .stats-bar { grid-template-columns: repeat(2, 1fr); }
   }
 
   @media (max-width: 768px) {
@@ -704,7 +945,7 @@ const schema = {
       align-items: flex-start;
       gap: 18px;
     }
-    .stats-bar { grid-template-columns: 1fr; }
+    .stats-bar { grid-template-columns: repeat(2, 1fr); }
     .stat-item { border-right: none; border-bottom: 1px solid var(--line); }
     .stat-item:last-child { border-bottom: none; }
     .section-inner { padding: 64px 24px; }
@@ -712,6 +953,7 @@ const schema = {
     .ventajas-grid { grid-template-columns: 1fr; }
     .spec-grid { grid-template-columns: 1fr; }
     .modal-grid { grid-template-columns: 1fr; }
+    .cob-grid { grid-template-columns: 1fr; }
     .cta-section { padding: 80px 24px; }
   }
 </style>

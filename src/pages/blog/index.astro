@@ -1,0 +1,92 @@
+---
+import Page from '../../layouts/Page.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog'))
+  .filter(p => !p.data.draft)
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+---
+<Page
+  title="Blog — Guías sobre Préstamos con Garantía de Auto | SWIP"
+  description="Guías, análisis y contenido educativo sobre préstamos con garantía vehicular, empeño de autos y liquidez con vehículos de lujo en México."
+>
+
+  <section class="blog-hero">
+    <div class="hero-inner">
+      <p class="eyebrow">BLOG · SWIP</p>
+      <h1 class="hero-title">Guías y análisis<br />sobre garantía vehicular.</h1>
+      <p class="hero-body">
+        Todo lo que necesitas saber sobre préstamos con garantía de auto,
+        empeño de vehículos y liquidez inteligente en México.
+      </p>
+    </div>
+  </section>
+
+  {posts.length > 0 ? (
+    <section class="posts-section">
+      <div class="posts-inner">
+        <div class="posts-grid">
+          {posts.map(post => (
+            <a href={`/blog/${post.data.slug}/`} class="post-card">
+              {post.data.image && (
+                <div class="post-img">
+                  <img src={post.data.image} alt={post.data.title} loading="lazy" />
+                </div>
+              )}
+              <div class="post-body">
+                <p class="post-cat">{post.data.category}</p>
+                <h2 class="post-title">{post.data.title}</h2>
+                <p class="post-desc">{post.data.description}</p>
+                <span class="post-date">{new Date(post.data.date).toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  ) : (
+    <section class="empty-section">
+      <div class="empty-inner">
+        <p class="empty-label">PRÓXIMAMENTE</p>
+        <h2 class="empty-title">Contenido en preparación.</h2>
+        <p class="empty-desc">Estamos preparando guías sobre préstamos con garantía vehicular, comparativas de mercado y análisis del segmento premium en México.</p>
+      </div>
+    </section>
+  )}
+
+</Page>
+
+<style>
+  .blog-hero { border-bottom: 1px solid var(--line); }
+  .hero-inner { max-width: 1280px; margin: 0 auto; padding: 96px 64px 80px; }
+  .eyebrow { font-size: 9px; letter-spacing: 0.42em; color: rgba(168,168,168,0.45); text-transform: uppercase; margin-bottom: 28px; }
+  .hero-title { font-size: clamp(44px, 5.5vw, 80px); font-weight: 400; color: var(--white); letter-spacing: -0.02em; line-height: 1.0; margin-bottom: 24px; }
+  .hero-body { max-width: 520px; font-size: 15px; color: rgba(168,168,168,0.78); line-height: 1.85; }
+
+  /* POSTS */
+  .posts-section { border-bottom: 1px solid var(--line); }
+  .posts-inner { max-width: 1280px; margin: 0 auto; padding: 80px 64px; }
+  .posts-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .post-card { background: var(--black); text-decoration: none; display: flex; flex-direction: column; transition: background 0.2s; }
+  .post-card:hover { background: rgba(255,255,255,0.02); }
+  .post-img { aspect-ratio: 16/9; overflow: hidden; }
+  .post-img img { width: 100%; height: 100%; object-fit: cover; }
+  .post-body { padding: 28px 28px 32px; display: flex; flex-direction: column; flex: 1; }
+  .post-cat { font-size: 9px; letter-spacing: 0.34em; color: rgba(168,168,168,0.35); text-transform: uppercase; margin-bottom: 12px; }
+  .post-title { font-size: 17px; font-weight: 400; color: var(--white); line-height: 1.3; margin-bottom: 12px; letter-spacing: -0.01em; }
+  .post-desc { font-size: 13px; color: rgba(168,168,168,0.6); line-height: 1.7; flex: 1; margin-bottom: 20px; }
+  .post-date { font-size: 10px; letter-spacing: 0.18em; color: rgba(168,168,168,0.3); text-transform: uppercase; }
+
+  /* EMPTY */
+  .empty-section { border-bottom: 1px solid var(--line); }
+  .empty-inner { max-width: 1280px; margin: 0 auto; padding: 120px 64px; text-align: center; }
+  .empty-label { font-size: 9px; letter-spacing: 0.42em; color: rgba(168,168,168,0.3); text-transform: uppercase; margin-bottom: 24px; }
+  .empty-title { font-size: clamp(28px, 3.5vw, 48px); font-weight: 300; color: var(--white); letter-spacing: -0.02em; margin-bottom: 20px; }
+  .empty-desc { font-size: 15px; color: rgba(168,168,168,0.55); line-height: 1.8; max-width: 480px; margin: 0 auto; }
+
+  @media (max-width: 1024px) { .posts-grid { grid-template-columns: repeat(2,1fr); } }
+  @media (max-width: 768px) {
+    .hero-inner, .posts-inner, .empty-inner { padding: 64px 24px; }
+    .posts-grid { grid-template-columns: 1fr; }
+  }
+</style>

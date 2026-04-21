@@ -1,0 +1,114 @@
+---
+import Page from '../../layouts/Page.astro';
+
+const WHATSAPP = 'https://wa.me/525500000000?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20SWIP';
+---
+<Page
+  title="Contacto | SWIP — Préstamo con Garantía Vehicular"
+  description="Contáctanos para una evaluación de tu vehículo. WhatsApp directo con un asesor o escríbenos por correo. Atención en CDMX y Querétaro."
+>
+
+  <section class="contact-hero">
+    <div class="hero-inner">
+      <p class="eyebrow">CONTACTO · SWIP</p>
+      <h1 class="hero-title">Habla con<br />un asesor.</h1>
+      <p class="hero-body">
+        Sin call centers, sin formularios que nadie responde. Contacto
+        directo con el equipo que tomará tu caso.
+      </p>
+    </div>
+  </section>
+
+  <!-- CANALES -->
+  <section class="channels-section">
+    <div class="inner">
+      <div class="channel-grid">
+        <div class="channel-card channel-primary">
+          <p class="channel-tag">CANAL PRINCIPAL</p>
+          <h2 class="channel-title">WhatsApp</h2>
+          <p class="channel-desc">
+            La forma más rápida de obtener una cotización y resolver dudas.
+            Respuesta en menos de una hora en horario hábil.
+          </p>
+          <a href={WHATSAPP} target="_blank" rel="noopener" class="btn-primary">
+            Escribir por WhatsApp →
+          </a>
+          <p class="channel-hours">Lunes a viernes · 9:00 – 19:00 hrs</p>
+        </div>
+
+        <div class="channel-card">
+          <p class="channel-tag">CORREO ELECTRÓNICO</p>
+          <h2 class="channel-title">Email</h2>
+          <p class="channel-desc">
+            Para consultas formales, solicitudes de documentación o seguimiento
+            de procesos en curso.
+          </p>
+          <a href="mailto:patricia_bernal@swip.mx" class="btn-ghost">
+            patricia_bernal@swip.mx →
+          </a>
+          <p class="channel-hours">Respuesta en el mismo día hábil</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COBERTURA -->
+  <section class="coverage-section">
+    <div class="inner">
+      <p class="section-eyebrow">COBERTURA</p>
+      <h2 class="section-title">Dónde operamos.</h2>
+      <div class="coverage-grid">
+        <div class="coverage-card">
+          <p class="cov-tag">CIUDAD DE MÉXICO</p>
+          <p class="cov-desc">Servicio en toda la zona metropolitana. Valuación en tu domicilio u oficina sin costo adicional en las zonas de Interlomas, Polanco, Lomas de Chapultepec, Santa Fe, Pedregal, Tecamachalco y Bosques de las Lomas.</p>
+        </div>
+        <div class="coverage-card">
+          <p class="cov-tag">QUERÉTARO</p>
+          <p class="cov-desc">Atención en toda la plaza queretana con los mismos tiempos de respuesta y condiciones que en CDMX. Valuación a domicilio disponible.</p>
+        </div>
+        <div class="coverage-card">
+          <p class="cov-tag">OTRAS CIUDADES</p>
+          <p class="cov-desc">Para otras plazas, contáctanos. Evaluamos cada caso para ver si podemos atenderte. En algunos casos es posible operar fuera de las plazas principales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Page>
+
+<style>
+  .contact-hero { border-bottom: 1px solid var(--line); }
+  .hero-inner { max-width: 1280px; margin: 0 auto; padding: 96px 64px 80px; }
+  .eyebrow { font-size: 9px; letter-spacing: 0.42em; color: rgba(168,168,168,0.45); text-transform: uppercase; margin-bottom: 28px; }
+  .hero-title { font-size: clamp(44px, 5.5vw, 80px); font-weight: 400; color: var(--white); letter-spacing: -0.02em; line-height: 1.0; margin-bottom: 24px; }
+  .hero-body { max-width: 480px; font-size: 15px; color: rgba(168,168,168,0.78); line-height: 1.85; }
+
+  .channels-section { border-bottom: 1px solid var(--line); }
+  .inner { max-width: 1280px; margin: 0 auto; padding: 96px 64px; }
+  .channel-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .channel-card { background: var(--black); padding: 56px 48px; }
+  .channel-primary { background: rgba(255,255,255,0.02); }
+  .channel-tag { font-size: 9px; letter-spacing: 0.38em; color: rgba(168,168,168,0.3); text-transform: uppercase; margin-bottom: 16px; }
+  .channel-title { font-size: 32px; font-weight: 300; color: var(--white); letter-spacing: -0.02em; margin-bottom: 16px; }
+  .channel-desc { font-size: 14px; color: rgba(168,168,168,0.68); line-height: 1.8; margin-bottom: 28px; max-width: 380px; }
+  .channel-hours { font-size: 11px; letter-spacing: 0.18em; color: rgba(168,168,168,0.32); text-transform: uppercase; margin-top: 16px; }
+
+  .btn-primary { display: inline-flex; align-items: center; min-height: 52px; padding: 16px 40px; border: 1px solid rgba(255,255,255,0.35); color: var(--white); font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; font-family: inherit; transition: all 0.2s; }
+  .btn-primary:hover { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.6); }
+  .btn-ghost { font-size: 13px; letter-spacing: 0.14em; color: rgba(168,168,168,0.6); text-decoration: none; text-transform: none; transition: color 0.2s; display: inline-block; }
+  .btn-ghost:hover { color: var(--white); }
+
+  .coverage-section { border-bottom: 1px solid var(--line); }
+  .section-eyebrow { font-size: 9px; letter-spacing: 0.42em; color: rgba(168,168,168,0.38); text-transform: uppercase; margin-bottom: 20px; }
+  .section-title { font-size: clamp(28px, 3.5vw, 48px); font-weight: 300; color: var(--white); letter-spacing: -0.02em; line-height: 1.05; margin-bottom: 56px; }
+  .coverage-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .coverage-card { background: var(--black); padding: 36px 32px; }
+  .cov-tag { font-size: 9px; letter-spacing: 0.36em; color: rgba(168,168,168,0.3); text-transform: uppercase; margin-bottom: 16px; }
+  .cov-desc { font-size: 13px; color: rgba(168,168,168,0.62); line-height: 1.8; }
+
+  @media (max-width: 768px) {
+    .hero-inner, .inner { padding: 64px 24px; }
+    .channel-grid, .coverage-grid { grid-template-columns: 1fr; }
+    .channel-card { padding: 40px 28px; }
+  }
+</style>

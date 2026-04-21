@@ -1,0 +1,139 @@
+---
+import Page from '../../layouts/Page.astro';
+
+const WHATSAPP = 'https://wa.me/525500000000?text=Hola%2C%20quiero%20cotizar%20un%20pr%C3%A9stamo%20con%20garant%C3%ADa%20de%20mi%20veh%C3%ADculo';
+---
+<Page
+  title="Cotiza tu Préstamo con Garantía de Auto | SWIP"
+  description="Cotiza tu préstamo con garantía vehicular. Recibe un estimado en minutos basado en el valor real de tu auto. Sin compromiso, sin consulta de buró."
+  noindex={false}
+>
+
+  <section class="cotizar-hero">
+    <div class="cotizar-inner">
+      <p class="eyebrow">COTIZADOR · SWIP</p>
+      <h1 class="cotizar-title">Cotiza tu préstamo.</h1>
+      <p class="cotizar-body">
+        Estamos preparando el cotizador conversacional — podrás recibir
+        un estimado inteligente en minutos directamente aquí.
+      </p>
+      <p class="cotizar-body">
+        Mientras tanto, nuestro equipo está disponible por WhatsApp
+        para darte una cotización personalizada de inmediato.
+      </p>
+      <a href={WHATSAPP} target="_blank" rel="noopener" class="btn-primary">
+        Cotizar por WhatsApp →
+      </a>
+    </div>
+
+    <div class="info-bar">
+      <div class="info-item">
+        <span class="info-label">Tiempo de respuesta</span>
+        <span class="info-val">Menos de 1 hora en horario hábil</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Qué necesitas tener a la mano</span>
+        <span class="info-val">Marca, modelo, año y kilometraje de tu vehículo</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Rango de préstamos</span>
+        <span class="info-val">$90,000 – $5,000,000 MXN</span>
+      </div>
+    </div>
+  </section>
+
+</Page>
+
+<style>
+  .cotizar-hero {
+    min-height: calc(100vh - 61px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--line);
+  }
+  .cotizar-inner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 720px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 96px 64px 64px;
+    text-align: center;
+    align-items: center;
+  }
+  .eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.42em;
+    color: rgba(168,168,168,0.4);
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+  .cotizar-title {
+    font-size: clamp(44px, 6vw, 88px);
+    font-weight: 400;
+    color: var(--white);
+    letter-spacing: -0.02em;
+    line-height: 1.0;
+    margin-bottom: 32px;
+  }
+  .cotizar-body {
+    font-size: 15px;
+    color: rgba(168,168,168,0.72);
+    line-height: 1.85;
+    max-width: 480px;
+    margin-bottom: 16px;
+  }
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 16px 40px;
+    border: 1px solid rgba(255,255,255,0.35);
+    color: var(--white);
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: inherit;
+    transition: all 0.2s;
+    margin-top: 16px;
+  }
+  .btn-primary:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(255,255,255,0.6);
+  }
+  .info-bar {
+    border-top: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  .info-item {
+    padding: 28px 40px;
+    border-right: 1px solid var(--line);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .info-item:last-child { border-right: none; }
+  .info-label {
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    color: rgba(168,168,168,0.35);
+    text-transform: uppercase;
+  }
+  .info-val {
+    font-size: 13px;
+    color: rgba(168,168,168,0.7);
+  }
+
+  @media (max-width: 768px) {
+    .cotizar-inner { padding: 64px 24px; }
+    .info-bar { grid-template-columns: 1fr; }
+    .info-item { border-right: none; border-bottom: 1px solid var(--line); }
+    .info-item:last-child { border-bottom: none; }
+  }
+</style>

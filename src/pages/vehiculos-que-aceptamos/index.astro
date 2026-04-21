@@ -1,0 +1,177 @@
+---
+import Page from '../../layouts/Page.astro';
+import CTASection from '../../components/CTASection.astro';
+---
+<Page
+  title="Vehículos que Aceptamos para Préstamo con Garantía | SWIP"
+  description="Autos de lujo, blindados, SUVs premium y vehículos de alto valor. BMW, Mercedes-Benz, Porsche, Land Rover, Lexus y más. Valuación especializada en México."
+>
+
+  <section class="page-hero">
+    <div class="hero-inner">
+      <p class="eyebrow">VEHÍCULOS · SWIP · MÉXICO</p>
+      <h1 class="hero-title">Sabemos valorar<br />lo que otros no.</h1>
+      <p class="hero-body">
+        Nos especializamos en el segmento que la mayoría de las empresas
+        no sabe cómo evaluar: vehículos de lujo, blindados y de alto valor.
+        La valuación correcta determina el monto correcto.
+      </p>
+    </div>
+  </section>
+
+  <!-- CATEGORÍAS -->
+  <section class="cats-section">
+    <div class="inner">
+
+      <div class="cat-block">
+        <div class="cat-header">
+          <p class="cat-eyebrow">CATEGORÍA PRINCIPAL</p>
+          <h2 class="cat-title">Autos de lujo</h2>
+        </div>
+        <div class="cat-body">
+          <p>Los vehículos de lujo representan el segmento donde SWIP tiene mayor especialización. Conocemos los valores reales de mercado, sabemos distinguir entre versiones y equipamientos, y valuamos con criterios que reflejan el activo real — no una tabla genérica.</p>
+          <div class="brands-grid">
+            <span>BMW</span><span>Mercedes-Benz</span><span>Porsche</span>
+            <span>Audi</span><span>Land Rover</span><span>Range Rover</span>
+            <span>Lexus</span><span>Cadillac</span><span>Volvo</span>
+            <span>Jaguar</span><span>Maserati</span><span>Genesis</span>
+            <span>Infiniti</span><span>Acura</span><span>Lincoln</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cat-block">
+        <div class="cat-header">
+          <p class="cat-eyebrow">ESPECIALIDAD ÚNICA</p>
+          <h2 class="cat-title">Autos blindados</h2>
+        </div>
+        <div class="cat-body">
+          <p>Los vehículos blindados tienen un valor diferente al del auto base — el blindaje certificado es un activo real con costo comprobable. La mayoría de las empresas no sabe cómo valuarlo correctamente y subestiman el vehículo. En SWIP reconocemos el valor del blindaje en la oferta.</p>
+          <p>Aceptamos blindajes de cualquier certificación: nivel II, III, III+, IV y superiores. Cualquier marca con blindaje instalado por armadoras certificadas.</p>
+          <div class="brands-grid">
+            <span>Cualquier marca con blindaje certificado</span>
+            <span>Blindaje instalado en armadora</span>
+            <span>Nivel II hasta NIJ IV</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cat-block">
+        <div class="cat-header">
+          <p class="cat-eyebrow">ALTO VALOR</p>
+          <h2 class="cat-title">Camionetas y SUVs premium</h2>
+        </div>
+        <div class="cat-body">
+          <p>Las camionetas de segmento alto tienen valores de mercado que pueden superar los de muchos autos de lujo. Valuamos con los mismos criterios de precisión que aplicamos a los demás segmentos.</p>
+          <div class="brands-grid">
+            <span>Toyota Land Cruiser</span><span>Ford Expedition</span>
+            <span>Chevrolet Suburban / Tahoe</span><span>RAM 1500 / 2500</span>
+            <span>Ford F-150 Platinum / Raptor</span><span>Nissan Patrol</span>
+            <span>Mercedes-Benz GLS / GLE</span><span>BMW X5 / X7</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cat-block cat-block--last">
+        <div class="cat-header">
+          <p class="cat-eyebrow">CASOS ESPECIALES</p>
+          <h2 class="cat-title">Clásicos y ediciones limitadas</h2>
+        </div>
+        <div class="cat-body">
+          <p>Vehículos clásicos con valor de mercado comprobable, ediciones limitadas, vehículos de colección y otros casos especiales se evalúan individualmente. Contáctanos para una valoración preliminar.</p>
+          <p>Para estos casos la valuación requiere documentación adicional y puede tomar más tiempo. El resultado suele ser una oferta más precisa y mejor que la de cualquier otro prestamista.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LO QUE NO ACEPTAMOS -->
+  <section class="no-section">
+    <div class="inner">
+      <p class="section-eyebrow">LO QUE NO ACEPTAMOS</p>
+      <h2 class="section-title">Claridad desde el inicio.</h2>
+      <div class="no-grid">
+        <div class="no-item">
+          <p class="no-title">Vehículos con reporte de robo</p>
+          <p class="no-desc">Verificamos en bases de datos oficiales. No aceptamos vehículos con cualquier tipo de reporte activo.</p>
+        </div>
+        <div class="no-item">
+          <p class="no-title">Autos con factura a nombre de empresa (casos especiales)</p>
+          <p class="no-desc">Puede ser posible bajo ciertas condiciones. Contáctanos para evaluar tu caso.</p>
+        </div>
+        <div class="no-item">
+          <p class="no-title">Vehículos de trabajo de valor bajo</p>
+          <p class="no-desc">Nos especializamos en vehículos de valor. Para autos populares de segmento bajo existen otras opciones en el mercado más adecuadas.</p>
+        </div>
+        <div class="no-item">
+          <p class="no-title">Motocicletas</p>
+          <p class="no-desc">Por el momento no operamos con motocicletas como garantía.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTASection
+    eyebrow="¿TU AUTO APLICA?"
+    title="Cuéntanos sobre tu vehículo."
+    body="Si tienes dudas sobre si tu auto es elegible, escríbenos. La evaluación preliminar es gratuita y sin compromiso."
+  />
+
+</Page>
+
+<style>
+  .page-hero { border-bottom: 1px solid var(--line); }
+  .hero-inner { max-width: 1280px; margin: 0 auto; padding: 96px 64px 80px; }
+  .eyebrow { font-size: 9px; letter-spacing: 0.42em; color: rgba(168,168,168,0.45); text-transform: uppercase; margin-bottom: 28px; }
+  .hero-title { font-size: clamp(44px, 5.5vw, 80px); font-weight: 400; color: var(--white); letter-spacing: -0.02em; line-height: 1.0; margin-bottom: 24px; }
+  .hero-body { max-width: 560px; font-size: 15px; color: rgba(168,168,168,0.78); line-height: 1.85; }
+
+  .cats-section { border-bottom: 1px solid var(--line); }
+  .inner { max-width: 1280px; margin: 0 auto; padding: 96px 64px; }
+
+  .cat-block {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 80px;
+    padding: 72px 0;
+    border-bottom: 1px solid var(--line);
+    align-items: start;
+  }
+  .cat-block--last { border-bottom: none; }
+  .cat-eyebrow { font-size: 9px; letter-spacing: 0.38em; color: rgba(168,168,168,0.3); text-transform: uppercase; margin-bottom: 16px; }
+  .cat-title { font-size: clamp(22px, 2.5vw, 34px); font-weight: 300; color: var(--white); letter-spacing: -0.02em; line-height: 1.1; }
+  .cat-body p { font-size: 14px; color: rgba(168,168,168,0.7); line-height: 1.85; margin-bottom: 16px; max-width: 600px; }
+
+  .brands-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+  }
+  .brands-grid span {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(168,168,168,0.5);
+    border: 1px solid var(--line);
+    padding: 6px 14px;
+  }
+
+  .no-section { border-bottom: 1px solid var(--line); }
+  .section-eyebrow { font-size: 9px; letter-spacing: 0.42em; color: rgba(168,168,168,0.38); text-transform: uppercase; margin-bottom: 20px; }
+  .section-title { font-size: clamp(28px, 3.5vw, 48px); font-weight: 300; color: var(--white); letter-spacing: -0.02em; line-height: 1.05; margin-bottom: 56px; }
+  .no-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .no-item { background: var(--black); padding: 36px 32px; }
+  .no-title { font-size: 13px; font-weight: 500; color: rgba(255,255,255,0.6); margin-bottom: 10px; }
+  .no-desc { font-size: 13px; color: rgba(168,168,168,0.5); line-height: 1.75; }
+
+  @media (max-width: 1024px) {
+    .cat-block { grid-template-columns: 1fr; gap: 24px; }
+  }
+  @media (max-width: 768px) {
+    .hero-inner, .inner { padding: 64px 24px; }
+    .no-grid { grid-template-columns: 1fr; }
+    .cat-block { padding: 48px 0; }
+  }
+</style>

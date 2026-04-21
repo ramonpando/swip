@@ -1,0 +1,172 @@
+---
+import Page from '../../layouts/Page.astro';
+import CTASection from '../../components/CTASection.astro';
+---
+<Page
+  title="Requisitos para Préstamo con Garantía de Auto | SWIP"
+  description="Conoce los requisitos para solicitar tu préstamo con garantía vehicular en SWIP. Documentación mínima, proceso ágil. Especialistas en autos de lujo y blindados en México."
+>
+
+  <section class="page-hero">
+    <div class="hero-inner">
+      <p class="eyebrow">REQUISITOS · SWIP · MÉXICO</p>
+      <h1 class="hero-title">Documentación mínima.<br />Proceso máximo.</h1>
+      <p class="hero-body">
+        No pedimos lo que no necesitamos. La lista es corta porque nuestro
+        negocio es evaluar el vehículo, no auditarte a ti.
+      </p>
+    </div>
+  </section>
+
+  <!-- REQUISITOS PRINCIPALES -->
+  <section class="reqs-section">
+    <div class="reqs-inner">
+      <div class="reqs-col">
+        <p class="col-eyebrow">DOCUMENTOS PERSONALES</p>
+        <ul class="req-list">
+          <li>
+            <span class="req-name">Identificación oficial vigente</span>
+            <span class="req-detail">INE/IFE, pasaporte o cédula profesional</span>
+          </li>
+          <li>
+            <span class="req-name">Comprobante de domicilio</span>
+            <span class="req-detail">No mayor a 3 meses. CFE, Telmex, agua o estado de cuenta</span>
+          </li>
+          <li>
+            <span class="req-name">Cuenta bancaria a tu nombre</span>
+            <span class="req-detail">Para recibir el depósito. Cualquier banco mexicano</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="reqs-col">
+        <p class="col-eyebrow">DOCUMENTOS DEL VEHÍCULO</p>
+        <ul class="req-list">
+          <li>
+            <span class="req-name">Factura original a tu nombre</span>
+            <span class="req-detail">Si el vehículo tiene crédito vigente, contáctanos para evaluar tu caso</span>
+          </li>
+          <li>
+            <span class="req-name">Tarjeta de circulación vigente</span>
+            <span class="req-detail">Verificación vehicular al corriente en CDMX</span>
+          </li>
+          <li>
+            <span class="req-name">Placas y documentación completa</span>
+            <span class="req-detail">Sin reporte de robo. Verificable en bases de datos oficiales</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- LO QUE NO PEDIMOS -->
+  <section class="no-req-section">
+    <div class="inner">
+      <p class="section-eyebrow">LO QUE NO PEDIMOS</p>
+      <h2 class="section-title">Sin burocracia innecesaria.</h2>
+      <div class="no-req-grid">
+        <div class="no-req-item">
+          <span class="no-icon">—</span>
+          <div>
+            <p class="no-title">Buró de crédito</p>
+            <p class="no-desc">No consultamos historial crediticio. Tu vehículo es la garantía, no tu historial bancario.</p>
+          </div>
+        </div>
+        <div class="no-req-item">
+          <span class="no-icon">—</span>
+          <div>
+            <p class="no-title">Comprobante de ingresos</p>
+            <p class="no-desc">No necesitas demostrar ingresos fijos ni laborales. Ideal para empresarios e independientes.</p>
+          </div>
+        </div>
+        <div class="no-req-item">
+          <span class="no-icon">—</span>
+          <div>
+            <p class="no-title">Aval o codeudor</p>
+            <p class="no-desc">No requerimos que alguien más firme contigo ni respalde el préstamo.</p>
+          </div>
+        </div>
+        <div class="no-req-item">
+          <span class="no-icon">—</span>
+          <div>
+            <p class="no-title">Estados de cuenta bancarios</p>
+            <p class="no-desc">No revisamos tus movimientos bancarios ni situación financiera personal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR MODALIDAD -->
+  <section class="modal-req-section">
+    <div class="inner">
+      <p class="section-eyebrow">SEGÚN LA MODALIDAD</p>
+      <h2 class="section-title">Una condición adicional<br />por modalidad.</h2>
+      <div class="modal-grid">
+        <div class="modal-card">
+          <p class="modal-tag">CON RESGUARDO</p>
+          <h3>Entrega del vehículo</h3>
+          <p>Dejas el vehículo en nuestras instalaciones durante el plazo del préstamo. No se requiere ningún documento adicional fuera de la lista base. El auto queda asegurado y bajo custodia certificada.</p>
+          <p class="modal-benefit">✓ Montos más altos · ✓ Mejores condiciones</p>
+        </div>
+        <div class="modal-card">
+          <p class="modal-tag">SIN RESGUARDO</p>
+          <h3>Instalación de GPS</h3>
+          <p>Para conservar el uso de tu vehículo se requiere la instalación de un dispositivo GPS activo. La instalación es coordinada por SWIP y no altera el vehículo de forma permanente.</p>
+          <p class="modal-benefit">✓ Conservas la movilidad · Hasta $400,000 MXN</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTASection
+    eyebrow="¿TIENES LOS DOCUMENTOS?"
+    title="Inicia tu cotización."
+    body="Si tienes identificación, factura del vehículo y comprobante de domicilio, estás listo para solicitar."
+  />
+
+</Page>
+
+<style>
+  .page-hero { border-bottom: 1px solid var(--line); }
+  .hero-inner { max-width: 1280px; margin: 0 auto; padding: 96px 64px 80px; }
+  .eyebrow { font-size: 9px; letter-spacing: 0.42em; color: rgba(168,168,168,0.45); text-transform: uppercase; margin-bottom: 28px; }
+  .hero-title { font-size: clamp(44px, 5.5vw, 80px); font-weight: 400; color: var(--white); letter-spacing: -0.02em; line-height: 1.0; margin-bottom: 24px; }
+  .hero-body { max-width: 520px; font-size: 15px; color: rgba(168,168,168,0.78); line-height: 1.85; }
+
+  /* REQS */
+  .reqs-section { border-bottom: 1px solid var(--line); }
+  .reqs-inner { max-width: 1280px; margin: 0 auto; padding: 96px 64px; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
+  .col-eyebrow { font-size: 9px; letter-spacing: 0.42em; color: rgba(168,168,168,0.35); text-transform: uppercase; margin-bottom: 40px; }
+  .req-list { list-style: none; display: flex; flex-direction: column; gap: 0; }
+  .req-list li { padding: 24px 0; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 6px; }
+  .req-list li:last-child { border-bottom: none; }
+  .req-name { font-size: 15px; font-weight: 400; color: var(--white); }
+  .req-detail { font-size: 12px; color: rgba(168,168,168,0.52); letter-spacing: 0.04em; }
+
+  /* NO REQ */
+  .no-req-section { border-bottom: 1px solid var(--line); }
+  .inner { max-width: 1280px; margin: 0 auto; padding: 96px 64px; }
+  .section-eyebrow { font-size: 9px; letter-spacing: 0.42em; color: rgba(168,168,168,0.38); text-transform: uppercase; margin-bottom: 20px; }
+  .section-title { font-size: clamp(28px, 3.5vw, 48px); font-weight: 300; color: var(--white); letter-spacing: -0.02em; line-height: 1.05; margin-bottom: 56px; }
+  .no-req-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .no-req-item { background: var(--black); padding: 36px 32px; display: flex; gap: 20px; align-items: start; }
+  .no-icon { font-size: 18px; color: rgba(168,168,168,0.2); flex-shrink: 0; margin-top: 2px; }
+  .no-title { font-size: 14px; font-weight: 500; color: var(--white); margin-bottom: 8px; }
+  .no-desc { font-size: 13px; color: rgba(168,168,168,0.6); line-height: 1.75; }
+
+  /* MODAL REQ */
+  .modal-req-section { border-bottom: 1px solid var(--line); }
+  .modal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 56px; }
+  .modal-card { background: var(--black); padding: 48px 40px; }
+  .modal-tag { font-size: 9px; letter-spacing: 0.38em; color: rgba(168,168,168,0.3); text-transform: uppercase; margin-bottom: 16px; }
+  .modal-card h3 { font-size: 20px; font-weight: 400; color: var(--white); margin-bottom: 16px; }
+  .modal-card p { font-size: 14px; color: rgba(168,168,168,0.68); line-height: 1.8; margin-bottom: 12px; }
+  .modal-benefit { font-size: 10px; letter-spacing: 0.2em; color: var(--green-mid); text-transform: uppercase; border-top: 1px solid var(--line); padding-top: 16px; margin-top: 8px; }
+
+  @media (max-width: 768px) {
+    .hero-inner, .inner { padding: 64px 24px; }
+    .reqs-inner { grid-template-columns: 1fr; gap: 48px; padding: 64px 24px; }
+    .no-req-grid, .modal-grid { grid-template-columns: 1fr; }
+  }
+</style>

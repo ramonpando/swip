@@ -1,0 +1,281 @@
+---
+import Page from '../../layouts/Page.astro';
+import CTASection from '../../components/CTASection.astro';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Cómo funciona el préstamo con garantía de auto en SWIP",
+  "description": "Proceso paso a paso para obtener liquidez usando tu vehículo como respaldo en SWIP México.",
+  "step": [
+    { "@type": "HowToStep", "position": 1, "name": "Contacto inicial", "text": "Compartes los datos básicos de tu vehículo y recibes un estimado en minutos." },
+    { "@type": "HowToStep", "position": 2, "name": "Valuación física", "text": "Un valuador SWIP revisa el vehículo en tu domicilio o en nuestras instalaciones." },
+    { "@type": "HowToStep", "position": 3, "name": "Oferta y contrato", "text": "Recibes una oferta clara con monto, tasa y plazo. Firmas si estás de acuerdo." },
+    { "@type": "HowToStep", "position": 4, "name": "Depósito en cuenta", "text": "Transferencia directa en menos de 24 horas de firmado el contrato." }
+  ]
+};
+---
+<Page
+  title="Cómo Funciona el Préstamo con Garantía de Auto | SWIP"
+  description="Conoce el proceso completo: desde el primer contacto hasta el depósito en tu cuenta. Cuatro pasos, menos de 24 horas, sin burocracia bancaria."
+  schema={schema}
+>
+
+  <section class="page-hero">
+    <div class="hero-inner">
+      <p class="eyebrow">PROCESO · SWIP · CDMX Y QUERÉTARO</p>
+      <h1 class="hero-title">Cuatro pasos.<br />Menos de 24 horas.</h1>
+      <p class="hero-body">
+        Diseñamos el proceso para que el trámite no sea el obstáculo.
+        Cada paso tiene un propósito claro y un tiempo definido.
+      </p>
+    </div>
+  </section>
+
+  <!-- PASOS DETALLADOS -->
+  <section class="steps-section">
+    <div class="step-row">
+      <div class="step-meta">
+        <span class="step-num">01</span>
+        <span class="step-tag">CONTACTO INICIAL</span>
+      </div>
+      <div class="step-content">
+        <h2 class="step-title">Cuéntanos sobre<br />tu vehículo.</h2>
+        <p>El proceso empieza con información básica: marca, modelo, año y kilometraje aproximado de tu vehículo. Puedes compartirla por WhatsApp o a través del cotizador conversacional.</p>
+        <p>En minutos recibes un estimado de rango — sin compromiso y sin que necesites salir de tu casa. El objetivo es que sepas desde el inicio si SWIP puede ayudarte y en qué condiciones.</p>
+        <div class="step-detail">
+          <span>Tiempo estimado: 10–15 minutos</span>
+          <span>Sin documentos en este paso</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="step-row">
+      <div class="step-meta">
+        <span class="step-num">02</span>
+        <span class="step-tag">VALUACIÓN FÍSICA</span>
+      </div>
+      <div class="step-content">
+        <h2 class="step-title">Revisamos el vehículo<br />donde estés.</h2>
+        <p>Un valuador SWIP agenda una visita a tu domicilio, oficina o el lugar que prefieras. También puedes llevar el vehículo a nuestras instalaciones si lo prefieres.</p>
+        <p>La valuación es profesional, documentada y gratuita. Revisamos condición mecánica, estética, historial y valor de mercado actual. Para vehículos de lujo y blindados aplicamos criterios especializados que la mayoría de las empresas no tienen.</p>
+        <div class="step-detail">
+          <span>Tiempo estimado: 45–90 minutos</span>
+          <span>Trae identificación y factura del vehículo</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="step-row">
+      <div class="step-meta">
+        <span class="step-num">03</span>
+        <span class="step-tag">OFERTA Y CONTRATO</span>
+      </div>
+      <div class="step-content">
+        <h2 class="step-title">Una oferta clara.<br />Sin letra chica.</h2>
+        <p>Con base en la valuación, recibes una propuesta formal: monto exacto, tasa de interés, plazo y condiciones. Todo por escrito, sin ambigüedades.</p>
+        <p>Si la oferta te convence, firmamos el contrato. Si no, no hay compromiso ni penalización. El contrato es el mismo estándar para todos — sin sorpresas después de la firma.</p>
+        <div class="step-detail">
+          <span>Tiempo estimado: 30–60 minutos</span>
+          <span>Documentación completa necesaria</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="step-row step-row--last">
+      <div class="step-meta">
+        <span class="step-num">04</span>
+        <span class="step-tag">DEPÓSITO EN CUENTA</span>
+      </div>
+      <div class="step-content">
+        <h2 class="step-title">El dinero en tu cuenta.<br />En menos de 24 horas.</h2>
+        <p>Una vez firmado el contrato, realizamos la transferencia directamente a tu cuenta bancaria. Sin intermediarios, sin efectivo, sin demoras innecesarias.</p>
+        <p>El plazo del préstamo empieza en ese momento. Tu ejecutivo SWIP queda disponible para cualquier duda durante toda la vigencia del contrato.</p>
+        <div class="step-detail">
+          <span>Transferencia en menos de 24 h</span>
+          <span>Ejecutivo dedicado durante todo el plazo</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODALIDADES -->
+  <section class="modal-section">
+    <div class="modal-inner">
+      <p class="section-eyebrow">MODALIDADES</p>
+      <h2 class="section-title">El proceso es el mismo.<br />La modalidad, tú la eliges.</h2>
+      <div class="modal-grid">
+        <div class="modal-card">
+          <p class="modal-tag">CON RESGUARDO</p>
+          <h3>Tu auto en instalaciones seguras.</h3>
+          <p>El vehículo queda bajo resguardo durante el plazo del préstamo. Instalaciones monitoreadas, seguro vigente y acceso controlado. Esta modalidad permite montos más altos y mejores condiciones.</p>
+          <p class="modal-amount">Sin límite de monto</p>
+        </div>
+        <div class="modal-card">
+          <p class="modal-tag">SIN RESGUARDO</p>
+          <h3>Sigues usando tu vehículo.</h3>
+          <p>Bajo ciertas condiciones y con monitoreo GPS activo, puedes conservar el uso de tu vehículo durante el plazo del préstamo. Ideal cuando la movilidad es una necesidad.</p>
+          <p class="modal-amount">Hasta $400,000 MXN</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRANSPARENCIA -->
+  <section class="trust-section">
+    <div class="trust-inner">
+      <p class="section-eyebrow">TRANSPARENCIA</p>
+      <h2 class="section-title">Lo que siempre<br />está claro.</h2>
+      <div class="trust-grid">
+        <div class="trust-item">
+          <p class="trust-label">Tasa de interés</p>
+          <p class="trust-desc">Fija desde el inicio. La conoces antes de firmar, no después.</p>
+        </div>
+        <div class="trust-item">
+          <p class="trust-label">Plazo del préstamo</p>
+          <p class="trust-desc">Definido en el contrato. Sin prórrogas automáticas ni sorpresas.</p>
+        </div>
+        <div class="trust-item">
+          <p class="trust-label">Pago anticipado</p>
+          <p class="trust-desc">Sin penalización. Puedes liquidar el préstamo en cualquier momento.</p>
+        </div>
+        <div class="trust-item">
+          <p class="trust-label">Resguardo del vehículo</p>
+          <p class="trust-desc">Instalaciones con seguro activo durante todo el plazo. Tu activo protegido.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTASection
+    eyebrow="SIGUIENTE PASO"
+    title="¿Listo para cotizar?"
+    body="Comparte los datos de tu vehículo y recibe un estimado en minutos. Sin compromiso."
+  />
+
+</Page>
+
+<style>
+  .page-hero {
+    border-bottom: 1px solid var(--line);
+  }
+  .hero-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 96px 64px 80px;
+  }
+  .eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.42em;
+    color: rgba(168,168,168,0.45);
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+  .hero-title {
+    font-size: clamp(44px, 5.5vw, 80px);
+    font-weight: 400;
+    color: var(--white);
+    letter-spacing: -0.02em;
+    line-height: 1.0;
+    margin-bottom: 24px;
+  }
+  .hero-body {
+    max-width: 520px;
+    font-size: 15px;
+    color: rgba(168,168,168,0.78);
+    line-height: 1.85;
+  }
+
+  /* STEPS */
+  .steps-section {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .step-row {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 80px;
+    padding: 72px 64px;
+    border-bottom: 1px solid var(--line);
+    align-items: start;
+  }
+  .step-row--last { border-bottom: none; }
+  .step-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: sticky;
+    top: 100px;
+  }
+  .step-num {
+    font-size: 48px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.08);
+    letter-spacing: -0.04em;
+    line-height: 1;
+  }
+  .step-tag {
+    font-size: 9px;
+    letter-spacing: 0.38em;
+    color: rgba(168,168,168,0.35);
+    text-transform: uppercase;
+  }
+  .step-content h2 {
+    font-size: clamp(24px, 2.8vw, 38px);
+    font-weight: 300;
+    color: var(--white);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+  .step-content p {
+    font-size: 15px;
+    color: rgba(168,168,168,0.72);
+    line-height: 1.85;
+    max-width: 600px;
+    margin-bottom: 16px;
+  }
+  .step-detail {
+    display: flex;
+    gap: 32px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+  }
+  .step-detail span {
+    font-size: 10px;
+    letter-spacing: 0.24em;
+    color: rgba(168,168,168,0.38);
+    text-transform: uppercase;
+  }
+
+  /* MODALIDADES */
+  .modal-section { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .modal-inner { max-width: 1280px; margin: 0 auto; padding: 96px 64px; }
+  .section-eyebrow { font-size: 9px; letter-spacing: 0.42em; color: rgba(168,168,168,0.38); text-transform: uppercase; margin-bottom: 20px; }
+  .section-title { font-size: clamp(28px, 3.5vw, 48px); font-weight: 300; color: var(--white); letter-spacing: -0.02em; line-height: 1.05; margin-bottom: 56px; }
+  .modal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .modal-card { background: var(--black); padding: 48px 40px; }
+  .modal-tag { font-size: 9px; letter-spacing: 0.38em; color: rgba(168,168,168,0.3); text-transform: uppercase; margin-bottom: 16px; }
+  .modal-card h3 { font-size: 20px; font-weight: 400; color: var(--white); letter-spacing: -0.01em; margin-bottom: 16px; }
+  .modal-card p { font-size: 14px; color: rgba(168,168,168,0.68); line-height: 1.8; margin-bottom: 12px; }
+  .modal-amount { font-size: 10px; letter-spacing: 0.26em; color: rgba(255,255,255,0.28); text-transform: uppercase; border-top: 1px solid var(--line); padding-top: 16px; margin-top: 8px; }
+
+  /* TRUST */
+  .trust-section { border-bottom: 1px solid var(--line); }
+  .trust-inner { max-width: 1280px; margin: 0 auto; padding: 96px 64px; }
+  .trust-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 56px; }
+  .trust-item { background: var(--black); padding: 36px 32px; }
+  .trust-label { font-size: 13px; font-weight: 500; color: var(--white); margin-bottom: 10px; }
+  .trust-desc { font-size: 13px; color: rgba(168,168,168,0.6); line-height: 1.75; }
+
+  @media (max-width: 1024px) {
+    .trust-grid { grid-template-columns: repeat(2,1fr); }
+  }
+  @media (max-width: 768px) {
+    .hero-inner, .modal-inner, .trust-inner { padding: 64px 24px; }
+    .step-row { grid-template-columns: 1fr; gap: 24px; padding: 56px 24px; }
+    .step-meta { flex-direction: row; align-items: center; position: static; }
+    .step-num { font-size: 32px; }
+    .modal-grid, .trust-grid { grid-template-columns: 1fr; }
+  }
+</style>

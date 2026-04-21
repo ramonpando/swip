@@ -1,0 +1,89 @@
+---
+import Page from '../../layouts/Page.astro';
+---
+<Page
+  title="Términos de Uso | SWIP"
+  description="Términos y condiciones de uso del sitio web de SWIP."
+  noindex={true}
+>
+  <section class="legal-hero">
+    <div class="hero-inner">
+      <p class="eyebrow">LEGAL · SWIP</p>
+      <h1 class="hero-title">Términos de Uso</h1>
+      <p class="hero-meta">Última actualización: enero 2026</p>
+    </div>
+  </section>
+
+  <section class="legal-body">
+    <div class="legal-inner">
+
+      <div class="legal-block">
+        <h2>Aceptación de los términos</h2>
+        <p>Al acceder y utilizar el sitio web swip.mx (en adelante "el Sitio"), usted acepta estar sujeto a los presentes Términos de Uso. Si no está de acuerdo con alguno de estos términos, le pedimos que no utilice el Sitio.</p>
+      </div>
+
+      <div class="legal-block">
+        <h2>Uso del sitio</h2>
+        <p>El Sitio tiene como finalidad proporcionar información sobre los servicios de préstamo con garantía vehicular de SWIP y facilitar el contacto con nuestro equipo. El usuario se compromete a:</p>
+        <ul>
+          <li>Utilizar el Sitio únicamente para fines lícitos y conforme a la ley.</li>
+          <li>No reproducir, distribuir o modificar el contenido del Sitio sin autorización expresa.</li>
+          <li>No intentar acceder a sistemas o información no autorizados.</li>
+          <li>Proporcionar información veraz al momento de contactar a SWIP.</li>
+        </ul>
+      </div>
+
+      <div class="legal-block">
+        <h2>Propiedad intelectual</h2>
+        <p>Todos los contenidos del Sitio — incluyendo textos, imágenes, logotipos, diseño y código fuente — son propiedad de SWIP o de sus licenciantes y están protegidos por las leyes aplicables de propiedad intelectual. Queda prohibida su reproducción total o parcial sin autorización previa y por escrito.</p>
+      </div>
+
+      <div class="legal-block">
+        <h2>Información y servicios</h2>
+        <p>La información publicada en el Sitio tiene carácter informativo y referencial. Las condiciones específicas de cada préstamo (monto, tasa, plazo) se determinan mediante evaluación individual y se formalizan en el contrato correspondiente.</p>
+        <p>SWIP se reserva el derecho de modificar, suspender o descontinuar cualquier aspecto del Sitio en cualquier momento y sin previo aviso.</p>
+      </div>
+
+      <div class="legal-block">
+        <h2>Limitación de responsabilidad</h2>
+        <p>SWIP no garantiza la disponibilidad continua del Sitio ni la ausencia de errores en su contenido. En la medida permitida por la ley, SWIP no será responsable por daños directos, indirectos, incidentales o consecuentes derivados del uso o imposibilidad de uso del Sitio.</p>
+      </div>
+
+      <div class="legal-block">
+        <h2>Modificaciones</h2>
+        <p>SWIP se reserva el derecho de modificar estos Términos de Uso en cualquier momento. Las modificaciones entrarán en vigor desde su publicación en el Sitio. El uso continuado del Sitio implica la aceptación de los términos vigentes.</p>
+      </div>
+
+      <div class="legal-block">
+        <h2>Legislación aplicable</h2>
+        <p>Estos Términos de Uso se rigen por las leyes de los Estados Unidos Mexicanos. Para cualquier controversia derivada del uso del Sitio, las partes se someten a la jurisdicción de los tribunales competentes de la Ciudad de México, renunciando a cualquier otro fuero que pudiera corresponderles.</p>
+      </div>
+
+      <div class="legal-block">
+        <h2>Contacto</h2>
+        <p>Para cualquier consulta relacionada con estos Términos de Uso, puede contactarnos en: <a href="mailto:patricia_bernal@swip.mx">patricia_bernal@swip.mx</a></p>
+      </div>
+
+    </div>
+  </section>
+</Page>
+
+<style>
+  .legal-hero { border-bottom: 1px solid var(--line); }
+  .hero-inner { max-width: 1280px; margin: 0 auto; padding: 80px 64px 64px; }
+  .eyebrow { font-size: 9px; letter-spacing: 0.42em; color: rgba(168,168,168,0.4); text-transform: uppercase; margin-bottom: 24px; }
+  .hero-title { font-size: clamp(32px, 4vw, 56px); font-weight: 300; color: var(--white); letter-spacing: -0.02em; margin-bottom: 12px; }
+  .hero-meta { font-size: 12px; color: rgba(168,168,168,0.4); letter-spacing: 0.08em; }
+
+  .legal-body { border-bottom: 1px solid var(--line); }
+  .legal-inner { max-width: 800px; margin: 0 auto; padding: 80px 64px; }
+
+  .legal-block { margin-bottom: 48px; padding-bottom: 48px; border-bottom: 1px solid var(--line); }
+  .legal-block:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .legal-block h2 { font-size: 16px; font-weight: 500; color: var(--white); margin-bottom: 16px; letter-spacing: -0.01em; }
+  .legal-block p { font-size: 14px; color: rgba(168,168,168,0.7); line-height: 1.9; margin-bottom: 12px; }
+  .legal-block ul { list-style: none; padding: 0; margin: 12px 0; display: flex; flex-direction: column; gap: 8px; }
+  .legal-block li { font-size: 14px; color: rgba(168,168,168,0.65); line-height: 1.7; padding-left: 16px; position: relative; }
+  .legal-block li::before { content: '—'; position: absolute; left: 0; color: rgba(168,168,168,0.25); }
+  .legal-block a { color: rgba(168,168,168,0.8); text-decoration: underline; text-underline-offset: 3px; }
+</style>

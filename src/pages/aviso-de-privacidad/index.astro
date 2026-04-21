@@ -1,0 +1,115 @@
+---
+import Page from '../../layouts/Page.astro';
+---
+<Page
+  title="Aviso de Privacidad | SWIP"
+  description="Aviso de privacidad de SWIP conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP)."
+  noindex={true}
+>
+  <section class="legal-hero">
+    <div class="hero-inner">
+      <p class="eyebrow">LEGAL · SWIP</p>
+      <h1 class="hero-title">Aviso de Privacidad</h1>
+      <p class="hero-meta">Última actualización: enero 2026</p>
+    </div>
+  </section>
+
+  <section class="legal-body">
+    <div class="legal-inner">
+
+      <div class="legal-block">
+        <h2>Responsable del tratamiento de datos</h2>
+        <p>SWIP (en adelante "SWIP" o "el Responsable") es responsable del tratamiento de sus datos personales. Para ejercer cualquier derecho en relación con sus datos personales puede contactarnos en: <a href="mailto:patricia_bernal@swip.mx">patricia_bernal@swip.mx</a></p>
+      </div>
+
+      <div class="legal-block">
+        <h2>Datos personales que recabamos</h2>
+        <p>Para la prestación de nuestros servicios de préstamo con garantía vehicular, recabamos los siguientes datos personales:</p>
+        <ul>
+          <li>Datos de identificación: nombre completo, CURP, RFC, fecha de nacimiento.</li>
+          <li>Datos de contacto: domicilio, teléfono, correo electrónico.</li>
+          <li>Datos del vehículo: marca, modelo, año, número de serie (VIN), número de motor, placas, factura.</li>
+          <li>Datos financieros: cuenta bancaria para depósito del préstamo.</li>
+          <li>Datos de geolocalización: en la modalidad sin resguardo, mediante dispositivo GPS instalado en el vehículo.</li>
+        </ul>
+        <p>No recabamos datos personales sensibles en el sentido de la LFPDPPP (como origen racial, estado de salud, creencias religiosas, preferencia sexual, etc.).</p>
+      </div>
+
+      <div class="legal-block">
+        <h2>Finalidades del tratamiento</h2>
+        <p><strong>Finalidades primarias (necesarias para la relación contractual):</strong></p>
+        <ul>
+          <li>Evaluación del vehículo y determinación del monto del préstamo.</li>
+          <li>Formalización y ejecución del contrato de préstamo con garantía vehicular.</li>
+          <li>Gestión del cobro y seguimiento del préstamo durante su vigencia.</li>
+          <li>Cumplimiento de obligaciones legales y regulatorias.</li>
+        </ul>
+        <p><strong>Finalidades secundarias (puede negarse sin afectar la relación contractual):</strong></p>
+        <ul>
+          <li>Envío de información sobre nuevos productos o servicios.</li>
+          <li>Evaluación de calidad del servicio y satisfacción del cliente.</li>
+        </ul>
+        <p>Si no desea que sus datos sean utilizados para finalidades secundarias, puede manifestarlo enviando un correo a <a href="mailto:patricia_bernal@swip.mx">patricia_bernal@swip.mx</a></p>
+      </div>
+
+      <div class="legal-block">
+        <h2>Transferencia de datos personales</h2>
+        <p>SWIP no comparte, vende ni cede sus datos personales a terceros, salvo en los siguientes casos:</p>
+        <ul>
+          <li>Cuando sea requerido por autoridades competentes conforme a la ley.</li>
+          <li>Empresas aseguradoras para la contratación del seguro del vehículo en resguardo.</li>
+          <li>Empresas de verificación de datos para validación de la factura y situación del vehículo.</li>
+        </ul>
+        <p>En todos los casos, los terceros están obligados a mantener la confidencialidad de los datos y usarlos únicamente para la finalidad para la que fueron transferidos.</p>
+      </div>
+
+      <div class="legal-block">
+        <h2>Derechos ARCO</h2>
+        <p>Usted tiene derecho a Acceder, Rectificar, Cancelar u Oponerse al tratamiento de sus datos personales (derechos ARCO). Para ejercerlos, envíe una solicitud a <a href="mailto:patricia_bernal@swip.mx">patricia_bernal@swip.mx</a> indicando:</p>
+        <ul>
+          <li>Nombre completo y datos de contacto.</li>
+          <li>Copia de identificación oficial.</li>
+          <li>Descripción clara del derecho que desea ejercer.</li>
+        </ul>
+        <p>Responderemos su solicitud en un plazo máximo de 20 días hábiles.</p>
+      </div>
+
+      <div class="legal-block">
+        <h2>Uso de cookies</h2>
+        <p>Nuestro sitio web puede utilizar cookies y tecnologías de rastreo para mejorar la experiencia del usuario y con fines analíticos. Puede configurar su navegador para rechazar cookies, aunque esto puede afectar la funcionalidad del sitio.</p>
+      </div>
+
+      <div class="legal-block">
+        <h2>Cambios al aviso de privacidad</h2>
+        <p>SWIP se reserva el derecho de modificar este aviso de privacidad en cualquier momento. Las modificaciones serán publicadas en este sitio web con la fecha de actualización correspondiente. El uso continuado del sitio o de nuestros servicios después de la publicación de cambios implica la aceptación de los mismos.</p>
+      </div>
+
+    </div>
+  </section>
+</Page>
+
+<style>
+  .legal-hero { border-bottom: 1px solid var(--line); }
+  .hero-inner { max-width: 1280px; margin: 0 auto; padding: 80px 64px 64px; }
+  .eyebrow { font-size: 9px; letter-spacing: 0.42em; color: rgba(168,168,168,0.4); text-transform: uppercase; margin-bottom: 24px; }
+  .hero-title { font-size: clamp(32px, 4vw, 56px); font-weight: 300; color: var(--white); letter-spacing: -0.02em; margin-bottom: 12px; }
+  .hero-meta { font-size: 12px; color: rgba(168,168,168,0.4); letter-spacing: 0.08em; }
+
+  .legal-body { border-bottom: 1px solid var(--line); }
+  .legal-inner { max-width: 800px; margin: 0 auto; padding: 80px 64px; }
+
+  .legal-block { margin-bottom: 48px; padding-bottom: 48px; border-bottom: 1px solid var(--line); }
+  .legal-block:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+  .legal-block h2 { font-size: 16px; font-weight: 500; color: var(--white); margin-bottom: 16px; letter-spacing: -0.01em; }
+  .legal-block p { font-size: 14px; color: rgba(168,168,168,0.7); line-height: 1.9; margin-bottom: 12px; }
+  .legal-block ul { list-style: none; padding: 0; margin: 12px 0; display: flex; flex-direction: column; gap: 8px; }
+  .legal-block li { font-size: 14px; color: rgba(168,168,168,0.65); line-height: 1.7; padding-left: 16px; position: relative; }
+  .legal-block li::before { content: '—'; position: absolute; left: 0; color: rgba(168,168,168,0.25); }
+  .legal-block a { color: rgba(168,168,168,0.8); text-decoration: underline; text-underline-offset: 3px; }
+  .legal-block strong { color: rgba(255,255,255,0.7); font-weight: 500; }
+
+  @media (max-width: 768px) {
+    .hero-inner, .legal-inner { padding: 56px 24px; }
+  }
+</style>

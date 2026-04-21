@@ -3,18 +3,39 @@ import Page from '../../layouts/Page.astro';
 import CTASection from '../../components/CTASection.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
 
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "Cómo funciona el préstamo con garantía de auto en SWIP",
-  "description": "Proceso paso a paso para obtener liquidez usando tu vehículo como respaldo en SWIP México.",
-  "step": [
-    { "@type": "HowToStep", "position": 1, "name": "Contacto inicial", "text": "Compartes los datos básicos de tu vehículo y recibes un estimado en minutos." },
-    { "@type": "HowToStep", "position": 2, "name": "Valuación física", "text": "Un valuador SWIP revisa el vehículo en tu domicilio o en nuestras instalaciones." },
-    { "@type": "HowToStep", "position": 3, "name": "Oferta y contrato", "text": "Recibes una oferta clara con monto, tasa y plazo. Firmas si estás de acuerdo." },
-    { "@type": "HowToStep", "position": 4, "name": "Depósito en cuenta", "text": "Transferencia directa en menos de 24 horas de firmado el contrato." }
-  ]
-};
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Cómo funciona el préstamo con garantía de auto en SWIP",
+    "description": "Proceso paso a paso para obtener liquidez usando tu vehículo como respaldo en SWIP México.",
+    "url": "https://swip.mx/como-funciona/",
+    "step": [
+      { "@type": "HowToStep", "position": 1, "name": "Contacto inicial", "text": "Compartes los datos básicos de tu vehículo y recibes un estimado en minutos." },
+      { "@type": "HowToStep", "position": 2, "name": "Valuación física", "text": "Un valuador SWIP revisa el vehículo en tu domicilio o en nuestras instalaciones." },
+      { "@type": "HowToStep", "position": 3, "name": "Oferta y contrato", "text": "Recibes una oferta clara con monto, tasa y plazo. Firmas si estás de acuerdo." },
+      { "@type": "HowToStep", "position": 4, "name": "Depósito en cuenta", "text": "Transferencia directa en menos de 24 horas de firmado el contrato." }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://swip.mx/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Cómo funciona",
+        "item": "https://swip.mx/como-funciona/"
+      }
+    ]
+  }
+];
 ---
 <Page
   title="Cómo Funciona el Préstamo con Garantía de Auto | SWIP"

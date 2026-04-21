@@ -14,15 +14,43 @@ const faqs = [
   { q: '¿Cuánto puedo obtener por un auto blindado?', a: 'Depende del vehículo base y del nivel de blindaje. Un vehículo blindado de segmento premium puede generar préstamos significativamente más altos que el mismo modelo sin blindaje. Para un estimado, contáctanos con marca, modelo, año y nivel de blindaje aproximado.' },
 ];
 
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "FinancialService",
-  "name": "Préstamo con Garantía de Autos Blindados — SWIP",
-  "description": "Préstamo con garantía de autos blindados en México. Valuación especializada que reconoce el valor real del blindaje. Proceso discreto y profesional.",
-  "url": "https://swip.mx/prestamo-con-garantia-de-autos-blindados/",
-  "provider": { "@id": "https://swip.mx/#organization" },
-  "areaServed": "MX"
-};
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Préstamo con Garantía de Autos Blindados — SWIP",
+    "description": "Préstamo con garantía de autos blindados en México. Valuación especializada que reconoce el valor real del blindaje. Proceso discreto y profesional.",
+    "url": "https://swip.mx/prestamo-con-garantia-de-autos-blindados/",
+    "provider": { "@id": "https://swip.mx/#organization" },
+    "areaServed": "MX",
+    "serviceType": "Préstamo con garantía de autos blindados",
+    "mainEntityOfPage": "https://swip.mx/prestamo-con-garantia-de-autos-blindados/"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://swip.mx/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Vehículos que aceptamos",
+        "item": "https://swip.mx/vehiculos-que-aceptamos/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Autos blindados",
+        "item": "https://swip.mx/prestamo-con-garantia-de-autos-blindados/"
+      }
+    ]
+  }
+];
 ---
 <Page
   title="Préstamo con Garantía de Autos Blindados en México | SWIP"

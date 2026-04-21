@@ -2,10 +2,42 @@
 import Page from '../../layouts/Page.astro';
 import CTASection from '../../components/CTASection.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://swip.mx/requisitos/#webpage",
+    "url": "https://swip.mx/requisitos/",
+    "name": "Requisitos para préstamo con garantía de auto | SWIP",
+    "description": "Documentación y condiciones básicas para solicitar un préstamo con garantía vehicular en SWIP.",
+    "inLanguage": "es-MX",
+    "about": { "@id": "https://swip.mx/#financial-service" }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://swip.mx/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Requisitos",
+        "item": "https://swip.mx/requisitos/"
+      }
+    ]
+  }
+];
 ---
 <Page
   title="Requisitos para Préstamo con Garantía de Auto | SWIP"
   description="Conoce los requisitos para solicitar tu préstamo con garantía vehicular en SWIP. Documentación mínima, proceso ágil. Especialistas en autos de lujo y blindados en México."
+  schema={schema}
 >
 
   <section class="page-hero">

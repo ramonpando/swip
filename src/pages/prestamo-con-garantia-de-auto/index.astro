@@ -15,16 +15,38 @@ const faqs = [
   { q: '¿Qué documentos necesito?', a: 'Los documentos básicos son: factura original del vehículo, identificación oficial vigente, comprobante de domicilio y tarjeta de circulación. En algunos casos se pueden requerir documentos adicionales según el perfil del vehículo.' },
 ];
 
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "FinancialService",
-  "name": "Préstamo con Garantía de Auto — SWIP",
-  "description": "Préstamo con garantía vehicular en México. Obtén liquidez usando tu auto como respaldo sin venderlo.",
-  "url": "https://swip.mx/prestamo-con-garantia-de-auto/",
-  "provider": { "@id": "https://swip.mx/#organization" },
-  "areaServed": "MX",
-  "currenciesAccepted": "MXN"
-};
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Préstamo con Garantía de Auto — SWIP",
+    "description": "Préstamo con garantía vehicular en México. Obtén liquidez usando tu auto como respaldo sin venderlo.",
+    "url": "https://swip.mx/prestamo-con-garantia-de-auto/",
+    "provider": { "@id": "https://swip.mx/#organization" },
+    "areaServed": "MX",
+    "currenciesAccepted": "MXN",
+    "serviceType": "Préstamo con garantía vehicular",
+    "mainEntityOfPage": "https://swip.mx/prestamo-con-garantia-de-auto/"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://swip.mx/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Préstamo con garantía de auto",
+        "item": "https://swip.mx/prestamo-con-garantia-de-auto/"
+      }
+    ]
+  }
+];
 ---
 <Page
   title="Préstamo con Garantía de Auto en México | SWIP"

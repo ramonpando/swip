@@ -15,15 +15,43 @@ const faqs = [
   { q: '¿Qué pasa si no puedo recuperar el auto al vencimiento?', a: 'Comunícate con tu ejecutivo Swip antes del vencimiento. Buscamos soluciones — desde reestructura hasta extensión del plazo — antes de llegar a cualquier escenario de incumplimiento. Tus derechos están protegidos en el contrato desde el inicio.' },
 ];
 
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "FinancialService",
-  "name": "Préstamo con Garantía de Auto con Resguardo — SWIP",
-  "description": "Préstamo con garantía vehicular en modalidad resguardo. Sin límite de monto, instalaciones seguras, seguro incluido. Especialistas en autos de lujo y blindados en México.",
-  "url": "https://swip.mx/prestamo-con-garantia-de-auto-con-resguardo/",
-  "provider": { "@id": "https://swip.mx/#organization" },
-  "areaServed": "MX"
-};
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Préstamo con Garantía de Auto con Resguardo — SWIP",
+    "description": "Préstamo con garantía vehicular en modalidad resguardo. Sin límite de monto, instalaciones seguras, seguro incluido. Especialistas en autos de lujo y blindados en México.",
+    "url": "https://swip.mx/prestamo-con-garantia-de-auto-con-resguardo/",
+    "provider": { "@id": "https://swip.mx/#organization" },
+    "areaServed": "MX",
+    "serviceType": "Préstamo con garantía de auto con resguardo",
+    "mainEntityOfPage": "https://swip.mx/prestamo-con-garantia-de-auto-con-resguardo/"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://swip.mx/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Préstamo con garantía de auto",
+        "item": "https://swip.mx/prestamo-con-garantia-de-auto/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Con resguardo",
+        "item": "https://swip.mx/prestamo-con-garantia-de-auto-con-resguardo/"
+      }
+    ]
+  }
+];
 ---
 <Page
   title="Préstamo con Garantía de Auto con Resguardo | SWIP México"

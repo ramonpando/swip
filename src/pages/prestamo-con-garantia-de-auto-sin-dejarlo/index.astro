@@ -14,15 +14,43 @@ const faqs = [
   { q: '¿Puedo cambiar de modalidad durante el préstamo?', a: 'En algunos casos es posible cambiar a la modalidad con resguardo durante la vigencia del préstamo, lo que puede mejorar las condiciones. Consulta con tu ejecutivo Swip para evaluar tu caso específico.' },
 ];
 
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "FinancialService",
-  "name": "Préstamo con Garantía de Auto Sin Dejarlo — SWIP",
-  "description": "Obtén liquidez sin dejar tu auto. Préstamo con garantía vehicular con monitoreo GPS. Hasta $400,000 MXN. Especialistas en vehículos de valor en México.",
-  "url": "https://swip.mx/prestamo-con-garantia-de-auto-sin-dejarlo/",
-  "provider": { "@id": "https://swip.mx/#organization" },
-  "areaServed": "MX"
-};
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Préstamo con Garantía de Auto Sin Dejarlo — SWIP",
+    "description": "Obtén liquidez sin dejar tu auto. Préstamo con garantía vehicular con monitoreo GPS. Hasta $400,000 MXN. Especialistas en vehículos de valor en México.",
+    "url": "https://swip.mx/prestamo-con-garantia-de-auto-sin-dejarlo/",
+    "provider": { "@id": "https://swip.mx/#organization" },
+    "areaServed": "MX",
+    "serviceType": "Préstamo con garantía de auto sin dejarlo",
+    "mainEntityOfPage": "https://swip.mx/prestamo-con-garantia-de-auto-sin-dejarlo/"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://swip.mx/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Préstamo con garantía de auto",
+        "item": "https://swip.mx/prestamo-con-garantia-de-auto/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Sin dejarlo",
+        "item": "https://swip.mx/prestamo-con-garantia-de-auto-sin-dejarlo/"
+      }
+    ]
+  }
+];
 ---
 <Page
   title="Préstamo con Garantía de Auto Sin Dejarlo | SWIP México"

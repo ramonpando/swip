@@ -16,15 +16,37 @@ const faqs = [
   { q: '¿Swip opera solo en Ciudad de México?', a: 'No. Swip tiene presencia en Ciudad de México — con cobertura en Interlomas, Polanco, Lomas de Chapultepec, Santa Fe y toda la zona metropolitana — y en Querétaro. En ambas plazas ofrecemos valuación en tu domicilio o en nuestras instalaciones.' },
 ];
 
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "FinancialService",
-  "name": "Empeño de Autos Premium — SWIP",
-  "description": "Alternativa premium al empeño de autos en México. Préstamo con garantía vehicular serio, claro y especializado en vehículos de alto valor.",
-  "url": "https://swip.mx/empeno-de-autos/",
-  "provider": { "@id": "https://swip.mx/#organization" },
-  "areaServed": "MX"
-};
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Empeño de Autos Premium — SWIP",
+    "description": "Alternativa premium al empeño de autos en México. Préstamo con garantía vehicular serio, claro y especializado en vehículos de alto valor.",
+    "url": "https://swip.mx/empeno-de-autos/",
+    "provider": { "@id": "https://swip.mx/#organization" },
+    "areaServed": "MX",
+    "serviceType": "Alternativa premium al empeño de autos",
+    "mainEntityOfPage": "https://swip.mx/empeno-de-autos/"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://swip.mx/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Empeño de autos",
+        "item": "https://swip.mx/empeno-de-autos/"
+      }
+    ]
+  }
+];
 ---
 <Page
   title="Empeño de Autos en México — Alternativa Premium | SWIP"

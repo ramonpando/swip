@@ -26,6 +26,97 @@ const {
 } = Astro.props;
 
 const canonicalUrl = canonical ?? new URL(Astro.url.pathname, 'https://swip.mx').href;
+const baseSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://swip.mx/#organization",
+      "name": "SWIP",
+      "url": "https://swip.mx",
+      "logo": "https://swip.mx/assets/logos/logo-light.svg",
+      "description": "Liquidez inteligente con respaldo en tu auto. Préstamos con garantía vehicular para autos de lujo, blindados y vehículos de alto valor en México.",
+      "email": "patricia_bernal@swip.mx",
+      "telephone": "+52-1-55-5405-5089",
+      "sameAs": [
+        "https://wa.me/5215554055089"
+      ]
+    },
+    {
+      "@type": "FinancialService",
+      "@id": "https://swip.mx/#financial-service",
+      "name": "SWIP",
+      "url": "https://swip.mx",
+      "image": "https://swip.mx/assets/og-default.jpg",
+      "description": "Préstamos con garantía vehicular para autos de lujo, blindados y vehículos de alto valor en México.",
+      "currenciesAccepted": "MXN",
+      "priceRange": "$$$$",
+      "paymentAccepted": "Transferencia bancaria",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Pje. Interlomas 6",
+        "addressLocality": "Naucalpan de Juárez",
+        "addressRegion": "Estado de México",
+        "postalCode": "52787",
+        "addressCountry": "MX"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Ciudad de México",
+          "sameAs": "https://www.wikidata.org/wiki/Q1489"
+        },
+        {
+          "@type": "City",
+          "name": "Querétaro",
+          "sameAs": "https://www.wikidata.org/wiki/Q16572"
+        }
+      ],
+      "serviceArea": [
+        { "@type": "City", "name": "Ciudad de México" },
+        { "@type": "City", "name": "Querétaro" }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "19:00"
+        }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+52-1-55-5405-5089",
+        "email": "patricia_bernal@swip.mx",
+        "contactType": "sales",
+        "areaServed": "MX",
+        "availableLanguage": [
+          "es",
+          "es-MX"
+        ]
+      },
+      "parentOrganization": {
+        "@id": "https://swip.mx/#organization"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://swip.mx/#website",
+      "url": "https://swip.mx",
+      "name": "SWIP",
+      "inLanguage": "es-MX",
+      "publisher": {
+        "@id": "https://swip.mx/#organization"
+      }
+    }
+  ]
+};
 ---
 <!DOCTYPE html>
 <html lang="es">
@@ -55,31 +146,7 @@ const canonicalUrl = canonical ?? new URL(Astro.url.pathname, 'https://swip.mx')
   <meta name="twitter:image" content={ogImage} />
 
   <!-- Schema base: Organization -->
-  <script type="application/ld+json" set:html={JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "@id": "https://swip.mx/#organization",
-    "name": "SWIP",
-    "url": "https://swip.mx",
-    "logo": "https://swip.mx/assets/logos/logo-light.svg",
-    "description": "Liquidez inteligente con respaldo en tu auto. Préstamos con garantía vehicular para autos de lujo, blindados y vehículos de alto valor en México.",
-    "email": "patricia_bernal@swip.mx",
-    "telephone": "+52-1-55-5405-5089",
-    "areaServed": [
-      { "@type": "City", "name": "Ciudad de México" },
-      { "@type": "City", "name": "Querétaro" }
-    ],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+52-1-55-5405-5089",
-      "email": "patricia_bernal@swip.mx",
-      "contactType": "sales",
-      "availableLanguage": "Spanish"
-    },
-    "sameAs": [
-      "https://wa.me/5215554055089"
-    ]
-  })} />
+  <script type="application/ld+json" set:html={JSON.stringify(baseSchema)} />
 
   <!-- Schema adicional por página -->
   {schema && (

@@ -2,10 +2,66 @@
 import Page from '../../layouts/Page.astro';
 import CTASection from '../../components/CTASection.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://swip.mx/vehiculos-que-aceptamos/#webpage",
+    "url": "https://swip.mx/vehiculos-que-aceptamos/",
+    "name": "Vehículos que aceptamos | SWIP",
+    "description": "Tipos de vehículos que SWIP acepta como garantía: autos de lujo, blindados, SUVs premium y unidades de alto valor.",
+    "inLanguage": "es-MX",
+    "about": { "@id": "https://swip.mx/#financial-service" }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Autos de lujo",
+        "url": "https://swip.mx/prestamo-con-garantia-de-autos-de-lujo/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Autos blindados",
+        "url": "https://swip.mx/prestamo-con-garantia-de-autos-blindados/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "SUVs premium y vehículos de alto valor",
+        "url": "https://swip.mx/vehiculos-que-aceptamos/"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://swip.mx/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Vehículos que aceptamos",
+        "item": "https://swip.mx/vehiculos-que-aceptamos/"
+      }
+    ]
+  }
+];
 ---
 <Page
   title="Vehículos que Aceptamos para Préstamo con Garantía | SWIP"
   description="Autos de lujo, blindados, SUVs premium y vehículos de alto valor. BMW, Mercedes-Benz, Porsche, Land Rover, Lexus y más. Valuación especializada en México."
+  schema={schema}
 >
 
   <section class="page-hero">

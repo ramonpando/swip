@@ -14,15 +14,43 @@ const faqs = [
   { q: '¿Qué pasa si mi auto tiene un crédito vigente?', a: 'Depende del saldo y el valor del vehículo. Contáctanos con los detalles — en algunos casos es posible estructurar una operación que liquide el crédito existente y te provea liquidez adicional.' },
 ];
 
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "FinancialService",
-  "name": "Préstamo con Garantía de Autos de Lujo — SWIP",
-  "description": "Préstamo con garantía de autos de lujo en México. Especialistas en BMW, Mercedes-Benz, Porsche, Audi, Land Rover y vehículos premium. Valuación precisa, montos hasta $5M MXN.",
-  "url": "https://swip.mx/prestamo-con-garantia-de-autos-de-lujo/",
-  "provider": { "@id": "https://swip.mx/#organization" },
-  "areaServed": "MX"
-};
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Préstamo con Garantía de Autos de Lujo — SWIP",
+    "description": "Préstamo con garantía de autos de lujo en México. Especialistas en BMW, Mercedes-Benz, Porsche, Audi, Land Rover y vehículos premium. Valuación precisa, montos hasta $5M MXN.",
+    "url": "https://swip.mx/prestamo-con-garantia-de-autos-de-lujo/",
+    "provider": { "@id": "https://swip.mx/#organization" },
+    "areaServed": "MX",
+    "serviceType": "Préstamo con garantía de autos de lujo",
+    "mainEntityOfPage": "https://swip.mx/prestamo-con-garantia-de-autos-de-lujo/"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://swip.mx/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Vehículos que aceptamos",
+        "item": "https://swip.mx/vehiculos-que-aceptamos/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Autos de lujo",
+        "item": "https://swip.mx/prestamo-con-garantia-de-autos-de-lujo/"
+      }
+    ]
+  }
+];
 ---
 <Page
   title="Préstamo con Garantía de Autos de Lujo en México | SWIP"

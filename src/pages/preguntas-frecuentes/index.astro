@@ -16,10 +16,30 @@ const faqs = [
   { q: '¿Qué pasa si no pago la mensualidad de mi autofinanciamiento?', a: 'Si enfrentas una dificultad de pago, lo más importante es avisar de inmediato. En SWIP buscamos alternativas antes de llegar a un incumplimiento formal, como reestructura o revisión del caso. Las condiciones, derechos y obligaciones quedan establecidos desde el contrato inicial.' },
   { q: '¿Qué tan recomendable es empeñar un auto?', a: 'Puede ser recomendable cuando necesitas liquidez rápida y tu vehículo tiene valor suficiente para respaldar una operación seria. Lo importante es elegir una estructura clara, documentada y profesional. Para autos de valor, un préstamo con garantía vehicular bien ejecutado suele ser una alternativa más conveniente que el empeño tradicional.' },
 ];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://swip.mx/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Preguntas frecuentes",
+      "item": "https://swip.mx/preguntas-frecuentes/"
+    }
+  ]
+};
 ---
 <Page
   title="Preguntas Frecuentes sobre Préstamo con Garantía de Auto | SWIP"
   description="Resuelve tus dudas sobre préstamo con garantía vehicular: montos, requisitos, tiempos de depósito, modalidades con y sin resguardo y vehículos que aceptamos."
+  schema={schema}
 >
   <section class="faq-hero">
     <div class="hero-inner">

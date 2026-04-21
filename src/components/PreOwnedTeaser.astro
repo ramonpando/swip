@@ -1,5 +1,4 @@
 ---
-const INVENTORY_URL = 'https://dashboard.bravix.com.mx/api/carflow/public/inventario?org=cmn0jyqvg0000rk01w30tuwky&limit=3';
 ---
 
 <section class="preowned-section">
@@ -11,18 +10,11 @@ const INVENTORY_URL = 'https://dashboard.bravix.com.mx/api/carflow/public/invent
       </div>
       <a href="/pre-owned/" class="po-link-all">Ver inventario completo →</a>
     </div>
-
     <div class="po-grid" id="po-grid">
-      <!-- skeleton -->
-      <div class="po-card po-skeleton"></div>
-      <div class="po-card po-skeleton"></div>
-      <div class="po-card po-skeleton"></div>
-      <div class="po-card po-cta">
-        <p class="po-cta-label">PRE-OWNED</p>
-        <p class="po-cta-title">Ver inventario<br />completo</p>
-        <p class="po-cta-body">Unidades certificadas con condición confirmada y documentación verificada.</p>
-        <a href="/pre-owned/" class="po-cta-btn">Ir a Pre-Owned →</a>
-      </div>
+      <div class="po-skeleton"></div>
+      <div class="po-skeleton"></div>
+      <div class="po-skeleton"></div>
+      <div class="po-skeleton"></div>
     </div>
   </div>
 </section>
@@ -30,80 +22,61 @@ const INVENTORY_URL = 'https://dashboard.bravix.com.mx/api/carflow/public/invent
 <script>
   const API = 'https://dashboard.bravix.com.mx/api/carflow/public/inventario?org=cmn0jyqvg0000rk01w30tuwky&limit=3';
 
-  function formatPrice(n: number) {
+  function fmt(n: number) {
     return '$' + n.toLocaleString('es-MX') + ' MXN';
   }
 
-  function formatKm(n: number) {
+  function fmtKm(n: number) {
     return n.toLocaleString('es-MX') + ' km';
   }
 
   function cardHTML(v: any) {
     const title = `${v.marca} ${v.modelo} ${v.año}`;
-    const badges = v.esBlindado
+    const badge = v.esBlindado
       ? `<span class="po-badge po-badge--blindado">Blindado${v.nivelBlindaje ? ' ' + v.nivelBlindaje.toUpperCase() : ''}</span>`
       : `<span class="po-badge">Certificado</span>`;
+    const specs = [fmtKm(v.kilometraje), v.transmision, v.color].filter(Boolean).join(' · ');
 
     return `
-      <a class="po-card po-card--vehicle" href="${v.fichaUrl}" target="_blank" rel="noopener">
-        <div class="po-img-wrap">
-          ${v.fotoPrincipal ? `<img src="${v.fotoPrincipal}" alt="${title}" loading="lazy" />` : '<div class="po-img-placeholder"></div>'}
-          <div class="po-badges">${badges}</div>
+      <a class="po-vehicle-card" href="${v.fichaUrl}" target="_blank" rel="noopener">
+        <div class="po-img">
+          ${v.fotoPrincipal ? `<img src="${v.fotoPrincipal}" alt="${title}" loading="lazy" />` : ''}
+          ${badge}
         </div>
-        <div class="po-card-body">
-          <p class="po-vehicle-name">${title}</p>
-          <div class="po-specs">
-            <span>${formatKm(v.kilometraje)}</span>
-            <span>${v.transmision}</span>
-            ${v.color ? `<span>${v.color}</span>` : ''}
-          </div>
-          <p class="po-price">${formatPrice(v.precioVenta)}</p>
-          <span class="po-card-link">Ver ficha →</span>
+        <div class="po-info">
+          <p class="po-name">${title}</p>
+          <p class="po-meta">${specs}</p>
+          <p class="po-price">${fmt(v.precioVenta)}</p>
+          <span class="po-ficha">Ver ficha →</span>
         </div>
       </a>`;
   }
 
-  async function loadInventory() {
+  const ctaCard = `
+    <div class="po-cta-card">
+      <p class="po-cta-eyebrow">Pre-Owned</p>
+      <p class="po-cta-heading">Ver inventario<br />completo</p>
+      <p class="po-cta-desc">Unidades certificadas con condición confirmada y documentación verificada.</p>
+      <a href="/pre-owned/" class="po-cta-link">Ir a Pre-Owned →</a>
+    </div>`;
+
+  async function load() {
     const grid = document.getElementById('po-grid');
     if (!grid) return;
-
     try {
       const res = await fetch(API);
       const data = await res.json();
-      const vehicles = data.vehiculos || [];
-
-      const ctaCard = `
-        <div class="po-card po-cta">
-          <p class="po-cta-label">PRE-OWNED</p>
-          <p class="po-cta-title">Ver inventario<br />completo</p>
-          <p class="po-cta-body">Unidades certificadas con condición confirmada y documentación verificada.</p>
-          <a href="/pre-owned/" class="po-cta-btn">Ir a Pre-Owned →</a>
-        </div>`;
-
-      if (vehicles.length === 0) {
-        grid.innerHTML = ctaCard;
-        return;
-      }
-
+      const vehicles: any[] = data.vehiculos || [];
       grid.innerHTML = vehicles.map(cardHTML).join('') + ctaCard;
     } catch {
-      const grid = document.getElementById('po-grid');
-      if (grid) {
-        grid.innerHTML = `
-          <div class="po-card po-cta po-cta--full">
-            <p class="po-cta-label">PRE-OWNED</p>
-            <p class="po-cta-title">Inventario disponible</p>
-            <p class="po-cta-body">Vehículos certificados con condición confirmada y documentación verificada.</p>
-            <a href="/pre-owned/" class="po-cta-btn">Ver inventario →</a>
-          </div>`;
-      }
+      grid.innerHTML = ctaCard;
     }
   }
 
-  loadInventory();
+  load();
 </script>
 
-<style>
+<style is:global>
   .preowned-section {
     border-top: 1px solid var(--line);
     border-bottom: 1px solid var(--line);
@@ -119,7 +92,7 @@ const INVENTORY_URL = 'https://dashboard.bravix.com.mx/api/carflow/public/invent
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    margin-bottom: 48px;
+    margin-bottom: 40px;
   }
 
   .po-eyebrow {
@@ -127,7 +100,7 @@ const INVENTORY_URL = 'https://dashboard.bravix.com.mx/api/carflow/public/invent
     letter-spacing: 0.42em;
     color: rgba(168,168,168,0.38);
     text-transform: uppercase;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
   }
 
   .po-title {
@@ -136,19 +109,18 @@ const INVENTORY_URL = 'https://dashboard.bravix.com.mx/api/carflow/public/invent
     color: var(--white);
     letter-spacing: -0.02em;
     line-height: 1.05;
+    margin: 0;
   }
 
   .po-link-all {
     font-size: 11px;
     letter-spacing: 0.22em;
-    color: rgba(168,168,168,0.5);
+    color: rgba(168,168,168,0.45);
     text-decoration: none;
     text-transform: uppercase;
     transition: color 0.2s;
     white-space: nowrap;
-    padding-bottom: 4px;
   }
-
   .po-link-all:hover { color: var(--white); }
 
   /* GRID */
@@ -158,181 +130,157 @@ const INVENTORY_URL = 'https://dashboard.bravix.com.mx/api/carflow/public/invent
     gap: 1px;
     background: var(--line);
     border: 1px solid var(--line);
-    min-height: 340px;
   }
 
   /* SKELETON */
   .po-skeleton {
+    min-height: 360px;
     background: var(--black);
-    animation: shimmer 1.6s infinite;
+    animation: po-shimmer 1.8s ease-in-out infinite;
   }
-
-  @keyframes shimmer {
+  @keyframes po-shimmer {
     0%, 100% { background: var(--black); }
-    50% { background: rgba(255,255,255,0.02); }
+    50% { background: rgba(255,255,255,0.025); }
   }
 
   /* VEHICLE CARD */
-  .po-card--vehicle {
+  .po-vehicle-card {
     background: var(--black);
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    color: inherit;
     transition: background 0.2s;
   }
+  .po-vehicle-card:hover { background: rgba(255,255,255,0.02); }
 
-  .po-card--vehicle:hover { background: rgba(255,255,255,0.025); }
-
-  .po-img-wrap {
+  .po-img {
     position: relative;
     aspect-ratio: 4/3;
     overflow: hidden;
-    background: rgba(255,255,255,0.03);
+    background: rgba(255,255,255,0.04);
   }
-
-  .po-img-wrap img {
+  .po-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.4s ease;
+    display: block;
+    transition: transform 0.5s ease;
   }
-
-  .po-card--vehicle:hover .po-img-wrap img { transform: scale(1.03); }
-
-  .po-img-placeholder {
-    width: 100%;
-    height: 100%;
-    background: rgba(255,255,255,0.03);
-  }
-
-  .po-badges {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    display: flex;
-    gap: 6px;
-  }
+  .po-vehicle-card:hover .po-img img { transform: scale(1.04); }
 
   .po-badge {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
     font-size: 8px;
-    letter-spacing: 0.28em;
+    letter-spacing: 0.3em;
     text-transform: uppercase;
-    padding: 4px 8px;
-    background: rgba(0,0,0,0.72);
-    color: rgba(168,168,168,0.7);
-    backdrop-filter: blur(4px);
+    padding: 4px 9px;
+    background: rgba(0,0,0,0.75);
+    color: rgba(168,168,168,0.65);
+    backdrop-filter: blur(6px);
+    font-family: inherit;
   }
-
   .po-badge--blindado {
-    color: var(--green-mid);
-    border: 1px solid rgba(1,254,74,0.2);
+    color: rgba(1,254,74,0.75);
+    border: 1px solid rgba(1,254,74,0.18);
   }
 
-  .po-card-body {
-    padding: 20px 20px 24px;
+  .po-info {
+    padding: 20px 22px 24px;
     display: flex;
     flex-direction: column;
     flex: 1;
   }
 
-  .po-vehicle-name {
-    font-size: 14px;
+  .po-name {
+    font-size: 15px;
     font-weight: 400;
     color: var(--white);
-    margin-bottom: 8px;
+    letter-spacing: -0.01em;
     line-height: 1.3;
+    margin: 0 0 8px;
   }
 
-  .po-specs {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 14px;
-  }
-
-  .po-specs span {
+  .po-meta {
     font-size: 10px;
-    letter-spacing: 0.18em;
-    color: rgba(168,168,168,0.42);
+    letter-spacing: 0.16em;
+    color: rgba(168,168,168,0.4);
     text-transform: uppercase;
+    margin: 0 0 16px;
+    line-height: 1.6;
   }
 
   .po-price {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 300;
     color: var(--white);
-    letter-spacing: -0.01em;
-    margin-top: auto;
-    margin-bottom: 12px;
+    letter-spacing: -0.02em;
+    margin: auto 0 14px;
   }
 
-  .po-card-link {
-    font-size: 10px;
-    letter-spacing: 0.24em;
-    color: rgba(168,168,168,0.38);
+  .po-ficha {
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    color: rgba(168,168,168,0.32);
     text-transform: uppercase;
     transition: color 0.2s;
   }
-
-  .po-card--vehicle:hover .po-card-link { color: var(--white); }
+  .po-vehicle-card:hover .po-ficha { color: rgba(168,168,168,0.75); }
 
   /* CTA CARD */
-  .po-cta {
-    background: rgba(255,255,255,0.01);
-    padding: 32px 28px;
+  .po-cta-card {
+    background: rgba(255,255,255,0.015);
+    padding: 32px 28px 36px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
   }
 
-  .po-cta--full { grid-column: 1 / -1; }
-
-  .po-cta-label {
+  .po-cta-eyebrow {
     font-size: 9px;
-    letter-spacing: 0.38em;
-    color: rgba(168,168,168,0.28);
+    letter-spacing: 0.4em;
+    color: rgba(168,168,168,0.25);
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin: 0 0 auto;
   }
 
-  .po-cta-title {
-    font-size: 20px;
+  .po-cta-heading {
+    font-size: 22px;
     font-weight: 300;
     color: var(--white);
-    letter-spacing: -0.01em;
+    letter-spacing: -0.02em;
     line-height: 1.2;
-    margin-bottom: 12px;
+    margin: 32px 0 12px;
   }
 
-  .po-cta-body {
+  .po-cta-desc {
     font-size: 12px;
-    color: rgba(168,168,168,0.48);
-    line-height: 1.75;
-    margin-bottom: 28px;
+    color: rgba(168,168,168,0.42);
+    line-height: 1.8;
+    margin: 0 0 28px;
   }
 
-  .po-cta-btn {
+  .po-cta-link {
     font-size: 10px;
-    letter-spacing: 0.26em;
-    color: rgba(168,168,168,0.55);
+    letter-spacing: 0.28em;
+    color: rgba(168,168,168,0.5);
     text-decoration: none;
     text-transform: uppercase;
     transition: color 0.2s;
   }
+  .po-cta-link:hover { color: var(--white); }
 
-  .po-cta-btn:hover { color: var(--white); }
-
+  /* RESPONSIVE */
   @media (max-width: 1024px) {
     .po-grid { grid-template-columns: repeat(2, 1fr); }
-    .po-cta { grid-column: 1 / -1; flex-direction: row; align-items: center; gap: 32px; }
-    .po-cta-body { margin-bottom: 0; }
   }
 
   @media (max-width: 768px) {
-    .po-inner { padding: 64px 24px; }
-    .po-header { flex-direction: column; align-items: flex-start; gap: 20px; }
+    .po-inner { padding: 56px 24px; }
+    .po-header { flex-direction: column; align-items: flex-start; gap: 18px; }
     .po-grid { grid-template-columns: 1fr; }
-    .po-cta { flex-direction: column; align-items: flex-start; }
-    .po-cta-body { margin-bottom: 24px; }
+    .po-skeleton { min-height: 200px; }
   }
 </style>

@@ -243,7 +243,11 @@ const schema = {
   }
   @media (max-width: 768px) {
     .hero-inner, .section-inner { padding: 64px 24px; }
+    .hero-actions { flex-direction: column; align-items: stretch; gap: 14px; }
+    .btn-primary { width: 100%; padding: 16px 24px; }
+    .btn-ghost { display: inline-flex; align-items: center; min-height: 44px; }
     .brand-list, .montos-grid, .steps-grid { grid-template-columns: 1fr; }
     .brand-tier { padding: 28px 24px; }
+    .monto-card, .step { padding: 32px 24px; }
   }
 </style>

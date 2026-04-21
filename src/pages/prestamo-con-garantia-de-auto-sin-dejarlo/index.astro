@@ -237,8 +237,12 @@ const schema = {
   }
   @media (max-width: 768px) {
     .hero-inner, .section-inner { padding: 64px 24px; }
+    .hero-actions { flex-direction: column; align-items: stretch; gap: 14px; }
+    .btn-primary { width: 100%; padding: 16px 24px; }
+    .btn-ghost { display: inline-flex; align-items: center; min-height: 44px; }
     .hero-stat-bar { grid-template-columns: 1fr; }
-    .hstat { border-right: none; border-bottom: 1px solid var(--line); }
+    .hstat { padding: 20px 24px; border-right: none; border-bottom: 1px solid var(--line); }
+    .how-item, .cond-col, .compare-card { padding: 32px 24px; }
     .how-grid, .cond-grid, .compare-grid { grid-template-columns: 1fr; }
   }
 </style>

@@ -18,6 +18,7 @@ Pendientes sugeridos para la siguiente jornada:
 - revisar Search Console cuando empiece a registrar impresiones y cobertura real
 - definir si `/cotizar/` se mantiene como page `noindex` o se convierte en landing de conversion completa
 - agregar un enlace claro para envio de documentos o registro directo hacia el dashboard de Bravix
+- evaluar una seccion `preowned` jalada directamente desde Carflow
 - generar OG images especificas por post y por money page para mejorar CTR social y sharing
 
 Alcance de esta auditoria:

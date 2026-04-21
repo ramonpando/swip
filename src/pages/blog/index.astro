@@ -9,6 +9,7 @@ const posts = (await getCollection('blog'))
 <Page
   title="Blog — Guías sobre Préstamos con Garantía de Auto | SWIP"
   description="Guías, análisis y contenido educativo sobre préstamos con garantía vehicular, empeño de autos y liquidez con vehículos de lujo en México."
+  noindex={posts.length === 0}
 >
 
   <section class="blog-hero">

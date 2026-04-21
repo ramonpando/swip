@@ -1,0 +1,103 @@
+---
+import Page from '../../layouts/Page.astro';
+import FAQ from '../../components/FAQ.astro';
+import CTASection from '../../components/CTASection.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+
+const faqs = [
+  { q: '¿Cómo se determina el monto de mi préstamo?', a: 'El monto depende del valor comercial de tu vehículo: modelo, año, kilometraje y estado general. Trabajamos con préstamos desde $90,000 hasta $5,000,000 MXN. Un valuador SWIP revisa el vehículo en persona para darte una oferta precisa y justa.' },
+  { q: '¿Puedo seguir usando mi auto durante el préstamo?', a: 'Sí. En la modalidad sin resguardo conservas el uso de tu vehículo bajo ciertas condiciones y monitoreo. En la modalidad con resguardo el auto queda en instalaciones seguras, lo que normalmente permite montos más altos y mejores condiciones.' },
+  { q: '¿Qué documentos necesito para solicitar?', a: 'Los básicos son identificación oficial vigente, factura original del vehículo a tu nombre, comprobante de domicilio y tarjeta de circulación. Dependiendo del caso puede pedirse documentación adicional.' },
+  { q: '¿En cuánto tiempo recibo el dinero?', a: 'Una vez firmado el contrato, el depósito se realiza en menos de 24 horas directamente a tu cuenta bancaria. En muchos casos el proceso completo se resuelve en el mismo día hábil.' },
+  { q: '¿Qué tipo de vehículos aceptan?', a: 'Nos especializamos en autos de lujo, blindados, SUVs premium y vehículos de alto valor. También evaluamos casos especiales cuando existe valor de mercado comprobable.' },
+  { q: '¿Qué pasa si no puedo pagar?', a: 'Lo importante es comunicarte de inmediato con tu ejecutivo SWIP. Buscamos soluciones antes de llegar a cualquier escenario de incumplimiento y todo queda documentado desde el contrato.' },
+];
+---
+<Page
+  title="Preguntas Frecuentes sobre Préstamo con Garantía de Auto | SWIP"
+  description="Resuelve tus dudas sobre préstamo con garantía vehicular: montos, requisitos, tiempos de depósito, modalidades con y sin resguardo y vehículos que aceptamos."
+>
+  <section class="faq-hero">
+    <div class="hero-inner">
+      <p class="eyebrow">PREGUNTAS FRECUENTES · SWIP</p>
+      <h1 class="hero-title">Respuestas claras<br />antes de solicitar.</h1>
+      <p class="hero-body">
+        Aquí concentramos las dudas más comunes sobre montos, proceso,
+        requisitos, modalidades y tiempos de respuesta para que evalúes si
+        SWIP es la alternativa correcta para tu vehículo.
+      </p>
+    </div>
+  </section>
+
+  <FAQ items={faqs} />
+
+  <RelatedLinks
+    eyebrow="SIGUIENTE PASO"
+    title="Profundiza según tu caso."
+    items={[
+      {
+        href: '/como-funciona/',
+        label: 'Cómo funciona',
+        description: 'Revisa el proceso completo desde la valuación hasta el depósito.',
+      },
+      {
+        href: '/requisitos/',
+        label: 'Requisitos',
+        description: 'Confirma qué documentación necesitas para avanzar sin fricción.',
+      },
+      {
+        href: '/cotizar/',
+        label: 'Cotizar',
+        description: 'Pasa de la duda a una evaluación real de tu vehículo.',
+      },
+    ]}
+  />
+
+  <CTASection
+    eyebrow="¿LISTO PARA AVANZAR?"
+    title="Cotiza tu préstamo."
+    body="Si tu vehículo tiene valor, podemos decirte en minutos si SWIP aplica para tu caso."
+  />
+</Page>
+
+<style>
+  .faq-hero {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .hero-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 96px 64px 80px;
+  }
+
+  .eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.42em;
+    color: rgba(168, 168, 168, 0.45);
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+
+  .hero-title {
+    font-size: clamp(44px, 5.5vw, 80px);
+    font-weight: 400;
+    color: var(--white);
+    letter-spacing: -0.02em;
+    line-height: 1;
+    margin-bottom: 24px;
+  }
+
+  .hero-body {
+    max-width: 560px;
+    font-size: 15px;
+    color: rgba(168, 168, 168, 0.78);
+    line-height: 1.85;
+  }
+
+  @media (max-width: 768px) {
+    .hero-inner {
+      padding: 64px 24px;
+    }
+  }
+</style>

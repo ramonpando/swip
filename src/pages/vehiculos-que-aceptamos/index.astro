@@ -1,6 +1,7 @@
 ---
 import Page from '../../layouts/Page.astro';
 import CTASection from '../../components/CTASection.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
 ---
 <Page
   title="Vehículos que Aceptamos para Préstamo con Garantía | SWIP"
@@ -111,6 +112,27 @@ import CTASection from '../../components/CTASection.astro';
       </div>
     </div>
   </section>
+
+  <RelatedLinks
+    title="Lleva la evaluación a la página correcta."
+    items={[
+      {
+        href: '/prestamo-con-garantia-de-autos-de-lujo/',
+        label: 'Autos de lujo',
+        description: 'Si tu vehículo está en el segmento premium, aquí está el enfoque especializado.',
+      },
+      {
+        href: '/prestamo-con-garantia-de-autos-blindados/',
+        label: 'Autos blindados',
+        description: 'Cuando el blindaje debe reconocerse como parte del valor real del activo.',
+      },
+      {
+        href: '/prestamo-con-garantia-de-auto/',
+        label: 'Garantía vehicular',
+        description: 'Vuelve a la página madre para entender el servicio completo y sus modalidades.',
+      },
+    ]}
+  />
 
   <CTASection
     eyebrow="¿TU AUTO APLICA?"

@@ -55,13 +55,22 @@ const canonicalUrl = canonical ?? new URL(Astro.url.pathname, 'https://swip.mx')
     "url": "https://swip.mx",
     "logo": "https://swip.mx/assets/logos/logo-light.svg",
     "description": "Liquidez inteligente con respaldo en tu auto. Préstamos con garantía vehicular para autos de lujo, blindados y vehículos de alto valor en México.",
-    "areaServed": "MX",
+    "email": "patricia_bernal@swip.mx",
+    "telephone": "+52-1-55-5405-5089",
+    "areaServed": [
+      { "@type": "City", "name": "Ciudad de México" },
+      { "@type": "City", "name": "Querétaro" }
+    ],
     "contactPoint": {
       "@type": "ContactPoint",
+      "telephone": "+52-1-55-5405-5089",
       "email": "patricia_bernal@swip.mx",
       "contactType": "sales",
       "availableLanguage": "Spanish"
-    }
+    },
+    "sameAs": [
+      "https://wa.me/5215554055089"
+    ]
   })} />
 
   <!-- Schema adicional por página -->

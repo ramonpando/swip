@@ -1,6 +1,7 @@
 ---
 import Page from '../../layouts/Page.astro';
 import CTASection from '../../components/CTASection.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
 ---
 <Page
   title="Requisitos para Préstamo con Garantía de Auto | SWIP"
@@ -118,6 +119,27 @@ import CTASection from '../../components/CTASection.astro';
       </div>
     </div>
   </section>
+
+  <RelatedLinks
+    title="Convierte los requisitos en siguiente paso."
+    items={[
+      {
+        href: '/prestamo-con-garantia-de-auto/',
+        label: 'Servicio principal',
+        description: 'Entiende la estructura general del préstamo con garantía vehicular.',
+      },
+      {
+        href: '/como-funciona/',
+        label: 'Proceso',
+        description: 'Después de reunir documentos, revisa cómo avanza el trámite paso a paso.',
+      },
+      {
+        href: '/vehiculos-que-aceptamos/',
+        label: 'Vehículos',
+        description: 'Confirma si tu auto entra en los segmentos que SWIP sabe valuar mejor.',
+      },
+    ]}
+  />
 
   <CTASection
     eyebrow="¿TIENES LOS DOCUMENTOS?"

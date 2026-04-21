@@ -8,7 +8,13 @@ export default defineConfig({
   trailingSlash: 'always',
   integrations: [
     sitemap({
-      filter: (page) => !page.includes('/lp/'),
+      filter: (page) => ![
+        '/lp/',
+        '/aviso-de-privacidad/',
+        '/terminos-de-uso/',
+        '/blog/',
+        '/cotizar/',
+      ].some((path) => page.includes(path)),
     }),
     mdx(),
   ],

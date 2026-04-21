@@ -505,7 +505,10 @@ const schema = [
     color: var(--white);
     letter-spacing: -0.02em;
     margin-bottom: 4px;
+    transition: color 0.25s;
   }
+
+  .stat-item:hover .stat-number { color: var(--green); }
 
   .stat-label {
     font-size: 10px;
@@ -910,7 +913,7 @@ const schema = [
   }
 
   .faq-item[open] .faq-q { color: var(--white); }
-  .faq-item[open] .faq-q::after { transform: rotate(45deg); color: var(--white); }
+  .faq-item[open] .faq-q::after { transform: rotate(45deg); color: var(--green-mid); }
 
   .faq-q:hover { color: var(--white); }
 

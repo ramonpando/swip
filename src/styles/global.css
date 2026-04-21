@@ -18,6 +18,10 @@
   --white-soft: rgba(255, 255, 255, 0.92);
   --white-muted: rgba(255, 255, 255, 0.68);
   --silver-strong: rgba(168, 168, 168, 0.78);
+  /* Brand green — extracted from logo-light.svg fill="#01FE4A" */
+  --green: #01FE4A;
+  --green-dim: rgba(1, 254, 74, 0.15);
+  --green-mid: rgba(1, 254, 74, 0.6);
 }
 
 html {

@@ -1,0 +1,239 @@
+---
+import Page from '../../layouts/Page.astro';
+import FAQ from '../../components/FAQ.astro';
+import CTASection from '../../components/CTASection.astro';
+
+const WHATSAPP = 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20cotizar%20un%20pr%C3%A9stamo%20con%20garant%C3%ADa%20de%20mi%20auto%20ex%C3%B3tico';
+
+const faqs = [
+  { q: '¿Aceptan Ferrari, Lamborghini y Bentley?', a: 'Sí. SWIP evalúa vehículos de marcas exóticas y superdeportivas incluyendo Ferrari, Lamborghini, Bentley, Rolls-Royce, McLaren y Aston Martin. Cada operación requiere valuación física en persona dado el valor y especificidad del activo.' },
+  { q: '¿Cómo se valúa un auto exótico?', a: 'Los autos exóticos no se valúan con tablas genéricas. Consideramos el mercado internacional de referencia, el historial de servicio en agencia, la condición mecánica y estética real, la configuración y opcionales de fábrica, y el kilometraje. Para autos como un Ferrari F8 o un Lamborghini Huracán, pequeñas diferencias en condición pueden representar millones de pesos de diferencia en valor.' },
+  { q: '¿Cuánto puedo obtener por mi Ferrari o Lamborghini?', a: 'Depende del modelo, año, kilometraje y condición. Un Ferrari 488 de año reciente en buenas condiciones puede respaldar préstamos desde $2,000,000 hasta $5,000,000+ MXN. Para modelos especiales, ediciones limitadas o autos con historia documentada, el monto se evalúa individualmente sin límite predefinido.' },
+  { q: '¿El proceso es discreto?', a: 'Total. Entendemos que quien posee un auto exótico valora la privacidad. Valuación en tu domicilio o en nuestras instalaciones con acceso controlado. Sin exposición innecesaria del vehículo. Desde el primer contacto hasta la firma, el proceso puede completarse en el mismo día hábil.' },
+  { q: '¿Qué pasa con el resguardo de un auto exótico?', a: 'En la modalidad con resguardo, los vehículos exóticos se almacenan en condiciones especializadas acordes al valor del activo. Temperatura controlada, acceso restringido y seguro activo durante todo el plazo. El vehículo recibe el tratamiento que corresponde a un activo de ese nivel.' },
+  { q: '¿Aceptan Porsche 911 GT3 o Turbo S?', a: 'Sí. Los Porsche 911 en versiones GT3, GT3 RS, Turbo S y Carrera S tienen alta demanda en el mercado de garantía vehicular premium. También aceptamos Porsche 718, Boxster y Cayman en versiones de alto valor. Cada caso se evalúa con criterios específicos para el segmento superdeportivo.' },
+];
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Préstamo con Garantía de Autos Exóticos — SWIP",
+    "description": "Préstamo con garantía de autos exóticos en México. Ferrari, Lamborghini, Bentley, Rolls-Royce, McLaren. Valuación especializada sin límite de monto. CDMX y Querétaro.",
+    "url": "https://swip.mx/prestamo-con-garantia-de-autos-exoticos/",
+    "provider": { "@id": "https://swip.mx/#organization" },
+    "areaServed": "MX"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(f => ({
+      "@type": "Question",
+      "name": f.q,
+      "acceptedAnswer": { "@type": "Answer", "text": f.a }
+    }))
+  }
+];
+---
+<Page
+  title="Préstamo con Garantía de Autos Exóticos en México | SWIP"
+  description="Obtén liquidez con tu Ferrari, Lamborghini, Bentley, Rolls-Royce o McLaren. Valuación especializada sin límite de monto. Proceso completamente discreto. CDMX y Querétaro."
+  schema={schema}
+>
+
+  <section class="page-hero">
+    <div class="hero-inner">
+      <p class="eyebrow">AUTOS EXÓTICOS · PRÉSTAMO CON GARANTÍA · MÉXICO</p>
+      <h1 class="hero-title">Ferrari. Lamborghini.<br />Bentley. El activo<br /><em>que otros no saben valuar.</em></h1>
+      <p class="hero-body">
+        Un auto exótico no se valúa con una tabla genérica. SWIP usa criterios
+        especializados para el segmento superdeportivo y de gran turismo: valor
+        de mercado real, historial documentado, condición verificada en persona.
+      </p>
+      <div class="hero-actions">
+        <a href={WHATSAPP} target="_blank" rel="noopener" class="btn-primary">Cotiza tu préstamo</a>
+        <a href="/prestamo-con-garantia-de-autos-de-lujo/" class="btn-ghost">Ver autos de lujo →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUÉ IMPORTA LA VALUACIÓN -->
+  <section class="content-section">
+    <div class="section-inner two-col">
+      <div>
+        <p class="section-eyebrow">EL PROBLEMA</p>
+        <h2 class="section-title">No todos saben<br />lo que tienes.</h2>
+      </div>
+      <div class="section-text">
+        <p>Un Ferrari F8 Tributo, un Lamborghini Huracán EVO o un Bentley Continental GT no son autos que se encuentran en las tablas de referencia estándar. Las empresas de empeño convencionales no tienen los criterios para valuar estos activos correctamente — y eso significa que te ofrecen una fracción de lo que el vehículo realmente vale.</p>
+        <p>SWIP trabaja con referencias de mercado internacionales, considera la configuración específica del vehículo, el historial de servicio en agencia autorizada y la condición real del activo. El resultado es una oferta que refleja el valor real — no un estimado conservador diseñado para proteger a quien no sabe lo que tiene frente a él.</p>
+        <p>Para estos vehículos, la diferencia entre valuar bien y valuar mal puede representar $1,000,000 MXN o más sobre el mismo auto.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARCAS -->
+  <section class="content-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">MARCAS QUE VALUAMOS</p>
+      <h2 class="section-title">Superdeportivos.<br />Gran turismo. Hipercars.</h2>
+      <div class="exotic-grid">
+
+        <div class="exotic-brand">
+          <p class="brand-tag">ITALIANA</p>
+          <p class="brand-name">Ferrari</p>
+          <p class="brand-models">Roma · Portofino M · F8 Tributo · SF90 Stradale · 296 GTB · 812 Superfast · Purosangue</p>
+        </div>
+
+        <div class="exotic-brand">
+          <p class="brand-tag">ITALIANA</p>
+          <p class="brand-name">Lamborghini</p>
+          <p class="brand-models">Urus · Urus S · Urus Performante · Huracán EVO · Huracán STO · Aventador S · Revuelto</p>
+        </div>
+
+        <div class="exotic-brand">
+          <p class="brand-tag">BRITÁNICA</p>
+          <p class="brand-name">Bentley</p>
+          <p class="brand-models">Bentayga · Bentayga EWB · Continental GT · Continental GTC · Flying Spur · Mulliner</p>
+        </div>
+
+        <div class="exotic-brand">
+          <p class="brand-tag">BRITÁNICA</p>
+          <p class="brand-name">Rolls-Royce</p>
+          <p class="brand-models">Cullinan · Ghost · Spectre · Wraith · Dawn · Black Badge Series</p>
+        </div>
+
+        <div class="exotic-brand">
+          <p class="brand-tag">BRITÁNICA</p>
+          <p class="brand-name">McLaren</p>
+          <p class="brand-models">GT · Artura · 720S · 750S · 765LT · Senna · Elva</p>
+        </div>
+
+        <div class="exotic-brand">
+          <p class="brand-tag">BRITÁNICA</p>
+          <p class="brand-name">Aston Martin</p>
+          <p class="brand-models">Vantage · DB11 · DBS · DBX · DBX707 · Valour</p>
+        </div>
+
+        <div class="exotic-brand">
+          <p class="brand-tag">ALEMANA</p>
+          <p class="brand-name">Porsche 911</p>
+          <p class="brand-models">Carrera S · Targa · Turbo S · GT3 · GT3 RS · GT3 Touring · Dakar</p>
+        </div>
+
+        <div class="exotic-brand exotic-brand--other">
+          <p class="brand-tag">OTRAS MARCAS</p>
+          <p class="brand-name">Evaluación individual</p>
+          <p class="brand-models">Bugatti · Pagani · Koenigsegg · Maserati MC20 · Alfa Romeo · Lotus y equivalentes superdeportivos. Contáctanos con los datos de tu vehículo.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MONTOS -->
+  <section class="content-section">
+    <div class="section-inner two-col">
+      <div>
+        <p class="section-eyebrow">MONTOS PARA EXÓTICOS</p>
+        <h2 class="section-title">Sin techo.<br />Sin tabla genérica.</h2>
+      </div>
+      <div class="section-text">
+        <p>Los préstamos con garantía de autos exóticos no tienen un límite de monto predefinido. El préstamo se determina en función del valor real del vehículo — establecido mediante valuación física especializada.</p>
+        <p>Como referencia orientativa: un Lamborghini Urus de año reciente puede respaldar préstamos entre $2,500,000 y $4,000,000 MXN. Un Ferrari F8 Tributo en buenas condiciones puede superar los $3,000,000 MXN. Para vehículos de edición especial, series limitadas o configuraciones de alto valor, el monto puede ser significativamente mayor.</p>
+        <p>El estimado inicial que obtienes por WhatsApp o cotizador es un rango orientativo. La oferta formal — precisa y vinculante — viene después de la valuación en persona.</p>
+        <div class="ref-note">
+          <span>Rangos orientativos — sujetos a valuación física</span>
+          <span>Sin límite de monto en modalidad con resguardo</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="content-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">DISCRECIÓN TOTAL</p>
+      <h2 class="section-title">El proceso que<br />un activo así merece.</h2>
+      <div class="process-grid">
+        <div class="process-step">
+          <p class="step-num">01</p>
+          <h3>Contacto confidencial</h3>
+          <p>Por WhatsApp o cotizador. Sin formularios públicos ni exposición de datos. El primer contacto es discreto por diseño.</p>
+        </div>
+        <div class="process-step">
+          <p class="step-num">02</p>
+          <h3>Valuación especializada</h3>
+          <p>Valuador con experiencia en el segmento superdeportivo. En tu domicilio o en nuestras instalaciones con acceso controlado. No un valuador genérico de tabla.</p>
+        </div>
+        <div class="process-step">
+          <p class="step-num">03</p>
+          <h3>Oferta precisa</h3>
+          <p>Monto, tasa y plazo basados en el valor real del vehículo. Sin revisiones de último momento ni condiciones sorpresa.</p>
+        </div>
+        <div class="process-step">
+          <p class="step-num">04</p>
+          <h3>Depósito en 24 h</h3>
+          <p>Transferencia directa a tu cuenta bancaria en menos de 24 horas de firmado el contrato. El mismo día hábil si el proceso inicia temprano.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <FAQ items={faqs} eyebrow="PREGUNTAS SOBRE AUTOS EXÓTICOS" />
+  <CTASection
+    eyebrow="VALUACIÓN ESPECIALIZADA"
+    title="¿Cuánto puedes obtener por tu exótico?"
+    body="Dinos marca, modelo y año. Te damos un rango honesto basado en el valor real de mercado de tu vehículo."
+  />
+
+</Page>
+
+<style>
+  .page-hero { border-bottom: 1px solid var(--line); }
+  .hero-inner { max-width: 1280px; margin: 0 auto; padding: 96px 64px 80px; }
+  .eyebrow { font-size: 9px; letter-spacing: 0.42em; color: rgba(168,168,168,0.45); text-transform: uppercase; margin-bottom: 28px; }
+  .hero-title { font-size: clamp(38px, 4.8vw, 70px); font-weight: 400; color: var(--white); letter-spacing: -0.02em; line-height: 1.0; margin-bottom: 24px; }
+  .hero-title em { display: block; font-style: normal; font-size: 0.72em; color: rgba(168,168,168,0.52); margin-top: 6px; }
+  .hero-body { max-width: 560px; font-size: 15px; color: rgba(168,168,168,0.78); line-height: 1.85; margin-bottom: 32px; }
+  .hero-actions { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+  .btn-primary { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 16px 40px; border: 1px solid rgba(255,255,255,0.35); color: var(--white); font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; font-family: inherit; transition: all 0.2s; }
+  .btn-primary:hover { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.6); }
+  .btn-ghost { font-size: 11px; letter-spacing: 0.22em; color: rgba(168,168,168,0.6); text-decoration: none; text-transform: uppercase; transition: color 0.2s; }
+  .btn-ghost:hover { color: var(--white); }
+
+  .content-section { border-bottom: 1px solid var(--line); }
+  .section-inner { max-width: 1280px; margin: 0 auto; padding: 96px 64px; }
+  .section-inner.two-col { display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px; align-items: start; }
+  .section-eyebrow { font-size: 9px; letter-spacing: 0.42em; color: rgba(168,168,168,0.38); text-transform: uppercase; margin-bottom: 20px; }
+  .section-title { font-size: clamp(26px, 3vw, 42px); font-weight: 300; color: var(--white); letter-spacing: -0.02em; line-height: 1.05; }
+  .section-text p { font-size: 15px; color: rgba(168,168,168,0.72); line-height: 1.85; margin-bottom: 16px; }
+
+  .ref-note { display: flex; flex-direction: column; gap: 4px; margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--line); }
+  .ref-note span { font-size: 10px; letter-spacing: 0.22em; color: rgba(168,168,168,0.36); text-transform: uppercase; }
+
+  /* EXOTIC GRID */
+  .exotic-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 56px; }
+  .exotic-brand { background: var(--black); padding: 32px 26px; }
+  .exotic-brand--other { background: rgba(255,255,255,0.01); }
+  .brand-tag { font-size: 8px; letter-spacing: 0.36em; color: rgba(168,168,168,0.28); text-transform: uppercase; margin-bottom: 10px; }
+  .brand-name { font-size: 17px; font-weight: 400; color: var(--white); margin-bottom: 10px; letter-spacing: -0.01em; }
+  .brand-models { font-size: 12px; color: rgba(168,168,168,0.48); line-height: 1.7; }
+
+  /* PROCESS */
+  .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 56px; }
+  .process-step { background: var(--black); padding: 36px 28px; }
+  .step-num { font-size: 11px; letter-spacing: 0.3em; color: rgba(168,168,168,0.2); margin-bottom: 16px; }
+  .process-step h3 { font-size: 15px; font-weight: 400; color: var(--white); margin-bottom: 10px; }
+  .process-step p { font-size: 13px; color: rgba(168,168,168,0.55); line-height: 1.7; }
+
+  @media (max-width: 1024px) {
+    .section-inner.two-col { grid-template-columns: 1fr; gap: 40px; }
+    .exotic-grid { grid-template-columns: repeat(2, 1fr); }
+    .process-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 768px) {
+    .hero-inner, .section-inner { padding: 64px 24px; }
+    .exotic-grid, .process-grid { grid-template-columns: 1fr; }
+  }
+</style>

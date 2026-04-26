@@ -2,6 +2,7 @@
 import Page from '../../layouts/Page.astro';
 import FAQ from '../../components/FAQ.astro';
 import CTASection from '../../components/CTASection.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
 
 const WHATSAPP = 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20cotizar%20un%20pr%C3%A9stamo%20con%20garant%C3%ADa%20de%20mi%20auto%20ex%C3%B3tico';
 
@@ -179,6 +180,27 @@ const schema = [
       </div>
     </div>
   </section>
+
+  <RelatedLinks
+    title="El exótico encaja en una ruta más amplia."
+    items={[
+      {
+        href: '/prestamo-con-garantia-de-autos-de-lujo/',
+        label: 'Autos de lujo',
+        description: 'BMW, Porsche, Mercedes, Range Rover — el segmento premium que también valuamos con criterio especializado.',
+      },
+      {
+        href: '/prestamo-con-garantia-de-autos-blindados/',
+        label: 'Autos blindados',
+        description: 'Si tu exótico tiene blindaje certificado, el valor adicional del blindaje también se reconoce en la oferta.',
+      },
+      {
+        href: '/prestamo-con-garantia-de-auto-con-resguardo/',
+        label: 'Modalidad con resguardo',
+        description: 'Para vehículos de este valor, la modalidad con resguardo es casi siempre la opción más conveniente.',
+      },
+    ]}
+  />
 
   <FAQ items={faqs} eyebrow="PREGUNTAS SOBRE AUTOS EXÓTICOS" />
   <CTASection

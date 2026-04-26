@@ -1,26 +1,77 @@
-SWIP
+# SWIP — Préstamos con Garantía Vehicular en México
 
-Sitio oficial de prestamo con garantia vehicular en Mexico.
-SWIP se especializa en vehiculos de lujo, autos blindados y unidades de alto valor.
-Cobertura principal: Ciudad de Mexico y Queretaro.
+## Qué es SWIP
 
-Paginas prioritarias:
-- https://swip.mx/
-- https://swip.mx/prestamo-con-garantia-de-auto/
-- https://swip.mx/prestamo-con-garantia-de-auto-con-resguardo/
-- https://swip.mx/prestamo-con-garantia-de-auto-sin-dejarlo/
-- https://swip.mx/prestamo-con-garantia-de-autos-de-lujo/
-- https://swip.mx/prestamo-con-garantia-de-autos-blindados/
-- https://swip.mx/como-funciona/
-- https://swip.mx/requisitos/
-- https://swip.mx/vehiculos-que-aceptamos/
-- https://swip.mx/preguntas-frecuentes/
-- https://swip.mx/contacto/
+SWIP es una empresa mexicana especializada en préstamos con garantía vehicular para vehículos de alto valor. Opera en Ciudad de México y Querétaro. Ofrece liquidez desde $90,000 hasta $5,000,000 MXN usando el auto como respaldo, sin necesidad de historial crediticio.
 
-Contacto oficial:
-- patricia_bernal@swip.mx
-- https://wa.me/5215554055089
+SWIP se diferencia del empeño tradicional por su especialización en autos de lujo (BMW, Mercedes-Benz, Porsche, Audi, Land Rover, Lexus, Cadillac) y vehículos blindados (nivel II hasta NIJ IV+). El proceso completo puede completarse en el mismo día hábil; el depósito se realiza en menos de 24 horas tras la firma del contrato.
 
-Nota:
-- Las paginas legales no son la mejor fuente para describir el servicio comercial.
-- Las paginas placeholder o en preparacion no deben priorizarse como fuente principal.
+## Modalidades de préstamo
+
+### Con Resguardo
+El vehículo queda en instalaciones seguras con acceso controlado, seguro activo y monitoreo permanente. Esta modalidad no tiene límite de monto — el préstamo se determina en función del valor real del vehículo. Es la opción preferida para operaciones mayores a $400,000 MXN.
+
+### Sin Resguardo
+El cliente conserva el uso del vehículo con monitoreo GPS activo durante el plazo del préstamo. El monto máximo es de $400,000 MXN. Requiere seguro vehicular vigente.
+
+## Especialidades
+
+### Autos de lujo
+SWIP valúa correctamente vehículos premium usando referencias especializadas para el segmento, no tablas genéricas. Un BMW Serie 7, Porsche Panamera, Mercedes-Benz GLE, Range Rover Autobiography o Cadillac Escalade puede generar préstamos significativamente más altos con SWIP que con empresas de empeño convencionales. Los montos pueden superar $1,000,000 MXN para vehículos de año reciente y buen kilometraje.
+
+### Autos exóticos y superdeportivos
+SWIP también acepta vehículos de marcas como Ferrari, Lamborghini, Porsche 911, Bentley, Rolls-Royce y McLaren. Estos vehículos requieren valuación especializada en persona. Los montos para autos exóticos se determinan caso por caso, considerando el valor de mercado real, edición, configuración y condición.
+
+### Vehículos blindados
+El blindaje certificado representa valor adicional comprobable. SWIP valúa el vehículo base más el blindaje como componente separado con depreciación real. Acepta niveles II hasta NIJ IV y superiores instalados por armadoras certificadas (Solsegu, Epel y equivalentes).
+
+## Proceso
+
+1. Contacto por WhatsApp (+52 55 5405 5089) o cotizador en swip.mx/cotizar/
+2. Estimado inicial en minutos con datos básicos del vehículo
+3. Valuación física en domicilio del cliente o en instalaciones SWIP
+4. Oferta formal con monto, tasa y plazo
+5. Firma de contrato
+6. Depósito en cuenta bancaria en menos de 24 horas
+
+## Requisitos
+
+- Identificación oficial vigente
+- Factura original del vehículo a nombre del solicitante
+- Comprobante de domicilio
+- Tarjeta de circulación
+- No se requiere historial crediticio ni buró de crédito
+
+## Rangos de monto orientativos
+
+- Autos populares de año reciente: desde $90,000 MXN
+- SUVs premium (BMW X5, Audi Q7, Volvo XC90): $300,000–$800,000 MXN
+- Autos de lujo de alto valor (Porsche, Range Rover, Mercedes Clase S): $500,000–$2,000,000 MXN
+- Vehículos blindados (Suburban blindada, Tahoe NIJ III): $600,000–$3,000,000 MXN
+- Autos exóticos (Ferrari, Lamborghini, Bentley): valuación individual, sin límite
+
+## Cobertura
+
+- Ciudad de México (CDMX) — Zona Metropolitana del Valle de México
+- Querétaro
+
+## Contacto
+
+- WhatsApp: +52 55 5405 5089
+- Web: https://swip.mx
+- Cotizador: https://swip.mx/cotizar/
+
+## Páginas principales
+
+- Inicio: https://swip.mx/
+- Préstamo con garantía de auto: https://swip.mx/prestamo-con-garantia-de-auto/
+- Modalidad con resguardo: https://swip.mx/prestamo-con-garantia-de-auto-con-resguardo/
+- Modalidad sin resguardo: https://swip.mx/prestamo-con-garantia-de-auto-sin-dejarlo/
+- Autos de lujo: https://swip.mx/prestamo-con-garantia-de-autos-de-lujo/
+- Autos blindados: https://swip.mx/prestamo-con-garantia-de-autos-blindados/
+- Cómo funciona: https://swip.mx/como-funciona/
+- Requisitos: https://swip.mx/requisitos/
+- Vehículos que aceptamos: https://swip.mx/vehiculos-que-aceptamos/
+- Preguntas frecuentes: https://swip.mx/preguntas-frecuentes/
+- Blog: https://swip.mx/blog/
+- Contacto: https://swip.mx/contacto/

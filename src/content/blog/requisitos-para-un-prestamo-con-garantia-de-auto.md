@@ -57,4 +57,4 @@ Si todavía no tienes claro ese tercer punto, primero conviene revisar [cómo fu
 
 Cuando la documentación está lista, la valuación se mueve más rápido y la oferta también. El objetivo de reunir requisitos no es burocracia: es eliminar fricción entre tu necesidad de liquidez y la operación real.
 
-Si ya tienes esos documentos base, el siguiente paso útil es [cotizar tu préstamo](/cotizar/) o hablar con el equipo desde [contacto](/contacto/) para validar si el vehículo aplica y qué modalidad conviene más.
+Si ya tienes esos documentos base, el siguiente paso útil es [cotizar tu préstamo](/cotizar/) para abrir WhatsApp o hablar con el equipo desde [contacto](/contacto/) para validar si el vehículo aplica y qué modalidad conviene más.

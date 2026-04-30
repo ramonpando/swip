@@ -27,7 +27,7 @@ El blindaje certificado representa valor adicional comprobable. SWIP valúa el v
 
 ## Proceso
 
-1. Contacto por WhatsApp (+52 55 5405 5089) o cotizador en swip.mx/cotizar/
+1. Contacto por WhatsApp (+52 55 5405 5089) o desde swip.mx/cotizar/ para abrir WhatsApp
 2. Estimado inicial en minutos con datos básicos del vehículo
 3. Valuación física en domicilio del cliente o en instalaciones SWIP
 4. Oferta formal con monto, tasa y plazo
@@ -59,7 +59,7 @@ El blindaje certificado representa valor adicional comprobable. SWIP valúa el v
 
 - WhatsApp: +52 55 5405 5089
 - Web: https://swip.mx
-- Cotizador: https://swip.mx/cotizar/
+- Cotizar por WhatsApp: https://swip.mx/cotizar/
 
 ## Páginas principales
 

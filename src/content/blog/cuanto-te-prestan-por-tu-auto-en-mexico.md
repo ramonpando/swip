@@ -50,4 +50,4 @@ Si todavía no tienes claro qué modalidad encaja con tu caso, primero conviene 
 
 La mejor pregunta no es “cuánto te dan por tu auto” en abstracto, sino: **cuánto puedes obtener con una valuación profesional, una estructura clara y una modalidad adecuada a tu necesidad real**.
 
-Si tu vehículo tiene valor, el siguiente paso útil no es seguir comparando cifras sin contexto, sino [cotizar tu préstamo](/cotizar/) o pasar por la página de [preguntas frecuentes](/preguntas-frecuentes/) para resolver dudas antes de hablar con un asesor.
+Si tu vehículo tiene valor, el siguiente paso útil no es seguir comparando cifras sin contexto, sino [cotizar tu préstamo](/cotizar/) para abrir WhatsApp o pasar por la página de [preguntas frecuentes](/preguntas-frecuentes/) para resolver dudas antes de hablar con un asesor.

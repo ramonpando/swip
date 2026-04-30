@@ -16,6 +16,7 @@ export interface Props {
 const props = Astro.props;
 ---
 <Base {...props}>
+  <slot name="head" slot="head" />
   <Nav />
   <main>
     <slot />

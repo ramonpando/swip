@@ -1,4 +1,5 @@
 ---
+const WHATSAPP = 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20cotizar%20un%20pr%C3%A9stamo%20con%20garant%C3%ADa%20de%20mi%20veh%C3%ADculo';
 const navLinks = [
   { href: '/como-funciona/', label: 'Cómo funciona' },
   { href: '/vehiculos-que-aceptamos/', label: 'Vehículos' },
@@ -21,10 +22,10 @@ const currentPath = Astro.url.pathname;
         {link.label}
       </a>
     ))}
-    <a href="/cotizar/" class="nav-mobile-cta">Cotiza tu préstamo</a>
+    <a href={WHATSAPP} target="_blank" rel="noopener" class="nav-mobile-cta">Cotiza tu préstamo</a>
   </div>
   <div class="nav-right">
-    <a href="/cotizar/" class="nav-cta">Cotiza tu préstamo</a>
+    <a href={WHATSAPP} target="_blank" rel="noopener" class="nav-cta">Cotiza tu préstamo</a>
     <button class="nav-hamburger" id="nav-hamburger" aria-label="Menú" aria-expanded="false" aria-controls="nav-links">
       <span></span><span></span><span></span>
     </button>

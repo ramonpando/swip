@@ -57,6 +57,8 @@ const articleSchema = {
   ...(image ? { image } : {}),
 };
 
+const WHATSAPP = 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20cotizar%20un%20pr%C3%A9stamo%20con%20garant%C3%ADa%20de%20mi%20veh%C3%ADculo';
+
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -120,7 +122,7 @@ const breadcrumbSchema = {
           pasa a la evaluación con el equipo de SWIP.
         </p>
         <div class="cta-actions">
-          <a href="/cotizar/" class="btn-primary">Cotiza tu préstamo</a>
+          <a href={WHATSAPP} target="_blank" rel="noopener" class="btn-primary">Cotiza tu préstamo</a>
           <a href="/prestamo-con-garantia-de-auto/" class="btn-ghost">Ver el servicio completo →</a>
         </div>
       </div>

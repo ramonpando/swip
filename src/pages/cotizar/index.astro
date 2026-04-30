@@ -8,18 +8,20 @@ const WHATSAPP = 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20cotizar%20
   description="Cotiza tu préstamo con garantía vehicular. Recibe un estimado en minutos basado en el valor real de tu auto. Sin compromiso, sin consulta de buró."
   noindex={true}
 >
+  <Fragment slot="head">
+    <meta http-equiv="refresh" content={`0;url=${WHATSAPP}`} />
+  </Fragment>
 
   <section class="cotizar-hero">
     <div class="cotizar-inner">
       <p class="eyebrow">COTIZADOR · SWIP</p>
-      <h1 class="cotizar-title">Cotiza tu préstamo.</h1>
+      <h1 class="cotizar-title">Te estamos llevando a WhatsApp.</h1>
       <p class="cotizar-body">
-        Estamos preparando el cotizador conversacional — podrás recibir
-        un estimado inteligente en minutos directamente aquí.
+        La cotización de SWIP se atiende por WhatsApp para darte respuesta
+        directa con un asesor y una evaluación más rápida.
       </p>
       <p class="cotizar-body">
-        Mientras tanto, nuestro equipo está disponible por WhatsApp
-        para darte una cotización personalizada de inmediato.
+        Si no se abre automáticamente, usa el botón de abajo.
       </p>
       <a href={WHATSAPP} target="_blank" rel="noopener" class="btn-primary">
         Cotizar por WhatsApp →

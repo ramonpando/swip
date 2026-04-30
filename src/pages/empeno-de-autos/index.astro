@@ -50,7 +50,7 @@ const schema = [
 ---
 <Page
   title="Empeño de Autos en México — Alternativa Premium | SWIP"
-  description="¿Buscas empeño de autos? Swip te ofrece una alternativa más seria: préstamo con garantía vehicular, proceso claro, trato premium y especialización en autos de valor. Evaluación gratuita."
+  description="¿Buscas empeño de autos? SWIP te ofrece una alternativa más seria: préstamo con garantía vehicular, proceso claro y especialización en autos de lujo, blindados y vehículos de alto valor."
   schema={schema}
 >
 
@@ -62,7 +62,7 @@ const schema = [
         Swip no es una casa de empeño tradicional. Es una alternativa más seria,
         más clara y más adecuada para quien tiene un vehículo de valor y necesita
         liquidez real — con trato profesional y condiciones justas. Si quieres ver
-        la estructura completa del servicio, entra a <a href="/prestamo-con-garantia-de-auto/">préstamo con garantía de auto</a>.
+        la estructura completa del servicio, entra a <a href="/prestamo-con-garantia-de-auto/">préstamo con garantía de auto</a>. Si tu caso cae en un segmento premium, también te conviene revisar <a href="/prestamo-con-garantia-de-autos-de-lujo/">autos de lujo</a> o <a href="/prestamo-con-garantia-de-autos-blindados/">autos blindados</a>.
       </p>
       <div class="hero-actions">
         <a href={WHATSAPP} target="_blank" rel="noopener" class="btn-primary">Cotiza tu préstamo</a>
@@ -168,18 +168,22 @@ const schema = [
         <div class="vehicle-cat">
           <p class="vcat-title">Autos de lujo</p>
           <p class="vcat-brands">BMW · Mercedes-Benz · Porsche · Audi · Lexus · Cadillac · Volvo · Jaguar · Maserati · Land Rover · Range Rover</p>
+          <a href="/prestamo-con-garantia-de-autos-de-lujo/" class="vehicle-link">Ver segmento premium →</a>
         </div>
         <div class="vehicle-cat">
           <p class="vcat-title">Autos blindados</p>
           <p class="vcat-brands">Vehículos con blindaje certificado de cualquier marca. Valuación especializada que reconoce el valor real del blindaje como activo adicional.</p>
+          <a href="/prestamo-con-garantia-de-autos-blindados/" class="vehicle-link">Ver blindados →</a>
         </div>
         <div class="vehicle-cat">
           <p class="vcat-title">Camionetas y SUVs premium</p>
           <p class="vcat-brands">Toyota Land Cruiser · Ford Expedition · Chevrolet Suburban · Ram 1500 · Ford F-150 · Nissan Patrol y equivalentes de segmento alto.</p>
+          <a href="/prestamo-con-garantia-de-autos-de-lujo/" class="vehicle-link">Ver lujo y SUVs premium →</a>
         </div>
         <div class="vehicle-cat">
           <p class="vcat-title">Clásicos y especiales</p>
           <p class="vcat-brands">Vehículos clásicos con valor de mercado comprobable, ediciones limitadas y otros casos especiales. Evaluamos cada caso individualmente.</p>
+          <a href="/vehiculos-que-aceptamos/" class="vehicle-link">Ver vehículos aceptados →</a>
         </div>
       </div>
     </div>
@@ -224,6 +228,11 @@ const schema = [
         href: '/requisitos/',
         label: 'Requisitos',
         description: 'Confirma qué documentos necesitas antes de pedir una valuación real.',
+      },
+      {
+        href: '/prestamo-con-garantia-de-autos-de-lujo/',
+        label: 'Autos de lujo',
+        description: 'Si vienes desde empeño pero tu activo es premium, esta es la landing comercial correcta.',
       },
     ]}
   />
@@ -289,6 +298,17 @@ const schema = [
   .vehicle-cat { background: var(--black); padding: 36px 32px; }
   .vcat-title { font-size: 13px; font-weight: 500; color: var(--white); margin-bottom: 12px; letter-spacing: -0.01em; }
   .vcat-brands { font-size: 13px; color: rgba(168,168,168,0.6); line-height: 1.75; }
+  .vehicle-link {
+    display: inline-flex;
+    margin-top: 16px;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(168,168,168,0.62);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .vehicle-link:hover { color: var(--white); }
 
   @media (max-width: 1024px) {
     .steps-grid { grid-template-columns: repeat(2,1fr); }

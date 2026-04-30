@@ -1,0 +1,371 @@
+---
+import Page from '../../layouts/Page.astro';
+import CTASection from '../../components/CTASection.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "@id": "https://swip.mx/por-que-swip/#webpage",
+    "url": "https://swip.mx/por-que-swip/",
+    "name": "Por qué SWIP",
+    "description": "Conoce cómo opera SWIP, en qué se especializa, dónde opera y por qué su enfoque en autos de lujo, blindados y vehículos de alto valor cambia la valuación.",
+    "inLanguage": "es-MX",
+    "about": { "@id": "https://swip.mx/#financial-service" },
+    "mainEntity": { "@id": "https://swip.mx/#organization" }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://swip.mx/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Por qué SWIP",
+        "item": "https://swip.mx/por-que-swip/"
+      }
+    ]
+  }
+];
+---
+<Page
+  title="Por Qué SWIP | Especialistas en Vehículos de Alto Valor"
+  description="SWIP opera con enfoque especializado en autos de lujo, blindados, exóticos y vehículos de alto valor. Conoce cómo valúa, cómo resguarda y dónde opera."
+  schema={schema}
+>
+
+  <section class="page-hero">
+    <div class="hero-inner">
+      <p class="eyebrow">POR QUÉ SWIP · MÉXICO</p>
+      <h1 class="hero-title">No operamos<br />como una casa de empeño.</h1>
+      <p class="hero-body">
+        SWIP está diseñado para operaciones con vehículos de valor. Eso cambia
+        todo: la forma de valuar, el trato, la discreción, el resguardo y la
+        estructura de la oferta. Si tu vehículo entra en el segmento premium,
+        aquí importa el activo real, no una tabla genérica.
+      </p>
+    </div>
+  </section>
+
+  <section class="story-section">
+    <div class="section-inner two-col">
+      <div>
+        <p class="section-eyebrow">QUIÉNES SOMOS</p>
+        <h2 class="section-title">Liquidez con<br />criterio de activo.</h2>
+      </div>
+      <div class="section-text">
+        <p>SWIP es una operación especializada en préstamos con garantía vehicular para autos de lujo, blindados, exóticos, SUVs premium y unidades de alto valor en México.</p>
+        <p>No buscamos operar volumen masivo de cualquier auto. Nuestro enfoque está en casos donde la valuación correcta cambia de forma material el resultado de la operación.</p>
+        <p>Por eso trabajamos con procesos más directos, contacto personalizado y revisión real del vehículo antes de emitir una oferta formal.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="signals-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">EN QUÉ SE NOTA</p>
+      <h2 class="section-title">Las señales que sí importan.</h2>
+      <div class="signals-grid">
+        <div class="signal-card">
+          <p class="signal-tag">VALUACIÓN</p>
+          <h3 class="signal-title">Revisión especializada</h3>
+          <p class="signal-desc">No valuamos igual un BMW X7, un Porsche 911 o una Suburban blindada que un auto de uso masivo. La versión, el equipamiento, el estado y el segmento sí cambian la oferta.</p>
+        </div>
+        <div class="signal-card">
+          <p class="signal-tag">TRATO</p>
+          <h3 class="signal-title">Contacto directo</h3>
+          <p class="signal-desc">El primer contacto se atiende por WhatsApp con una conversación útil, no con un formulario que nadie responde ni con un call center genérico.</p>
+        </div>
+        <div class="signal-card">
+          <p class="signal-tag">DISCRECIÓN</p>
+          <h3 class="signal-title">Proceso reservado</h3>
+          <p class="signal-desc">Muchos casos requieren bajo perfil desde el primer contacto. Diseñamos el proceso para proteger datos, contexto y exposición del vehículo.</p>
+        </div>
+        <div class="signal-card">
+          <p class="signal-tag">ESTRUCTURA</p>
+          <h3 class="signal-title">Oferta documentada</h3>
+          <p class="signal-desc">El estimado inicial sirve para validar si el caso tiene sentido. La oferta formal llega después de la valuación física, con monto, plazo y condiciones definidas.</p>
+        </div>
+        <div class="signal-card">
+          <p class="signal-tag">RESGUARDO</p>
+          <h3 class="signal-title">Custodia controlada</h3>
+          <p class="signal-desc">Cuando la operación es con resguardo, el vehículo queda en instalaciones seguras, con acceso controlado y cobertura activa durante el plazo acordado.</p>
+        </div>
+        <div class="signal-card">
+          <p class="signal-tag">SEGMENTO</p>
+          <h3 class="signal-title">Activos de alto valor</h3>
+          <p class="signal-desc">Nos especializamos donde otras empresas suelen subvaluar: lujo, blindados, exóticos, camionetas premium y casos especiales con valor de mercado comprobable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="specialty-section">
+    <div class="section-inner two-col">
+      <div>
+        <p class="section-eyebrow">ESPECIALIZACIÓN</p>
+        <h2 class="section-title">Los segmentos donde<br />marcamos diferencia.</h2>
+      </div>
+      <div class="section-text">
+        <p>La diferencia entre una oferta baja y una operación seria suele estar en la valuación. Esa diferencia se vuelve más grande cuando el vehículo pertenece a categorías que exigen criterio técnico real.</p>
+        <p>En SWIP concentramos esa ventaja en cuatro rutas: <a href="/prestamo-con-garantia-de-autos-de-lujo/">autos de lujo</a>, <a href="/prestamo-con-garantia-de-autos-blindados/">autos blindados</a>, <a href="/prestamo-con-garantia-de-autos-exoticos/">autos exóticos</a> y <a href="/vehiculos-que-aceptamos/">vehículos de alto valor</a>.</p>
+        <p>Para esos segmentos, la modalidad con resguardo suele permitir montos más altos y mejores condiciones. Cuando la movilidad es prioritaria, evaluamos también la modalidad <a href="/prestamo-con-garantia-de-auto-sin-dejarlo/">sin dejarlo</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="coverage-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">COBERTURA</p>
+      <h2 class="section-title">Operamos donde está el valor.</h2>
+      <div class="coverage-grid">
+        <div class="coverage-card">
+          <p class="coverage-tag">CIUDAD DE MÉXICO</p>
+          <p class="coverage-desc">Atendemos la zona metropolitana con foco en corredores donde se concentra el parque vehicular premium: Interlomas, Polanco, Lomas, Santa Fe, Pedregal, Tecamachalco y Bosques.</p>
+        </div>
+        <div class="coverage-card">
+          <p class="coverage-tag">QUERÉTARO</p>
+          <p class="coverage-desc">Operamos en Querétaro con el mismo estándar de respuesta, valuación y trato. Es una plaza estratégica para SUVs premium, vehículos ejecutivos y blindados.</p>
+        </div>
+        <div class="coverage-card">
+          <p class="coverage-tag">CASOS ESPECIALES</p>
+          <p class="coverage-desc">Si tu vehículo está fuera de esas plazas pero tiene valor y la operación hace sentido, evaluamos el caso. La cobertura depende del activo y de la logística.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">ANTES DE AVANZAR</p>
+      <h2 class="section-title">Lo que sí te conviene revisar.</h2>
+      <div class="trust-list">
+        <div class="trust-item">
+          <span class="trust-num">01</span>
+          <div>
+            <strong>Si el vehículo realmente cae en un segmento de valor</strong>
+            <p>No todo auto necesita una operación especializada. Pero cuando el activo sí la merece, la diferencia en monto puede ser grande.</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <span class="trust-num">02</span>
+          <div>
+            <strong>Si la modalidad correcta es con o sin resguardo</strong>
+            <p>La prioridad puede ser monto máximo o continuidad de uso. La estructura correcta depende de esa decisión.</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <span class="trust-num">03</span>
+          <div>
+            <strong>Si la documentación base está lista</strong>
+            <p>Factura, identificación, comprobante de domicilio y tarjeta de circulación aceleran la operación y reducen fricción desde el inicio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <RelatedLinks
+    eyebrow="SIGUIENTE PASO"
+    title="Lleva esta lógica a la página correcta."
+    items={[
+      {
+        href: '/prestamo-con-garantia-de-autos-de-lujo/',
+        label: 'Autos de lujo',
+        description: 'La ruta comercial principal para vehículos premium y camionetas de alto valor.',
+      },
+      {
+        href: '/prestamo-con-garantia-de-autos-blindados/',
+        label: 'Autos blindados',
+        description: 'Cuando el blindaje debe reconocerse como parte real del valor del activo.',
+      },
+      {
+        href: '/contacto/',
+        label: 'Contacto',
+        description: 'Habla con un asesor si quieres validar si tu vehículo aplica y qué estructura conviene más.',
+      },
+    ]}
+  />
+
+  <CTASection
+    eyebrow="EVALUACIÓN INICIAL"
+    title="Si tu vehículo tiene valor,\nvale la pena hablar."
+    body="Podemos decirte rápidamente si el caso encaja con SWIP y qué modalidad tiene más sentido antes de avanzar a valuación física."
+  />
+
+</Page>
+
+<style>
+  .page-hero,
+  .story-section,
+  .signals-section,
+  .specialty-section,
+  .coverage-section,
+  .trust-section {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .hero-inner,
+  .section-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 96px 64px 80px;
+  }
+
+  .eyebrow,
+  .section-eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.42em;
+    color: rgba(168,168,168,0.4);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .hero-title,
+  .section-title {
+    font-size: clamp(42px, 5vw, 78px);
+    font-weight: 400;
+    color: var(--white);
+    letter-spacing: -0.02em;
+    line-height: 1;
+    margin-bottom: 24px;
+  }
+
+  .hero-body,
+  .section-text p {
+    font-size: 15px;
+    color: rgba(168,168,168,0.76);
+    line-height: 1.85;
+  }
+
+  .hero-body {
+    max-width: 560px;
+  }
+
+  .two-col {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 72px;
+    align-items: start;
+  }
+
+  .section-text {
+    max-width: 760px;
+  }
+
+  .section-text p {
+    margin-bottom: 18px;
+  }
+
+  .section-text a {
+    color: var(--white);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .signals-grid,
+  .coverage-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+
+  .signal-card,
+  .coverage-card {
+    background: var(--black);
+    padding: 34px 30px;
+  }
+
+  .signal-tag,
+  .coverage-tag {
+    font-size: 9px;
+    letter-spacing: 0.36em;
+    color: rgba(168,168,168,0.3);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  .signal-title {
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--white);
+    letter-spacing: -0.02em;
+    margin-bottom: 14px;
+  }
+
+  .signal-desc,
+  .coverage-desc {
+    font-size: 13px;
+    color: rgba(168,168,168,0.64);
+    line-height: 1.8;
+  }
+
+  .trust-list {
+    display: grid;
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+
+  .trust-item {
+    background: var(--black);
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 28px;
+    padding: 28px 30px;
+    align-items: start;
+  }
+
+  .trust-num {
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    color: rgba(168,168,168,0.46);
+  }
+
+  .trust-item strong {
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 10px;
+  }
+
+  .trust-item p {
+    font-size: 14px;
+    color: rgba(168,168,168,0.64);
+    line-height: 1.8;
+  }
+
+  @media (max-width: 1024px) {
+    .signals-grid,
+    .coverage-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .two-col {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-inner,
+    .section-inner {
+      padding: 64px 24px;
+    }
+
+    .trust-item {
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+  }
+</style>

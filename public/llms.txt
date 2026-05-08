@@ -65,6 +65,8 @@ El blindaje certificado representa valor adicional comprobable. SWIP valúa el v
 
 - Inicio: https://swip.mx/
 - Préstamo con garantía de auto: https://swip.mx/prestamo-con-garantia-de-auto/
+- Préstamo con garantía de auto en CDMX: https://swip.mx/prestamo-con-garantia-de-auto-en-cdmx/
+- Préstamo con garantía de auto en Querétaro: https://swip.mx/prestamo-con-garantia-de-auto-en-queretaro/
 - Modalidad con resguardo: https://swip.mx/prestamo-con-garantia-de-auto-con-resguardo/
 - Modalidad sin resguardo: https://swip.mx/prestamo-con-garantia-de-auto-sin-dejarlo/
 - Autos de lujo: https://swip.mx/prestamo-con-garantia-de-autos-de-lujo/
@@ -75,3 +77,11 @@ El blindaje certificado representa valor adicional comprobable. SWIP valúa el v
 - Preguntas frecuentes: https://swip.mx/preguntas-frecuentes/
 - Blog: https://swip.mx/blog/
 - Contacto: https://swip.mx/contacto/
+
+## Cluster editorial: Autos Blindados
+
+Artículos del blog sobre préstamos con garantía de autos blindados:
+
+- ¿Cuánto me prestan por un auto blindado?: https://swip.mx/blog/cuanto-me-prestan-por-un-auto-blindado/
+- ¿Cómo se valúa un auto blindado?: https://swip.mx/blog/como-se-valua-un-auto-blindado/
+- ¿Qué documentos necesito para un auto blindado?: https://swip.mx/blog/documentos-para-empenar-o-dejar-en-garantia-un-auto-blindado/

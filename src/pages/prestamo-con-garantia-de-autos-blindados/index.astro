@@ -135,6 +135,31 @@ const schema = [
     </div>
   </section>
 
+  <!-- BLOG CLUSTER -->
+  <section class="content-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">GUÍAS SOBRE AUTOS BLINDADOS</p>
+      <h2 class="section-title">Preguntas frecuentes<br />respondidas a fondo.</h2>
+      <div class="blog-links">
+        <a href="/blog/cuanto-me-prestan-por-un-auto-blindado/" class="blog-link-card">
+          <p class="blog-link-label">MONTOS</p>
+          <p class="blog-link-title">¿Cuánto me prestan por un auto blindado?</p>
+          <p class="blog-link-arrow">Leer →</p>
+        </a>
+        <a href="/blog/como-se-valua-un-auto-blindado/" class="blog-link-card">
+          <p class="blog-link-label">VALUACIÓN</p>
+          <p class="blog-link-title">¿Cómo se valúa un auto blindado?</p>
+          <p class="blog-link-arrow">Leer →</p>
+        </a>
+        <a href="/blog/documentos-para-empenar-o-dejar-en-garantia-un-auto-blindado/" class="blog-link-card">
+          <p class="blog-link-label">REQUISITOS</p>
+          <p class="blog-link-title">¿Qué documentos necesito para un auto blindado?</p>
+          <p class="blog-link-arrow">Leer →</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <RelatedLinks
     title="Lleva un blindado a la ruta que sí reconoce su valor."
     items={[
@@ -195,6 +220,13 @@ const schema = [
     .section-inner.two-col { grid-template-columns: 1fr; gap: 40px; }
     .levels-grid { grid-template-columns: repeat(2,1fr); }
   }
+  .blog-links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 48px; }
+  .blog-link-card { background: var(--black); padding: 36px 28px; text-decoration: none; transition: background 0.2s; display: block; }
+  .blog-link-card:hover { background: rgba(255,255,255,0.03); }
+  .blog-link-label { font-size: 9px; letter-spacing: 0.38em; color: rgba(168,168,168,0.35); text-transform: uppercase; margin-bottom: 12px; }
+  .blog-link-title { font-size: 16px; font-weight: 300; color: var(--white); line-height: 1.35; margin-bottom: 18px; }
+  .blog-link-arrow { font-size: 11px; letter-spacing: 0.2em; color: rgba(168,168,168,0.45); text-transform: uppercase; }
+
   @media (max-width: 768px) {
     .hero-inner, .section-inner { padding: 64px 24px; }
     .hero-actions { flex-direction: column; align-items: stretch; gap: 14px; }
@@ -202,5 +234,7 @@ const schema = [
     .btn-ghost { display: inline-flex; align-items: center; min-height: 44px; }
     .level-card { padding: 32px 24px; }
     .levels-grid { grid-template-columns: 1fr; }
+    .blog-links { grid-template-columns: 1fr; }
+    .blog-link-card { padding: 28px 20px; }
   }
 </style>

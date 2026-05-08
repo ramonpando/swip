@@ -1,0 +1,404 @@
+---
+import Page from '../../layouts/Page.astro';
+import FAQ from '../../components/FAQ.astro';
+import CTASection from '../../components/CTASection.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+
+const WHATSAPP = 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20cotizar%20un%20pr%C3%A9stamo%20con%20garant%C3%ADa%20de%20auto%20en%20Quer%C3%A9taro';
+
+const faqs = [
+  { q: '¿SWIP sí opera en Querétaro?', a: 'Sí. SWIP atiende la plaza queretana con el mismo estándar de respuesta, valuación y trato que ofrece en Ciudad de México para vehículos de alto valor.' },
+  { q: '¿Qué tipo de vehículos revisan en Querétaro?', a: 'Evaluamos autos de lujo, SUVs premium, vehículos blindados y otras unidades con valor de mercado comprobable. También revisamos casos especiales cuando el activo y la logística lo justifican.' },
+  { q: '¿La valuación en Querétaro también puede ser presencial?', a: 'Sí. La valuación en persona forma parte del flujo normal cuando el caso avanza. Puede coordinarse según el vehículo, la zona y la modalidad que tenga más sentido.' },
+  { q: '¿Cuánto puedo obtener por mi auto en Querétaro?', a: 'El monto depende del valor real del vehículo, su condición, versión y perfil de operación. SWIP trabaja desde $90,000 hasta $5,000,000 MXN, con casos altos que normalmente requieren resguardo.' },
+  { q: '¿Qué hago si no sé si mi vehículo entra en el perfil?', a: 'Lo mejor es enviar marca, modelo, año y kilometraje por WhatsApp. Con eso se puede filtrar rápido si el caso encaja y qué ruta conviene revisar primero.' },
+];
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "@id": "https://swip.mx/prestamo-con-garantia-de-auto-en-queretaro/#service",
+    "name": "Préstamo con Garantía de Auto en Querétaro — SWIP",
+    "description": "Préstamo con garantía de auto en Querétaro para autos de lujo, blindados y vehículos de alto valor. Atención directa, valuación seria y operación discreta.",
+    "url": "https://swip.mx/prestamo-con-garantia-de-auto-en-queretaro/",
+    "provider": { "@id": "https://swip.mx/#organization" },
+    "areaServed": {
+      "@type": "City",
+      "name": "Querétaro",
+      "sameAs": "https://www.wikidata.org/wiki/Q16572"
+    },
+    "serviceType": "Préstamo con garantía vehicular en Querétaro",
+    "currenciesAccepted": "MXN",
+    "mainEntityOfPage": "https://swip.mx/prestamo-con-garantia-de-auto-en-queretaro/"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://swip.mx/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Préstamo con garantía de auto",
+        "item": "https://swip.mx/prestamo-con-garantia-de-auto/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Querétaro",
+        "item": "https://swip.mx/prestamo-con-garantia-de-auto-en-queretaro/"
+      }
+    ]
+  }
+];
+---
+<Page
+  title="Préstamo con Garantía de Auto en Querétaro | SWIP"
+  description="Solicita un préstamo con garantía de auto en Querétaro con valuación seria y trato discreto. SWIP atiende autos de lujo, blindados y vehículos de alto valor."
+  schema={schema}
+>
+  <section class="page-hero">
+    <div class="hero-inner">
+      <p class="eyebrow">PRÉSTAMO CON GARANTÍA DE AUTO · QUERÉTARO</p>
+      <h1 class="hero-title">Préstamo respaldado<br />por tu auto en Querétaro.</h1>
+      <p class="hero-body">
+        Querétaro tiene un parque vehicular premium cada vez más relevante, pero
+        muchas opciones siguen tratando activos de alto valor como si fueran
+        autos genéricos. SWIP entra cuando la valuación correcta, la discreción
+        y la velocidad sí cambian el resultado.
+      </p>
+      <div class="hero-actions">
+        <a href={WHATSAPP} target="_blank" rel="noopener" class="btn-primary">Cotiza en Querétaro</a>
+        <a href="/contacto/" class="btn-ghost">Hablar con un asesor →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="section-inner two-col">
+      <div>
+        <p class="section-eyebrow">LECTURA LOCAL</p>
+        <h2 class="section-title">No toda oferta local<br />entiende el activo.</h2>
+      </div>
+      <div class="section-text">
+        <p>Si estás buscando un préstamo con garantía de auto en Querétaro, la pregunta correcta no es solo quién presta. Es quién entiende el valor del vehículo que estás poniendo como respaldo.</p>
+        <p>SWIP opera en la plaza queretana con foco en autos de lujo, SUVs premium, blindados y otras unidades donde el segmento, la versión y la condición cambian materialmente el monto posible.</p>
+        <p>Si tu necesidad es más amplia, también puedes revisar la página general de <a href="/prestamo-con-garantia-de-auto/">préstamo con garantía de auto</a> o la especialidad de <a href="/prestamo-con-garantia-de-autos-blindados/">autos blindados</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">CUÁNDO ENCAJA</p>
+      <h2 class="section-title">Los escenarios donde<br />más sentido tiene.</h2>
+      <div class="use-grid">
+        <div class="use-card">
+          <p class="use-tag">SUVS Y PREMIUM</p>
+          <h3 class="use-title">Vehículos ejecutivos y de alto valor</h3>
+          <p class="use-desc">BMW, Mercedes-Benz, Audi, Land Rover, Porsche y SUVs premium donde una valuación correcta puede mover fuerte el monto disponible.</p>
+        </div>
+        <div class="use-card">
+          <p class="use-tag">BLINDADOS</p>
+          <h3 class="use-title">Activos donde el blindaje importa</h3>
+          <p class="use-desc">Cuando el vehículo incorpora blindaje certificado, la operación requiere una lógica distinta a la de una valuación superficial.</p>
+        </div>
+        <div class="use-card">
+          <p class="use-tag">LIQUIDEZ RÁPIDA</p>
+          <h3 class="use-title">Resolver capital sin deshacerte del auto</h3>
+          <p class="use-desc">Si el vehículo ya concentra valor patrimonial, usarlo como respaldo puede ser una vía más eficiente que venderlo con prisa o malbaratarlo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="como-funciona" class="content-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">PROCESO EN QUERÉTARO</p>
+      <h2 class="section-title">Respuesta rápida,<br />operación seria.</h2>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3 class="step-title">Filtro inicial</h3>
+          <p class="step-desc">Compartes datos básicos del vehículo y validamos rápido si la operación encaja con el perfil de SWIP.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3 class="step-title">Valuación presencial</h3>
+          <p class="step-desc">Si el caso avanza, se coordina la revisión del activo con base en la logística y el tipo de vehículo.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3 class="step-title">Oferta formal</h3>
+          <p class="step-desc">El monto se define después de ver el activo real, con condiciones claras y sin sorpresas posteriores.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <h3 class="step-title">Depósito</h3>
+          <p class="step-desc">Con documentación lista, el proceso puede cerrarse dentro del mismo día hábil y el depósito se realiza en menos de 24 horas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">MODALIDADES</p>
+      <h2 class="section-title">Monto máximo o<br />continuidad de uso.</h2>
+      <div class="modal-grid">
+        <div class="modal-card">
+          <p class="modal-tag">CON RESGUARDO</p>
+          <h3 class="modal-title">Para operaciones más altas</h3>
+          <p class="modal-desc">En vehículos de mayor valor, esta modalidad suele permitir mejores condiciones y montos más ambiciosos.</p>
+          <a href="/prestamo-con-garantia-de-auto-con-resguardo/" class="modal-link">Ver modalidad →</a>
+        </div>
+        <div class="modal-card">
+          <p class="modal-tag">SIN DEJARLO</p>
+          <h3 class="modal-title">Para seguir usando el auto</h3>
+          <p class="modal-desc">Si la movilidad es prioritaria, evaluamos la modalidad sin dejarlo dentro de los límites que el caso soporte.</p>
+          <a href="/prestamo-con-garantia-de-auto-sin-dejarlo/" class="modal-link">Ver modalidad →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <RelatedLinks
+    eyebrow="RUTAS RELACIONADAS"
+    title="Conecta Querétaro con la página que resuelve mejor tu perfil."
+    items={[
+      {
+        href: '/prestamo-con-garantia-de-autos-de-lujo/',
+        label: 'Autos de lujo',
+        description: 'Cuando el diferencial real está en la valuación de unidades premium y SUVs de alto valor.',
+      },
+      {
+        href: '/prestamo-con-garantia-de-auto-en-cdmx/',
+        label: 'CDMX',
+        description: 'La página local equivalente para operaciones en Ciudad de México y zona metropolitana.',
+      },
+      {
+        href: '/contacto/',
+        label: 'Contacto',
+        description: 'Habla con un asesor para validar tiempos, cobertura y documentación inicial.',
+      },
+    ]}
+  />
+
+  <FAQ items={faqs} eyebrow="PREGUNTAS FRECUENTES · QUERÉTARO" />
+
+  <CTASection
+    eyebrow="SIGUIENTE PASO · QUERÉTARO"
+    title="Si el vehículo tiene valor,\nno lo mandes a una tabla genérica."
+    body="Comparte marca, modelo, año y kilometraje para validar rápido si tu caso en Querétaro encaja con SWIP."
+    primaryLabel="Cotizar en Querétaro"
+  />
+</Page>
+
+<style>
+  .page-hero,
+  .content-section {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .hero-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 96px 64px 80px;
+  }
+
+  .section-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 96px 64px;
+  }
+
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1.35fr;
+    gap: 80px;
+    align-items: start;
+  }
+
+  .eyebrow,
+  .section-eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.42em;
+    color: rgba(168,168,168,0.4);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .hero-title,
+  .section-title {
+    font-size: clamp(34px, 4.8vw, 72px);
+    font-weight: 300;
+    color: var(--white);
+    letter-spacing: -0.02em;
+    line-height: 1.02;
+    margin-bottom: 24px;
+  }
+
+  .hero-body,
+  .section-text p {
+    font-size: 15px;
+    color: rgba(168,168,168,0.76);
+    line-height: 1.85;
+  }
+
+  .hero-body {
+    max-width: 620px;
+    margin-bottom: 32px;
+  }
+
+  .section-text p {
+    margin-bottom: 20px;
+  }
+
+  .hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 16px 40px;
+    border: 1px solid rgba(255,255,255,0.35);
+    color: var(--white);
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .btn-primary:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(255,255,255,0.6);
+  }
+
+  .btn-ghost,
+  .modal-link {
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    color: rgba(168,168,168,0.56);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+  .btn-ghost:hover,
+  .modal-link:hover {
+    color: var(--white);
+  }
+
+  .use-grid,
+  .steps-grid,
+  .modal-grid {
+    display: grid;
+    gap: 1px;
+    background: var(--line);
+    margin-top: 56px;
+  }
+
+  .use-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .steps-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .modal-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .use-card,
+  .step,
+  .modal-card {
+    background: var(--black);
+    padding: 40px 32px;
+  }
+
+  .use-tag,
+  .modal-tag,
+  .step-num {
+    font-size: 9px;
+    letter-spacing: 0.36em;
+    color: rgba(168,168,168,0.3);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+
+  .use-title,
+  .modal-title,
+  .step-title {
+    font-size: 22px;
+    font-weight: 300;
+    color: var(--white);
+    letter-spacing: -0.01em;
+    margin-bottom: 12px;
+  }
+
+  .step-title {
+    font-size: 17px;
+  }
+
+  .use-desc,
+  .modal-desc,
+  .step-desc {
+    font-size: 13px;
+    color: rgba(168,168,168,0.64);
+    line-height: 1.75;
+  }
+
+  @media (max-width: 1024px) {
+    .use-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .steps-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-inner,
+    .section-inner {
+      padding: 64px 24px;
+    }
+
+    .two-col,
+    .steps-grid,
+    .modal-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-actions {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 14px;
+    }
+
+    .btn-primary {
+      width: 100%;
+      padding: 16px 24px;
+    }
+
+    .use-card,
+    .step,
+    .modal-card {
+      padding: 36px 24px;
+    }
+  }
+</style>

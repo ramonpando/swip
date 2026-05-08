@@ -157,16 +157,18 @@ const baseSchema = {
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/assets/logos/favicon.svg" />
 
-  <!-- Fonts -->
+  <!-- Fonts — async to avoid render blocking -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500&display=swap" /></noscript>
   <slot name="head" />
 
 </head>
 <body>
   <slot />
   <script
+    defer
     src="https://chatapp.chatflow.mx/widget.js"
     data-agent-id="a6b8378e-05dc-4bcc-a2a7-261c7ae146ec"
     data-position="bottom-right"

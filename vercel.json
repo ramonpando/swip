@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/pre-owned/",
+      "destination": "https://dashboard.bravix.com.mx/catalogo/swip-dealership",
+      "permanent": true
+    },
+    {
+      "source": "/pre-owned",
+      "destination": "https://dashboard.bravix.com.mx/catalogo/swip-dealership",
+      "permanent": true
+    }
+  ]
+}

@@ -285,6 +285,46 @@ const schema = [
     </div>
   </section>
 
+  <!-- BLOG CLUSTER -->
+  <section class="content-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">GUÍAS POR MODELO Y SITUACIÓN</p>
+      <h2 class="section-title">Respuestas específicas<br />para tu vehículo.</h2>
+      <div class="blog-links">
+        <a href="/blog/cuanto-me-prestan-por-una-range-rover/" class="blog-link-card">
+          <p class="blog-link-label">POR MODELO</p>
+          <p class="blog-link-title">¿Cuánto me prestan por una Range Rover?</p>
+          <p class="blog-link-arrow">Leer →</p>
+        </a>
+        <a href="/blog/cuanto-me-prestan-por-una-bmw-x7/" class="blog-link-card">
+          <p class="blog-link-label">POR MODELO</p>
+          <p class="blog-link-title">¿Cuánto me prestan por una BMW X7?</p>
+          <p class="blog-link-arrow">Leer →</p>
+        </a>
+        <a href="/blog/cuanto-me-prestan-por-una-mercedes-g63/" class="blog-link-card">
+          <p class="blog-link-label">POR MODELO</p>
+          <p class="blog-link-title">¿Cuánto me prestan por una Mercedes G63?</p>
+          <p class="blog-link-arrow">Leer →</p>
+        </a>
+        <a href="/blog/empeno-de-autos-de-lujo-vs-prestamo-con-garantia/" class="blog-link-card">
+          <p class="blog-link-label">COMPARATIVA</p>
+          <p class="blog-link-title">Empeño de lujo vs préstamo con garantía: qué conviene más</p>
+          <p class="blog-link-arrow">Leer →</p>
+        </a>
+        <a href="/blog/con-resguardo-o-sin-dejarlo-para-auto-de-lujo/" class="blog-link-card">
+          <p class="blog-link-label">MODALIDAD</p>
+          <p class="blog-link-title">Con resguardo o sin dejarlo: qué conviene para un auto de lujo</p>
+          <p class="blog-link-arrow">Leer →</p>
+        </a>
+        <a href="/blog/cuanto-tarda-el-proceso-para-auto-premium-blindado-exotico/" class="blog-link-card">
+          <p class="blog-link-label">PROCESO</p>
+          <p class="blog-link-title">¿Cuánto tarda el proceso para un auto de lujo?</p>
+          <p class="blog-link-arrow">Leer →</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <RelatedLinks
     title="Conecta la valuación premium con la operación correcta."
     items={[
@@ -389,6 +429,13 @@ const schema = [
   .coverage-tag { font-size: 9px; letter-spacing: 0.36em; color: rgba(168,168,168,0.3); text-transform: uppercase; margin-bottom: 16px; }
   .coverage-desc { font-size: 13px; color: rgba(168,168,168,0.62); line-height: 1.8; }
 
+  .blog-links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 48px; }
+  .blog-link-card { background: var(--black); padding: 36px 28px; text-decoration: none; transition: background 0.2s; display: block; }
+  .blog-link-card:hover { background: rgba(255,255,255,0.03); }
+  .blog-link-label { font-size: 9px; letter-spacing: 0.38em; color: rgba(168,168,168,0.35); text-transform: uppercase; margin-bottom: 12px; }
+  .blog-link-title { font-size: 16px; font-weight: 300; color: var(--white); line-height: 1.35; margin-bottom: 18px; }
+  .blog-link-arrow { font-size: 11px; letter-spacing: 0.2em; color: rgba(168,168,168,0.45); text-transform: uppercase; }
+
   @media (max-width: 1024px) {
     .section-inner.two-col { grid-template-columns: 1fr; gap: 40px; }
     .brand-list { grid-template-columns: repeat(2,1fr); }
@@ -404,5 +451,7 @@ const schema = [
     .brand-list, .montos-grid, .steps-grid, .diff-grid, .coverage-grid { grid-template-columns: 1fr; }
     .brand-tier { padding: 28px 24px; }
     .monto-card, .step, .diff-card, .coverage-card { padding: 32px 24px; }
+    .blog-links { grid-template-columns: 1fr; }
+    .blog-link-card { padding: 28px 20px; }
   }
 </style>

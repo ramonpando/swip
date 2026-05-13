@@ -30,6 +30,23 @@ const schema = [
   },
   {
     "@context": "https://schema.org",
+    "@type": "LoanOrCredit",
+    "name": "Préstamo con Garantía de Auto — SWIP",
+    "description": "Préstamo con garantía vehicular en México. Obtén liquidez usando tu auto como respaldo sin venderlo.",
+    "url": "https://swip.mx/prestamo-con-garantia-de-auto/",
+    "provider": { "@id": "https://swip.mx/#organization" },
+    "currency": "MXN",
+    "loanType": "SecuredLoan",
+    "requiredCollateral": "Vehículo automotor como garantía prendaria",
+    "amount": {
+      "@type": "MonetaryAmount",
+      "minValue": 90000,
+      "maxValue": 5000000,
+      "currency": "MXN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
       {
@@ -45,6 +62,15 @@ const schema = [
         "item": "https://swip.mx/prestamo-con-garantia-de-auto/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(f => ({
+      "@type": "Question",
+      "name": f.q,
+      "acceptedAnswer": { "@type": "Answer", "text": f.a }
+    }))
   }
 ];
 ---

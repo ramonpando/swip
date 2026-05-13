@@ -28,6 +28,22 @@ const schema = [
   },
   {
     "@context": "https://schema.org",
+    "@type": "LoanOrCredit",
+    "name": "Préstamo con Garantía de Auto Sin Dejarlo — SWIP",
+    "description": "Obtén liquidez sin dejar tu auto. Préstamo con monitoreo GPS activo, hasta $400,000 MXN.",
+    "url": "https://swip.mx/prestamo-con-garantia-de-auto-sin-dejarlo/",
+    "provider": { "@id": "https://swip.mx/#organization" },
+    "currency": "MXN",
+    "loanType": "SecuredLoan",
+    "requiredCollateral": "Vehículo con monitoreo GPS activo",
+    "amount": {
+      "@type": "MonetaryAmount",
+      "maxValue": 400000,
+      "currency": "MXN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
       {
@@ -49,6 +65,15 @@ const schema = [
         "item": "https://swip.mx/prestamo-con-garantia-de-auto-sin-dejarlo/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(f => ({
+      "@type": "Question",
+      "name": f.q,
+      "acceptedAnswer": { "@type": "Answer", "text": f.a }
+    }))
   }
 ];
 ---

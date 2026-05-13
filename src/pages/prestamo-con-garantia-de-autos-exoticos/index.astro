@@ -27,6 +27,23 @@ const schema = [
   },
   {
     "@context": "https://schema.org",
+    "@type": "LoanOrCredit",
+    "name": "Préstamo con Garantía de Auto Exótico — SWIP",
+    "description": "Préstamo con garantía de autos exóticos: Ferrari, Lamborghini, Bentley, Rolls-Royce, McLaren. Valuación internacional, sin límite de monto.",
+    "url": "https://swip.mx/prestamo-con-garantia-de-autos-exoticos/",
+    "provider": { "@id": "https://swip.mx/#organization" },
+    "currency": "MXN",
+    "loanType": "SecuredLoan",
+    "requiredCollateral": "Auto exótico o superdeportivo como garantía prendaria",
+    "amount": {
+      "@type": "MonetaryAmount",
+      "minValue": 800000,
+      "maxValue": 5000000,
+      "currency": "MXN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": faqs.map(f => ({
       "@type": "Question",

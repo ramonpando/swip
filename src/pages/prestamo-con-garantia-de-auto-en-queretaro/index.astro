@@ -55,6 +55,15 @@ const schema = [
         "item": "https://swip.mx/prestamo-con-garantia-de-auto-en-queretaro/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(f => ({
+      "@type": "Question",
+      "name": f.q,
+      "acceptedAnswer": { "@type": "Answer", "text": f.a }
+    }))
   }
 ];
 ---

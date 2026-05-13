@@ -28,6 +28,23 @@ const schema = [
   },
   {
     "@context": "https://schema.org",
+    "@type": "LoanOrCredit",
+    "name": "Préstamo con Garantía de Auto Blindado — SWIP",
+    "description": "Préstamo con garantía de autos blindados. Valuación especializada que reconoce el valor del blindaje certificado. Hasta $5,000,000 MXN.",
+    "url": "https://swip.mx/prestamo-con-garantia-de-autos-blindados/",
+    "provider": { "@id": "https://swip.mx/#organization" },
+    "currency": "MXN",
+    "loanType": "SecuredLoan",
+    "requiredCollateral": "Vehículo blindado certificado como garantía prendaria",
+    "amount": {
+      "@type": "MonetaryAmount",
+      "minValue": 90000,
+      "maxValue": 5000000,
+      "currency": "MXN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
       {
@@ -49,6 +66,15 @@ const schema = [
         "item": "https://swip.mx/prestamo-con-garantia-de-autos-blindados/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(f => ({
+      "@type": "Question",
+      "name": f.q,
+      "acceptedAnswer": { "@type": "Answer", "text": f.a }
+    }))
   }
 ];
 ---

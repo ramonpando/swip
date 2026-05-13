@@ -28,6 +28,23 @@ const schema = [
   },
   {
     "@context": "https://schema.org",
+    "@type": "LoanOrCredit",
+    "name": "Préstamo con Garantía de Auto de Lujo — SWIP",
+    "description": "Préstamo con garantía de autos de lujo. Valuación especializada para BMW, Mercedes-Benz, Porsche, Audi y equivalentes. Hasta $5,000,000 MXN.",
+    "url": "https://swip.mx/prestamo-con-garantia-de-autos-de-lujo/",
+    "provider": { "@id": "https://swip.mx/#organization" },
+    "currency": "MXN",
+    "loanType": "SecuredLoan",
+    "requiredCollateral": "Auto de lujo como garantía prendaria",
+    "amount": {
+      "@type": "MonetaryAmount",
+      "minValue": 200000,
+      "maxValue": 5000000,
+      "currency": "MXN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
       {
@@ -49,6 +66,15 @@ const schema = [
         "item": "https://swip.mx/prestamo-con-garantia-de-autos-de-lujo/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(f => ({
+      "@type": "Question",
+      "name": f.q,
+      "acceptedAnswer": { "@type": "Answer", "text": f.a }
+    }))
   }
 ];
 ---

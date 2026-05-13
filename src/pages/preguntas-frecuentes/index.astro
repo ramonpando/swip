@@ -17,24 +17,35 @@ const faqs = [
   { q: '¿Qué tan recomendable es empeñar un auto?', a: 'Puede ser recomendable cuando necesitas liquidez rápida y tu vehículo tiene valor suficiente para respaldar una operación seria. Lo importante es elegir una estructura clara, documentada y profesional. Para autos de valor, un préstamo con garantía vehicular bien ejecutado suele ser una alternativa más conveniente que el empeño tradicional.' },
 ];
 
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Inicio",
-      "item": "https://swip.mx/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Preguntas frecuentes",
-      "item": "https://swip.mx/preguntas-frecuentes/"
-    }
-  ]
-};
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://swip.mx/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Preguntas frecuentes",
+        "item": "https://swip.mx/preguntas-frecuentes/"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(f => ({
+      "@type": "Question",
+      "name": f.q,
+      "acceptedAnswer": { "@type": "Answer", "text": f.a }
+    }))
+  }
+];
 ---
 <Page
   title="Preguntas Frecuentes sobre Préstamo con Garantía de Auto | SWIP"

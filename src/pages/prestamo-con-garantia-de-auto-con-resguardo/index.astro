@@ -29,6 +29,17 @@ const schema = [
   },
   {
     "@context": "https://schema.org",
+    "@type": "LoanOrCredit",
+    "name": "Préstamo con Garantía de Auto con Resguardo — SWIP",
+    "description": "Modalidad con resguardo: sin límite de monto, instalaciones seguras y seguro activo durante todo el plazo.",
+    "url": "https://swip.mx/prestamo-con-garantia-de-auto-con-resguardo/",
+    "provider": { "@id": "https://swip.mx/#organization" },
+    "currency": "MXN",
+    "loanType": "SecuredLoan",
+    "requiredCollateral": "Vehículo en resguardo físico en instalaciones SWIP"
+  },
+  {
+    "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
       {
@@ -50,6 +61,15 @@ const schema = [
         "item": "https://swip.mx/prestamo-con-garantia-de-auto-con-resguardo/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(f => ({
+      "@type": "Question",
+      "name": f.q,
+      "acceptedAnswer": { "@type": "Answer", "text": f.a }
+    }))
   }
 ];
 ---

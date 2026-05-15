@@ -196,5 +196,158 @@ const baseSchema = {
     data-primary-color="#000000"
     data-greeting="¡Hola! Soy SwipBot. ¿En qué puedo ayudarte?"
   ></script>
+
+  <!-- Modal de cotización -->
+  <div id="swip-modal-overlay" style="display:none" aria-modal="true" role="dialog">
+    <div id="swip-modal">
+      <button id="swip-modal-close" aria-label="Cerrar">×</button>
+      <p class="swip-modal-eyebrow">¿CÓMO QUIERES CONTINUAR?</p>
+      <div class="swip-modal-options">
+        <div class="swip-modal-option">
+          <p class="swip-option-label">Sin compromiso</p>
+          <h3 class="swip-option-title">Cotiza con SwipBot</h3>
+          <p class="swip-option-body">El bot te hace 3 preguntas y estima cuánto puedes obtener. Sin presión, sin asesor.</p>
+          <button class="swip-btn-bot" id="swip-open-bot">Iniciar chat →</button>
+        </div>
+        <div class="swip-modal-divider"></div>
+        <div class="swip-modal-option">
+          <p class="swip-option-label">Respuesta inmediata</p>
+          <h3 class="swip-option-title">Hablar con un asesor</h3>
+          <p class="swip-option-body">Un asesor real te atiende ahora por WhatsApp. Para cuando ya sabes que quieres avanzar.</p>
+          <a class="swip-btn-wa" id="swip-open-wa" href="https://wa.me/5215554055089?text=Hola%2C%20quiero%20cotizar%20un%20pr%C3%A9stamo%20con%20garant%C3%ADa%20de%20mi%20veh%C3%ADculo" target="_blank" rel="noopener">Abrir WhatsApp →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    #swip-modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.85);
+      z-index: 99999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    #swip-modal {
+      background: #0a0a0a;
+      border: 1px solid rgba(255,255,255,0.1);
+      max-width: 720px;
+      width: 100%;
+      padding: 56px 48px;
+      position: relative;
+    }
+    #swip-modal-close {
+      position: absolute;
+      top: 20px;
+      right: 24px;
+      background: none;
+      border: none;
+      color: rgba(255,255,255,0.4);
+      font-size: 24px;
+      cursor: pointer;
+      line-height: 1;
+      padding: 0;
+    }
+    #swip-modal-close:hover { color: #fff; }
+    .swip-modal-eyebrow {
+      font-size: 9px;
+      letter-spacing: 0.42em;
+      color: rgba(168,168,168,0.38);
+      text-transform: uppercase;
+      margin: 0 0 40px;
+      text-align: center;
+    }
+    .swip-modal-options {
+      display: grid;
+      grid-template-columns: 1fr 1px 1fr;
+      gap: 40px;
+    }
+    .swip-modal-divider {
+      background: rgba(255,255,255,0.08);
+    }
+    .swip-modal-option {
+      display: flex;
+      flex-direction: column;
+    }
+    .swip-option-label {
+      font-size: 9px;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: rgba(168,168,168,0.38);
+      margin: 0 0 12px;
+    }
+    .swip-option-title {
+      font-size: 22px;
+      font-weight: 300;
+      color: #fff;
+      letter-spacing: -0.02em;
+      margin: 0 0 16px;
+    }
+    .swip-option-body {
+      font-size: 13px;
+      color: rgba(168,168,168,0.6);
+      line-height: 1.7;
+      margin: 0 0 32px;
+      flex: 1;
+    }
+    .swip-btn-bot, .swip-btn-wa {
+      display: inline-block;
+      padding: 14px 28px;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,0.25);
+      color: #fff;
+      background: none;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.2s;
+      text-align: center;
+    }
+    .swip-btn-bot:hover, .swip-btn-wa:hover {
+      background: rgba(255,255,255,0.06);
+      border-color: rgba(255,255,255,0.5);
+    }
+    @media (max-width: 600px) {
+      #swip-modal { padding: 40px 24px; }
+      .swip-modal-options { grid-template-columns: 1fr; }
+      .swip-modal-divider { display: none; }
+    }
+  </style>
+
+  <script is:inline>
+    window.openSwipModal = function() {
+      var overlay = document.getElementById('swip-modal-overlay');
+      overlay.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    };
+    function closeSwipModal() {
+      document.getElementById('swip-modal-overlay').style.display = 'none';
+      document.body.style.overflow = '';
+    }
+    document.getElementById('swip-modal-close').addEventListener('click', closeSwipModal);
+    document.getElementById('swip-modal-overlay').addEventListener('click', function(e) {
+      if (e.target === this) closeSwipModal();
+    });
+    document.getElementById('swip-open-bot').addEventListener('click', function() {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'chatbot_started' });
+      closeSwipModal();
+      setTimeout(function() {
+        if (window.ChatFlowWidget) window.ChatFlowWidget.open();
+      }, 300);
+    });
+    document.getElementById('swip-open-wa').addEventListener('click', function() {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'whatsapp_click', from_modal: true });
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeSwipModal();
+    });
+  </script>
 </body>
 </html>

@@ -22,12 +22,12 @@ const WHATSAPP = 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20solicitar%
     <h2 class="cta-title">{title}</h2>
     <p class="cta-body">{body}</p>
     <div class="cta-actions">
-      <a href={WHATSAPP} target="_blank" rel="noopener" class="btn-primary">
+      <button onclick="openSwipModal()" class="btn-primary">
         {primaryLabel}
-      </a>
-      <a href={WHATSAPP} target="_blank" rel="noopener" class="btn-ghost">
+      </button>
+      <button onclick="openSwipModal()" class="btn-ghost">
         Hablar por WhatsApp →
-      </a>
+      </button>
     </div>
   </div>
 </section>

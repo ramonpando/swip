@@ -1,0 +1,5 @@
+# Negative Keywords — SWIP
+# Exporta las keywords negativas de las campañas viejas y pégalas aquí
+# Formato: una keyword por línea
+
+# --- PEGAR LISTA EXPORTADA DE ADS AQUÍ ---

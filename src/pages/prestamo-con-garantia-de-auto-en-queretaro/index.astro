@@ -75,16 +75,37 @@ const schema = [
   <section class="page-hero">
     <div class="hero-inner">
       <p class="eyebrow">PRÉSTAMO CON GARANTÍA DE AUTO · QUERÉTARO</p>
-      <h1 class="hero-title">Préstamo respaldado<br />por tu auto en Querétaro.</h1>
+      <h1 class="hero-title">Liquidez en 24 horas<br />con tu auto en Querétaro.</h1>
       <p class="hero-body">
-        Querétaro tiene un parque vehicular premium cada vez más relevante, pero
-        muchas opciones siguen tratando activos de alto valor como si fueran
-        autos genéricos. SWIP entra cuando la valuación correcta, la discreción
-        y la velocidad sí cambian el resultado.
+        Sin buró de crédito, sin vender tu vehículo. SWIP valúa tu auto en tu
+        domicilio y deposita en menos de 24 horas. Autos de lujo, blindados
+        y SUVs premium en Querétaro.
       </p>
       <div class="hero-actions">
-        <button onclick="openSwipModal()" class="btn-primary">Cotiza en Querétaro</button>
+        <button onclick="openSwipModal()" class="btn-primary">Cotiza gratis — sin compromiso</button>
         <a href="/contacto/" class="btn-ghost">Hablar con un asesor →</a>
+      </div>
+      <p class="hero-trust">Sin buró de crédito &nbsp;·&nbsp; Sin vender tu auto &nbsp;·&nbsp; Depósito en 24 h</p>
+    </div>
+  </section>
+
+  <section class="stat-bar">
+    <div class="stat-bar-inner">
+      <div class="stat-item">
+        <span class="stat-num">$0</span>
+        <span class="stat-label">Costo de valuación</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">4.5%</span>
+        <span class="stat-label">Tasa mensual fija desde</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">24 h</span>
+        <span class="stat-label">Depósito máximo</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">$5M</span>
+        <span class="stat-label">MXN monto máximo</span>
       </div>
     </div>
   </section>
@@ -205,6 +226,19 @@ const schema = [
   />
 
   <FAQ items={faqs} eyebrow="PREGUNTAS FRECUENTES · QUERÉTARO" />
+
+  <section class="legal-disclosure">
+    <div class="legal-inner">
+      <p class="legal-text">
+        CORPOSWIP LATAM S.A.P.I. de C.V. · RFC: CLA230824RS7 · Nombre comercial: SWIP ·
+        Préstamos con garantía vehicular desde $90,000 hasta $5,000,000 MXN ·
+        Tasa de interés mensual desde 4.5% sobre saldo insoluto · El monto y la tasa
+        dependen del valor del vehículo y las condiciones de la operación ·
+        Pje. Interlomas 6, Bosques de las Palmas, Huixquilucan, Estado de México, C.P. 52787 ·
+        Tel. 55 5405 5089
+      </p>
+    </div>
+  </section>
 
   <CTASection
     eyebrow="SIGUIENTE PASO · QUERÉTARO"
@@ -388,10 +422,83 @@ const schema = [
     }
   }
 
+  .hero-trust {
+    margin-top: 20px;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    color: rgba(168,168,168,0.45);
+    text-transform: uppercase;
+  }
+
+  .stat-bar {
+    border-bottom: 1px solid var(--line);
+    background: rgba(255,255,255,0.02);
+  }
+
+  .stat-bar-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 64px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--line);
+  }
+
+  .stat-item {
+    background: var(--black);
+    padding: 28px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .stat-num {
+    font-size: 32px;
+    font-weight: 300;
+    color: var(--white);
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    color: rgba(168,168,168,0.4);
+    text-transform: uppercase;
+  }
+
+  .legal-disclosure {
+    border-top: 1px solid var(--line);
+  }
+
+  .legal-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 32px 64px;
+  }
+
+  .legal-text {
+    font-size: 11px;
+    color: rgba(168,168,168,0.35);
+    line-height: 1.8;
+  }
+
+  @media (max-width: 1024px) {
+    .stat-bar-inner {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
   @media (max-width: 768px) {
     .hero-inner,
     .section-inner {
       padding: 64px 24px;
+    }
+
+    .stat-bar-inner {
+      padding: 24px;
+      grid-template-columns: repeat(2, 1fr);
     }
 
     .two-col,

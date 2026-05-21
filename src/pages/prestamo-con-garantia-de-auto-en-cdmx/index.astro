@@ -118,6 +118,23 @@ const schema = [
     </div>
   </section>
 
+  <section class="brands-section">
+    <div class="brands-inner">
+      <p class="brands-eyebrow">Valuamos estas marcas y más</p>
+      <div class="brands-strip">
+        <span>BMW</span>
+        <span>Mercedes-Benz</span>
+        <span>Porsche</span>
+        <span>Audi</span>
+        <span>Land Rover</span>
+        <span>Lexus</span>
+        <span>Cadillac</span>
+        <span>Blindados</span>
+        <span>Exóticos</span>
+      </div>
+    </div>
+  </section>
+
   <section class="content-section">
     <div class="section-inner two-col">
       <div>
@@ -152,6 +169,9 @@ const schema = [
           <h3 class="use-title">Atención directa sin procesos impersonales</h3>
           <p class="use-desc">En CDMX la velocidad importa, pero también la discreción. El contacto inicia por WhatsApp con conversación útil, no con un flujo genérico de formularios.</p>
         </div>
+      </div>
+      <div class="mid-cta">
+        <button onclick="openSwipModal()" class="btn-primary">¿Tu vehículo aplica? Cotiza gratis →</button>
       </div>
     </div>
   </section>
@@ -188,18 +208,28 @@ const schema = [
   <section class="content-section">
     <div class="section-inner">
       <p class="section-eyebrow">MODALIDADES</p>
-      <h2 class="section-title">La estructura depende<br />del objetivo.</h2>
+      <h2 class="section-title">Dos formas de<br />obtener liquidez.</h2>
       <div class="modal-grid">
         <div class="modal-card">
           <p class="modal-tag">CON RESGUARDO</p>
-          <h3 class="modal-title">Prioridad en monto</h3>
-          <p class="modal-desc">Cuando el objetivo es maximizar el préstamo, la modalidad con resguardo suele abrir mejores condiciones y operaciones más altas.</p>
+          <h3 class="modal-title">Dejas el vehículo,<br />obtienes el máximo.</h3>
+          <p class="modal-desc">Tu auto queda en instalaciones seguras y monitoreadas durante el plazo. Esta modalidad permite los montos más altos, mejor tasa y menor fricción en la valuación — es la opción cuando el objetivo es maximizar el préstamo.</p>
+          <ul class="modal-features">
+            <li>Monto máximo sobre el valor del activo</li>
+            <li>Tasa más baja al reducir el riesgo operativo</li>
+            <li>Instalaciones seguras, monitoreadas 24/7</li>
+          </ul>
           <a href="/prestamo-con-garantia-de-auto-con-resguardo/" class="modal-link">Ver modalidad →</a>
         </div>
         <div class="modal-card">
           <p class="modal-tag">SIN DEJARLO</p>
-          <h3 class="modal-title">Prioridad en movilidad</h3>
-          <p class="modal-desc">Si necesitas seguir usando tu vehículo en CDMX, evaluamos la modalidad sin dejarlo dentro de los parámetros operativos del caso.</p>
+          <h3 class="modal-title">Conservas el auto,<br />sigues moviéndote.</h3>
+          <p class="modal-desc">Mantienes el uso de tu vehículo en CDMX bajo condiciones de monitoreo GPS durante el plazo. El monto es algo menor al de la modalidad con resguardo, pero conservas tu movilidad completa.</p>
+          <ul class="modal-features">
+            <li>Sigues usando tu auto todos los días</li>
+            <li>Monitoreo GPS durante el plazo del préstamo</li>
+            <li>Monto ajustado al riesgo operativo del caso</li>
+          </ul>
           <a href="/prestamo-con-garantia-de-auto-sin-dejarlo/" class="modal-link">Ver modalidad →</a>
         </div>
       </div>
@@ -394,6 +424,73 @@ const schema = [
     letter-spacing: 0.26em;
     color: rgba(168,168,168,0.4);
     text-transform: uppercase;
+  }
+
+  .brands-section {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .brands-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 32px 64px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .brands-eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.36em;
+    color: rgba(168,168,168,0.3);
+    text-transform: uppercase;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .brands-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 32px;
+    align-items: center;
+  }
+
+  .brands-strip span {
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    color: rgba(168,168,168,0.5);
+    text-transform: uppercase;
+  }
+
+  .mid-cta {
+    margin-top: 48px;
+    padding-top: 40px;
+    border-top: 1px solid var(--line);
+  }
+
+  .modal-features {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .modal-features li {
+    font-size: 12px;
+    color: rgba(168,168,168,0.5);
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    position: relative;
+  }
+
+  .modal-features li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: rgba(168,168,168,0.25);
   }
 
   .legal-disclosure {
@@ -597,6 +694,15 @@ const schema = [
 
     .stat-item {
       padding: 20px 24px;
+    }
+
+    .brands-inner {
+      padding: 24px;
+      gap: 20px;
+    }
+
+    .brands-eyebrow {
+      width: 100%;
     }
 
     .two-col,

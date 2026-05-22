@@ -2,7 +2,6 @@
 import Page from '../../layouts/Page.astro';
 import FAQ from '../../components/FAQ.astro';
 import CTASection from '../../components/CTASection.astro';
-import RelatedLinks from '../../components/RelatedLinks.astro';
 
 const WHATSAPP = 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20cotizar%20un%20pr%C3%A9stamo%20con%20garant%C3%ADa%20de%20auto%20en%20Quer%C3%A9taro';
 
@@ -194,44 +193,18 @@ const schema = [
           <p class="modal-tag">CON RESGUARDO</p>
           <h3 class="modal-title">Para operaciones más altas</h3>
           <p class="modal-desc">En vehículos de mayor valor, esta modalidad suele permitir mejores condiciones y montos más ambiciosos.</p>
-          <a href="/prestamo-con-garantia-de-auto-con-resguardo/" class="modal-link">Ver modalidad →</a>
+          <button onclick="openSwipModal()" class="modal-cta">Cotizar con resguardo →</button>
         </div>
         <div class="modal-card">
           <p class="modal-tag">SIN DEJARLO</p>
           <h3 class="modal-title">Para seguir usando el auto</h3>
           <p class="modal-desc">Si la movilidad es prioritaria, evaluamos la modalidad sin dejarlo dentro de los límites que el caso soporte.</p>
-          <a href="/prestamo-con-garantia-de-auto-sin-dejarlo/" class="modal-link">Ver modalidad →</a>
+          <button onclick="openSwipModal()" class="modal-cta">Cotizar sin dejarlo →</button>
         </div>
       </div>
     </div>
   </section>
 
-  <RelatedLinks
-    eyebrow="RUTAS RELACIONADAS"
-    title="Conecta Querétaro con la página que resuelve mejor tu perfil."
-    items={[
-      {
-        href: '/prestamo-con-garantia-de-autos-de-lujo/',
-        label: 'Autos de lujo',
-        description: 'Cuando el diferencial real está en la valuación de unidades premium y SUVs de alto valor.',
-      },
-      {
-        href: '/prestamo-con-garantia-de-auto-en-cdmx/',
-        label: 'CDMX',
-        description: 'La página local equivalente para operaciones en Ciudad de México y zona metropolitana.',
-      },
-      {
-        href: '/blog/donde-valuan-autos-blindados-en-queretaro/',
-        label: 'Valuación de blindados en Querétaro',
-        description: 'Cómo se coordina la valuación de autos blindados en Querétaro con el mismo estándar que en CDMX.',
-      },
-      {
-        href: '/contacto/',
-        label: 'Contacto',
-        description: 'Habla con un asesor para validar tiempos, cobertura y documentación inicial.',
-      },
-    ]}
-  />
 
   <FAQ items={faqs} eyebrow="PREGUNTAS FRECUENTES · QUERÉTARO" />
 
@@ -480,8 +453,7 @@ const schema = [
     border-color: rgba(255,255,255,0.6);
   }
 
-  .btn-ghost,
-  .modal-link {
+  .btn-ghost {
     font-size: 11px;
     letter-spacing: 0.22em;
     color: rgba(168,168,168,0.56);
@@ -490,8 +462,23 @@ const schema = [
     transition: color 0.2s;
   }
 
-  .btn-ghost:hover,
-  .modal-link:hover {
+  .btn-ghost:hover {
+    color: var(--white);
+  }
+
+  .modal-cta {
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    color: rgba(168,168,168,0.56);
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.2s;
+  }
+
+  .modal-cta:hover {
     color: var(--white);
   }
 

@@ -41,9 +41,14 @@ const articleSchema = {
   "articleSection": category,
   "mainEntityOfPage": canonical,
   "author": {
-    "@type": "Organization",
-    "name": "SWIP",
+    "@type": "Person",
+    "@id": "https://swip.mx/#ramon-pando",
+    "name": "Ramon Pando",
+    "jobTitle": "Fundador y Director General",
     "url": "https://swip.mx",
+    "worksFor": {
+      "@id": "https://swip.mx/#organization",
+    },
   },
   "publisher": {
     "@type": "Organization",
@@ -112,6 +117,18 @@ const breadcrumbSchema = {
         <slot />
       </div>
     </article>
+
+    <section class="article-author">
+      <div class="article-inner author-inner">
+        <div class="author-card">
+          <div class="author-text">
+            <p class="author-name">Ramon Pando</p>
+            <p class="author-role">Fundador y Director General, SWIP</p>
+            <p class="author-bio">Fundó SWIP en 2023 con el objetivo de ofrecer liquidez real a propietarios de vehículos de alto valor en México. Más de 10 años en estructuración de activos y financiamiento alternativo. Opera personalmente cada valuación de activos complejos — blindados, exóticos y vehículos de producción limitada.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="article-cta">
       <div class="article-inner cta-inner">
@@ -274,6 +291,44 @@ const breadcrumbSchema = {
   .prose th {
     color: var(--white);
     font-weight: 400;
+  }
+
+  .article-author {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .author-inner {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .author-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .author-name {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 4px;
+  }
+
+  .author-role {
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(168, 168, 168, 0.45);
+    margin-bottom: 14px;
+  }
+
+  .author-bio {
+    font-size: 14px;
+    line-height: 1.85;
+    color: rgba(168, 168, 168, 0.62);
+    max-width: 620px;
+    margin-bottom: 0;
   }
 
   .cta-inner {

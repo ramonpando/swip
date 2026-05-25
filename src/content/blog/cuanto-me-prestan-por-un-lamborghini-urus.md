@@ -64,6 +64,32 @@ El Urus es más utilizable como vehículo cotidiano que otros Lamborghini, lo qu
 - 10,000 – 15,000 km anuales: estándar del segmento
 - Más de 20,000 km anuales: ajuste significativo en la valuación
 
+## Cuándo el Urus puede valer más que su precio original
+
+Es uno de los pocos vehículos donde esto sucede regularmente en México, y tiene implicaciones directas para el monto de un préstamo.
+
+Las condiciones en las que un Urus puede estar por encima de su precio de lista original:
+
+- **Urus Performante con configuración Ad Personam** en colores de alta demanda (Giallo Orion, Verde Mantis), año 2023-2024, con menos de 5,000 km. El mercado secundario puede reflejar un precio igual o superior al precio de agencia cuando hay listas de espera activas.
+- **Urus S de 2022-2023** en períodos donde la demanda supera la entrega de nuevas unidades. El mercado secundario de CDMX ha registrado transacciones de Urus S a precios de $200,000–$400,000 MXN sobre el precio de lista en meses de alta demanda.
+
+Para efectos del préstamo: cuando el vehículo vale igual o más que su precio original, el monto que SWIP puede ofrecer puede estar en el rango superior de la tabla. Es la diferencia entre un activo que deprecia normalmente y uno con demanda superior a oferta.
+
+## El mercado internacional y cómo afecta la valuación en México
+
+El Urus tiene demanda activa en mercados internacionales que influye en el precio de reventa local:
+
+| Mercado | Nivel de demanda | Impacto en valuación MX |
+|---------|-----------------|------------------------|
+| México (CDMX, GDL, MTY) | Alto | Referencia primaria |
+| EAU / Arabia Saudita | Muy alto | Escasez global que sube precios locales |
+| EUA (Miami, Houston, LA) | Alto | Referencia comparativa en USD |
+| Europa | Moderado | Referencia para versiones Ad Personam exclusivas |
+
+Lo que esto significa en práctica: cuando el valuador analiza un Urus, no usa solo el mercado local. Considera el movimiento en el mercado secundario internacional para esa versión específica — porque eso afecta qué tan rápido puede moverse el activo si fuera necesario.
+
+Un Urus Performante 2023 con configuración estándar puede moverse en el mercado MX en días. Uno con configuración Ad Personam muy específica puede tardar más — eso se refleja en el monto final.
+
 ## Urus como activo para garantía: comparación con otras opciones del segmento
 
 | Vehículo | Retención de valor | Liquidez del mercado | Nota |

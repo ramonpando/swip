@@ -1,7 +1,8 @@
 # Google Ads — Campaña Querétaro
 
 Fecha: 2026-05-21
-Estado: **LISTA PARA CONFIGURAR**
+Actualizado: 2026-05-29
+Estado: **ACTIVA ✅**
 
 ---
 
@@ -32,8 +33,16 @@ Estado: **LISTA PARA CONFIGURAR**
 - ❌ Desactivar socios de búsqueda (por ahora)
 
 ### Ubicaciones
-- **Segmentar:** Querétaro, México
-- **Excluir:** resto del país
+- ~~**Segmentar:** Querétaro estado~~ — **CAMBIADO 2026-05-29**
+- **Segmentar zonas premium específicas:**
+  - Juriquilla, Querétaro
+  - Jurica, Querétaro
+  - El Campanario, Querétaro
+  - Zibatá, Querétaro
+  - Zakía, Querétaro
+  - El Refugio, Querétaro
+  - Santiago de Querétaro (centro)
+- **Razón:** estado completo incluye zonas rurales y ciudades de bajo perfil (San Juan del Río, Cadereyta, Amealco)
 - Opción de segmentación: **"Personas en esta ubicación"** (no "interesadas en")
 
 ### Idioma
@@ -60,13 +69,14 @@ Nombre: `Garantia_Vehicular_Queretaro`
 "empeño de autos Querétaro"
 "préstamo vehicular Querétaro"
 "dinero con mi auto Querétaro"
-"préstamo sin buró Querétaro"
 "garantía vehicular Querétaro"
 "préstamo con garantía Querétaro"
 "empeñar auto Querétaro"
 "préstamo con auto Querétaro"
 "liquidez con mi auto Querétaro"
 ```
+
+> ⚠️ **"préstamo sin buró Querétaro" ELIMINADA** — atrae perfil incorrecto (personas con mal historial buscando préstamos pequeños). Aprendizaje de CDMX aplicado desde el inicio.
 
 ### Negative keywords (agregar desde el inicio)
 

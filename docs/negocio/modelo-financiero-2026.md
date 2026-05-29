@@ -197,8 +197,8 @@ Revisar estos indicadores el día 1 de cada mes:
 
 | Campaña | Plataforma | Landing | Presupuesto/día | Estado |
 |---------|-----------|---------|----------------|--------|
-| GOOG_Search_CDMX_General | Google Ads | `/prestamo-con-garantia-de-auto-en-cdmx/` | $500 MXN | Activa ✅ |
-| GOOG_Search_Queretaro_Garantia_May26 | Google Ads | `/prestamo-con-garantia-de-auto-en-queretaro/` | $150 MXN | Configurada — activar ⏳ |
+| GOOG_Search_CDMX_General | Google Ads | `/prestamo-con-garantia-de-auto-en-cdmx/` | Subido (ver nota) | Activa ✅ |
+| GOOG_Search_Queretaro_Garantia_May26 | Google Ads | `/prestamo-con-garantia-de-auto-en-queretaro/` | $150 MXN | **Activa ✅** |
 | Meta Ads | Meta | TBD | — | Pendiente planeación |
 
 ---
@@ -209,3 +209,7 @@ Revisar estos indicadores el día 1 de cada mes:
 - **2026-05-13:** GTM + GA4 + Google Ads conversiones verificadas. Grupo "Lujo y Blindados" pausado (0 impresiones — keywords muy genéricas).
 - **2026-05-20:** Estrategia V2 documentada. Decisiones pendientes a junio.
 - **2026-05-21:** Campaña Querétaro configurada. Landings CDMX y Querétaro optimizadas (hero con imagen, stats bar, trust line, divulgación legal). Modelo financiero corregido con churn cohort.
+- **2026-05-29:** Campaña Querétaro activada. Ambas campañas optimizadas por ubicación y keywords:
+  - CDMX: radio 8 millas desde CP 11000 (Polanco), excluidas Gustavo A. Madero / Azcapotzalco / Venustiano Carranza / Iztacalco. Keywords "sin buró" y "sin historial crediticio" pausadas — eran la causa de leads de $3K-$15K.
+  - Querétaro: zona estado reemplazada por zonas premium (Juriquilla, Jurica, El Campanario, Zibatá, Zakía, El Refugio, Santiago QRO). Budget mantenido en $150/día.
+  - Presupuesto CDMX subido (pendiente confirmar monto exacto).

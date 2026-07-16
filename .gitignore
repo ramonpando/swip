@@ -6,3 +6,8 @@ node_modules/
 .DS_Store
 *.log
 .astro/
+
+# Local AI assistant tooling
+.agents/
+.claude/
+skills-lock.json

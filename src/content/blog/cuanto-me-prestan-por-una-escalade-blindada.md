@@ -1,15 +1,21 @@
 ---
-title: "¿Cuánto me prestan por una Escalade blindada?"
-description: "Por una Escalade blindada nivel III en buenas condiciones, SWIP puede ofrecer entre $900,000 y $1,800,000 MXN. La Escalade tiene uno de los valores de garantía más altos del segmento de blindados por su precio base alto y buena demanda de mercado."
+title: "¿Cuánto Prestan por una Cadillac Escalade en México?"
+description: "Consulta cuánto puedes obtener por una Cadillac Escalade estándar o blindada. El monto depende del año, versión, kilometraje, condición y blindaje."
 date: "2026-05-13"
 category: "Autos Blindados"
 slug: "cuanto-me-prestan-por-una-escalade-blindada"
 draft: false
 ---
 
-Por una Escalade blindada en buenas condiciones, SWIP puede ofrecer entre $900,000 y $1,800,000 MXN. La Escalade tiene uno de los valores de garantía más altos dentro del segmento de blindados en México por dos razones: su precio base es significativamente mayor al de la Suburban y la Tahoe, y tiene demanda activa como blindado en el mercado mexicano.
+SWIP puede evaluar una Cadillac Escalade estándar o blindada como garantía vehicular. El monto depende primero del valor del vehículo base: año, versión, kilometraje, historial de servicio y condición. Si tiene blindaje, también se revisan el nivel, la armadora, la antigüedad y la documentación.
 
-En SWIP hacemos [préstamos con garantía de autos blindados](/prestamo-con-garantia-de-autos-blindados/) con valuación que reconoce el valor real del blindaje. La Escalade, en sus versiones de alto equipamiento, es uno de los vehículos que mejor desempeño tiene en operaciones de garantía vehicular.
+En una Escalade blindada nivel III en buenas condiciones, los rangos orientativos pueden ir de $900,000 a $1,800,000 MXN para modelos recientes. Una Escalade sin blindaje también puede aplicar: se valúa como [auto de lujo](/prestamo-con-garantia-de-autos-de-lujo/), sin exigir documentación de blindaje. Si la unidad está protegida, usamos una [valuación especializada para autos blindados](/prestamo-con-garantia-de-autos-blindados/).
+
+## Escalade estándar o blindada: ambas pueden aplicar
+
+El blindaje no es un requisito para solicitar un préstamo. Una Escalade estándar conserva valor por su versión, equipamiento, condición y demanda en el mercado secundario. En una Escalade blindada, ese valor base se analiza primero y después se suma el valor comprobable del blindaje.
+
+Los rangos de la siguiente tabla corresponden a unidades blindadas. Para una Escalade sin blindaje, el estimado se calcula con las referencias de mercado de su año y versión específicas.
 
 ## Por qué la Escalade genera montos más altos que la Suburban y Tahoe
 
@@ -21,7 +27,7 @@ La diferencia en monto de préstamo entre una Escalade y sus contrapartes de la 
 
 Esa diferencia en valor base se traduce directamente en mayor capacidad de garantía. Una Escalade Platinum blindada de año reciente puede respaldar préstamos que la Suburban del mismo año no alcanza.
 
-## Rangos orientativos por año y versión
+## Rangos orientativos para una Escalade blindada
 
 | Año | Versión | Nivel blindaje | Rango de préstamo estimado |
 |-----|---------|---------------|---------------------------|
@@ -33,9 +39,9 @@ Esa diferencia en valor base se traduce directamente en mayor capacidad de garan
 
 Rangos orientativos. El monto exacto sale de la valuación en persona. Una Escalade Platinum 2023 con blindaje reciente de primera armadora, historial de agencia y bajo kilometraje puede estar en el extremo superior. Una del mismo año con kilometraje alto o sin documentación del blindaje estará más abajo.
 
-## Escalade estándar vs. Escalade ESV blindada
+## Escalade estándar vs. Escalade ESV: cómo cambia la valuación
 
-El ESV (Extended Stretch Vehicle) es significativamente más largo que el modelo estándar. Para efectos del préstamo con garantía:
+El ESV (Extended Stretch Vehicle) es significativamente más largo que el modelo estándar. Esto importa esté blindada o no. Para efectos del préstamo con garantía:
 
 - **Mayor valor base**: el ESV tiene precio de lista más alto en todas las versiones
 - **Mayor capacidad de blindaje**: el espacio adicional permite blindajes más completos con menor compromiso en rendimiento
@@ -43,7 +49,7 @@ El ESV (Extended Stretch Vehicle) es significativamente más largo que el modelo
 
 Para operaciones donde el monto máximo es prioritario, el ESV puede generar números más altos. Para operaciones donde la liquidación del activo podría ser un escenario posible, el modelo estándar tiene mejor liquidez.
 
-## Qué determina el monto de tu Escalade blindada
+## Qué determina el monto de tu Escalade
 
 ### El vehículo base
 
@@ -60,9 +66,9 @@ Para operaciones donde el monto máximo es prioritario, el ESV puede generar nú
 
 Para ver los factores de valuación completos: [cómo se valúa un auto blindado](/blog/como-se-valua-un-auto-blindado/) y [cuánto me prestan por un auto blindado](/blog/cuanto-me-prestan-por-un-auto-blindado/).
 
-## Modalidad que corresponde a una Escalade blindada
+## Modalidad que corresponde a una Escalade
 
-Dado el valor típico de una Escalade blindada, la [modalidad con resguardo](/prestamo-con-garantia-de-auto-con-resguardo/) es casi siempre la estructura correcta — el monto que el vehículo puede respaldar está muy por encima del límite de $400,000 MXN de la modalidad sin resguardo.
+Dado el valor típico de una Escalade, la [modalidad con resguardo](/prestamo-con-garantia-de-auto-con-resguardo/) suele permitir aprovechar mejor el valor del vehículo. En unidades blindadas de alto valor, el monto que pueden respaldar normalmente supera el límite de $400,000 MXN de la modalidad sin resguardo.
 
 El resguardo de una Escalade blindada en SWIP considera el peso del vehículo (puede superar 3,500 kg con blindaje NIJ III), instalaciones acordes y proceso de logística discreto para el retiro del vehículo.
 
@@ -76,7 +82,7 @@ Base:
 - Comprobante de domicilio
 - Tarjeta de circulación
 
-Para el blindaje:
+Si está blindada:
 - Certificación del nivel y armadora (si está disponible)
 - Sin certificación, el valuador evalúa en inspección física
 
@@ -86,6 +92,9 @@ Revisa la lista completa en [documentos para un auto blindado](/blog/documentos-
 
 **¿La Escalade blindada genera mejor monto que una Suburban blindada?**
 Generalmente sí — la Escalade tiene mayor valor base en todas las versiones equivalentes. Para el mismo nivel de blindaje y condición, la diferencia en monto puede ser de $200,000–$400,000 MXN en favor de la Escalade.
+
+**¿Puedo solicitar un préstamo si mi Escalade no está blindada?**
+Sí. El blindaje no es obligatorio. SWIP revisa el año, la versión, el kilometraje, el historial de servicio, la condición y la documentación del vehículo para calcular un estimado.
 
 **¿Aceptan Escalade de modelos anteriores a 2021 (generación anterior)?**
 Sí. Los modelos 2015-2020 tienen la generación anterior y un valor de mercado menor, pero siguen siendo activos sólidos para garantía cuando están en buenas condiciones y con blindaje documentado.
@@ -103,4 +112,4 @@ Pje. Interlomas 6, Naucalpan de Juárez, Estado de México, C.P. 52787
 WhatsApp / Teléfono: 55 5405 5089  
 Atención en CDMX y Querétaro
 
-Si tienes una Escalade blindada y quieres saber el monto real que puedes obtener, el primer paso es contactar al equipo de SWIP con año, versión, kilometraje y nivel de blindaje. El estimado inicial sale en minutos por WhatsApp.
+Si tienes una Cadillac Escalade y quieres saber cuánto puedes obtener, comparte año, versión, kilometraje y condición general. Si está blindada, agrega el nivel, la armadora y la documentación disponible. El equipo de SWIP puede darte un estimado inicial por WhatsApp.

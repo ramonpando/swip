@@ -1,15 +1,15 @@
 ---
-title: "¿Cuánto me prestan por un Porsche 911?"
-description: "Por un Porsche 911 en buenas condiciones, SWIP puede ofrecer entre $600,000 y $4,000,000 MXN. El rango varía enormemente según la versión: desde una Carrera base hasta una GT3 RS o Turbo S. La valuación especializada distingue entre versiones que pueden diferir en más de $2,000,000 MXN de valor."
+title: "¿Cuánto Prestan por un Porsche 911 en México?"
+description: "Consulta rangos estimados de $550,000 a $4 millones para un Porsche 911. La versión, el año, el kilometraje y el historial determinan la valuación."
 date: "2026-05-13"
 category: "Autos Exóticos"
 slug: "cuanto-me-prestan-por-un-porsche-911"
 draft: false
 ---
 
-Por un Porsche 911 en buenas condiciones, SWIP puede ofrecer entre $600,000 y $4,000,000 MXN. El rango varía enormemente según la versión — un Porsche 911 Carrera base de 2019 y un Porsche 911 GT3 RS de 2022 son activos con valores completamente diferentes, aunque se llamen igual. La valuación especializada es lo que permite distinguirlos correctamente y ofrecer el monto que corresponde a cada uno.
+Por un Porsche 911, el rango orientativo de préstamo va de $550,000 a $4,000,000 MXN. La versión es el factor principal: un Carrera base y un GT3 RS del mismo año pueden tener valores muy diferentes. También influyen el kilometraje, el historial de servicio, los opcionales y la condición real.
 
-En SWIP hacemos [préstamos con garantía de autos exóticos](/prestamo-con-garantia-de-autos-exoticos/) y de [lujo](/prestamo-con-garantia-de-autos-de-lujo/) con valuación que reconoce las diferencias entre versiones del 911. Este artículo explica los rangos y los factores que determinan el monto para cada variante.
+SWIP realiza [préstamos con garantía de autos exóticos](/prestamo-con-garantia-de-autos-exoticos/) y de [lujo](/prestamo-con-garantia-de-autos-de-lujo/) con valuación específica para cada versión del 911. A continuación puedes comparar rangos y entender qué determina cuánto te pueden prestar por el vehículo.
 
 ## La familia 911: por qué la versión importa más que en casi cualquier otro auto
 

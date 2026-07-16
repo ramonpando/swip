@@ -53,7 +53,7 @@ Los demás documentos que cambian el resultado:
 - Póliza de seguro vigente que ampare el vehículo
 - En caso de crédito activo: estado de cuenta actualizado
 
-Si quieres ver la lista completa de [documentos necesarios para un auto blindado](/documentos-para-empenar-o-dejar-en-garantia-un-auto-blindado/), hay un artículo dedicado a ese tema.
+Si quieres ver la lista completa de [documentos necesarios para un auto blindado](/blog/documentos-para-empenar-o-dejar-en-garantia-un-auto-blindado/), hay un artículo dedicado a ese tema.
 
 ## Qué errores bajan la oferta
 
@@ -85,4 +85,4 @@ Pje. Interlomas 6, Naucalpan de Juárez, Estado de México, C.P. 52787
 WhatsApp / Teléfono: 55 5405 5089  
 Atención en CDMX y Querétaro
 
-Para entender [cuánto te pueden prestar por tu auto blindado](/cuanto-me-prestan-por-un-auto-blindado/) o para ver qué [documentos necesitas reunir antes de la valuación](/documentos-para-empenar-o-dejar-en-garantia-un-auto-blindado/), revisa los artículos del cluster. Si ya tienes el expediente listo, contacta al equipo de SWIP directamente.
+Para entender [cuánto te pueden prestar por tu auto blindado](/blog/cuanto-me-prestan-por-un-auto-blindado/) o para ver qué [documentos necesitas reunir antes de la valuación](/blog/documentos-para-empenar-o-dejar-en-garantia-un-auto-blindado/), revisa los artículos del cluster. Si ya tienes el expediente listo, contacta al equipo de SWIP directamente.

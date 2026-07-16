@@ -44,7 +44,7 @@ Sin historial o con mantenimiento en talleres externos sin documentación, la of
 - **Modificaciones:** las estéticas reversibles tienen impacto menor; las mecánicas o de motor, especialmente sin documentación, pueden reducir la oferta de forma significativa
 - **Procedencia:** vehículos importados directamente por el propietario con factura en orden tienen valuación más limpia que los que pasaron por intermediarios con cadena de facturación compleja
 
-Para ver en detalle qué factores bajan la valuación de forma específica, revisa el artículo sobre [qué baja la valuación de un auto exótico o de lujo](/que-baja-la-valuacion-de-un-auto-exotico-o-de-lujo/).
+Para ver en detalle qué factores bajan la valuación de forma específica, revisa el artículo sobre [qué baja la valuación de un auto exótico o de lujo](/blog/que-baja-la-valuacion-de-un-auto-exotico-o-de-lujo/).
 
 ## Cómo preparar el vehículo para la valuación
 
@@ -79,4 +79,4 @@ Pje. Interlomas 6, Naucalpan de Juárez, Estado de México, C.P. 52787
 WhatsApp / Teléfono: 55 5405 5089  
 Atención en CDMX y Querétaro
 
-Si ya tienes el expediente listo, el siguiente paso es agendar la valuación con el equipo de SWIP. También puedes revisar [cuánto te pueden prestar por un Ferrari o Lamborghini](/cuanto-me-prestan-por-un-ferrari-o-lamborghini/) o ver los [requisitos para iniciar el proceso](/requisitos/).
+Si ya tienes el expediente listo, el siguiente paso es agendar la valuación con el equipo de SWIP. También puedes revisar [cuánto te pueden prestar por un Ferrari o Lamborghini](/blog/cuanto-me-prestan-por-un-ferrari-o-lamborghini/) o ver los [requisitos para iniciar el proceso](/requisitos/).

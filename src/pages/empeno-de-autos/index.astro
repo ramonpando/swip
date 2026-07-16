@@ -8,10 +8,13 @@ const WHATSAPP = 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20solicitar%
 
 const faqs = [
   { q: '¿Swip es una casa de empeño?', a: 'No exactamente. Swip es una empresa especializada en préstamos con garantía vehicular. A diferencia del empeño tradicional, trabajamos con vehículos de valor medio-alto y alto, ofrecemos un proceso documentado y transparente, y nos especializamos en autos de lujo y blindados.' },
-  { q: '¿Cuál es la diferencia entre empeño de autos y préstamo con garantía vehicular?', a: 'En esencia, el producto financiero es similar: usas tu auto como garantía para obtener dinero. La diferencia está en cómo se ejecuta: el empeño tradicional suele tener procesos poco transparentes, tasas altas y trato impersonal. Un préstamo con garantía vehicular serio — como el de Swip — tiene contrato claro, tasa fija, valuación profesional y atención dedicada.' },
+  { q: '¿Cuál es la diferencia entre empeño de autos y préstamo con garantía vehicular?', a: 'En ambos casos usas el vehículo como respaldo para obtener dinero. La diferencia práctica está en la valuación, las modalidades disponibles, la tasa, el plazo y las condiciones del contrato. En Swip recibes una oferta formal después de revisar el vehículo real.' },
   { q: '¿Qué tipos de autos acepta Swip?', a: 'Swip acepta vehículos de valor medio-alto y alto: autos de lujo (BMW, Mercedes, Porsche, Audi, Land Rover), autos blindados, SUVs premium y vehículos en buen estado general. Mientras mayor sea el valor del auto, mejores condiciones puedes obtener.' },
   { q: '¿Cuánto puedo obtener por mi auto?', a: 'El monto depende directamente del valor comercial de tu vehículo. En Swip trabajamos con préstamos desde $90,000 hasta $5,000,000 MXN. Un valuador revisa tu auto en persona y te da una oferta precisa sin compromisos previos.' },
-  { q: '¿Cómo sé si me conviene el empeño o el préstamo con garantía?', a: 'Si tienes un vehículo de valor y buscas liquidez seria, profesional y a un precio justo, Swip es la mejor opción. Si solo necesitas empeñar algo de poco valor de forma rápida, quizá el empeño tradicional sea suficiente. Para vehículos de valor, Swip siempre ofrece mejores condiciones.' },
+  { q: '¿Puedo empeñar mi auto sin dejarlo?', a: 'Sí, cuando el vehículo y la operación cumplen las condiciones de la modalidad sin resguardo. Conservas el uso del auto con monitoreo GPS y el monto máximo es de $400,000 MXN. Para montos mayores normalmente se evalúa la modalidad con resguardo.' },
+  { q: '¿Qué documentos necesito?', a: 'Identificación oficial vigente, factura original a nombre del solicitante, comprobante de domicilio y tarjeta de circulación. Según el vehículo o la modalidad pueden solicitarse documentos adicionales.' },
+  { q: '¿Qué tasa y plazo maneja Swip?', a: 'La tasa mensual parte de 4.5% sobre saldo insoluto. La tasa final, el plazo y las condiciones dependen del vehículo y de la estructura aprobada. Recibes el monto, la tasa y el plazo por escrito antes de firmar.' },
+  { q: '¿Qué pasa si no puedo pagar?', a: 'Las consecuencias y opciones aplicables se establecen en el contrato. Si anticipas un problema, comunícate de inmediato con el equipo para revisar alternativas. Un incumplimiento sostenido puede llevar a la ejecución de la garantía.' },
   { q: '¿Puedo recuperar mi auto cuando quiera?', a: 'Sí. Puedes liquidar el préstamo anticipadamente en cualquier momento y recuperar tu vehículo. No hay penalización por pago anticipado.' },
   { q: '¿Swip opera solo en Ciudad de México?', a: 'No. Swip tiene presencia en Ciudad de México — con cobertura en Interlomas, Polanco, Lomas de Chapultepec, Santa Fe y toda la zona metropolitana — y en Querétaro. En ambas plazas ofrecemos valuación en tu domicilio o en nuestras instalaciones.' },
 ];
@@ -20,12 +23,12 @@ const schema = [
   {
     "@context": "https://schema.org",
     "@type": "FinancialService",
-    "name": "Empeño de Autos Premium — SWIP",
-    "description": "Alternativa premium al empeño de autos en México. Préstamo con garantía vehicular serio, claro y especializado en vehículos de alto valor.",
+    "name": "Empeño de Autos en México — SWIP",
+    "description": "Préstamo con garantía vehicular de $90,000 a $5,000,000 MXN, con resguardo o sin dejar el auto. Valuación especializada en CDMX y Querétaro.",
     "url": "https://swip.mx/empeno-de-autos/",
     "provider": { "@id": "https://swip.mx/#organization" },
     "areaServed": "MX",
-    "serviceType": "Alternativa premium al empeño de autos",
+    "serviceType": "Préstamo con garantía vehicular con o sin resguardo",
     "mainEntityOfPage": "https://swip.mx/empeno-de-autos/"
   },
   {
@@ -49,56 +52,71 @@ const schema = [
 ];
 ---
 <Page
-  title="Empeño de Autos en México — Alternativa Premium | SWIP"
-  description="¿Buscas empeño de autos? SWIP te ofrece una alternativa más seria: préstamo con garantía vehicular, proceso claro y especialización en autos de lujo, blindados y vehículos de alto valor."
+  title="Empeño de Autos en México: Con o Sin Dejarlo | SWIP"
+  description="Obtén de $90,000 a $5,000,000 usando tu auto como garantía. Con resguardo o sin dejarlo, valuación profesional en CDMX y Querétaro. Solicita un estimado."
   schema={schema}
 >
 
   <section class="page-hero">
     <div class="hero-inner">
-      <p class="eyebrow">EMPEÑO DE AUTOS · ALTERNATIVA PREMIUM · MÉXICO</p>
-      <h1 class="hero-title">Empeño de autos<br />en México.<br />Sin sorpresas.</h1>
+      <p class="eyebrow">EMPEÑO DE AUTOS · CON O SIN RESGUARDO · MÉXICO</p>
+      <h1 class="hero-title">Empeño de autos<br />en México.<br />Con o sin dejarlo.</h1>
       <p class="hero-body">
-        Swip no es una casa de empeño tradicional. Es una alternativa más seria,
-        más clara y más adecuada para quien tiene un vehículo de valor y necesita
-        liquidez real — con trato profesional y condiciones justas. Si quieres ver
-        la estructura completa del servicio, entra a <a href="/prestamo-con-garantia-de-auto/">préstamo con garantía de auto</a>. Si tu caso cae en un segmento premium, también te conviene revisar <a href="/prestamo-con-garantia-de-autos-de-lujo/">autos de lujo</a> o <a href="/prestamo-con-garantia-de-autos-blindados/">autos blindados</a>.
+        Obtén de $90,000 a $5,000,000 MXN usando tu vehículo como garantía,
+        sin venderlo. Puedes elegir una operación con resguardo para buscar un monto
+        mayor o solicitar la modalidad <a href="/prestamo-con-garantia-de-auto-sin-dejarlo/">sin dejar el auto</a>, sujeta a aprobación y con un máximo de $400,000 MXN.
+        La valuación se realiza sobre el vehículo real en CDMX o Querétaro.
       </p>
       <div class="hero-actions">
-        <button onclick="openSwipModal()" class="btn-primary">Cotiza tu préstamo</button>
-        <a href="/prestamo-con-garantia-de-auto/" class="btn-ghost">Ver el servicio completo →</a>
+        <button onclick="openSwipModal()" class="btn-primary">Recibir un estimado</button>
+        <a href="/requisitos/" class="btn-ghost">Ver requisitos →</a>
       </div>
     </div>
   </section>
 
-  <!-- COMPARATIVA -->
+  <!-- QUÉ COMPARAR -->
   <section class="content-section">
     <div class="section-inner">
-      <p class="section-eyebrow">LA DIFERENCIA</p>
-      <h2 class="section-title">Empeño tradicional<br />vs. Swip.</h2>
+      <p class="section-eyebrow">ANTES DE FIRMAR</p>
+      <h2 class="section-title">Qué debes comparar<br />en un empeño de auto.</h2>
       <div class="compare-grid">
-        <div class="compare-col col-bad">
-          <p class="col-header">Empeño tradicional</p>
+        <div class="compare-col col-good">
+          <p class="col-header">REVISA SIEMPRE</p>
           <ul>
-            <li>Tasas altas y poco transparentes</li>
-            <li>Valuación arbitraria del vehículo</li>
-            <li>Proceso impersonal y masivo</li>
-            <li>Poca experiencia en autos de lujo</li>
-            <li>Contratos con letra chica</li>
-            <li>Sin atención personalizada</li>
+            <li>Cómo se calcula el valor del vehículo</li>
+            <li>Tasa, plazo y costo total de la operación</li>
+            <li>Si conservarás el uso del auto</li>
+            <li>Condiciones para liquidar anticipadamente</li>
+            <li>Consecuencias de un pago tardío o incumplimiento</li>
+            <li>Documentos y obligaciones de cada parte</li>
           </ul>
         </div>
         <div class="compare-col col-good">
-          <p class="col-header">SWIP</p>
+          <p class="col-header">CÓMO OPERA SWIP</p>
           <ul>
-            <li>Tasa fija, clara desde el inicio</li>
-            <li>Valuación profesional y documentada</li>
-            <li>Proceso discreto y personalizado</li>
-            <li>Especialistas en lujo y blindados</li>
-            <li>Contrato transparente sin sorpresas</li>
-            <li>Ejecutivo dedicado en todo el proceso</li>
+            <li>Valuación según versión, equipamiento y condición</li>
+            <li>Tasa fija y plazo indicados antes de firmar</li>
+            <li>Modalidad con resguardo o sin dejarlo</li>
+            <li>Oferta formal después de revisar el activo</li>
+            <li>Especialización en lujo, blindados y alto valor</li>
+            <li>Liquidación anticipada sin penalización</li>
           </ul>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODALIDADES -->
+  <section class="content-section">
+    <div class="section-inner two-col">
+      <div>
+        <p class="section-eyebrow">CON O SIN DEJARLO</p>
+        <h2 class="section-title">Dos formas de usar<br />tu auto como garantía.</h2>
+      </div>
+      <div class="section-text">
+        <p><strong>Con resguardo:</strong> el vehículo permanece en instalaciones seguras durante el plazo. Esta estructura suele permitir montos mayores porque reduce el riesgo operativo. Consulta la <a href="/prestamo-con-garantia-de-auto-con-resguardo/">modalidad con resguardo</a>.</p>
+        <p><strong>Sin dejarlo:</strong> conservas el uso del auto con monitoreo GPS y condiciones definidas en el contrato. El monto máximo es de $400,000 MXN y la aprobación depende del vehículo y del caso. Revisa el <a href="/prestamo-con-garantia-de-auto-sin-dejarlo/">empeño de auto sin dejarlo</a>.</p>
+        <p>No tienes que decidir antes de solicitar. Comparte marca, modelo, año y kilometraje; el equipo te explica qué modalidad encaja y qué monto puede respaldar el vehículo.</p>
       </div>
     </div>
   </section>
@@ -133,6 +151,37 @@ const schema = [
     </div>
   </section>
 
+  <!-- REQUISITOS -->
+  <section class="content-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">REQUISITOS</p>
+      <h2 class="section-title">Qué necesitas para<br />empeñar tu auto.</h2>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3 class="step-title">Identificación oficial</h3>
+          <p class="step-desc">INE o pasaporte vigente de la persona que solicita la operación.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3 class="step-title">Factura original</h3>
+          <p class="step-desc">Documento que acredita la propiedad del vehículo y permite validar su situación.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3 class="step-title">Comprobante de domicilio</h3>
+          <p class="step-desc">Documento reciente para integrar correctamente el expediente.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <h3 class="step-title">Tarjeta de circulación</h3>
+          <p class="step-desc">Vigente y consistente con la información del vehículo presentado.</p>
+        </div>
+      </div>
+      <p class="section-body-text">Según el vehículo o la modalidad pueden solicitarse documentos adicionales. Consulta los <a href="/requisitos/">requisitos completos</a> antes de la valuación.</p>
+    </div>
+  </section>
+
   <!-- MONTOS -->
   <section class="content-section">
     <div class="section-inner">
@@ -147,12 +196,37 @@ const schema = [
         <div class="monto-block">
           <p class="monto-label">Modalidad con resguardo</p>
           <p class="monto-val">Sin límite de monto</p>
-          <p class="monto-desc">Tu auto queda en instalaciones seguras durante el plazo. Esta modalidad permite acceder a los montos más altos y las mejores condiciones del mercado.</p>
+          <p class="monto-desc">Tu auto queda en instalaciones seguras durante el plazo. Esta modalidad puede permitir montos mayores, según la valuación y las condiciones aprobadas.</p>
         </div>
         <div class="monto-block monto-note">
           <p class="monto-desc">El monto exacto depende del valor comercial de tu vehículo: marca, modelo, año, kilometraje y estado general. Un valuador Swip revisa el auto en persona y te entrega una oferta precisa — sin compromisos previos y sin costo.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- COSTOS Y CONTRATO -->
+  <section class="content-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">TASA, PLAZO Y RIESGO</p>
+      <h2 class="section-title">Conoce las condiciones<br />antes de firmar.</h2>
+      <div class="montos-grid">
+        <div class="monto-block">
+          <p class="monto-label">TASA</p>
+          <p class="monto-val">Desde 4.5% mensual</p>
+          <p class="monto-desc">Se calcula sobre saldo insoluto. La tasa final depende del vehículo, la modalidad y las condiciones aprobadas.</p>
+        </div>
+        <div class="monto-block">
+          <p class="monto-label">OFERTA FORMAL</p>
+          <p class="monto-val">Monto, tasa y plazo</p>
+          <p class="monto-desc">Recibes las condiciones por escrito después de la valuación y antes de firmar el contrato.</p>
+        </div>
+        <div class="monto-block monto-note">
+          <p class="monto-label">INCUMPLIMIENTO</p>
+          <p class="monto-desc">Un incumplimiento sostenido puede llevar a la ejecución de la garantía. Revisa fechas, costos y consecuencias; si anticipas un problema, comunícate antes del vencimiento.</p>
+        </div>
+      </div>
+      <p class="section-body-text">Puedes consultar los <a href="/terminos-de-uso/">términos de uso</a> y resolver dudas específicas con un asesor antes de iniciar.</p>
     </div>
   </section>
 
@@ -162,7 +236,7 @@ const schema = [
       <p class="section-eyebrow">VEHÍCULOS QUE ACEPTAMOS</p>
       <h2 class="section-title">Sabemos valorar<br />lo que otros no.</h2>
       <p class="section-body-text">
-        La mayoría de las casas de empeño no tienen criterios claros para vehículos premium. En Swip nos especializamos exactamente en ese segmento: autos cuyo valor real va más allá de la tabla de precios estándar.
+        Una valuación genérica puede ignorar la versión, el equipamiento, el historial o el blindaje. En Swip nos especializamos en vehículos cuyo valor requiere revisar esos factores por separado.
       </p>
       <div class="vehicles-grid">
         <div class="vehicle-cat">
@@ -189,6 +263,32 @@ const schema = [
     </div>
   </section>
 
+  <!-- COBERTURA -->
+  <section class="content-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">COBERTURA</p>
+      <h2 class="section-title">Valuación en CDMX<br />y Querétaro.</h2>
+      <div class="compare-grid">
+        <div class="compare-col col-good">
+          <p class="col-header">CIUDAD DE MÉXICO</p>
+          <ul>
+            <li>Atención en CDMX y zona metropolitana</li>
+            <li>Valuación coordinada en domicilio u oficina</li>
+            <li><a href="/prestamo-con-garantia-de-auto-en-cdmx/">Ver operación en CDMX</a></li>
+          </ul>
+        </div>
+        <div class="compare-col col-good">
+          <p class="col-header">QUERÉTARO</p>
+          <ul>
+            <li>Atención para autos premium y de alto valor</li>
+            <li>Revisión presencial según la logística del caso</li>
+            <li><a href="/prestamo-con-garantia-de-auto-en-queretaro/">Ver operación en Querétaro</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- PARA QUIÉN ES -->
   <section class="content-section">
     <div class="section-inner two-col">
@@ -198,7 +298,7 @@ const schema = [
       </div>
       <div class="section-text">
         <p>Swip está pensado para personas que tienen patrimonio vehicular y necesitan liquidez por razones concretas: capital para un negocio, resolver una urgencia, aprovechar una oportunidad de inversión o cubrir un desfase de flujo sin recurrir a créditos bancarios lentos o con requisitos difíciles de cumplir.</p>
-        <p>Si tu auto vale y quieres tratarlo como lo que es — un activo serio — Swip es la opción correcta. No malbaratas tu patrimonio ni te sometes a procesos poco claros con tasas que no entiendes hasta que ya firmaste.</p>
+        <p>Si tu auto concentra una parte importante de tu patrimonio, conviene comparar la valuación, el costo total, la modalidad y las consecuencias del contrato antes de decidir. Swip entrega esas condiciones antes de la firma.</p>
         <p>Atendemos empresarios, profesionistas independientes, ejecutivos y cualquier persona con un vehículo de valor que necesita liquidez rápida y discreta.</p>
         <div class="tag-list">
           <span>Autos de lujo</span>
@@ -237,7 +337,7 @@ const schema = [
       {
         href: '/blog/swip-vs-monte-de-piedad-vs-banco/',
         label: 'SWIP vs Monte de Piedad vs banco',
-        description: 'Comparación directa: por qué para un auto de valor el empeño tradicional rara vez es la mejor opción.',
+        description: 'Compara valuación, requisitos, tiempos y estructura para elegir con mejor información.',
       },
       {
         href: '/blog/no-pase-el-buro-y-tengo-un-auto-de-valor/',
@@ -248,9 +348,15 @@ const schema = [
   />
 
   <FAQ items={faqs} />
+  <section class="content-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">INFORMACIÓN LEGAL</p>
+      <p class="section-body-text">CORPOSWIP LATAM S.A.P.I. de C.V. · RFC: CLA230824RS7 · Préstamos con garantía vehicular desde $90,000 hasta $5,000,000 MXN · Tasa mensual desde 4.5% sobre saldo insoluto · El monto, la tasa y el plazo dependen del valor del vehículo y de las condiciones de la operación.</p>
+    </div>
+  </section>
   <CTASection
-    title="¿Tu auto tiene valor?\nÚsalo con inteligencia."
-    body="Evaluación sin compromiso. Cuéntanos sobre tu vehículo y te decimos cuánto puedes obtener."
+    title="¿Cuánto puedes obtener\npor tu auto?"
+    body="Comparte marca, modelo, año y kilometraje. Te damos un estimado inicial y te explicamos si conviene con resguardo o sin dejarlo."
   />
 
 </Page>

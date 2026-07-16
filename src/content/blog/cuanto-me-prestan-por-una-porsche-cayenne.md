@@ -1,15 +1,15 @@
 ---
-title: "¿Cuánto me prestan por un Porsche Cayenne?"
-description: "Por un Porsche Cayenne en buenas condiciones, SWIP puede ofrecer entre $500,000 y $2,500,000 MXN. El rango varía según versión: Cayenne base, S, GTS, Turbo, Turbo S E-Hybrid o Turbo GT. Valuación especializada en domicilio, sin buró de crédito, depósito en menos de 24 horas."
+title: "¿Cuánto Prestan por un Porsche Cayenne en México?"
+description: "Consulta rangos estimados de $400,000 a $2.5 millones para un Porsche Cayenne, según año y versión. Valuación especializada en CDMX y Querétaro."
 date: "2026-05-22"
 category: "SUVs Premium"
 slug: "cuanto-me-prestan-por-una-porsche-cayenne"
 draft: false
 ---
 
-Por un Porsche Cayenne en buenas condiciones, SWIP puede ofrecer entre $500,000 y $2,500,000 MXN. Es una gama con diferencias de valor muy amplias — un Cayenne base y un Cayenne Turbo GT del mismo año pueden diferir en $3,000,000 MXN en el mercado. La valuación especializada de SWIP distingue estas diferencias con referencias actuales del mercado secundario, no con tablas genéricas.
+Por un Porsche Cayenne, el rango orientativo de préstamo va de $400,000 a $2,500,000 MXN. El monto depende del año, versión, kilometraje, historial de servicio y condición real. Un Cayenne base y un Turbo GT del mismo año pueden tener diferencias de varios millones de pesos en el mercado.
 
-En SWIP hacemos [préstamos con garantía de autos de lujo](/prestamo-con-garantia-de-autos-de-lujo/) con valuación en domicilio en CDMX y Querétaro, sin buró de crédito y depósito en menos de 24 horas. Este artículo explica los rangos y qué factores determinan el monto para tu Cayenne.
+SWIP distingue cada versión con una valuación especializada, en lugar de aplicar una tabla genérica. Ofrecemos [préstamos con garantía de autos de lujo](/prestamo-con-garantia-de-autos-de-lujo/) con valuación a domicilio en CDMX y Querétaro. A continuación puedes comparar los rangos y factores que determinan cuánto te pueden prestar por tu Cayenne.
 
 ## La familia Cayenne: versiones con diferencias de valor enormes
 

@@ -69,7 +69,7 @@ Algunos de estos factores no son reversibles (el kilometraje ya está, un daño 
 - Renovar el seguro si está por vencer
 - Declarar cualquier reparación o modificación antes de la revisión
 
-Para ver qué documentos específicos conviene preparar antes de la valuación, revisa el artículo sobre [cómo se valúa un auto exótico](/como-se-valua-un-auto-exotico/). Y si quieres saber qué rango de monto es realista para tu vehículo, revisa [cuánto prestan por un Ferrari o Lamborghini](/cuanto-me-prestan-por-un-ferrari-o-lamborghini/).
+Para ver qué documentos específicos conviene preparar antes de la valuación, revisa el artículo sobre [cómo se valúa un auto exótico](/blog/como-se-valua-un-auto-exotico/). Y si quieres saber qué rango de monto es realista para tu vehículo, revisa [cuánto prestan por un Ferrari o Lamborghini](/blog/cuanto-me-prestan-por-un-ferrari-o-lamborghini/).
 
 ## Preguntas frecuentes
 

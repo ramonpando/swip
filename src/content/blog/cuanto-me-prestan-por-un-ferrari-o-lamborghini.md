@@ -58,4 +58,4 @@ Pje. Interlomas 6, Naucalpan de Juárez, Estado de México, C.P. 52787
 WhatsApp / Teléfono: 55 5405 5089  
 Atención en CDMX y Querétaro
 
-Para saber exactamente cuánto puede rendir tu Ferrari o Lamborghini, el siguiente paso es una valuación real con alguien que conozca el segmento. También puedes revisar [cómo se valúa un auto exótico](/como-se-valua-un-auto-exotico/) antes de agendar, o ir directo a los [requisitos para iniciar](/requisitos/).
+Para saber exactamente cuánto puede rendir tu Ferrari o Lamborghini, el siguiente paso es una valuación real con alguien que conozca el segmento. También puedes revisar [cómo se valúa un auto exótico](/blog/como-se-valua-un-auto-exotico/) antes de agendar, o ir directo a los [requisitos para iniciar](/requisitos/).

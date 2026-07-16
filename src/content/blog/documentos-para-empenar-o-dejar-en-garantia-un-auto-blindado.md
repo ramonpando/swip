@@ -32,7 +32,7 @@ El **certificado de blindaje** es el documento que acredita:
 
 Este documento es lo que permite al valuador asignar valor al componente de blindaje de forma verificable. Sin él, la valuación del blindaje es estimada y el monto ofrecido puede quedar por debajo del valor real del vehículo.
 
-Para entender cómo impacta este documento en el monto final, revisa el artículo sobre [cómo se valúa un auto blindado](/como-se-valua-un-auto-blindado/).
+Para entender cómo impacta este documento en el monto final, revisa el artículo sobre [cómo se valúa un auto blindado](/blog/como-se-valua-un-auto-blindado/).
 
 ## Qué pasa si no tengo el certificado
 
@@ -94,4 +94,4 @@ Pje. Interlomas 6, Naucalpan de Juárez, Estado de México, C.P. 52787
 WhatsApp / Teléfono: 55 5405 5089  
 Atención en CDMX y Querétaro
 
-Si tienes el expediente listo o quieres confirmar si tu situación aplica, el equipo de SWIP puede orientarte antes de agendar. También puedes revisar [cuánto te pueden prestar por un auto blindado](/cuanto-me-prestan-por-un-auto-blindado/) para tener contexto del monto antes de avanzar.
+Si tienes el expediente listo o quieres confirmar si tu situación aplica, el equipo de SWIP puede orientarte antes de agendar. También puedes revisar [cuánto te pueden prestar por un auto blindado](/blog/cuanto-me-prestan-por-un-auto-blindado/) para tener contexto del monto antes de avanzar.

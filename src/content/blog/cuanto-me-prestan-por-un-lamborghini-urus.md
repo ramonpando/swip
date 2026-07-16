@@ -1,15 +1,15 @@
 ---
-title: "¿Cuánto me prestan por un Lamborghini Urus?"
-description: "Por un Lamborghini Urus en buenas condiciones, SWIP puede ofrecer entre $1,000,000 y $3,000,000 MXN. El monto depende del año, versión (Urus estándar, Urus S, Urus Performante) y el estado del vehículo. La valuación considera el mercado internacional y el estado real del activo."
+title: "¿Cuánto Prestan por un Lamborghini Urus en México?"
+description: "Consulta rangos estimados de $900,000 a $3 millones para un Lamborghini Urus. El año, la versión, el kilometraje y el historial determinan el monto."
 date: "2026-05-13"
 category: "Autos Exóticos"
 slug: "cuanto-me-prestan-por-un-lamborghini-urus"
 draft: false
 ---
 
-Por un Lamborghini Urus en buenas condiciones, SWIP puede ofrecer entre $1,000,000 y $3,000,000 MXN. El rango exacto depende del año, la versión (Urus estándar, Urus S, Urus Performante), la configuración de fábrica y el estado del vehículo. El Urus tiene una de las retenciones de valor más altas de cualquier SUV en el mercado — lo que lo convierte en uno de los activos más sólidos del segmento exótico para una operación de garantía vehicular.
+Por un Lamborghini Urus, el rango orientativo de préstamo va de $900,000 a $3,000,000 MXN. El monto depende del año, la versión —Urus estándar, S o Performante—, el kilometraje, la configuración de fábrica, el historial de servicio y la condición real.
 
-En SWIP hacemos [préstamos con garantía de autos exóticos](/prestamo-con-garantia-de-autos-exoticos/) y de [lujo](/prestamo-con-garantia-de-autos-de-lujo/) con valuación especializada. El Urus es un caso particular porque combina características del segmento exótico (marca Lamborghini, precio base, demanda) con la practicidad de un SUV.
+SWIP realiza [préstamos con garantía de autos exóticos](/prestamo-con-garantia-de-autos-exoticos/) y de [lujo](/prestamo-con-garantia-de-autos-de-lujo/) con valuación especializada. El Urus combina el mercado de un Lamborghini con la demanda de una SUV de alto valor. A continuación puedes comparar rangos por versión y los factores que más afectan la valuación.
 
 ## Por qué el Urus tiene uno de los mejores valores de retención del segmento
 

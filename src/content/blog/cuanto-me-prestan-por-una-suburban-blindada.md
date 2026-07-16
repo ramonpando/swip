@@ -1,15 +1,21 @@
 ---
-title: "¿Cuánto me prestan por una Suburban blindada?"
-description: "Por una Suburban blindada nivel III en buenas condiciones, SWIP puede ofrecer entre $700,000 y $1,500,000 MXN. El monto exacto depende del año, versión, nivel de blindaje y condición del vehículo. La valuación reconoce el blindaje como componente separado."
+title: "¿Cuánto Prestan por una Chevrolet Suburban en México?"
+description: "Consulta cuánto puedes obtener por una Chevrolet Suburban estándar o blindada. El monto depende del año, versión, kilometraje, condición y blindaje."
 date: "2026-05-13"
 category: "Autos Blindados"
 slug: "cuanto-me-prestan-por-una-suburban-blindada"
 draft: false
 ---
 
-Por una Suburban blindada en buenas condiciones, SWIP puede ofrecer entre $700,000 y $1,500,000 MXN. El rango exacto depende del año, la versión (Premier, Z71, RST), el nivel de blindaje instalado y la condición del vehículo. La valuación reconoce el vehículo base más el blindaje como componente separado — que es lo que hace que el monto sea real y no subestimado.
+SWIP puede evaluar una Chevrolet Suburban estándar o blindada como garantía vehicular. El monto depende primero del año, la versión, el kilometraje, el historial de servicio y la condición. Si tiene blindaje, también se revisan el nivel, la armadora, la antigüedad y la documentación.
 
-En SWIP hacemos [préstamos con garantía de autos blindados](/prestamo-con-garantia-de-autos-blindados/) con valuación especializada por segmento. La Suburban blindada es uno de los vehículos más comunes en nuestro portafolio de blindados.
+En una Suburban blindada en buenas condiciones, los rangos orientativos pueden ir de $700,000 a $1,500,000 MXN para modelos recientes. Una Suburban sin blindaje también puede aplicar dentro de los [vehículos de alto valor que acepta SWIP](/vehiculos-que-aceptamos/). Si está protegida, usamos una [valuación especializada para autos blindados](/prestamo-con-garantia-de-autos-blindados/).
+
+## Suburban estándar o blindada: ambas pueden aplicar
+
+El blindaje no es un requisito. Una Suburban estándar se valúa por su año, versión, equipamiento, mantenimiento y demanda. Cuando está blindada, se calcula primero el valor del vehículo base y después el valor comprobable de la protección instalada.
+
+Los rangos de la siguiente tabla corresponden a unidades blindadas. Para una Suburban sin blindaje, el estimado se determina con las referencias de mercado de su año y versión específicas.
 
 ## Por qué la Suburban es uno de los vehículos más solicitados para préstamos con garantía
 
@@ -20,7 +26,7 @@ La Suburban tiene dos características que la hacen sólida como activo de garan
 
 Una Suburban blindada de año reciente con documentación completa es uno de los activos más predecibles para una operación de este tipo.
 
-## Rangos orientativos por año y versión
+## Rangos orientativos para una Suburban blindada
 
 Los montos de préstamo son proporcionales al valor real del vehículo. Estos son rangos orientativos — el monto exacto sale de la valuación en persona:
 
@@ -33,7 +39,7 @@ Los montos de préstamo son proporcionales al valor real del vehículo. Estos so
 
 Estos rangos son orientativos. Una Suburban Premier 2023 con blindaje reciente de armadora reconocida, historial de servicio en agencia y poco kilometraje puede estar en el límite superior. Una del mismo año con kilometraje alto o sin documentación del blindaje puede estar en el inferior.
 
-## Qué determina el monto de tu Suburban blindada
+## Qué determina el monto de tu Suburban
 
 El valuador de SWIP revisa dos componentes por separado:
 
@@ -53,15 +59,15 @@ El valuador de SWIP revisa dos componentes por separado:
 
 Para entender el proceso de valuación completo, revisa [cómo se valúa un auto blindado](/blog/como-se-valua-un-auto-blindado/).
 
-## Modalidad que suele convenir para una Suburban blindada
+## Modalidad que suele convenir para una Suburban
 
-Para la mayoría de las Suburbans blindadas, el valor del activo supera el umbral de $400,000 MXN de la [modalidad sin resguardo](/prestamo-con-garantia-de-auto-sin-dejarlo/). Eso significa que para obtener el monto real que el vehículo puede respaldar, la [modalidad con resguardo](/prestamo-con-garantia-de-auto-con-resguardo/) es la estructura correcta.
+Para una Suburban de alto valor, la [modalidad con resguardo](/prestamo-con-garantia-de-auto-con-resguardo/) suele permitir un monto mayor. En muchas Suburbans blindadas, el valor del activo supera el límite de $400,000 MXN de la [modalidad sin resguardo](/prestamo-con-garantia-de-auto-sin-dejarlo/).
 
 El resguardo de una Suburban blindada se hace en instalaciones con capacidad para el peso y las dimensiones del vehículo — una Suburban blindada nivel III puede pesar 500–700 kg más que el modelo estándar.
 
 Si el monto que necesitas es $350,000 MXN o menos y la movilidad es crítica, la modalidad sin resguardo puede evaluarse. Para más detalle sobre esta decisión: [¿Puedo seguir usando mi auto blindado durante el préstamo?](/blog/puedo-seguir-usando-mi-auto-blindado-durante-el-prestamo/)
 
-## Qué documentos necesitas para una Suburban blindada
+## Qué documentos necesitas para una Suburban
 
 Los documentos base son los mismos que para cualquier préstamo con garantía:
 
@@ -70,7 +76,7 @@ Los documentos base son los mismos que para cualquier préstamo con garantía:
 - Comprobante de domicilio
 - Tarjeta de circulación
 
-Para blindados, se suman:
+Si está blindada, se suman:
 - Certificación o documentación del blindaje instalado (si la tienes)
 - Si no tienes la certificación, el valuador la evalúa directamente en la inspección física
 
@@ -80,6 +86,9 @@ Lista completa en [documentos para dejar en garantía un auto blindado](/blog/do
 
 **¿Aceptan Suburban blindadas de modelo 2018 o anterior?**
 Sí, mientras el valor del vehículo y el blindaje justifiquen la operación. Para modelos anteriores a 2018, el monto disponible es menor, pero el proceso de evaluación es el mismo.
+
+**¿Puedo solicitar un préstamo si mi Suburban no está blindada?**
+Sí. El blindaje no es obligatorio. El estimado se basa en el año, la versión, el kilometraje, el historial de servicio, la condición y la documentación de la Suburban.
 
 **¿La armadora del blindaje importa mucho para el monto?**
 Sí. Una Suburban con blindaje de Solsegu o Epel tiene mayor valor de reventa en el mercado que una con blindaje de armadora desconocida. Eso se refleja en el monto ofrecido.
@@ -100,4 +109,4 @@ Pje. Interlomas 6, Naucalpan de Juárez, Estado de México, C.P. 52787
 WhatsApp / Teléfono: 55 5405 5089  
 Atención en CDMX y Querétaro
 
-Si tienes una Suburban blindada y quieres saber cuánto puedes obtener, comparte año, versión, kilometraje y nivel de blindaje aproximado por WhatsApp. En minutos te damos un estimado inicial antes de avanzar a la valuación en persona.
+Si tienes una Chevrolet Suburban y quieres saber cuánto puedes obtener, comparte año, versión, kilometraje y condición general. Si está blindada, agrega el nivel, la armadora y la documentación disponible. El equipo de SWIP puede darte un estimado inicial por WhatsApp.

@@ -70,4 +70,10 @@ El proceso parte únicamente del valor de tu vehículo.
 
 ---
 
+## Casos donde la liquidez tiene un destino específico
+
+La estructura puede servir para resolver una obligación inmediata o liberar capital sin vender el vehículo. Si el objetivo es cubrir una obligación fiscal, revisa cómo funciona [usar el auto como garantía para pagar SAT o deudas urgentes](/blog/pagar-sat-deudas-urgentes-con-garantia-de-auto/). Si el capital se destinará a una empresa, consulta [cómo financiar un negocio con la garantía de tu auto](/blog/prestamo-con-garantia-de-auto-para-financiar-tu-negocio/).
+
+---
+
 Si tu situación requiere liquidez hoy, [cotiza ahora](/prestamo-con-garantia-de-auto/) con los datos básicos de tu vehículo y recibe un estimado en minutos.

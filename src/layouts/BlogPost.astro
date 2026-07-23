@@ -7,23 +7,37 @@ export interface Props {
   title: string;
   description: string;
   date: string;
+  updatedDate?: string;
   category: string;
   slug: string;
   image?: string;
+  relatedPosts?: Array<{
+    title: string;
+    description: string;
+    category: string;
+    slug: string;
+  }>;
 }
 
 const {
   title,
   description,
   date,
+  updatedDate,
   category,
   slug,
   image,
+  relatedPosts = [],
 } = Astro.props;
 
 const canonical = `https://swip.mx/blog/${slug}/`;
 const blogIndex = 'https://swip.mx/blog/';
 const dateFormatted = new Date(date).toLocaleDateString('es-MX', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+const updatedDateFormatted = updatedDate && new Date(updatedDate).toLocaleDateString('es-MX', {
   year: 'numeric',
   month: 'long',
   day: 'numeric',
@@ -36,7 +50,7 @@ const articleSchema = {
   "headline": title,
   "description": description,
   "datePublished": date,
-  "dateModified": date,
+  ...(updatedDate ? { "dateModified": updatedDate } : {}),
   "inLanguage": "es-MX",
   "articleSection": category,
   "mainEntityOfPage": canonical,
@@ -97,7 +111,7 @@ const breadcrumbSchema = {
   ogImage={image}
   ogType="article"
   publishedTime={date}
-  modifiedTime={date}
+  modifiedTime={updatedDate}
   schema={[articleSchema, breadcrumbSchema]}
 >
   <Nav />
@@ -107,7 +121,12 @@ const breadcrumbSchema = {
         <a href="/blog/" class="back-link">← Volver al blog</a>
         <p class="article-category">{category}</p>
         <h1 class="article-title">{title}</h1>
-        <p class="article-meta">{dateFormatted}</p>
+        <p class="article-meta">
+          <span>Publicado <time datetime={date}>{dateFormatted}</time></span>
+          {updatedDate && updatedDateFormatted && (
+            <span> · Actualizado <time datetime={updatedDate}>{updatedDateFormatted}</time></span>
+          )}
+        </p>
         <p class="article-description">{description}</p>
       </div>
     </section>
@@ -117,6 +136,25 @@ const breadcrumbSchema = {
         <slot />
       </div>
     </article>
+
+    {relatedPosts.length > 0 && (
+      <section class="article-related" aria-labelledby="related-title">
+        <div class="related-inner">
+          <p class="related-eyebrow">CONTINÚA EXPLORANDO</p>
+          <h2 id="related-title" class="related-title">Artículos relacionados</h2>
+          <div class="related-grid">
+            {relatedPosts.map((post) => (
+              <a href={`/blog/${post.slug}/`} class="related-card">
+                <p class="related-category">{post.category}</p>
+                <h3>{post.title}</h3>
+                <p>{post.description}</p>
+                <span>Leer artículo →</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
 
     <section class="article-author">
       <div class="article-inner author-inner">
@@ -155,6 +193,7 @@ const breadcrumbSchema = {
 
   .article-hero,
   .article-body,
+  .article-related,
   .article-cta {
     border-bottom: 1px solid var(--line);
   }
@@ -297,6 +336,82 @@ const breadcrumbSchema = {
     border-bottom: 1px solid var(--line);
   }
 
+  .related-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 72px 64px;
+  }
+
+  .related-eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.42em;
+    color: rgba(168, 168, 168, 0.4);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .related-title {
+    font-size: clamp(30px, 3.5vw, 46px);
+    font-weight: 300;
+    color: var(--white);
+    letter-spacing: -0.02em;
+    margin-bottom: 32px;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+
+  .related-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 28px;
+    color: inherit;
+    background: var(--black);
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+
+  .related-card:hover {
+    background: rgba(255, 255, 255, 0.025);
+  }
+
+  .related-category {
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    color: rgba(168, 168, 168, 0.4);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  .related-card h3 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: var(--white);
+    margin-bottom: 14px;
+  }
+
+  .related-card > p:last-of-type {
+    flex: 1;
+    font-size: 13px;
+    line-height: 1.7;
+    color: rgba(168, 168, 168, 0.64);
+    margin-bottom: 24px;
+  }
+
+  .related-card span {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    color: rgba(168, 168, 168, 0.56);
+    text-transform: uppercase;
+  }
+
   .author-inner {
     padding-top: 56px;
     padding-bottom: 56px;
@@ -408,6 +523,14 @@ const breadcrumbSchema = {
   @media (max-width: 768px) {
     .article-inner {
       padding: 64px 24px;
+    }
+
+    .related-inner {
+      padding: 56px 24px;
+    }
+
+    .related-grid {
+      grid-template-columns: 1fr;
     }
   }
 </style>

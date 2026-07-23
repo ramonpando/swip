@@ -84,7 +84,10 @@ const schema = [
                 <p class="post-cat">{post.data.category}</p>
                 <h2 class="post-title">{post.data.title}</h2>
                 <p class="post-desc">{post.data.description}</p>
-                <span class="post-date">{new Date(post.data.date).toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                <span class="post-date">
+                  {post.data.updatedDate ? 'Actualizado ' : ''}
+                  {new Date(post.data.updatedDate ?? post.data.date).toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' })}
+                </span>
               </div>
             </a>
           ))}

@@ -5,13 +5,63 @@ import BlogPost from '../../layouts/BlogPost.astro';
 export async function getStaticPaths() {
   const posts = await getCollection('blog', ({ data }) => !data.draft);
 
-  return posts.map((post) => ({
-    params: { slug: post.data.slug },
-    props: { post },
-  }));
+  const normalizeCategory = (category: string) => category
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase();
+
+  const clusterByCategory: Record<string, string> = {
+    'autos blindados': 'blindados',
+    'autos de lujo': 'premium',
+    'autos exoticos': 'premium',
+    'suvs premium': 'premium',
+    'proceso': 'proceso',
+    'guia completa': 'proceso',
+    'requisitos': 'proceso',
+    'montos': 'proceso',
+    'casos de uso': 'decision',
+    'comparativas': 'decision',
+    'cobertura': 'local',
+    'queretaro': 'local',
+  };
+
+  return posts.map((post) => {
+    const currentCategory = normalizeCategory(post.data.category);
+    const currentCluster = clusterByCategory[currentCategory];
+    const relatedPosts = posts
+      .filter((candidate) => candidate.data.slug !== post.data.slug)
+      .map((candidate) => {
+        const candidateCategory = normalizeCategory(candidate.data.category);
+        const sameCategory = candidateCategory === currentCategory;
+        const sameCluster = currentCluster && clusterByCategory[candidateCategory] === currentCluster;
+
+        return {
+          post: candidate,
+          relevance: sameCategory ? 2 : sameCluster ? 1 : 0,
+        };
+      })
+      .filter(({ relevance }) => relevance > 0)
+      .sort((a, b) =>
+        b.relevance - a.relevance
+        || new Date(b.post.data.updatedDate ?? b.post.data.date).getTime()
+          - new Date(a.post.data.updatedDate ?? a.post.data.date).getTime()
+      )
+      .slice(0, 3)
+      .map(({ post: related }) => ({
+        title: related.data.title,
+        description: related.data.description,
+        category: related.data.category,
+        slug: related.data.slug,
+      }));
+
+    return {
+      params: { slug: post.data.slug },
+      props: { post, relatedPosts },
+    };
+  });
 }
 
-const { post } = Astro.props;
+const { post, relatedPosts } = Astro.props;
 const { Content } = await render(post);
 ---
 
@@ -19,9 +69,11 @@ const { Content } = await render(post);
   title={post.data.title}
   description={post.data.description}
   date={post.data.date}
+  updatedDate={post.data.updatedDate}
   category={post.data.category}
   slug={post.data.slug}
   image={post.data.image}
+  relatedPosts={relatedPosts}
 >
   <Content />
 </BlogPost>

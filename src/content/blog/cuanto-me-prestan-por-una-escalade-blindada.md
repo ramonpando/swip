@@ -2,6 +2,7 @@
 title: "¿Cuánto Prestan por una Cadillac Escalade en México?"
 description: "Consulta cuánto puedes obtener por una Cadillac Escalade estándar o blindada. El monto depende del año, versión, kilometraje, condición y blindaje."
 date: "2026-05-13"
+updatedDate: "2026-07-16"
 category: "Autos Blindados"
 slug: "cuanto-me-prestan-por-una-escalade-blindada"
 draft: false

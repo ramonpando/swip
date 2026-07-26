@@ -6,7 +6,7 @@ export interface Props {
 const { context = 'vehicle' } = Astro.props;
 const isWatch = context === 'watch';
 const WHATSAPP = isWatch
-  ? 'https://wa.me/5215554055089?text=Hola%20Ramon%2C%20vi%20el%20piloto%20de%20relojes%20de%20SWIP%20y%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20privada'
+  ? 'https://wa.me/5215542317035?text=Hola%20Ramon%2C%20vi%20el%20piloto%20de%20relojes%20de%20SWIP%20y%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20privada'
   : 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20de%20mi%20veh%C3%ADculo';
 ---
 <footer class="swip-footer">
@@ -43,7 +43,12 @@ const WHATSAPP = isWatch
     <div class="footer-col">
       <p class="col-title">Contacto</p>
       <a href="mailto:patricia_bernal@swip.mx" style="text-transform:none;letter-spacing:0;">patricia_bernal@swip.mx</a>
-      <a href="tel:+525554055089" style="text-transform:none;letter-spacing:0;">55 5405 5089</a>
+      <a
+        href={isWatch ? 'tel:+525542317035' : 'tel:+525554055089'}
+        style="text-transform:none;letter-spacing:0;"
+      >
+        {isWatch ? '55 4231 7035' : '55 5405 5089'}
+      </a>
       <a href={WHATSAPP} target="_blank" rel="noopener" data-preserve-message={isWatch || undefined}>WhatsApp</a>
       <a href={WHATSAPP} target="_blank" rel="noopener" data-preserve-message={isWatch || undefined}>{isWatch ? 'Evalúa tu reloj' : 'Cotiza tu préstamo'}</a>
       <p class="footer-address">Pje. Interlomas 6, Naucalpan,<br />Estado de México, 52787</p>

@@ -11,6 +11,7 @@ export interface Props {
   publishedTime?: string;
   modifiedTime?: string;
   schema?: object | object[];
+  disableChatWidget?: boolean;
 }
 
 const {
@@ -23,6 +24,7 @@ const {
   publishedTime,
   modifiedTime,
   schema,
+  disableChatWidget = false,
 } = Astro.props;
 
 const canonicalUrl = canonical ?? new URL(Astro.url.pathname, 'https://swip.mx').href;
@@ -183,7 +185,7 @@ const baseSchema = {
       const params = new URLSearchParams(window.location.search);
       if (params.get('utm_medium') !== 'cpc' && !params.has('gclid')) return;
       const msg = encodeURIComponent('Hola, vi su anuncio y me interesa el préstamo con garantía de auto');
-      document.querySelectorAll('a[href*="wa.me"]').forEach(function(a) {
+      document.querySelectorAll('a[href*="wa.me"]:not([data-preserve-message])').forEach(function(a) {
         a.href = a.href.replace(/[?&]text=[^&]*/, '') + (a.href.includes('?') ? '&' : '?') + 'text=' + msg;
       });
     })();
@@ -340,13 +342,15 @@ const baseSchema = {
       if (e.key === 'Escape') closeSwipModal();
     });
   </script>
-  <script
-    defer
-    src="https://chatapp.chatflow.mx/widget.js"
-    data-agent-id="a6b8378e-05dc-4bcc-a2a7-261c7ae146ec"
-    data-position="bottom-right"
-    data-primary-color="#2d2d2d"
-    data-greeting="Hola, soy SwipBot. Cuéntame: ¿qué auto tienes y cuánto necesitas? Te digo en un minuto si aplica."
-  ></script>
+  {!disableChatWidget && (
+    <script
+      defer
+      src="https://chatapp.chatflow.mx/widget.js"
+      data-agent-id="a6b8378e-05dc-4bcc-a2a7-261c7ae146ec"
+      data-position="bottom-right"
+      data-primary-color="#2d2d2d"
+      data-greeting="Hola, soy SwipBot. Cuéntame: ¿qué auto tienes y cuánto necesitas? Te digo en un minuto si aplica."
+    ></script>
+  )}
 </body>
 </html>

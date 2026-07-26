@@ -30,6 +30,8 @@ const {
   relatedPosts = [],
 } = Astro.props;
 
+const isWatchArticle = category.toLocaleLowerCase('es-MX').includes('relojes');
+
 const canonical = `https://swip.mx/blog/${slug}/`;
 const blogIndex = 'https://swip.mx/blog/';
 const dateFormatted = new Date(date).toLocaleDateString('es-MX', {
@@ -77,6 +79,7 @@ const articleSchema = {
 };
 
 const WHATSAPP = 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20cotizar%20un%20pr%C3%A9stamo%20con%20garant%C3%ADa%20de%20mi%20veh%C3%ADculo';
+const WATCH_WHATSAPP = 'https://wa.me/5215554055089?text=Hola%20Ramon%2C%20le%C3%AD%20un%20art%C3%ADculo%20de%20relojes%20en%20SWIP%20y%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20privada';
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -114,7 +117,7 @@ const breadcrumbSchema = {
   modifiedTime={updatedDate}
   schema={[articleSchema, breadcrumbSchema]}
 >
-  <Nav />
+  <Nav context={isWatchArticle ? 'watch' : 'vehicle'} />
   <main>
     <section class="article-hero">
       <div class="article-inner">
@@ -171,19 +174,36 @@ const breadcrumbSchema = {
     <section class="article-cta">
       <div class="article-inner cta-inner">
         <p class="cta-eyebrow">SIGUIENTE PASO</p>
-        <h2 class="cta-title">Convierte la información en una valuación real.</h2>
-        <p class="cta-body">
-          Si tu vehículo tiene valor y quieres saber cuánto puedes obtener,
-          pasa a la evaluación con el equipo de SWIP.
-        </p>
-        <div class="cta-actions">
-          <button onclick="openSwipModal()" class="btn-primary">Cotiza tu préstamo</button>
-          <a href="/prestamo-con-garantia-de-auto/" class="btn-ghost">Ver el servicio completo →</a>
-        </div>
+        {isWatchArticle ? (
+          <>
+            <h2 class="cta-title">Empieza con una evaluación privada.</h2>
+            <p class="cta-body">
+              Comparte la referencia de tu reloj y el monto que buscas. Ramon Pando,
+              fundador de SWIP, atenderá personalmente tu solicitud y te dirá si
+              vale la pena avanzar a una revisión física.
+            </p>
+            <div class="cta-actions">
+              <a href={WATCH_WHATSAPP} target="_blank" rel="noopener" data-preserve-message class="btn-primary">Evaluar mi reloj</a>
+              <a href="/prestamo-con-garantia-de-reloj/" class="btn-ghost">Ver cómo funciona →</a>
+            </div>
+          </>
+        ) : (
+          <>
+            <h2 class="cta-title">Convierte la información en una valuación real.</h2>
+            <p class="cta-body">
+              Si tu vehículo tiene valor y quieres saber cuánto puedes obtener,
+              pasa a la evaluación con el equipo de SWIP.
+            </p>
+            <div class="cta-actions">
+              <button onclick="openSwipModal()" class="btn-primary">Cotiza tu préstamo</button>
+              <a href="/prestamo-con-garantia-de-auto/" class="btn-ghost">Ver el servicio completo →</a>
+            </div>
+          </>
+        )}
       </div>
     </section>
   </main>
-  <Footer />
+  <Footer context={isWatchArticle ? 'watch' : 'vehicle'} />
 </Base>
 
 <style is:global>

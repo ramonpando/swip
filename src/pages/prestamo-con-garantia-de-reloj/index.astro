@@ -1,0 +1,897 @@
+---
+import Base from '../../layouts/Base.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+
+const WHATSAPP_NUMBER = '5215554055089';
+const WHATSAPP = `https://wa.me/${WHATSAPP_NUMBER}?text=Hola%20Ramon%2C%20vi%20el%20piloto%20de%20relojes%20de%20SWIP%20y%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20privada`;
+
+const faqs = [
+  {
+    q: '¿Solicitar una evaluación garantiza que recibiré un préstamo?',
+    a: 'No. El servicio se encuentra en etapa piloto. Cada solicitud está sujeta a elegibilidad, autenticidad, condición, procedencia, valor de liquidación y disponibilidad. La evaluación inicial no constituye una oferta de crédito.',
+  },
+  {
+    q: '¿Cómo calculan el valor del reloj?',
+    a: 'Tomamos como referencia la marca, la referencia exacta, la condición, la configuración, la existencia de caja y documentos y, sobre todo, el valor real de venta en el mercado secundario. No usamos como único dato el precio publicado en un marketplace.',
+  },
+  {
+    q: '¿Necesito caja, papeles o factura?',
+    a: 'Ayudan a acreditar procedencia y pueden mejorar la valuación, pero no sustituyen la autenticación. Si no cuentas con alguno de ellos, puedes solicitar una revisión preliminar y el equipo te indicará si el caso puede continuar.',
+  },
+  {
+    q: '¿Qué marcas están considerando en el piloto?',
+    a: 'La evaluación inicial se concentra en Rolex y en referencias seleccionadas de Cartier y Omega. Otras marcas y piezas especiales se revisan individualmente, sin garantía de aceptación.',
+  },
+  {
+    q: '¿Dónde se realiza la revisión?',
+    a: 'Las revisiones físicas se coordinan exclusivamente por cita en una ubicación controlada de SWIP en Interlomas. No recibimos relojes por mensajería ni fuera de una cita confirmada.',
+  },
+  {
+    q: '¿Qué pasa con mi reloj si la operación avanza?',
+    a: 'Antes de cualquier entrega se explican por escrito las condiciones aplicables. El reloj sólo se recibe después de autenticación, aprobación y formalización. Durante la vigencia de una operación aprobada, la pieza permanece bajo resguardo y no puede utilizarse.',
+  },
+];
+
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: 'Evaluación para préstamo sobre reloj de lujo — SWIP',
+    description: 'Solicita una evaluación privada de tu Rolex, Cartier u Omega para conocer si puede aplicar a una operación de liquidez con garantía.',
+    url: 'https://swip.mx/prestamo-con-garantia-de-reloj/',
+    inLanguage: 'es-MX',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.a,
+      },
+    })),
+  },
+];
+---
+
+<Base
+  title="Evaluación para Préstamo sobre Reloj de Lujo | SWIP"
+  description="Solicita una evaluación privada de tu Rolex, Cartier u Omega. Conoce si tu reloj puede aplicar a una operación de liquidez con garantía en el piloto de SWIP."
+  schema={schema}
+  disableChatWidget={true}
+>
+  <Nav context="watch" />
+  <main>
+    <section class="watch-hero">
+      <div class="watch-hero__copy">
+        <p class="eyebrow">ACCESO PILOTO · RELOJES DE LUJO · INTERLOMAS</p>
+        <h1>Tu reloj puede darte liquidez sin dejar de ser tuyo.</h1>
+        <p class="hero-body">
+          Solicita una evaluación privada para conocer si tu Rolex, Cartier u Omega
+          puede aplicar. Primero revisamos referencia, condición y mercado; después,
+          si el caso es elegible, coordinamos una autenticación por cita.
+        </p>
+        <div class="hero-actions">
+          <a
+            href="#evaluacion"
+            class="btn-primary"
+            data-cta="watch_hero_form"
+          >
+            Evaluar mi reloj
+          </a>
+          <a
+            href={WHATSAPP}
+            target="_blank"
+            rel="noopener"
+            class="btn-ghost"
+            data-preserve-message
+            data-cta="watch_hero_whatsapp"
+          >
+            Hablar por WhatsApp →
+          </a>
+        </div>
+        <p class="pilot-note">
+          Atención directa con Ramon Pando, fundador de SWIP. Cupo limitado; la
+          evaluación no constituye una oferta de crédito ni garantiza aprobación.
+        </p>
+      </div>
+
+      <div class="watch-visual" aria-hidden="true">
+        <div class="watch-strap watch-strap--top"></div>
+        <div class="watch-case">
+          <div class="watch-crown"></div>
+          <div class="watch-dial">
+            <span class="marker marker--12"></span>
+            <span class="marker marker--3"></span>
+            <span class="marker marker--6"></span>
+            <span class="marker marker--9"></span>
+            <span class="hand hand--hour"></span>
+            <span class="hand hand--minute"></span>
+            <span class="watch-pin"></span>
+          </div>
+        </div>
+        <div class="watch-strap watch-strap--bottom"></div>
+        <p class="visual-caption">VALUACIÓN · AUTENTICIDAD · LIQUIDEZ</p>
+      </div>
+    </section>
+
+    <section class="signal-bar" aria-label="Características de la evaluación">
+      <div>
+        <span>01</span>
+        <p>Evaluación preliminar sin entregar la pieza</p>
+      </div>
+      <div>
+        <span>02</span>
+        <p>Revisión física únicamente por cita</p>
+      </div>
+      <div>
+        <span>03</span>
+        <p>Valor basado en mercado secundario</p>
+      </div>
+      <div>
+        <span>04</span>
+        <p>Atención privada y expediente documentado</p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="section-inner two-col">
+        <div>
+          <p class="section-eyebrow">ANTES DEL MONTO</p>
+          <h2>Primero hay que saber exactamente qué reloj tienes.</h2>
+        </div>
+        <div class="section-copy">
+          <p>
+            Dos relojes de la misma marca pueden tener valores completamente distintos.
+            La referencia, el año, el material, la carátula, el brazalete, el estado y
+            la procedencia cambian lo que un comprador profesional pagaría realmente.
+          </p>
+          <p>
+            Por eso no prestamos sobre el precio más alto publicado en internet. La
+            evaluación parte del valor razonable de salida de la pieza y de una revisión
+            profesional de autenticidad y condición.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="section-inner">
+        <p class="section-eyebrow">PERFIL DEL PILOTO</p>
+        <h2 class="section-title">Pocas marcas.<br />Criterios estrictos.</h2>
+        <div class="brand-grid">
+          <article class="brand-card brand-card--primary">
+            <p class="card-kicker">PRIORIDAD INICIAL</p>
+            <h3>Rolex</h3>
+            <p>Submariner, GMT-Master II, Daytona, Datejust y Oyster Perpetual seleccionados.</p>
+          </article>
+          <article class="brand-card">
+            <p class="card-kicker">REFERENCIAS SELECCIONADAS</p>
+            <h3>Cartier</h3>
+            <p>Santos y otras configuraciones con mercado secundario comprobable.</p>
+          </article>
+          <article class="brand-card">
+            <p class="card-kicker">REFERENCIAS SELECCIONADAS</p>
+            <h3>Omega</h3>
+            <p>Speedmaster y Seamaster que alcancen el perfil mínimo de la operación.</p>
+          </article>
+          <article class="brand-card brand-card--muted">
+            <p class="card-kicker">REVISIÓN INDIVIDUAL</p>
+            <h3>Otras marcas</h3>
+            <p>Puedes enviarnos la referencia. Te diremos con claridad si entra o no en esta etapa.</p>
+          </article>
+        </div>
+        <p class="exclusion-note">
+          Durante el piloto no consideramos réplicas, piezas modificadas, diamantes aftermarket,
+          números de serie alterados ni relojes sin procedencia razonable.
+        </p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="section-inner">
+        <p class="section-eyebrow">CÓMO FUNCIONA</p>
+        <h2 class="section-title">Información primero.<br />La pieza después.</h2>
+        <div class="steps-grid">
+          <article>
+            <span>01</span>
+            <h3>Comparte los datos</h3>
+            <p>Marca, referencia, caja y documentos, ciudad, monto que buscas y fotografías básicas.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Recibe una preevaluación</h3>
+            <p>Revisamos si la pieza puede alcanzar el perfil mínimo y te damos el siguiente paso.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Agenda una revisión privada</h3>
+            <p>Si aplica, coordinamos autenticación y condición en una ubicación controlada.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Conoce la propuesta</h3>
+            <p>Una operación sólo avanza después de aprobación, expediente y formalización por escrito.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="evaluation-section" id="evaluacion">
+      <div class="evaluation-intro">
+        <p class="section-eyebrow">EVALUACIÓN PRIVADA</p>
+        <h2>Cuéntanos qué reloj tienes.</h2>
+        <p>
+          Completa los datos esenciales. Al continuar abriremos WhatsApp con tu
+          información. Ramon atenderá personalmente tu solicitud y te indicará qué
+          fotografías compartir.
+        </p>
+        <ul>
+          <li>Vista frontal del reloj</li>
+          <li>Parte posterior</li>
+          <li>Cierre y brazalete</li>
+          <li>Caja, tarjeta y documentos, si existen</li>
+        </ul>
+      </div>
+
+      <form class="watch-form" id="watch-evaluation-form">
+        <label>
+          Nombre
+          <input name="nombre" type="text" autocomplete="name" required />
+        </label>
+        <label>
+          Marca
+          <select name="marca" required>
+            <option value="">Selecciona una marca</option>
+            <option>Rolex</option>
+            <option>Cartier</option>
+            <option>Omega</option>
+            <option>Otra</option>
+          </select>
+        </label>
+        <label class="field-wide">
+          Modelo o referencia
+          <input name="referencia" type="text" placeholder="Ej. Submariner 126610LN" required />
+        </label>
+        <label>
+          Caja y documentos
+          <select name="documentos" required>
+            <option value="">Selecciona una opción</option>
+            <option value="Sí, ambos">Sí, ambos</option>
+            <option value="Sólo caja">Sólo caja</option>
+            <option value="Sólo documentos">Sólo documentos</option>
+            <option value="No tengo">No tengo</option>
+          </select>
+        </label>
+        <label>
+          Monto que buscas
+          <select name="monto" required>
+            <option value="">Selecciona un rango</option>
+            <option>$100,000–$150,000</option>
+            <option>$150,001–$250,000</option>
+            <option>$250,001–$400,000</option>
+            <option>Más de $400,000</option>
+          </select>
+        </label>
+        <label class="field-wide">
+          Ciudad
+          <input name="ciudad" type="text" autocomplete="address-level2" placeholder="Ej. CDMX, Naucalpan, Querétaro" required />
+        </label>
+        <label class="consent field-wide">
+          <input name="privacidad" type="checkbox" required />
+          <span>
+            Autorizo el contacto para evaluar mi solicitud y confirmo haber leído el
+            <a href="/aviso-de-privacidad/" target="_blank">aviso de privacidad</a>.
+          </span>
+        </label>
+        <button type="submit" class="form-submit">Continuar por WhatsApp →</button>
+        <p class="form-disclaimer field-wide">
+          No envíes números de serie completos en este formulario. Un asesor te indicará
+          qué fotografías compartir y cómo proteger la información sensible de la pieza.
+        </p>
+      </form>
+    </section>
+
+    <section class="content-section">
+      <div class="section-inner faq-wrap">
+        <div>
+          <p class="section-eyebrow">PREGUNTAS FRECUENTES</p>
+          <h2 class="section-title">Sin letras pequeñas<br />en la primera conversación.</h2>
+        </div>
+        <div class="faq-list">
+          {faqs.map((faq) => (
+            <details>
+              <summary>{faq.q}</summary>
+              <p>{faq.a}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <p class="section-eyebrow">ACCESO PILOTO</p>
+      <h2>Empieza con una evaluación, no con una promesa.</h2>
+      <p>
+        Comparte la referencia de tu reloj y el monto que buscas. Te diremos si vale
+        la pena avanzar a una revisión física.
+      </p>
+      <a href="#evaluacion" class="btn-primary" data-cta="watch_final_form">Evaluar mi reloj</a>
+    </section>
+  </main>
+  <Footer context="watch" />
+
+  <script define:vars={{ WHATSAPP_NUMBER }}>
+    const form = document.getElementById('watch-evaluation-form');
+
+    document.querySelectorAll('[data-cta]').forEach((element) => {
+      element.addEventListener('click', () => {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'watch_landing_cta',
+          cta: element.getAttribute('data-cta'),
+        });
+      });
+    });
+
+    form?.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const data = new FormData(form);
+      const message = [
+        'Hola Ramon, vi el piloto de relojes de SWIP y quiero solicitar una evaluación privada.',
+        '',
+        'Origen: landing de relojes',
+        `Nombre: ${data.get('nombre')}`,
+        `Marca: ${data.get('marca')}`,
+        `Modelo o referencia: ${data.get('referencia')}`,
+        `Caja y documentos: ${data.get('documentos')}`,
+        `Monto que busco: ${data.get('monto')}`,
+        `Ciudad: ${data.get('ciudad')}`,
+        '',
+        'Entiendo que la evaluación inicial no garantiza una oferta ni aprobación.',
+      ].join('\n');
+
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'watch_evaluation_submitted',
+        watch_brand: data.get('marca'),
+        requested_amount: data.get('monto'),
+      });
+
+      window.open(
+        `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`,
+        '_blank',
+        'noopener'
+      );
+    });
+  </script>
+</Base>
+
+<style>
+  main { padding-top: 69px; }
+
+  :global(html),
+  :global(body) {
+    overflow-x: hidden;
+  }
+
+  .watch-hero {
+    width: 100%;
+    min-height: 760px;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.08fr 0.92fr;
+    border-left: 1px solid var(--line);
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .watch-hero__copy {
+    width: 100%;
+    min-width: 0;
+    padding: 112px 72px 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .eyebrow,
+  .section-eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.4em;
+    color: rgba(168, 168, 168, 0.42);
+    text-transform: uppercase;
+  }
+
+  .eyebrow { margin-bottom: 28px; }
+
+  .watch-hero h1 {
+    max-width: 100%;
+    max-width: 760px;
+    font-size: clamp(50px, 6.2vw, 94px);
+    font-weight: 300;
+    letter-spacing: -0.045em;
+    line-height: 0.94;
+    color: var(--white);
+  }
+
+  .hero-body {
+    max-width: 650px;
+    margin-top: 32px;
+    font-size: 16px;
+    line-height: 1.85;
+    color: rgba(168, 168, 168, 0.76);
+  }
+
+  .hero-actions {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    gap: 14px;
+    margin-top: 38px;
+  }
+
+  .btn-primary,
+  .btn-ghost,
+  .form-submit {
+    min-height: 52px;
+    padding: 16px 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    background: transparent;
+    color: var(--white);
+    font: inherit;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+
+  .btn-primary,
+  .form-submit {
+    border-color: rgba(1, 254, 74, 0.48);
+    background: rgba(1, 254, 74, 0.06);
+  }
+
+  .btn-primary:hover,
+  .form-submit:hover {
+    background: rgba(1, 254, 74, 0.12);
+    border-color: rgba(1, 254, 74, 0.8);
+  }
+
+  .btn-ghost:hover {
+    border-color: rgba(255, 255, 255, 0.56);
+    background: rgba(255, 255, 255, 0.04);
+  }
+
+  .pilot-note {
+    margin-top: 18px;
+    max-width: 560px;
+    font-size: 11px;
+    line-height: 1.7;
+    color: rgba(168, 168, 168, 0.42);
+  }
+
+  .watch-visual {
+    position: relative;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+      radial-gradient(circle at 50% 46%, rgba(255, 255, 255, 0.09), transparent 34%),
+      linear-gradient(135deg, rgba(255, 255, 255, 0.025), transparent 58%);
+    border-left: 1px solid var(--line);
+  }
+
+  .watch-case {
+    position: relative;
+    z-index: 2;
+    width: min(31vw, 390px);
+    aspect-ratio: 1;
+    padding: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    border-radius: 50%;
+    box-shadow:
+      0 0 0 10px rgba(255, 255, 255, 0.025),
+      0 40px 100px rgba(0, 0, 0, 0.55),
+      inset 0 0 40px rgba(255, 255, 255, 0.025);
+  }
+
+  .watch-dial {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background:
+      radial-gradient(circle, #171717 0 4%, transparent 4.5%),
+      radial-gradient(circle at 40% 35%, rgba(255, 255, 255, 0.07), transparent 36%),
+      #0b0b0b;
+  }
+
+  .watch-crown {
+    position: absolute;
+    z-index: -1;
+    right: -36px;
+    top: 43%;
+    width: 35px;
+    height: 54px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 0 8px 8px 0;
+  }
+
+  .watch-strap {
+    position: absolute;
+    left: 50%;
+    width: min(18vw, 210px);
+    height: 44%;
+    transform: translateX(-50%);
+    border-left: 1px solid rgba(255, 255, 255, 0.14);
+    border-right: 1px solid rgba(255, 255, 255, 0.14);
+    background: linear-gradient(90deg, #0b0b0b, #161616 50%, #0b0b0b);
+  }
+
+  .watch-strap--top { top: -20%; }
+  .watch-strap--bottom { bottom: -20%; }
+
+  .marker,
+  .hand,
+  .watch-pin {
+    position: absolute;
+    display: block;
+    background: rgba(255, 255, 255, 0.7);
+  }
+
+  .marker--12,
+  .marker--6 {
+    width: 2px;
+    height: 20px;
+    left: calc(50% - 1px);
+  }
+
+  .marker--12 { top: 8%; }
+  .marker--6 { bottom: 8%; }
+
+  .marker--3,
+  .marker--9 {
+    width: 20px;
+    height: 2px;
+    top: calc(50% - 1px);
+  }
+
+  .marker--3 { right: 8%; }
+  .marker--9 { left: 8%; }
+
+  .hand {
+    left: 50%;
+    bottom: 50%;
+    width: 2px;
+    transform-origin: bottom center;
+  }
+
+  .hand--hour { height: 26%; transform: rotate(307deg); }
+  .hand--minute { height: 37%; transform: rotate(47deg); background: rgba(1, 254, 74, 0.72); }
+
+  .watch-pin {
+    width: 9px;
+    height: 9px;
+    left: calc(50% - 4.5px);
+    top: calc(50% - 4.5px);
+    border-radius: 50%;
+  }
+
+  .visual-caption {
+    position: absolute;
+    bottom: 34px;
+    font-size: 8px;
+    letter-spacing: 0.42em;
+    color: rgba(168, 168, 168, 0.25);
+  }
+
+  .signal-bar {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-left: 1px solid var(--line);
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .signal-bar div {
+    min-height: 116px;
+    padding: 26px 30px;
+    border-right: 1px solid var(--line);
+  }
+
+  .signal-bar div:last-child { border-right: 0; }
+  .signal-bar span { font-size: 9px; color: rgba(1, 254, 74, 0.5); letter-spacing: 0.2em; }
+  .signal-bar p { margin-top: 16px; font-size: 12px; line-height: 1.55; color: rgba(168, 168, 168, 0.62); }
+
+  .content-section {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .section-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 104px 64px;
+  }
+
+  .two-col,
+  .faq-wrap {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 100px;
+  }
+
+  .section-eyebrow { margin-bottom: 24px; }
+
+  .section-inner h2,
+  .evaluation-intro h2,
+  .final-cta h2 {
+    font-size: clamp(38px, 4.8vw, 68px);
+    font-weight: 300;
+    letter-spacing: -0.035em;
+    line-height: 1;
+    color: var(--white);
+  }
+
+  .section-copy p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: rgba(168, 168, 168, 0.72);
+    margin-bottom: 22px;
+  }
+
+  .brand-grid,
+  .steps-grid {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+
+  .brand-card,
+  .steps-grid article {
+    min-height: 280px;
+    padding: 32px;
+    background: #0a0a0a;
+  }
+
+  .brand-card--primary { box-shadow: inset 0 2px rgba(1, 254, 74, 0.52); }
+  .brand-card--muted { background: rgba(255, 255, 255, 0.015); }
+  .card-kicker,
+  .steps-grid span {
+    font-size: 8px;
+    letter-spacing: 0.3em;
+    color: rgba(168, 168, 168, 0.36);
+  }
+
+  .brand-card h3,
+  .steps-grid h3 {
+    margin-top: 28px;
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--white);
+  }
+
+  .brand-card p:last-child,
+  .steps-grid p {
+    margin-top: 18px;
+    font-size: 13px;
+    line-height: 1.75;
+    color: rgba(168, 168, 168, 0.6);
+  }
+
+  .exclusion-note {
+    margin-top: 24px;
+    max-width: 850px;
+    font-size: 12px;
+    line-height: 1.75;
+    color: rgba(168, 168, 168, 0.45);
+  }
+
+  .steps-grid span { color: rgba(1, 254, 74, 0.52); }
+
+  .evaluation-section {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    border-left: 1px solid var(--line);
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .evaluation-intro {
+    padding: 88px 58px;
+    border-right: 1px solid var(--line);
+  }
+
+  .evaluation-intro > p:not(.section-eyebrow) {
+    margin-top: 26px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(168, 168, 168, 0.66);
+  }
+
+  .evaluation-intro ul {
+    margin: 28px 0 0 18px;
+    font-size: 12px;
+    line-height: 2;
+    color: rgba(168, 168, 168, 0.52);
+  }
+
+  .watch-form {
+    padding: 88px 58px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .watch-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 9px;
+    letter-spacing: 0.26em;
+    color: rgba(168, 168, 168, 0.52);
+    text-transform: uppercase;
+  }
+
+  .watch-form input,
+  .watch-form select {
+    width: 100%;
+    min-height: 50px;
+    padding: 12px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0;
+    background: #0a0a0a;
+    color: var(--white);
+    font: inherit;
+    font-size: 14px;
+    letter-spacing: normal;
+    text-transform: none;
+    outline: none;
+  }
+
+  .watch-form input:focus,
+  .watch-form select:focus {
+    border-color: rgba(1, 254, 74, 0.54);
+  }
+
+  .field-wide { grid-column: 1 / -1; }
+
+  .watch-form .consent {
+    display: grid;
+    grid-template-columns: 18px 1fr;
+    align-items: start;
+    gap: 12px;
+    letter-spacing: normal;
+    text-transform: none;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .watch-form .consent input {
+    min-height: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    accent-color: var(--green);
+  }
+
+  .watch-form .consent a {
+    color: var(--white);
+    text-underline-offset: 3px;
+  }
+
+  .form-submit {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  .form-disclaimer {
+    font-size: 11px;
+    line-height: 1.65;
+    color: rgba(168, 168, 168, 0.38);
+  }
+
+  .faq-list details {
+    border-top: 1px solid var(--line);
+    padding: 24px 0;
+  }
+
+  .faq-list details:last-child { border-bottom: 1px solid var(--line); }
+  .faq-list summary {
+    cursor: pointer;
+    list-style: none;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.86);
+    padding-right: 34px;
+    position: relative;
+  }
+
+  .faq-list summary::-webkit-details-marker { display: none; }
+  .faq-list summary::after {
+    content: '+';
+    position: absolute;
+    right: 4px;
+    color: rgba(1, 254, 74, 0.56);
+  }
+
+  .faq-list details[open] summary::after { content: '−'; }
+  .faq-list details p {
+    margin-top: 16px;
+    max-width: 650px;
+    font-size: 13px;
+    line-height: 1.8;
+    color: rgba(168, 168, 168, 0.6);
+  }
+
+  .final-cta {
+    padding: 112px 24px;
+    text-align: center;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .final-cta h2 { max-width: 820px; margin: 0 auto; }
+  .final-cta > p:not(.section-eyebrow) {
+    max-width: 580px;
+    margin: 24px auto 34px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgba(168, 168, 168, 0.64);
+  }
+
+  @media (max-width: 1024px) {
+    .watch-hero { grid-template-columns: 1fr; }
+    .watch-hero__copy { padding: 88px 48px 70px; }
+    .watch-visual { min-height: 560px; border-left: 0; border-top: 1px solid var(--line); }
+    .watch-case { width: 340px; }
+    .watch-strap { width: 190px; }
+    .signal-bar { grid-template-columns: 1fr 1fr; }
+    .signal-bar div:nth-child(2) { border-right: 0; }
+    .signal-bar div:nth-child(-n + 2) { border-bottom: 1px solid var(--line); }
+    .two-col, .faq-wrap { gap: 56px; }
+    .brand-grid, .steps-grid { grid-template-columns: 1fr 1fr; }
+    .evaluation-section { grid-template-columns: 1fr; }
+    .evaluation-intro { border-right: 0; border-bottom: 1px solid var(--line); }
+  }
+
+  @media (max-width: 700px) {
+    main { padding-top: 61px; }
+    .watch-hero__copy { padding: 66px 24px 58px; }
+    .watch-hero h1 { font-size: clamp(46px, 14vw, 66px); }
+    .hero-body { font-size: 15px; }
+    .hero-actions { flex-direction: column; }
+    .btn-primary, .btn-ghost { width: 100%; }
+    .watch-visual { min-height: 430px; }
+    .watch-case { width: min(74vw, 310px); }
+    .watch-strap { width: min(42vw, 170px); }
+    .signal-bar { grid-template-columns: 1fr; }
+    .signal-bar div { min-height: 92px; border-right: 0; border-bottom: 1px solid var(--line); }
+    .signal-bar div:last-child { border-bottom: 0; }
+    .section-inner { padding: 72px 24px; }
+    .two-col, .faq-wrap { grid-template-columns: 1fr; gap: 48px; }
+    .brand-grid, .steps-grid { grid-template-columns: 1fr; }
+    .brand-card, .steps-grid article { min-height: 220px; }
+    .evaluation-intro, .watch-form { padding: 64px 24px; }
+    .watch-form { grid-template-columns: 1fr; }
+    .field-wide { grid-column: auto; }
+    .form-submit { grid-column: auto; }
+  }
+</style>

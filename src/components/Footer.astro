@@ -1,5 +1,13 @@
 ---
-const WHATSAPP = 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20de%20mi%20veh%C3%ADculo';
+export interface Props {
+  context?: 'vehicle' | 'watch';
+}
+
+const { context = 'vehicle' } = Astro.props;
+const isWatch = context === 'watch';
+const WHATSAPP = isWatch
+  ? 'https://wa.me/5215554055089?text=Hola%20Ramon%2C%20vi%20el%20piloto%20de%20relojes%20de%20SWIP%20y%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20privada'
+  : 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20de%20mi%20veh%C3%ADculo';
 ---
 <footer class="swip-footer">
   <div class="footer-main">
@@ -9,7 +17,7 @@ const WHATSAPP = 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20solicitar%
       </a>
       <p class="tagline">
         Liquidez inteligente<br />
-        con respaldo en tu auto.
+        con respaldo en {isWatch ? 'activos premium.' : 'tu auto.'}
       </p>
     </div>
 
@@ -36,8 +44,8 @@ const WHATSAPP = 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20solicitar%
       <p class="col-title">Contacto</p>
       <a href="mailto:patricia_bernal@swip.mx" style="text-transform:none;letter-spacing:0;">patricia_bernal@swip.mx</a>
       <a href="tel:+525554055089" style="text-transform:none;letter-spacing:0;">55 5405 5089</a>
-      <a href={WHATSAPP} target="_blank" rel="noopener">WhatsApp</a>
-      <a href={WHATSAPP} target="_blank" rel="noopener">Cotiza tu préstamo</a>
+      <a href={WHATSAPP} target="_blank" rel="noopener" data-preserve-message={isWatch || undefined}>WhatsApp</a>
+      <a href={WHATSAPP} target="_blank" rel="noopener" data-preserve-message={isWatch || undefined}>{isWatch ? 'Evalúa tu reloj' : 'Cotiza tu préstamo'}</a>
       <p class="footer-address">Pje. Interlomas 6, Naucalpan,<br />Estado de México, 52787</p>
     </div>
   </div>

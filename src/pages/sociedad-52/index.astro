@@ -9,60 +9,65 @@ const spaces = [
   {
     number: '01',
     icon: 'ANN',
-    title: 'Anuncios Oficiales',
+    title: 'Sociedad 52 — Announcements',
     access: 'Solo administradores',
-    description: 'Novedades, reglas, convocatorias y experiencias presenciales privadas. Información esencial, cero ruido.',
+    description: 'Novedades, manifiesto, reglas, avances de la generación fundadora y convocatorias a experiencias privadas.',
   },
   {
     number: '02',
     icon: '+52',
-    title: 'Lounge (+52)',
-    access: 'Conversación general',
-    description: 'Networking y recomendaciones de viajes, hospitalidad, aviación privada, bienestar y temas relevantes entre miembros.',
+    title: 'Sociedad 52 — Members',
+    access: 'Conversación moderada',
+    description: 'Presentaciones, networking y recomendaciones entre miembros. Sin prospección fría, cadenas ni inventario masivo.',
   },
   {
     number: '03',
-    icon: 'RE',
-    title: 'Real Estate Off-Market',
-    access: 'Propiedad directa',
-    description: 'Residencias, terrenos, departamentos y ranchos que no se encuentran publicados masivamente en portales.',
+    icon: 'OPP',
+    title: 'Sociedad 52 — Opportunities',
+    access: 'Publicación filtrada',
+    description: 'El equipo publica oportunidades verificadas. Los interesados responden al concierge, no directamente al propietario.',
   },
-  {
-    number: '04',
-    icon: 'G+A',
-    title: 'Garage & Armoring',
-    access: 'Colección y alta especificación',
-    description: 'Hypercars, autos de colección, superdeportivos y vehículos con blindaje de alta especificación.',
-  },
-  {
-    number: '05',
-    icon: 'HH',
-    title: 'High Horology',
-    access: 'Piezas seleccionadas',
-    description: 'Alta relojería, referencias escasas, piezas de complicación y activos tangibles con mercado de colección.',
-  },
+];
+
+const participationProfiles = [
+  'Propietario de activos',
+  'Comprador activo',
+  'Coleccionista',
+  'Empresario o profesionista',
+  'Especialista',
+  'Partner comercial',
+];
+
+const interestCategories = [
+  'Autos premium',
+  'Blindados',
+  'Relojes',
+  'Propiedades',
+  'Liquidez sobre activos',
+  'Conexiones empresariales',
+  'Servicios especializados',
 ];
 
 const faqs = [
   {
+    q: '¿Cuándo abrirá Sociedad 52?',
+    a: 'La Comunidad abrirá cuando estén aprobados los 52 miembros fundadores y exista una mezcla suficiente de oportunidades, compradores, especialistas y una primera experiencia preparada. No abriremos un grupo vacío.',
+  },
+  {
+    q: '¿Qué sucede si soy aprobado antes de completar los 52?',
+    a: 'Recibirás una Founding Letter y actualizaciones privadas mientras se forma la generación completa. El acceso se activa de manera simultánea para todos los fundadores.',
+  },
+  {
+    q: '¿Los fundadores podrán invitar a otras personas?',
+    a: 'Sí. Después de conformar la primera generación, cada fundador podrá proponer hasta tres personas para consideración. Una referencia abre la revisión, pero nunca garantiza admisión.',
+  },
+  {
     q: '¿Puedo entrar directamente desde un enlace de WhatsApp?',
-    a: 'No. El enlace de la Comunidad nunca se publica. Cada ingreso requiere solicitud, revisión y una invitación enviada personalmente por un administrador.',
-  },
-  {
-    q: '¿Necesito ser cliente de SWIP?',
-    a: 'No necesariamente. Sociedad 52 forma parte del ecosistema SWIP, pero la admisión depende de reputación verificable, intención, afinidad con el estándar y capacidad de aportar a la comunidad.',
-  },
-  {
-    q: '¿Se aceptan brokers o intermediarios?',
-    a: 'No se aceptan cadenas de intermediación ni opciones recicladas. Solo propietarios, coleccionistas o representantes con autorización verificable pueden publicar un activo.',
+    a: 'No. El enlace de la Comunidad nunca se publica. Cada ingreso requiere solicitud, revisión, una conversación breve y una invitación enviada personalmente.',
   },
   {
     q: '¿Enviar una solicitud garantiza el acceso?',
-    a: 'No. Todas las solicitudes se revisan individualmente. Sociedad 52 puede limitar, posponer o rechazar una admisión para proteger el estándar y la privacidad de sus miembros.',
-  },
-  {
-    q: '¿La comunidad garantiza las operaciones entre miembros?',
-    a: 'No. La pertenencia no sustituye contratos, verificación, asesoría profesional ni due diligence. Cada miembro es responsable de validar cualquier relación u operación antes de avanzar.',
+    a: 'No. Cada perfil se revisa personalmente. Un candidato puede quedar en revisión, ser preseleccionado, aprobado como fundador, considerado para una futura generación o no seleccionado.',
   },
 ];
 
@@ -71,7 +76,7 @@ const schema = [
     '@context': 'https://schema.org',
     '@type': 'WebPage',
     name: 'Sociedad 52 — Comunidad privada del ecosistema SWIP',
-    description: 'Comunidad privada y curada para relaciones de confianza, experiencias presenciales y oportunidades off-market en México.',
+    description: 'Sociedad 52 está seleccionando a sus 52 miembros fundadores: una comunidad privada de activos de alto valor, conexiones verificadas y oportunidades off-market en México.',
     url: 'https://swip.mx/sociedad-52/',
     inLanguage: 'es-MX',
     isPartOf: { '@id': 'https://swip.mx/#website' },
@@ -110,8 +115,8 @@ const schema = [
 ---
 
 <Base
-  title="Sociedad 52 | Comunidad Privada del Ecosistema SWIP"
-  description="Una comunidad privada y curada para relaciones de confianza, experiencias presenciales y oportunidades off-market en México. Acceso por consideración."
+  title="Sociedad 52 | Selección de los 52 Miembros Fundadores"
+  description="Estamos seleccionando a los 52 miembros fundadores de Sociedad 52, una comunidad privada en México para activos de alto valor, conexiones verificadas y oportunidades off-market."
   schema={schema}
   disableChatWidget={true}
 >
@@ -119,13 +124,13 @@ const schema = [
   <main>
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">SOCIEDAD 52 · COMUNIDAD PRIVADA · MÉXICO</p>
-        <h1>Una red de confianza,<br /><em>no otro grupo.</em></h1>
+        <p class="eyebrow">SOCIEDAD 52</p>
+        <h1>México,<br /><em>por invitación.</em></h1>
         <p class="hero-body">
-          Sociedad 52 reúne personas con criterio, reputación y capacidad de
-          aportar. Relaciones de alto nivel, experiencias privadas y acceso
-          responsable a oportunidades que no necesitan exposición pública.
+          Una comunidad privada para propietarios, empresarios, compradores,
+          coleccionistas y especialistas relacionados con activos de alto valor.
         </p>
+        <p class="founding-statement">Actualmente seleccionamos a los 52 miembros fundadores.</p>
         <div class="hero-actions">
           <a href="#solicitud" class="btn-primary" data-cta="sociedad_hero_application">
             Solicitar consideración
@@ -133,8 +138,8 @@ const schema = [
           <a href="#estandar" class="btn-ghost">Conocer el estándar →</a>
         </div>
         <p class="hero-note">
-          Comunidad del ecosistema SWIP · Acceso por recomendación y revisión
-          individual · La solicitud no garantiza admisión.
+          La Comunidad abrirá cuando la primera generación esté completa y
+          preparada. La solicitud no garantiza admisión.
         </p>
       </div>
       <div class="hero-mark" aria-hidden="true">
@@ -145,17 +150,17 @@ const schema = [
     </section>
 
     <section class="signal-bar" aria-label="Principios de Sociedad 52">
-      <div><span>01</span><p>Acceso curado</p></div>
-      <div><span>02</span><p>Confidencialidad</p></div>
-      <div><span>03</span><p>Propiedad directa</p></div>
-      <div><span>04</span><p>Invitación personal</p></div>
+      <div><span>52</span><p>Miembros fundadores</p></div>
+      <div><span>15+</span><p>Oportunidades reales</p></div>
+      <div><span>10+</span><p>Compradores activos</p></div>
+      <div><span>5+</span><p>Especialistas confiables</p></div>
     </section>
 
     <section class="content-section" id="estandar">
       <div class="section-inner two-col">
         <div>
           <p class="section-eyebrow">EL ESTÁNDAR</p>
-          <h2>La calidad de la red depende de quién entra.</h2>
+          <h2>Acceso antes que exposición.</h2>
         </div>
         <div class="section-copy">
           <p>
@@ -164,25 +169,34 @@ const schema = [
             directorio se convierta en una lista de prospección.
           </p>
           <p>
-            Sociedad 52 opera al revés: revisión humana, espacios separados,
-            publicaciones con formato y consecuencias claras cuando alguien
-            rompe la confidencialidad o utiliza la red sin autorización.
+            Sociedad 52 se construye antes de abrir: revisión humana, una
+            generación equilibrada, oportunidades reales y compradores con
+            solicitudes concretas.
           </p>
           <p>
-            No buscamos volumen. Buscamos miembros que aporten experiencia,
-            relaciones, acceso o criterio.
+            La promesa es acceso a oportunidades que normalmente no se
+            publican, conexiones confiables y una comunidad verificada alrededor
+            de autos premium, blindados, relojes, propiedades y servicios
+            especializados.
           </p>
         </div>
+      </div>
+      <div class="not-grid" aria-label="Lo que Sociedad 52 no es">
+        <p>No es un grupo de anuncios.</p>
+        <p>No es un marketplace.</p>
+        <p>No es una red de brokers.</p>
+        <p>No es un club para presumir.</p>
+        <p>No es una comunidad abierta.</p>
       </div>
     </section>
 
     <section class="content-section" id="espacios">
       <div class="section-inner">
-        <p class="section-eyebrow">CINCO ESPACIOS · UNA COMUNIDAD</p>
-        <h2 class="section-title">Cada conversación<br />tiene su lugar.</h2>
+        <p class="section-eyebrow">ARQUITECTURA INICIAL</p>
+        <h2 class="section-title">Tres espacios.<br />Actividad desde el día uno.</h2>
         <p class="section-lead">
-          La Comunidad se organiza para conservar señal, privacidad y contexto.
-          Cada espacio tiene una función y un estándar de publicación.
+          No abriremos categorías vacías. Autos, relojes y propiedades tendrán
+          espacios propios cuando exista suficiente actividad en cada una.
         </p>
         <div class="spaces-grid">
           {spaces.map((space) => (
@@ -248,30 +262,61 @@ const schema = [
       </div>
     </section>
 
+    <section class="content-section gate-section">
+      <div class="section-inner">
+        <p class="section-eyebrow">PUERTA DE LANZAMIENTO</p>
+        <h2 class="section-title">Abrimos cuando exista<br />una comunidad completa.</h2>
+        <p class="section-lead">
+          Llegar a 52 nombres no es suficiente. Sociedad 52 abre cuando se
+          cumplen simultáneamente estas cinco condiciones.
+        </p>
+        <div class="gate-grid">
+          <article><strong>52</strong><span>Miembros fundadores aprobados y equilibrados</span></article>
+          <article><strong>15+</strong><span>Oportunidades reales preparadas</span></article>
+          <article><strong>10+</strong><span>Compradores con solicitudes concretas</span></article>
+          <article><strong>5+</strong><span>Especialistas confiables disponibles</span></article>
+          <article><strong>01</strong><span>Experiencia inaugural preparada</span></article>
+        </div>
+        <div class="nomination-note">
+          <p class="section-eyebrow">DESPUÉS DE LOS 52</p>
+          <p>
+            Cada miembro fundador podrá proponer hasta tres personas para
+            consideración. La recomendación abre una revisión; nunca garantiza
+            admisión.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <section class="content-section" id="admision">
       <div class="section-inner">
         <p class="section-eyebrow">ADMISIÓN</p>
-        <h2 class="section-title">La invitación llega<br />después del filtro.</h2>
+        <h2 class="section-title">Aprobación primero.<br />Acceso después.</h2>
         <div class="admission-grid">
           <article>
             <span>01</span>
-            <h3>Solicitud o recomendación</h3>
-            <p>Comparte quién eres, quién te recomienda y qué esperas aportar a la comunidad.</p>
+            <h3>Solicitud</h3>
+            <p>Comparte identidad, actividad, participación, intereses, una necesidad actual y lo que podrías aportar.</p>
           </article>
           <article>
             <span>02</span>
-            <h3>Revisión individual</h3>
-            <p>Validamos identidad pública, trayectoria, intención y afinidad con el estándar.</p>
+            <h3>En revisión</h3>
+            <p>Revisamos identidad, actividad, alineación y si el perfil ayuda a equilibrar la generación fundadora.</p>
           </article>
           <article>
             <span>03</span>
-            <h3>Conversación privada</h3>
-            <p>Una llamada breve permite alinear expectativas y resolver cualquier duda antes de admitir.</p>
+            <h3>Preselección y llamada</h3>
+            <p>Una conversación de 10–15 minutos valida intención, comunicación, privacidad, qué busca y qué aporta.</p>
           </article>
           <article>
             <span>04</span>
-            <h3>Invitación personal</h3>
-            <p>Si el perfil es aprobado, un administrador comparte directamente el acceso a la Comunidad.</p>
+            <h3>Fundador aprobado</h3>
+            <p>Recibe una Founding Letter y actualizaciones privadas. El acceso aún no se activa.</p>
+          </article>
+          <article>
+            <span>05</span>
+            <h3>Apertura simultánea</h3>
+            <p>Cuando la generación y la puerta de lanzamiento están completas, los 52 reciben su invitación numerada.</p>
           </article>
         </div>
       </div>
@@ -282,9 +327,9 @@ const schema = [
         <p class="section-eyebrow">COHORTE FUNDADORA</p>
         <h2>Solicita consideración.</h2>
         <p>
-          Buscamos una primera cohorte pequeña y activa. No necesitas compartir
-          información patrimonial ni documentos sensibles. Necesitamos entender
-          quién eres, cómo llegaste y qué podrías aportar.
+          Estamos formando la primera generación de 52. No pedimos información
+          patrimonial ni documentos sensibles; necesitamos entender quién eres,
+          cómo participas, qué buscas y qué podrías aportar.
         </p>
         <div class="application-note">
           <span>IMPORTANTE</span>
@@ -298,33 +343,51 @@ const schema = [
           <input type="text" name="nombre" autocomplete="name" required />
         </label>
         <label>
-          Ciudad y país
+          WhatsApp
+          <input type="tel" name="whatsapp" autocomplete="tel" required />
+        </label>
+        <label>
+          Correo
+          <input type="email" name="correo" autocomplete="email" required />
+        </label>
+        <label>
+          Ciudad
           <input type="text" name="ciudad" autocomplete="address-level2" required />
         </label>
         <label class="field-wide">
-          Actividad profesional o empresa
+          Empresa, actividad o profesión
           <input type="text" name="actividad" required />
+        </label>
+        <label>
+          LinkedIn, sitio web o red verificable
+          <input type="url" name="perfil" placeholder="https://" />
         </label>
         <label>
           ¿Quién te recomienda?
           <input type="text" name="referido" placeholder="Nombre o relación" />
         </label>
-        <label>
-          Código de invitación
-          <input type="text" name="codigo" placeholder="Opcional" />
-        </label>
-        <label class="field-wide">
-          Interés principal
-          <select name="interes" required>
-            <option value="" selected disabled>Selecciona una opción</option>
-            <option>Lounge y networking</option>
-            <option>Real Estate Off-Market</option>
-            <option>Garage & Armoring</option>
-            <option>High Horology</option>
-            <option>Experiencias privadas</option>
-            <option>Varios espacios</option>
-          </select>
-        </label>
+        <fieldset class="field-wide">
+          <legend>¿Cuál describe mejor tu participación? Puedes elegir más de una.</legend>
+          <div class="checkbox-grid">
+            {participationProfiles.map((profile) => (
+              <label class="check-option">
+                <input type="checkbox" name="participacion" value={profile} />
+                <span>{profile}</span>
+              </label>
+            ))}
+          </div>
+        </fieldset>
+        <fieldset class="field-wide">
+          <legend>Categorías de interés</legend>
+          <div class="checkbox-grid">
+            {interestCategories.map((category) => (
+              <label class="check-option">
+                <input type="checkbox" name="categorias" value={category} />
+                <span>{category}</span>
+              </label>
+            ))}
+          </div>
+        </fieldset>
         <label class="field-wide">
           ¿Qué podrías aportar a Sociedad 52?
           <textarea name="aporte" rows="4" required></textarea>
@@ -332,6 +395,29 @@ const schema = [
         <label class="field-wide">
           ¿Qué esperas encontrar?
           <textarea name="busca" rows="3" required></textarea>
+        </label>
+        <label class="field-wide">
+          Describe una oportunidad o necesidad actual
+          <textarea
+            name="oportunidad"
+            rows="4"
+            placeholder="Ej. vehículo que buscas, activo que quieres colocar, propiedad off-market, necesidad de liquidez o conexión específica."
+            required
+          ></textarea>
+        </label>
+        <label class="field-wide">
+          ¿Qué relación tienes con SWIP?
+          <select name="relacion_swip" required>
+            <option value="" selected disabled>Selecciona una opción</option>
+            <option>Cliente</option>
+            <option>Referido</option>
+            <option>Contacto profesional</option>
+            <option>Todavía ninguna</option>
+          </select>
+        </label>
+        <label class="field-wide">
+          ¿Por qué deberíamos considerarte?
+          <textarea name="motivo" rows="3" required></textarea>
         </label>
         <label class="consent field-wide">
           <input type="checkbox" name="consentimiento" required />
@@ -368,10 +454,10 @@ const schema = [
 
     <section class="final-cta">
       <p class="section-eyebrow">SOCIEDAD 52 · COHORTE FUNDADORA</p>
-      <h2>La exclusividad no se declara.<br />Se protege.</h2>
+      <h2>Estamos seleccionando a<br />los 52 miembros fundadores.</h2>
       <p>
-        Si compartes el estándar y puedes aportar a una red de confianza,
-        presenta tu solicitud para revisión.
+        La Comunidad abrirá cuando existan las personas, oportunidades,
+        compradores, especialistas y experiencia necesarias para comenzar viva.
       </p>
       <a href="#solicitud" class="btn-primary" data-cta="sociedad_final_application">
         Solicitar consideración
@@ -382,6 +468,19 @@ const schema = [
 
   <script define:vars={{ WHATSAPP_NUMBER }}>
     const form = document.getElementById('sociedad-application-form');
+    const participationInputs = Array.from(
+      form?.querySelectorAll('input[name="participacion"]') || []
+    );
+    const categoryInputs = Array.from(
+      form?.querySelectorAll('input[name="categorias"]') || []
+    );
+
+    [...participationInputs, ...categoryInputs].forEach((input) => {
+      input.addEventListener('change', () => {
+        participationInputs[0]?.setCustomValidity('');
+        categoryInputs[0]?.setCustomValidity('');
+      });
+    });
 
     document.querySelectorAll('[data-cta]').forEach((element) => {
       element.addEventListener('click', () => {
@@ -396,28 +495,50 @@ const schema = [
     form?.addEventListener('submit', (event) => {
       event.preventDefault();
       const data = new FormData(form);
+      const participation = data.getAll('participacion');
+      const categories = data.getAll('categorias');
+
+      if (participation.length === 0) {
+        participationInputs[0]?.setCustomValidity('Selecciona al menos una forma de participación.');
+        participationInputs[0]?.reportValidity();
+        return;
+      }
+
+      if (categories.length === 0) {
+        categoryInputs[0]?.setCustomValidity('Selecciona al menos una categoría de interés.');
+        categoryInputs[0]?.reportValidity();
+        return;
+      }
+
       const message = [
         'Hola Ramon, quiero solicitar consideración para la cohorte fundadora de Sociedad 52.',
         '',
         'Origen: landing Sociedad 52',
         `Nombre: ${data.get('nombre')}`,
-        `Ciudad y país: ${data.get('ciudad')}`,
+        `WhatsApp: ${data.get('whatsapp')}`,
+        `Correo: ${data.get('correo')}`,
+        `Ciudad: ${data.get('ciudad')}`,
         `Actividad: ${data.get('actividad')}`,
+        `Perfil verificable: ${data.get('perfil') || 'No indicado'}`,
         `Recomendado por: ${data.get('referido') || 'Sin recomendación indicada'}`,
-        `Código: ${data.get('codigo') || 'Sin código'}`,
-        `Interés principal: ${data.get('interes')}`,
+        `Participación: ${participation.join(', ')}`,
+        `Categorías: ${categories.join(', ')}`,
         `Qué puedo aportar: ${data.get('aporte')}`,
         `Qué espero encontrar: ${data.get('busca')}`,
+        `Oportunidad o necesidad actual: ${data.get('oportunidad')}`,
+        `Relación con SWIP: ${data.get('relacion_swip')}`,
+        `Por qué considerarme: ${data.get('motivo')}`,
         '',
-        'Entiendo que esta solicitud inicia una revisión y no garantiza admisión.',
+        'Entiendo que la Comunidad abrirá al conformar la generación completa y que esta solicitud no garantiza admisión.',
       ].join('\n');
 
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({
         event: 'sociedad_52_application_submitted',
-        primary_interest: data.get('interes'),
+        participation_profiles: participation.join('|'),
+        interest_categories: categories.join('|'),
         has_referral: Boolean(data.get('referido')),
-        has_invite_code: Boolean(data.get('codigo')),
+        swip_relationship: data.get('relacion_swip'),
       });
 
       window.open(
@@ -495,6 +616,16 @@ const schema = [
     font-size: 16px;
     line-height: 1.85;
     color: rgba(168, 168, 168, 0.76);
+  }
+
+  .founding-statement {
+    max-width: 620px;
+    margin-top: 22px;
+    padding-left: 18px;
+    border-left: 1px solid rgba(255, 255, 255, 0.26);
+    font-size: 15px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
   }
 
   .hero-actions {
@@ -682,23 +813,43 @@ const schema = [
 
   .section-copy p:last-child { margin-bottom: 0; }
 
+  .not-grid {
+    max-width: 1152px;
+    margin: -40px auto 104px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1px;
+    border: 1px solid var(--line);
+    background: var(--line);
+  }
+
+  .not-grid p {
+    min-height: 96px;
+    padding: 24px 20px;
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    font-size: 11px;
+    line-height: 1.6;
+    letter-spacing: 0.12em;
+    color: rgba(168, 168, 168, 0.58);
+    text-transform: uppercase;
+  }
+
   .spaces-grid {
     margin-top: 58px;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1px;
     background: var(--line);
     border: 1px solid var(--line);
   }
 
   .space-card {
-    grid-column: span 2;
     min-height: 310px;
     padding: 36px 30px;
     background: var(--black);
   }
-
-  .space-card:nth-child(4) { grid-column: 2 / span 2; }
 
   .space-top {
     display: flex;
@@ -791,7 +942,8 @@ const schema = [
   }
 
   .rules-grid,
-  .admission-grid {
+  .admission-grid,
+  .gate-grid {
     margin-top: 58px;
     display: grid;
     gap: 1px;
@@ -800,10 +952,12 @@ const schema = [
   }
 
   .rules-grid { grid-template-columns: repeat(3, 1fr); }
-  .admission-grid { grid-template-columns: repeat(4, 1fr); }
+  .admission-grid { grid-template-columns: repeat(5, 1fr); }
+  .gate-grid { grid-template-columns: repeat(5, 1fr); }
 
   .rules-grid article,
-  .admission-grid article {
+  .admission-grid article,
+  .gate-grid article {
     min-height: 270px;
     padding: 36px 30px;
     background: var(--black);
@@ -816,6 +970,43 @@ const schema = [
     font-size: 10px;
     letter-spacing: 0.25em;
     color: rgba(168, 168, 168, 0.28);
+  }
+
+  .gate-grid article {
+    min-height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .gate-grid strong {
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 1;
+    color: var(--white);
+  }
+
+  .gate-grid span {
+    font-size: 12px;
+    line-height: 1.7;
+    color: rgba(168, 168, 168, 0.62);
+  }
+
+  .nomination-note {
+    margin-top: 28px;
+    padding: 30px;
+    border: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 36px;
+    background: rgba(255, 255, 255, 0.012);
+  }
+
+  .nomination-note p:last-child {
+    max-width: 720px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(168, 168, 168, 0.7);
   }
 
   .application-section {
@@ -882,6 +1073,44 @@ const schema = [
     text-transform: uppercase;
   }
 
+  .application-form fieldset {
+    min-width: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .application-form legend {
+    margin-bottom: 12px;
+    font-size: 9px;
+    letter-spacing: 0.22em;
+    color: rgba(168, 168, 168, 0.5);
+    text-transform: uppercase;
+  }
+
+  .checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+
+  .application-form .check-option {
+    min-height: 58px;
+    padding: 14px;
+    display: grid;
+    grid-template-columns: 18px 1fr;
+    align-items: center;
+    gap: 10px;
+    background: #0a0a0a;
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: normal;
+    color: rgba(255, 255, 255, 0.72);
+    text-transform: none;
+    cursor: pointer;
+  }
+
   .application-form input,
   .application-form select,
   .application-form textarea {
@@ -926,6 +1155,14 @@ const schema = [
     width: 16px;
     height: 16px;
     margin-top: 2px;
+    accent-color: var(--green);
+  }
+
+  .application-form .check-option input {
+    min-height: 0;
+    width: 16px;
+    height: 16px;
+    padding: 0;
     accent-color: var(--green);
   }
 
@@ -1002,10 +1239,10 @@ const schema = [
     .mark-plus { margin-top: 145px; }
     .mark-number { font-size: 300px; }
     .spaces-grid { grid-template-columns: repeat(2, 1fr); }
-    .space-card { grid-column: auto; }
-    .space-card:nth-child(4) { grid-column: auto; }
+    .not-grid { margin-inline: 48px; grid-template-columns: repeat(3, 1fr); }
     .rules-grid { grid-template-columns: 1fr 1fr; }
     .admission-grid { grid-template-columns: 1fr 1fr; }
+    .gate-grid { grid-template-columns: repeat(3, 1fr); }
     .application-section { grid-template-columns: 1fr; }
     .application-intro { border-right: 0; border-bottom: 1px solid var(--line); }
   }
@@ -1029,12 +1266,16 @@ const schema = [
     .signal-bar div:last-child { border-bottom: 0; }
     .section-inner { padding: 76px 24px; }
     .two-col, .faq-grid, .protocol-grid { grid-template-columns: 1fr; gap: 48px; }
-    .spaces-grid, .rules-grid, .admission-grid { grid-template-columns: 1fr; }
-    .space-card, .rules-grid article, .admission-grid article { min-height: 230px; }
+    .not-grid { margin: -28px 24px 76px; grid-template-columns: 1fr; }
+    .not-grid p { min-height: 72px; }
+    .spaces-grid, .rules-grid, .admission-grid, .gate-grid { grid-template-columns: 1fr; }
+    .space-card, .rules-grid article, .admission-grid article, .gate-grid article { min-height: 220px; }
+    .nomination-note { grid-template-columns: 1fr; gap: 10px; padding: 24px; }
     .protocol-card { padding: 30px 24px; }
     .protocol-card dl div { grid-template-columns: 1fr; gap: 7px; }
     .application-intro, .application-form { padding: 64px 24px; }
     .application-form { grid-template-columns: 1fr; }
+    .checkbox-grid { grid-template-columns: 1fr; }
     .field-wide, .form-submit { grid-column: auto; }
   }
 </style>

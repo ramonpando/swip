@@ -2,20 +2,22 @@
 
 Última actualización: 2026-07-27  
 Responsable: Ramon Pando  
-Estado: Lanzamiento web
+Estado: Prelanzamiento — selección de Founding 52
 
-## Estado de lanzamiento
+## Estado del prelanzamiento
 
 - **Posicionamiento público:** Comunidad privada del ecosistema SWIP.
 - **URL:** `https://swip.mx/sociedad-52/`
 - **Conversión principal:** Solicitar consideración.
 - **Destino de la solicitud:** WhatsApp directo de Ramon Pando.
-- **Acceso a la Comunidad:** Invitación personal después de revisión.
+- **Meta de fundación:** 52 miembros fundadores.
+- **Acceso a la Comunidad:** Se activa simultáneamente cuando se complete la
+  generación y la puerta de lanzamiento.
 - **Enlace público de WhatsApp Communities:** No se publica.
 - **Integración:** Navbar, footer, homepage, recorrido de relojes y página
   institucional de SWIP.
-- **Pendiente operativo:** Crear/configurar la Comunidad en WhatsApp y comenzar
-  la selección de la cohorte fundadora.
+- **Pendiente operativo:** Acumular candidatos, compradores, oportunidades y
+  especialistas antes de abrir la Comunidad en WhatsApp.
 
 ## Definición
 
@@ -34,6 +36,22 @@ lista de prospección. Debe crear un entorno de alta confianza para:
 
 La calidad de Sociedad 52 depende más de quién entra, cómo se comporta y qué
 aporta que del número total de miembros.
+
+## El ritual de los 52 fundadores
+
+Sociedad 52 abrirá cuando estén seleccionados sus 52 miembros fundadores. Los
+primeros 52 establecen la cultura y reciben permanentemente el distintivo
+`Founding Member 01–52`.
+
+El número 52 no limita el tamaño futuro. Funciona como:
+
+- meta concreta de prelanzamiento;
+- cupo real de la primera generación;
+- historia compartida de pertenencia;
+- urgencia legítima sin promociones ni contadores falsos.
+
+Después de conformar la generación fundadora, cada uno de los 52 podrá proponer
+hasta tres personas para consideración. Una referencia no garantiza admisión.
 
 ## Principio de acceso
 
@@ -55,25 +73,32 @@ Conversación breve de admisión
     ↓
 Aceptación expresa de reglas
     ↓
-Invitación personal a WhatsApp
+Aprobación como miembro fundador
+    ↓
+Founding Letter + actualizaciones privadas
+    ↓
+Generación y puerta de lanzamiento completas
+    ↓
+Invitación personal y numerada a WhatsApp
 ```
 
 El enlace de invitación de WhatsApp debe mantenerse privado, enviarse uno a uno
 y cambiarse si se filtra.
 
-## Arquitectura en WhatsApp
+## Arquitectura inicial en WhatsApp
 
-La Comunidad principal se llama `SOCIEDAD 52`. Dentro se crean cinco grupos
-funcionales. En comunicación interna conviene llamarlos “espacios” o “grupos
-temáticos” para no confundirlos con el producto separado WhatsApp Channels.
+La Comunidad principal se llama `SOCIEDAD 52`. En el lanzamiento solo se abren
+tres grupos. Las categorías de autos, relojes, blindados y real estate se
+separan cuando cada una tenga actividad suficiente.
 
-### 1. 📢 Anuncios Oficiales
+### 1. Sociedad 52 — Announcements
 
 **Permisos:** Solo administradores.
 
 **Uso:**
 
-- novedades y cambios de reglas;
+- avances de la generación fundadora;
+- manifiesto y cambios de reglas;
 - convocatorias a experiencias privadas;
 - altas de nuevas iniciativas;
 - avisos de moderación general;
@@ -82,7 +107,7 @@ temáticos” para no confundirlos con el producto separado WhatsApp Channels.
 **No usar para:** Publicidad repetitiva, publicaciones de activos o conversación
 general.
 
-### 2. 💬 Lounge (+52)
+### 2. Sociedad 52 — Members
 
 **Permisos:** Miembros.
 
@@ -98,28 +123,16 @@ general.
 **No usar para:** Prospección fría, cadenas, spam, política partidista agresiva o
 publicaciones masivas de inventario.
 
-### 3. 🏠 Real Estate Off-Market
+### 3. Sociedad 52 — Opportunities
 
-**Uso exclusivo:** Residencias, terrenos, departamentos, desarrollos
-seleccionados o ranchos no publicados masivamente en portales.
+**Permisos:** Solo publica el equipo después de filtrar y normalizar la
+información.
 
-**Origen permitido:** Propietario directo o representante autorizado con
-mandato verificable.
+**Uso:** Oportunidades verificadas de autos, blindados, relojes, propiedades,
+liquidez y conexiones empresariales.
 
-### 4. 🏎️ Garage & Armoring
-
-**Uso exclusivo:** Hypercars, autos de colección, superdeportivos, clásicos
-relevantes y vehículos con blindaje de alta especificación.
-
-**Origen permitido:** Propietario, colección privada o representante autorizado.
-
-### 5. ⌚ High Horology
-
-**Uso exclusivo:** Alta relojería, referencias escasas, piezas de alta
-complicación y activos tangibles de colección.
-
-**Ejemplos de perfil:** Patek Philippe, Audemars Piguet, Rolex de referencias
-raras y piezas equivalentes.
+Los miembros interesados responden al concierge, no directamente al
+propietario. Esto protege privacidad, formato y trazabilidad.
 
 ## Protocolo obligatorio de publicación
 
@@ -189,37 +202,47 @@ con asesoría legal antes del lanzamiento.
 
 ### Cohorte inicial
 
-Recomendación: iniciar con 25 a 40 miembros seleccionados personalmente. No
-abrir una convocatoria masiva durante esta etapa.
+La cohorte inicial tiene exactamente 52 miembros fundadores seleccionados. La
+Comunidad no se abre antes de completar la generación y las cinco condiciones de
+lanzamiento.
 
 ### Ruta de entrada
 
 1. **Recomendación:** Cada candidato llega recomendado por Ramon o por un
    miembro fundador. La landing puede admitir solicitudes sin recomendación,
    pero se procesan con menor prioridad.
-2. **Solicitud breve:** El candidato explica identidad, ciudad, actividad,
-   relación con quien lo recomienda, intereses y qué puede aportar.
+2. **Solicitud:** El candidato explica identidad, ciudad, actividad, relación
+   con SWIP, perfil de participación, intereses, necesidad actual y qué aporta.
 3. **Verificación básica:** Confirmar identidad pública y trayectoria. No pedir
    pruebas patrimoniales ni información financiera sensible en el formulario.
 4. **Conversación de 15 minutos:** Validar intención, criterio, expectativas y
    entendimiento de las reglas.
 5. **Aceptación:** El candidato acepta confidencialidad, no prospección, formato
    de publicación y moderación.
-6. **Invitación personal:** Un administrador comparte el acceso directamente.
-7. **Periodo inicial de 30 días:** Observar conducta y participación antes de
-   considerarlo miembro consolidado.
+6. **Aprobación:** El candidato recibe una Founding Letter; el acceso aún no se
+   activa.
+7. **Preapertura:** Recibe una actualización privada cada 7–10 días y puede
+   proponer una oportunidad o búsqueda.
+8. **Invitación personal:** Cuando la puerta de lanzamiento está completa,
+   recibe su invitación numerada y acceso simultáneo con los demás fundadores.
 
 ### Datos mínimos de la solicitud
 
 - Nombre completo.
-- Ciudad y país.
+- WhatsApp y correo.
+- Ciudad.
 - Actividad profesional o empresa.
 - Perfil público verificable, opcional pero recomendado.
 - Nombre de quien lo recomienda.
-- Código de invitación, si existe.
-- Intereses: Lounge, real estate, garage/armoring, alta relojería, experiencias.
+- Perfil de participación: propietario, comprador, coleccionista, empresario,
+  especialista o partner.
+- Intereses: autos, blindados, relojes, propiedades, liquidez, conexiones y
+  servicios especializados.
 - “¿Qué podrías aportar a Sociedad 52?”
 - “¿Qué esperas encontrar?”
+- “Describe una oportunidad o necesidad actual.”
+- “¿Qué relación tienes con SWIP?”
+- “¿Por qué deberíamos considerarte?”
 - Aceptación de privacidad, confidencialidad, no prospección y reglas.
 
 ### Datos que no deben solicitarse públicamente
@@ -229,6 +252,89 @@ abrir una convocatoria masiva durante esta etapa.
 - Domicilio particular exacto.
 - Números de serie completos de activos.
 - Documentos de identidad por WhatsApp o formulario no preparado para ello.
+
+## Estados de aplicación
+
+| Estado | Significado |
+|---|---|
+| En revisión | Se valida identidad, actividad y alineación |
+| Preseleccionado | Se agenda una conversación de 10–15 minutos |
+| Miembro fundador aprobado | Recibe Founding Letter; todavía sin acceso |
+| Futuras generaciones | Buen perfil fuera de la primera composición |
+| No seleccionado | No avanza; no requiere explicación extensa |
+
+## Funnel de captación
+
+| Etapa | Meta de planeación |
+|---|---:|
+| Solicitudes | 200–250 |
+| Perfiles interesantes | 100 |
+| Llamadas | 70 |
+| Fundadores aprobados | 52 |
+
+No se publican contadores de solicitudes ni lugares restantes. Solo se comunican
+hitos verdaderos: selección abierta, cohorte en revisión y futuras aperturas.
+
+## Composición de los Founding 52
+
+| Perfil principal | Miembros |
+|---|---:|
+| Clientes y propietarios de activos | 16 |
+| Empresarios bien conectados | 10 |
+| Compradores activos | 8 |
+| Coleccionistas de relojes/autos | 6 |
+| Especialistas | 6 |
+| Partners seleccionados | 6 |
+| **Total** | **52** |
+
+Una persona puede cumplir varias funciones. Los vendedores e intermediarios no
+deben dominar la generación.
+
+## Puerta de lanzamiento
+
+La Comunidad abre solo al cumplir simultáneamente:
+
+1. 52 miembros fundadores aprobados y equilibrados.
+2. Al menos 15 oportunidades reales.
+3. Al menos 10 compradores activos con solicitudes concretas.
+4. Cinco especialistas confiables.
+5. Primera experiencia presencial o virtual preparada.
+
+## Founding Letter y espera activa
+
+Al aprobarse, cada fundador recibe una carta de selección que explica que el
+acceso se activará con la generación completa. Después recibe comunicación
+privada cada 7–10 días:
+
+- avance real del proceso;
+- manifiesto y código de conducta;
+- oportunidad preliminar;
+- presentación de un especialista;
+- invitación a proponer una búsqueda;
+- fecha aproximada del evento inaugural.
+
+## Lanzamiento en dos tiempos
+
+### Día 1 — Revelación
+
+Cada fundador recibe invitación numerada, distintivo Founding 01–52, manifiesto,
+código de conducta, formato de oportunidades y acceso a la Comunidad.
+
+### Día 2 o 3 — Sesión 01: Los 52
+
+Sesión inaugural, idealmente presencial, con visión, presentaciones dirigidas,
+dos o tres oportunidades seleccionadas, explicación del concierge y networking
+moderado.
+
+## Registro dual en CRM
+
+Cada aplicación se evalúa con dos campos independientes:
+
+1. **Elegibilidad para Sociedad 52.**
+2. **Oportunidad comercial para SWIP.**
+
+Un buen prospecto de préstamo no es automáticamente un buen miembro, y un buen
+miembro puede no tener una oportunidad financiera inmediata.
 
 ## Moderación
 
@@ -280,7 +386,7 @@ Agregar un bloque o enlace visible:
 
 ```text
 Sociedad 52
-Comunidad privada · Acceso por invitación
+Founding 52 · Selección abierta
 ```
 
 El footer garantiza un enlace desde todas las páginas sin convertirlo en una
@@ -291,14 +397,14 @@ llamada comercial agresiva.
 Agregar una franja independiente después de activos y antes de “Por qué SWIP”:
 
 ```text
-SOCIEDAD 52 · ACCESO PRIVADO
+SOCIEDAD 52 · GENERACIÓN FUNDADORA
 
-Una red construida alrededor de criterio, discreción y acceso.
+Estamos seleccionando a los 52 miembros fundadores.
 
-Comunidad curada para relaciones de confianza, experiencias privadas y
-oportunidades off-market.
+México, por invitación. La Comunidad abre cuando existan las personas,
+oportunidades, compradores y especialistas necesarios.
 
-[Conocer Sociedad 52 →]
+[Solicitar consideración →]
 ```
 
 ### Enlaces contextuales
@@ -338,14 +444,15 @@ SWIP (/)
 
 Secciones recomendadas:
 
-1. Hero: “Una red de confianza, no otro grupo.”
+1. Hero: “México, por invitación.”
 2. Qué es Sociedad 52.
 3. Para quién es y para quién no.
-4. Cinco espacios de la Comunidad.
+4. Tres espacios iniciales de la Comunidad.
 5. Tres reglas de oro.
-6. Cómo funciona el filtro de entrada.
-7. Formulario de solicitud.
-8. Nota de privacidad y ausencia de garantía de admisión.
+6. Puerta de lanzamiento.
+7. Cómo funciona el filtro de entrada.
+8. Formulario completo de solicitud.
+9. Nota de privacidad y ausencia de garantía de admisión.
 
 ## Fases
 
@@ -359,10 +466,11 @@ Secciones recomendadas:
 ### Fase 1 — Cohorte fundadora
 
 - Crear landing.
-- Crear formulario con código o recomendación.
-- Seleccionar 25 a 40 miembros.
-- Abrir Anuncios y Lounge primero.
-- Activar grupos temáticos cuando exista masa crítica.
+- Captar 200–250 solicitudes.
+- Realizar aproximadamente 70 llamadas.
+- Seleccionar y equilibrar los 52 miembros fundadores.
+- Preparar 15 oportunidades, 10 compradores, 5 especialistas y Sesión 01.
+- Enviar Founding Letters y comunicaciones cada 7–10 días.
 
 ### Fase 2 — Integración web
 
@@ -373,6 +481,10 @@ Secciones recomendadas:
 
 ### Fase 3 — Operación
 
+- Abrir Announcements, Members y Opportunities simultáneamente.
+- Celebrar Sesión 01 — Los 52.
+- Dar a cada fundador tres nominaciones personales.
+- Activar grupos temáticos cuando exista masa crítica.
 - Cadencia mensual de experiencias.
 - Revisión trimestral de miembros inactivos o problemáticos.
 - Métricas de calidad.
@@ -382,10 +494,8 @@ Secciones recomendadas:
 
 1. ¿Sociedad 52 se presenta como “por SWIP”, “una iniciativa de Ramon Pando” o
    marca independiente?
-2. ¿Cuántos miembros fundadores exactos entran?
-3. ¿Solo México o también miembros/off-market en Miami y otras plazas?
-4. ¿Quién puede recomendar y cuántas invitaciones recibe?
-5. ¿Se acepta un representante autorizado que no sea propietario?
-6. ¿Habrá cuota en el futuro?
-7. ¿La landing será pública e indexable o privada/noindex durante la cohorte?
-8. ¿Qué datos y consentimiento requiere la revisión legal?
+2. ¿Solo México o también miembros/off-market en Miami y otras plazas?
+3. ¿Se acepta un representante autorizado que no sea propietario?
+4. ¿Habrá cuota en el futuro?
+5. ¿Qué datos y consentimiento requiere la revisión legal?
+6. ¿Qué CRM recibirá y clasificará automáticamente las solicitudes?

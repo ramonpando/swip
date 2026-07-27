@@ -190,8 +190,10 @@ const baseSchema = {
       });
     })();
   </script>
-  <!-- Modal de cotización -->
-  <div id="swip-modal-overlay" style="display:none" aria-modal="true" role="dialog">
+  {!disableChatWidget && (
+    <Fragment>
+    <!-- Modal de cotización -->
+    <div id="swip-modal-overlay" style="display:none" aria-modal="true" role="dialog">
     <div id="swip-modal">
       <button id="swip-modal-close" aria-label="Cerrar">×</button>
       <p class="swip-modal-eyebrow">¿CÓMO QUIERES CONTINUAR?</p>
@@ -341,7 +343,9 @@ const baseSchema = {
     document.addEventListener('keydown', function(e) {
       if (e.key === 'Escape') closeSwipModal();
     });
-  </script>
+    </script>
+    </Fragment>
+  )}
   {!disableChatWidget && (
     <script
       defer

@@ -1,33 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
-import Nav from '../../components/Nav.astro';
-import Footer from '../../components/Footer.astro';
 
 const WHATSAPP_NUMBER = '5215542317035';
-
-const spaces = [
-  {
-    number: '01',
-    icon: 'ANN',
-    title: 'Sociedad 52 — Announcements',
-    access: 'Solo administradores',
-    description: 'Novedades, manifiesto, reglas, avances de la generación fundadora y convocatorias a experiencias privadas.',
-  },
-  {
-    number: '02',
-    icon: '+52',
-    title: 'Sociedad 52 — Members',
-    access: 'Conversación moderada',
-    description: 'Presentaciones, networking y recomendaciones entre miembros. Sin prospección fría, cadenas ni inventario masivo.',
-  },
-  {
-    number: '03',
-    icon: 'OPP',
-    title: 'Sociedad 52 — Opportunities',
-    access: 'Publicación filtrada',
-    description: 'El equipo publica oportunidades verificadas. Los interesados responden al concierge, no directamente al propietario.',
-  },
-];
 
 const participationProfiles = [
   'Propietario de activos',
@@ -83,24 +57,6 @@ const schema = [
   },
   {
     '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      {
-        '@type': 'ListItem',
-        position: 1,
-        name: 'Inicio',
-        item: 'https://swip.mx/',
-      },
-      {
-        '@type': 'ListItem',
-        position: 2,
-        name: 'Sociedad 52',
-        item: 'https://swip.mx/sociedad-52/',
-      },
-    ],
-  },
-  {
-    '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: faqs.map((faq) => ({
       '@type': 'Question',
@@ -120,7 +76,10 @@ const schema = [
   schema={schema}
   disableChatWidget={true}
 >
-  <Nav context="community" />
+  <header class="landing-header">
+    <p>SOCIEDAD 52</p>
+    <span>FOUNDING 01—52 · MÉXICO</span>
+  </header>
   <main>
     <section class="hero">
       <div class="hero-copy">
@@ -133,9 +92,8 @@ const schema = [
         <p class="founding-statement">Actualmente seleccionamos a los 52 miembros fundadores.</p>
         <div class="hero-actions">
           <a href="#solicitud" class="btn-primary" data-cta="sociedad_hero_application">
-            Solicitar consideración
+            Iniciar mi evaluación
           </a>
-          <a href="#estandar" class="btn-ghost">Conocer el estándar →</a>
         </div>
         <p class="hero-note">
           La Comunidad abrirá cuando la primera generación esté completa y
@@ -190,133 +148,58 @@ const schema = [
       </div>
     </section>
 
-    <section class="content-section" id="espacios">
+    <section class="content-section" id="criterios">
       <div class="section-inner">
-        <p class="section-eyebrow">ARQUITECTURA INICIAL</p>
-        <h2 class="section-title">Tres espacios.<br />Actividad desde el día uno.</h2>
+        <p class="section-eyebrow">QUÉ EVALUAMOS</p>
+        <h2 class="section-title">No buscamos estatus.<br />Buscamos compatibilidad.</h2>
         <p class="section-lead">
-          No abriremos categorías vacías. Autos, relojes y propiedades tendrán
-          espacios propios cuando exista suficiente actividad en cada una.
+          Revisamos cada perfil de forma humana para construir una primera
+          generación equilibrada, confiable y capaz de aportar valor desde el
+          inicio.
         </p>
-        <div class="spaces-grid">
-          {spaces.map((space) => (
-            <article class="space-card">
-              <div class="space-top">
-                <span>{space.number}</span>
-                <span aria-hidden="true">{space.icon}</span>
-              </div>
-              <p class="space-access">{space.access}</p>
-              <h3>{space.title}</h3>
-              <p>{space.description}</p>
-            </article>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    <section class="content-section protocol-section">
-      <div class="section-inner protocol-grid">
-        <div class="protocol-copy">
-          <p class="section-eyebrow">PROTOCOLO DE PUBLICACIÓN</p>
-          <h2>Off-market no significa informal.</h2>
-          <p>
-            Una o dos imágenes representativas son suficientes. La ficha
-            completa, documentos y due diligence se comparten únicamente por
-            privado con una contraparte interesada.
-          </p>
-        </div>
-        <div class="protocol-card" aria-label="Ejemplo del formato de publicación">
-          <p class="protocol-status">[DISPONIBLE / OFF-MARKET]</p>
-          <dl>
-            <div><dt>Ubicación / Pieza</dt><dd>CDMX · Valle de Bravo · Miami</dd></div>
-            <div><dt>Detalle</dt><dd>Porsche 911 GT3 RS 2024</dd></div>
-            <div><dt>Precio</dt><dd>$XXX,XXX USD</dd></div>
-            <div><dt>Estatus</dt><dd>Directo de propietario</dd></div>
-            <div><dt>Contacto</dt><dd>Mensaje directo para dossier</dd></div>
-          </dl>
-        </div>
-      </div>
-    </section>
-
-    <section class="content-section">
-      <div class="section-inner">
-        <p class="section-eyebrow">REGLAS DE ORO</p>
-        <h2 class="section-title">La confianza necesita<br />límites claros.</h2>
         <div class="rules-grid">
           <article>
             <span>01</span>
-            <h3>Cero intermediación opaca</h3>
-            <p>Propietarios, coleccionistas o representantes con autorización verificable. No cadenas de brokers ni inventario reciclado.</p>
+            <h3>Trayectoria verificable</h3>
+            <p>Identidad, actividad y reputación que podamos comprender y validar sin solicitar información patrimonial sensible.</p>
           </article>
           <article>
             <span>02</span>
-            <h3>Confidencialidad absoluta</h3>
-            <p>Lo que se comparte dentro se queda dentro. Filtrar ofertas, datos o conversaciones es motivo de expulsión.</p>
+            <h3>Valor para la comunidad</h3>
+            <p>Experiencia, criterio, oportunidades, necesidades concretas o relaciones que ayuden a construir una red útil.</p>
           </article>
           <article>
             <span>03</span>
-            <h3>Privacidad y no prospección</h3>
-            <p>Está prohibido utilizar el directorio para campañas, extracción de contactos o ventas no solicitadas.</p>
+            <h3>Alineación con el estándar</h3>
+            <p>Discreción, respeto a la privacidad, cero prospección fría y disposición para participar sin ruido ni intermediación opaca.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="content-section gate-section">
+    <section class="content-section" id="proceso">
       <div class="section-inner">
-        <p class="section-eyebrow">PUERTA DE LANZAMIENTO</p>
-        <h2 class="section-title">Abrimos cuando exista<br />una comunidad completa.</h2>
+        <p class="section-eyebrow">EL PROCESO</p>
+        <h2 class="section-title">Una evaluación.<br />Tres momentos.</h2>
         <p class="section-lead">
-          Llegar a 52 nombres no es suficiente. Sociedad 52 abre cuando se
-          cumplen simultáneamente estas cinco condiciones.
+          La solicitud no entrega acceso automático. Nos permite conocerte,
+          revisar el encaje y decidir el siguiente paso.
         </p>
-        <div class="gate-grid">
-          <article><strong>52</strong><span>Miembros fundadores aprobados y equilibrados</span></article>
-          <article><strong>15+</strong><span>Oportunidades reales preparadas</span></article>
-          <article><strong>10+</strong><span>Compradores con solicitudes concretas</span></article>
-          <article><strong>5+</strong><span>Especialistas confiables disponibles</span></article>
-          <article><strong>01</strong><span>Experiencia inaugural preparada</span></article>
-        </div>
-        <div class="nomination-note">
-          <p class="section-eyebrow">DESPUÉS DE LOS 52</p>
-          <p>
-            Cada miembro fundador podrá proponer hasta tres personas para
-            consideración. La recomendación abre una revisión; nunca garantiza
-            admisión.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="content-section" id="admision">
-      <div class="section-inner">
-        <p class="section-eyebrow">ADMISIÓN</p>
-        <h2 class="section-title">Aprobación primero.<br />Acceso después.</h2>
-        <div class="admission-grid">
+        <div class="admission-grid compact">
           <article>
             <span>01</span>
-            <h3>Solicitud</h3>
-            <p>Comparte identidad, actividad, participación, intereses, una necesidad actual y lo que podrías aportar.</p>
+            <h3>Evaluación inicial</h3>
+            <p>Comparte quién eres, cómo participas, qué buscas y qué podrías aportar a la generación fundadora.</p>
           </article>
           <article>
             <span>02</span>
-            <h3>En revisión</h3>
-            <p>Revisamos identidad, actividad, alineación y si el perfil ayuda a equilibrar la generación fundadora.</p>
+            <h3>Revisión privada</h3>
+            <p>Validamos identidad, trayectoria, intención y la forma en que tu perfil complementa a los primeros 52.</p>
           </article>
           <article>
             <span>03</span>
-            <h3>Preselección y llamada</h3>
-            <p>Una conversación de 10–15 minutos valida intención, comunicación, privacidad, qué busca y qué aporta.</p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>Fundador aprobado</h3>
-            <p>Recibe una Founding Letter y actualizaciones privadas. El acceso aún no se activa.</p>
-          </article>
-          <article>
-            <span>05</span>
-            <h3>Apertura simultánea</h3>
-            <p>Cuando la generación y la puerta de lanzamiento están completas, los 52 reciben su invitación numerada.</p>
+            <h3>Conversación de admisión</h3>
+            <p>Los perfiles preseleccionados reciben una invitación para una llamada breve antes de cualquier aprobación.</p>
           </article>
         </div>
       </div>
@@ -324,114 +207,158 @@ const schema = [
 
     <section class="application-section" id="solicitud">
       <div class="application-intro">
-        <p class="section-eyebrow">COHORTE FUNDADORA</p>
-        <h2>Solicita consideración.</h2>
+        <p class="section-eyebrow">EVALUACIÓN PRIVADA</p>
+        <h2>Cuéntanos quién eres.</h2>
         <p>
-          Estamos formando la primera generación de 52. No pedimos información
-          patrimonial ni documentos sensibles; necesitamos entender quién eres,
-          cómo participas, qué buscas y qué podrías aportar.
+          Completa esta evaluación para ser considerado en la primera generación
+          de 52. No solicitamos información patrimonial ni documentos sensibles.
         </p>
         <div class="application-note">
-          <span>IMPORTANTE</span>
-          <p>El formulario inicia una revisión. No entrega acceso automático ni contiene el enlace privado de WhatsApp.</p>
+          <span>QUÉ SIGUE</span>
+          <p>Revisaremos tu perfil personalmente. Si existe compatibilidad, recibirás una invitación para una conversación breve.</p>
         </div>
       </div>
 
       <form class="application-form" id="sociedad-application-form">
-        <label>
-          Nombre completo
-          <input type="text" name="nombre" autocomplete="name" required />
-        </label>
-        <label>
-          WhatsApp
-          <input type="tel" name="whatsapp" autocomplete="tel" required />
-        </label>
-        <label>
-          Correo
-          <input type="email" name="correo" autocomplete="email" required />
-        </label>
-        <label>
-          Ciudad
-          <input type="text" name="ciudad" autocomplete="address-level2" required />
-        </label>
-        <label class="field-wide">
-          Empresa, actividad o profesión
-          <input type="text" name="actividad" required />
-        </label>
-        <label>
-          LinkedIn, sitio web o red verificable
-          <input type="url" name="perfil" placeholder="https://" />
-        </label>
-        <label>
-          ¿Quién te recomienda?
-          <input type="text" name="referido" placeholder="Nombre o relación" />
-        </label>
-        <fieldset class="field-wide">
-          <legend>¿Cuál describe mejor tu participación? Puedes elegir más de una.</legend>
-          <div class="checkbox-grid">
-            {participationProfiles.map((profile) => (
-              <label class="check-option">
-                <input type="checkbox" name="participacion" value={profile} />
-                <span>{profile}</span>
-              </label>
-            ))}
+        <div class="form-progress field-wide" aria-label="Progreso de la evaluación">
+          <span class="progress-label">PASO <strong id="current-step">1</strong> DE 3</span>
+          <span class="progress-track"><span id="progress-fill"></span></span>
+        </div>
+
+        <div class="form-step active field-wide" data-step="1">
+          <div class="step-heading">
+            <span>01</span>
+            <div>
+              <h3>Tu perfil</h3>
+              <p>Información básica para identificarte y poder contactarte.</p>
+            </div>
           </div>
-        </fieldset>
-        <fieldset class="field-wide">
-          <legend>Categorías de interés</legend>
-          <div class="checkbox-grid">
-            {interestCategories.map((category) => (
-              <label class="check-option">
-                <input type="checkbox" name="categorias" value={category} />
-                <span>{category}</span>
-              </label>
-            ))}
+          <div class="step-fields">
+            <label>
+              Nombre completo
+              <input type="text" name="nombre" autocomplete="name" required />
+            </label>
+            <label>
+              WhatsApp
+              <input type="tel" name="whatsapp" autocomplete="tel" required />
+            </label>
+            <label>
+              Correo
+              <input type="email" name="correo" autocomplete="email" required />
+            </label>
+            <label>
+              Ciudad
+              <input type="text" name="ciudad" autocomplete="address-level2" required />
+            </label>
+            <label class="field-wide">
+              Empresa, actividad o profesión
+              <input type="text" name="actividad" required />
+            </label>
+            <label>
+              LinkedIn, sitio web o red verificable
+              <input type="url" name="perfil" placeholder="https://" />
+            </label>
+            <label>
+              ¿Quién te recomienda?
+              <input type="text" name="referido" placeholder="Nombre o relación" />
+            </label>
           </div>
-        </fieldset>
-        <label class="field-wide">
-          ¿Qué podrías aportar a Sociedad 52?
-          <textarea name="aporte" rows="4" required></textarea>
-        </label>
-        <label class="field-wide">
-          ¿Qué esperas encontrar?
-          <textarea name="busca" rows="3" required></textarea>
-        </label>
-        <label class="field-wide">
-          Describe una oportunidad o necesidad actual
-          <textarea
-            name="oportunidad"
-            rows="4"
-            placeholder="Ej. vehículo que buscas, activo que quieres colocar, propiedad off-market, necesidad de liquidez o conexión específica."
-            required
-          ></textarea>
-        </label>
-        <label class="field-wide">
-          ¿Qué relación tienes con SWIP?
-          <select name="relacion_swip" required>
-            <option value="" selected disabled>Selecciona una opción</option>
-            <option>Cliente</option>
-            <option>Referido</option>
-            <option>Contacto profesional</option>
-            <option>Todavía ninguna</option>
-          </select>
-        </label>
-        <label class="field-wide">
-          ¿Por qué deberíamos considerarte?
-          <textarea name="motivo" rows="3" required></textarea>
-        </label>
-        <label class="consent field-wide">
-          <input type="checkbox" name="consentimiento" required />
-          <span>
-            Acepto el contacto para revisar mi solicitud y confirmo haber leído
-            el <a href="/aviso-de-privacidad/" target="_blank">aviso de privacidad</a>.
-            Entiendo que la solicitud no garantiza admisión.
-          </span>
-        </label>
-        <button type="submit" class="form-submit">Enviar solicitud para revisión →</button>
-        <p class="form-disclaimer field-wide">
-          No compartas identificaciones, estados de cuenta, domicilios exactos,
-          números de serie ni expedientes de activos en este formulario.
-        </p>
+        </div>
+
+        <div class="form-step field-wide" data-step="2" hidden>
+          <div class="step-heading">
+            <span>02</span>
+            <div>
+              <h3>Tu participación</h3>
+              <p>Selecciona todas las opciones que describan tu perfil e intereses.</p>
+            </div>
+          </div>
+          <div class="step-fields">
+            <fieldset class="field-wide">
+              <legend>¿Cuál describe mejor tu participación?</legend>
+              <div class="checkbox-grid">
+                {participationProfiles.map((profile) => (
+                  <label class="check-option">
+                    <input type="checkbox" name="participacion" value={profile} />
+                    <span>{profile}</span>
+                  </label>
+                ))}
+              </div>
+            </fieldset>
+            <fieldset class="field-wide">
+              <legend>Categorías de interés</legend>
+              <div class="checkbox-grid">
+                {interestCategories.map((category) => (
+                  <label class="check-option">
+                    <input type="checkbox" name="categorias" value={category} />
+                    <span>{category}</span>
+                  </label>
+                ))}
+              </div>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="form-step field-wide" data-step="3" hidden>
+          <div class="step-heading">
+            <span>03</span>
+            <div>
+              <h3>Compatibilidad</h3>
+              <p>Ayúdanos a comprender lo que buscas y el valor que puedes aportar.</p>
+            </div>
+          </div>
+          <div class="step-fields">
+            <label class="field-wide">
+              ¿Qué podrías aportar a Sociedad 52?
+              <textarea name="aporte" rows="4" required></textarea>
+            </label>
+            <label class="field-wide">
+              ¿Qué esperas encontrar?
+              <textarea name="busca" rows="3" required></textarea>
+            </label>
+            <label class="field-wide">
+              Describe una oportunidad o necesidad actual
+              <textarea
+                name="oportunidad"
+                rows="4"
+                placeholder="Ej. vehículo que buscas, activo que quieres colocar, propiedad off-market, necesidad de liquidez o conexión específica."
+                required
+              ></textarea>
+            </label>
+            <label class="field-wide">
+              ¿Qué relación tienes con SWIP?
+              <select name="relacion_swip" required>
+                <option value="" selected disabled>Selecciona una opción</option>
+                <option>Cliente</option>
+                <option>Referido</option>
+                <option>Contacto profesional</option>
+                <option>Todavía ninguna</option>
+              </select>
+            </label>
+            <label class="field-wide">
+              ¿Por qué deberíamos considerarte?
+              <textarea name="motivo" rows="3" required></textarea>
+            </label>
+            <label class="consent field-wide">
+              <input type="checkbox" name="consentimiento" required />
+              <span>
+                Acepto el contacto para revisar mi solicitud y confirmo haber leído
+                el <a href="/aviso-de-privacidad/" target="_blank">aviso de privacidad</a>.
+                Entiendo que la evaluación no garantiza admisión.
+              </span>
+            </label>
+            <p class="form-disclaimer field-wide">
+              No compartas identificaciones, estados de cuenta, domicilios exactos,
+              números de serie ni expedientes de activos.
+            </p>
+          </div>
+        </div>
+
+        <div class="form-navigation field-wide">
+          <button type="button" class="form-back" id="form-back" hidden>← Regresar</button>
+          <button type="button" class="form-next" id="form-next">Continuar evaluación →</button>
+          <button type="submit" class="form-submit" id="form-submit" hidden>Enviar mi evaluación →</button>
+        </div>
       </form>
     </section>
 
@@ -439,7 +366,7 @@ const schema = [
       <div class="section-inner faq-grid">
         <div>
           <p class="section-eyebrow">PREGUNTAS FRECUENTES</p>
-          <h2 class="section-title">Antes de solicitar<br />consideración.</h2>
+          <h2 class="section-title">Antes de iniciar<br />tu evaluación.</h2>
         </div>
         <div class="faq-list">
           {faqs.map((faq) => (
@@ -460,11 +387,15 @@ const schema = [
         compradores, especialistas y experiencia necesarias para comenzar viva.
       </p>
       <a href="#solicitud" class="btn-primary" data-cta="sociedad_final_application">
-        Solicitar consideración
+        Iniciar mi evaluación
       </a>
     </section>
   </main>
-  <Footer context="community" />
+  <footer class="landing-footer">
+    <p>SOCIEDAD 52 · MÉXICO</p>
+    <span>Acceso privado. Evaluación personal.</span>
+    <a href="/aviso-de-privacidad/" target="_blank">Aviso de privacidad</a>
+  </footer>
 
   <script define:vars={{ WHATSAPP_NUMBER }}>
     const form = document.getElementById('sociedad-application-form');
@@ -474,12 +405,74 @@ const schema = [
     const categoryInputs = Array.from(
       form?.querySelectorAll('input[name="categorias"]') || []
     );
+    const steps = Array.from(form?.querySelectorAll('.form-step') || []);
+    const backButton = document.getElementById('form-back');
+    const nextButton = document.getElementById('form-next');
+    const submitButton = document.getElementById('form-submit');
+    const currentStepLabel = document.getElementById('current-step');
+    const progressFill = document.getElementById('progress-fill');
+    let currentStep = 1;
+
+    const showStep = (stepNumber) => {
+      currentStep = stepNumber;
+      steps.forEach((step) => {
+        const isCurrent = Number(step.getAttribute('data-step')) === currentStep;
+        step.hidden = !isCurrent;
+        step.classList.toggle('active', isCurrent);
+      });
+      if (currentStepLabel) currentStepLabel.textContent = String(currentStep);
+      if (progressFill) progressFill.style.width = `${(currentStep / steps.length) * 100}%`;
+      if (backButton) backButton.hidden = currentStep === 1;
+      if (nextButton) nextButton.hidden = currentStep === steps.length;
+      if (submitButton) submitButton.hidden = currentStep !== steps.length;
+    };
+
+    const validateCurrentStep = () => {
+      const step = steps.find(
+        (item) => Number(item.getAttribute('data-step')) === currentStep
+      );
+      if (!step) return true;
+
+      const fields = Array.from(step.querySelectorAll('input, select, textarea'));
+      for (const field of fields) {
+        if (!field.reportValidity()) return false;
+      }
+
+      if (currentStep === 2) {
+        const participation = participationInputs.filter((input) => input.checked);
+        const categories = categoryInputs.filter((input) => input.checked);
+
+        if (participation.length === 0) {
+          participationInputs[0]?.setCustomValidity('Selecciona al menos una forma de participación.');
+          participationInputs[0]?.reportValidity();
+          return false;
+        }
+        if (categories.length === 0) {
+          categoryInputs[0]?.setCustomValidity('Selecciona al menos una categoría de interés.');
+          categoryInputs[0]?.reportValidity();
+          return false;
+        }
+      }
+
+      return true;
+    };
 
     [...participationInputs, ...categoryInputs].forEach((input) => {
       input.addEventListener('change', () => {
         participationInputs[0]?.setCustomValidity('');
         categoryInputs[0]?.setCustomValidity('');
       });
+    });
+
+    nextButton?.addEventListener('click', () => {
+      if (!validateCurrentStep()) return;
+      showStep(Math.min(currentStep + 1, steps.length));
+      form?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    backButton?.addEventListener('click', () => {
+      showStep(Math.max(currentStep - 1, 1));
+      form?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
 
     document.querySelectorAll('[data-cta]').forEach((element) => {
@@ -511,7 +504,7 @@ const schema = [
       }
 
       const message = [
-        'Hola Ramon, quiero solicitar consideración para la cohorte fundadora de Sociedad 52.',
+        'Hola Ramon, quiero enviar mi evaluación para la cohorte fundadora de Sociedad 52.',
         '',
         'Origen: landing Sociedad 52',
         `Nombre: ${data.get('nombre')}`,
@@ -547,16 +540,44 @@ const schema = [
         'noopener'
       );
     });
+
+    showStep(1);
   </script>
 </Base>
 
 <style>
-  main { padding-top: 69px; }
+  main { padding-top: 0; }
+
+  [hidden] { display: none !important; }
 
   :global(html),
   :global(body) {
     overflow-x: hidden;
   }
+
+  .landing-header {
+    min-height: 70px;
+    padding: 0 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+    border-bottom: 1px solid var(--line);
+    background: #090909;
+  }
+
+  .landing-header p,
+  .landing-header span,
+  .landing-footer p,
+  .landing-footer span,
+  .landing-footer a {
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+  }
+
+  .landing-header p { color: rgba(255, 255, 255, 0.92); }
+  .landing-header span { color: rgba(168, 168, 168, 0.38); }
 
   #estandar,
   #espacios,
@@ -636,7 +657,9 @@ const schema = [
   }
 
   .btn-primary,
-  .form-submit {
+  .form-submit,
+  .form-next,
+  .form-back {
     min-height: 52px;
     padding: 16px 40px;
     display: inline-flex;
@@ -655,7 +678,9 @@ const schema = [
   }
 
   .btn-primary:hover,
-  .form-submit:hover {
+  .form-submit:hover,
+  .form-next:hover,
+  .form-back:hover {
     background: rgba(255, 255, 255, 0.06);
     border-color: rgba(255, 255, 255, 0.6);
   }
@@ -953,6 +978,7 @@ const schema = [
 
   .rules-grid { grid-template-columns: repeat(3, 1fr); }
   .admission-grid { grid-template-columns: repeat(5, 1fr); }
+  .admission-grid.compact { grid-template-columns: repeat(3, 1fr); }
   .gate-grid { grid-template-columns: repeat(5, 1fr); }
 
   .rules-grid article,
@@ -1058,6 +1084,72 @@ const schema = [
   }
 
   .application-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 18px;
+  }
+
+  .form-progress {
+    display: grid;
+    gap: 12px;
+  }
+
+  .progress-label {
+    font-size: 9px;
+    letter-spacing: 0.24em;
+    color: rgba(168, 168, 168, 0.4);
+  }
+
+  .progress-label strong {
+    color: rgba(255, 255, 255, 0.86);
+    font-weight: 400;
+  }
+
+  .progress-track {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .progress-track span {
+    display: block;
+    width: 33.333%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.74);
+    transition: width 0.25s ease;
+  }
+
+  .form-step { scroll-margin-top: 24px; }
+
+  .step-heading {
+    margin: 12px 0 30px;
+    display: grid;
+    grid-template-columns: 38px 1fr;
+    gap: 18px;
+    align-items: start;
+  }
+
+  .step-heading > span {
+    padding-top: 5px;
+    font-size: 9px;
+    letter-spacing: 0.24em;
+    color: rgba(168, 168, 168, 0.28);
+  }
+
+  .step-heading h3 {
+    font-size: 26px;
+    font-weight: 300;
+    color: var(--white);
+  }
+
+  .step-heading p {
+    margin-top: 8px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: rgba(168, 168, 168, 0.54);
+  }
+
+  .step-fields {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px 18px;
@@ -1172,14 +1264,29 @@ const schema = [
   }
 
   .form-submit {
-    grid-column: 1 / -1;
-    width: 100%;
+    flex: 1;
   }
 
   .form-disclaimer {
     font-size: 11px;
     line-height: 1.65;
     color: rgba(168, 168, 168, 0.38);
+  }
+
+  .form-navigation {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+  }
+
+  .form-next {
+    min-width: 250px;
+  }
+
+  .form-back {
+    padding-inline: 24px;
+    border-color: rgba(255, 255, 255, 0.12);
+    color: rgba(168, 168, 168, 0.62);
   }
 
   .faq-list details {
@@ -1232,6 +1339,26 @@ const schema = [
     color: rgba(168, 168, 168, 0.64);
   }
 
+  .landing-footer {
+    min-height: 92px;
+    padding: 28px 56px;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 36px;
+    align-items: center;
+    border-bottom: 1px solid var(--line);
+    background: #080808;
+  }
+
+  .landing-footer p { color: rgba(255, 255, 255, 0.72); }
+  .landing-footer span { color: rgba(168, 168, 168, 0.3); }
+  .landing-footer a {
+    color: rgba(168, 168, 168, 0.48);
+    text-decoration: none;
+  }
+
+  .landing-footer a:hover { color: var(--white); }
+
   @media (max-width: 1120px) {
     .hero { grid-template-columns: 1fr; }
     .hero-copy { padding: 88px 48px 76px; }
@@ -1248,7 +1375,8 @@ const schema = [
   }
 
   @media (max-width: 760px) {
-    main { padding-top: 61px; }
+    .landing-header { min-height: 62px; padding: 0 24px; }
+    .landing-header span { display: none; }
     .hero-copy { padding: 72px 24px 62px; }
     .hero h1 { font-size: clamp(46px, 14vw, 66px); }
     .hero-body { font-size: 15px; }
@@ -1274,8 +1402,15 @@ const schema = [
     .protocol-card { padding: 30px 24px; }
     .protocol-card dl div { grid-template-columns: 1fr; gap: 7px; }
     .application-intro, .application-form { padding: 64px 24px; }
-    .application-form { grid-template-columns: 1fr; }
+    .application-form, .step-fields { grid-template-columns: 1fr; }
     .checkbox-grid { grid-template-columns: 1fr; }
     .field-wide, .form-submit { grid-column: auto; }
+    .form-navigation { flex-direction: column-reverse; }
+    .form-next, .form-back, .form-submit { width: 100%; }
+    .landing-footer {
+      padding: 30px 24px;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
   }
 </style>

@@ -8,14 +8,16 @@ Estado: Prelanzamiento — selección de Founding 52
 
 - **Posicionamiento público:** Comunidad privada del ecosistema SWIP.
 - **URL:** `https://swip.mx/sociedad-52/`
-- **Conversión principal:** Solicitar consideración.
+- **Conversión principal:** Iniciar evaluación privada.
 - **Destino de la solicitud:** WhatsApp directo de Ramon Pando.
 - **Meta de fundación:** 52 miembros fundadores.
 - **Acceso a la Comunidad:** Se activa simultáneamente cuando se complete la
   generación y la puerta de lanzamiento.
 - **Enlace público de WhatsApp Communities:** No se publica.
-- **Integración:** Navbar, footer, homepage, recorrido de relojes y página
-  institucional de SWIP.
+- **Descubrimiento:** Homepage, footer y páginas contextuales de SWIP pueden
+  llevar tráfico a Sociedad 52.
+- **Experiencia de landing:** Aislada de la navegación de SWIP, sin menú ni
+  enlaces de salida comerciales. Una sola acción: completar la evaluación.
 - **Pendiente operativo:** Acumular candidatos, compradores, oportunidades y
   especialistas antes de abrir la Comunidad en WhatsApp.
 
@@ -358,10 +360,14 @@ bajas. Solo los administradores tienen acceso.
 
 `/sociedad-52/`
 
-La landing explica el estándar, quién puede aplicar, los espacios temáticos y
-las reglas. Su CTA es `Solicitar consideración`, nunca `Unirme al grupo`.
+La landing resume el estándar, los criterios de compatibilidad y el proceso de
+admisión. Su CTA único es `Iniciar mi evaluación`, nunca `Unirme al grupo`.
 
-### Navegación global
+Una vez que la persona entra a `/sociedad-52/`, desaparece la navegación de
+SWIP. La cabecera identifica únicamente a Sociedad 52 y el footer se limita al
+aviso de privacidad. Todos los CTA internos llevan al mismo formulario.
+
+### Descubrimiento desde la navegación global
 
 Para mantener cinco enlaces principales:
 
@@ -389,8 +395,8 @@ Sociedad 52
 Founding 52 · Selección abierta
 ```
 
-El footer garantiza un enlace desde todas las páginas sin convertirlo en una
-llamada comercial agresiva.
+El footer de SWIP garantiza un enlace desde otras páginas sin convertirlo en una
+llamada comercial agresiva. No se reutiliza dentro de la landing de Sociedad 52.
 
 ### Homepage
 
@@ -404,7 +410,7 @@ Estamos seleccionando a los 52 miembros fundadores.
 México, por invitación. La Comunidad abre cuando existan las personas,
 oportunidades, compradores y especialistas necesarios.
 
-[Solicitar consideración →]
+[Iniciar mi evaluación →]
 ```
 
 ### Enlaces contextuales
@@ -417,9 +423,8 @@ Prioridad alta:
 - artículos sobre vehículos excepcionales;
 - página “Por qué SWIP”.
 
-No insertar una promoción repetitiva en todos los artículos. Navbar y footer ya
-garantizan presencia global; los enlaces dentro del contenido deben aparecer
-solo donde exista afinidad real.
+No insertar una promoción repetitiva en todos los artículos. Los enlaces dentro
+del contenido deben aparecer solo donde exista afinidad real.
 
 ## Arquitectura web
 
@@ -434,9 +439,9 @@ SWIP (/)
 │   └── Guías de relojes
 ├── Sociedad 52
 │   ├── Propuesta y estándar
-│   ├── Espacios temáticos
-│   ├── Reglas
-│   └── Solicitud de consideración
+│   ├── Criterios de compatibilidad
+│   ├── Proceso de admisión
+│   └── Evaluación privada
 └── Blog
 ```
 
@@ -447,12 +452,36 @@ Secciones recomendadas:
 1. Hero: “México, por invitación.”
 2. Qué es Sociedad 52.
 3. Para quién es y para quién no.
-4. Tres espacios iniciales de la Comunidad.
-5. Tres reglas de oro.
-6. Puerta de lanzamiento.
-7. Cómo funciona el filtro de entrada.
-8. Formulario completo de solicitud.
-9. Nota de privacidad y ausencia de garantía de admisión.
+4. Qué evaluamos.
+5. Cómo funciona el filtro de entrada.
+6. Evaluación en tres pasos.
+7. Preguntas frecuentes.
+8. Nota de privacidad y ausencia de garantía de admisión.
+
+La arquitectura de WhatsApp, el protocolo de publicaciones y la puerta de
+lanzamiento permanecen en la documentación y en las comunicaciones privadas.
+No deben competir con la conversión principal de la landing.
+
+## Roadmap operativo guardado
+
+Estos pasos comienzan después de afinar y validar la landing:
+
+1. **Persistencia:** Guardar cada evaluación en una base de datos o CRM; WhatsApp
+   deja de ser el único registro.
+2. **Pipeline:** Implementar los estados En revisión, Preseleccionado,
+   Entrevista, Fundador aprobado, Futuras generaciones y No seleccionado.
+3. **Evaluación interna:** Puntuar confianza, compatibilidad, aportación,
+   capacidad de compra, oportunidades y relación con SWIP.
+4. **Agenda:** Enviar a los preseleccionados un enlace privado para una llamada
+   de 10–15 minutos.
+5. **Founding Letter:** Formalizar reglas, confidencialidad, expectativas y
+   confirmación de participación.
+6. **Inventario de lanzamiento:** Registrar 15 oportunidades, 10 compradores,
+   5 especialistas y la primera experiencia.
+7. **WhatsApp cerrado:** Preparar Announcements, Members y Opportunities sin
+   invitar miembros antes de cumplir la puerta de lanzamiento.
+8. **Privacidad:** Validar aviso, consentimiento, tratamiento de datos y
+   responsabilidades con asesoría legal.
 
 ## Fases
 
@@ -474,7 +503,7 @@ Secciones recomendadas:
 
 ### Fase 2 — Integración web
 
-- Enlace global en navbar y footer.
+- Enlaces de descubrimiento desde SWIP hacia la landing aislada.
 - Franja de homepage.
 - Enlaces contextuales en páginas de activos.
 - Eventos de analítica para visitas, inicio y envío de solicitud.

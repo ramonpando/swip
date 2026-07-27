@@ -158,7 +158,7 @@ const schema = [
       </div>
     </section>
 
-    <section class="content-section">
+    <section class="content-section" id="marcas">
       <div class="section-inner">
         <p class="section-eyebrow">PERFIL DEL PILOTO</p>
         <h2 class="section-title">Pocas marcas.<br />Criterios estrictos.</h2>
@@ -191,7 +191,7 @@ const schema = [
       </div>
     </section>
 
-    <section class="content-section">
+    <section class="content-section" id="como-funciona">
       <div class="section-inner">
         <p class="section-eyebrow">CÓMO FUNCIONA</p>
         <h2 class="section-title">Información primero.<br />La pieza después.</h2>
@@ -295,7 +295,7 @@ const schema = [
       </form>
     </section>
 
-    <section class="content-section">
+    <section class="content-section" id="preguntas">
       <div class="section-inner faq-wrap">
         <div>
           <p class="section-eyebrow">PREGUNTAS FRECUENTES</p>
@@ -372,6 +372,12 @@ const schema = [
 
 <style>
   main { padding-top: 69px; }
+
+  #marcas,
+  #como-funciona,
+  #preguntas {
+    scroll-margin-top: 72px;
+  }
 
   :global(html),
   :global(body) {

@@ -219,6 +219,21 @@ const schema = [
           <span class="spec-link">Ver más →</span>
         </a>
       </div>
+      <a
+        href="/prestamo-con-garantia-de-reloj/"
+        class="watch-pilot"
+        data-cta="home_watch_pilot"
+      >
+        <div>
+          <p class="watch-pilot-tag">NUEVO · PROGRAMA PILOTO</p>
+          <h3>Ahora también evaluamos relojes de lujo.</h3>
+          <p>
+            Rolex y referencias seleccionadas de Cartier y Omega. Evaluación
+            privada, autenticación por cita y atención directa.
+          </p>
+        </div>
+        <span>Conocer el piloto →</span>
+      </a>
     </div>
   </section>
 
@@ -771,6 +786,59 @@ const schema = [
 
   .spec-card:hover .spec-link { color: var(--white); }
 
+  .watch-pilot {
+    margin-top: 1px;
+    padding: 40px;
+    border: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+    color: inherit;
+    text-decoration: none;
+    background:
+      linear-gradient(110deg, rgba(79, 255, 176, 0.035), transparent 55%),
+      var(--black);
+    transition: background 0.2s, border-color 0.2s;
+  }
+
+  .watch-pilot:hover {
+    background:
+      linear-gradient(110deg, rgba(79, 255, 176, 0.065), transparent 55%),
+      rgba(255, 255, 255, 0.015);
+    border-color: rgba(255, 255, 255, 0.16);
+  }
+
+  .watch-pilot-tag {
+    margin-bottom: 14px;
+    font-size: 9px;
+    letter-spacing: 0.34em;
+    color: var(--green);
+  }
+
+  .watch-pilot h3 {
+    margin-bottom: 10px;
+    font-size: clamp(24px, 3vw, 38px);
+    font-weight: 300;
+    color: var(--white);
+    letter-spacing: -0.02em;
+  }
+
+  .watch-pilot p:not(.watch-pilot-tag) {
+    max-width: 650px;
+    font-size: 13px;
+    color: rgba(168, 168, 168, 0.68);
+    line-height: 1.75;
+  }
+
+  .watch-pilot > span {
+    flex-shrink: 0;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: rgba(255, 255, 255, 0.72);
+    text-transform: uppercase;
+  }
+
   /* ── VENTAJAS ── */
   .ventajas-grid {
     display: grid;
@@ -997,6 +1065,12 @@ const schema = [
     .steps-grid { grid-template-columns: 1fr; }
     .ventajas-grid { grid-template-columns: 1fr; }
     .spec-grid { grid-template-columns: 1fr; }
+    .watch-pilot {
+      padding: 36px 24px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+    }
     .modal-grid { grid-template-columns: 1fr; }
     .cob-grid { grid-template-columns: 1fr; }
     .cta-section { padding: 80px 24px; }

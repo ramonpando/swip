@@ -32,7 +32,7 @@ Estado comprobado al 27 de julio de 2026:
 | Landing | Publicada en `https://swip.mx/sociedad-52/` | En producción |
 | Enfoque de conversión | Una sola acción pública: `Iniciar mi evaluación` | Implementado |
 | Navegación | Landing aislada, sin navbar, logo enlazado ni rutas comerciales hacia SWIP | Implementado |
-| Evaluación | Formulario dividido en Perfil, Participación y Compatibilidad | Implementado |
+| Evaluación | Perfil humano dividido en Quién eres, Cómo conectas y Tus intereses | Implementado |
 | Validación | Campos obligatorios, selección mínima de perfiles e intereses y consentimiento | Implementado |
 | Entrega actual | Mensaje estructurado al WhatsApp directo de Ramon | Implementado temporalmente |
 | Analítica | Eventos para CTA y envío de evaluación mediante `dataLayer` | Implementado |
@@ -283,24 +283,60 @@ lanzamiento.
 8. **Invitación personal:** Cuando la puerta de lanzamiento está completa,
    recibe su invitación numerada y acceso simultáneo con los demás fundadores.
 
-### Datos mínimos de la solicitud
+### Perfil de fundador — base del CRM
+
+La solicitud no funciona como un examen ni asigna una calificación automática.
+Su objetivo es conocer a la persona, entender cómo se relaciona, qué negocios
+disfruta y cuáles son sus intereses reales.
+
+El formulario se divide en tres momentos:
+
+#### 1. Quién eres
 
 - Nombre completo.
 - WhatsApp y correo.
 - Ciudad.
-- Actividad profesional o empresa.
-- Perfil público verificable, opcional pero recomendado.
-- Nombre de quien lo recomienda.
-- Perfil de participación: propietario, comprador, coleccionista, empresario,
-  especialista o partner.
-- Intereses: autos, blindados, relojes, propiedades, liquidez, conexiones y
-  servicios especializados.
-- “¿Qué podrías aportar a Sociedad 52?”
-- “¿Qué esperas encontrar?”
-- “Describe una oportunidad o necesidad actual.”
-- “¿Qué relación tienes con SWIP?”
-- “¿Por qué deberíamos considerarte?”
-- Aceptación de privacidad, confidencialidad, no prospección y reglas.
+- Actividad, empresa, negocio o proyecto actual.
+- Perfil público verificable, opcional.
+- Persona que lo recomienda u origen del descubrimiento.
+
+#### 2. Cómo conectas
+
+- Perfiles con los que se identifica: empresario, ejecutivo, inversionista,
+  propietario, comprador, coleccionista, especialista, representante
+  autorizado, conector o profesionista independiente.
+- Qué disfruta al conocer personas: relaciones de confianza, oportunidades,
+  alianzas, activos, inversiones, intercambio de experiencia, relaciones sin
+  intención comercial inmediata y experiencias privadas.
+- Tipos de oportunidad que le interesan: compraventas, inversiones, alianzas,
+  real estate, activos de colección, servicios, referencias, mentoría y
+  relaciones personales.
+- Temas en los que otro miembro podría buscarlo.
+- Conexión, persona u oportunidad que desea encontrar actualmente.
+
+#### 3. Tus intereses
+
+- Relación con los autos.
+- Tipos de autos preferidos, solo si manifiesta interés.
+- Marcas, modelos o autos favoritos, solo si manifiesta interés.
+- Relación con los relojes.
+- Marcas, referencias o piezas favoritas, solo si manifiesta interés.
+- Otros intereses personales: viajes, gastronomía, vinos, arte, tecnología,
+  real estate, aviación, náutica, golf, deportes, caballos, filantropía y
+  experiencias familiares.
+- Qué tendría que suceder para que Sociedad 52 fuera realmente valiosa.
+- Aceptación de confianza, discreción, cero prospección fría y privacidad.
+
+El CRM debe conservar las respuestas estructuradas y las respuestas abiertas
+sin resumirlas ni convertirlas inicialmente en puntuaciones. La ficha interna
+debe permitir comprender de un vistazo:
+
+1. quién es;
+2. a qué se dedica;
+3. cómo prefiere relacionarse;
+4. qué puede aportar;
+5. qué está buscando;
+6. qué afinidades comparte con otros miembros.
 
 ### Datos que no deben solicitarse públicamente
 
@@ -591,3 +627,31 @@ Estos pasos comienzan después de afinar y validar la landing:
 | 2026-07-27 | `4f59ada` | Primera landing pública y concepto inicial de Sociedad 52 |
 | 2026-07-27 | `a97d1e6` | Cambio a prelanzamiento Founding 52, puerta de lanzamiento y evaluación ampliada |
 | 2026-07-27 | `f77524c` | Landing aislada, conversión única y evaluación progresiva en tres pasos |
+
+## Handoff para la siguiente sesión
+
+Estado guardado el 27 de julio de 2026:
+
+- El nuevo Perfil de Fundador está implementado en tres pasos.
+- Incluye identidad, actividad, forma de relacionarse, negocios, conexiones,
+  autos, relojes y otros intereses.
+- Las preguntas específicas de autos y relojes son condicionales.
+- El envío continúa temporalmente hacia el WhatsApp directo de Ramon.
+- La compilación, los enlaces y el comportamiento responsive fueron validados.
+- Todavía no existe persistencia en base de datos ni bandeja interna.
+- Estos cambios todavía no se han publicado en producción.
+
+Orden acordado para continuar:
+
+1. Revisar visualmente y aprobar las preguntas y opciones finales.
+2. Publicar el nuevo formulario en `swip.mx`.
+3. Diseñar la ficha interna del prospecto usando las mismas respuestas.
+4. Crear una bandeja con cuatro estados: Nuevo, En conversación, Aprobado y
+   Descartado.
+5. Crear el almacenamiento y guardar automáticamente cada perfil.
+6. Conectar el formulario con la bandeja interna y conservar el contacto por
+   WhatsApp.
+
+Al retomar, no comenzar por automatizaciones, puntuaciones, reportes ni un CRM
+genérico. La primera versión debe seguir siendo una bandeja privada,
+deliberadamente sencilla y centrada en conocer a la persona.

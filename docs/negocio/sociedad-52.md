@@ -21,6 +21,39 @@ Estado: Prelanzamiento — selección de Founding 52
 - **Pendiente operativo:** Acumular candidatos, compradores, oportunidades y
   especialistas antes de abrir la Comunidad en WhatsApp.
 
+## Avances implementados
+
+Estado comprobado al 27 de julio de 2026:
+
+| Área | Avance | Estado |
+|---|---|---|
+| Estrategia | Prelanzamiento basado en seleccionar primero a 52 fundadores | Implementado |
+| Puerta de lanzamiento | 52 fundadores, 15 oportunidades, 10 compradores, 5 especialistas y una experiencia | Documentado |
+| Landing | Publicada en `https://swip.mx/sociedad-52/` | En producción |
+| Enfoque de conversión | Una sola acción pública: `Iniciar mi evaluación` | Implementado |
+| Navegación | Landing aislada, sin navbar, logo enlazado ni rutas comerciales hacia SWIP | Implementado |
+| Evaluación | Formulario dividido en Perfil, Participación y Compatibilidad | Implementado |
+| Validación | Campos obligatorios, selección mínima de perfiles e intereses y consentimiento | Implementado |
+| Entrega actual | Mensaje estructurado al WhatsApp directo de Ramon | Implementado temporalmente |
+| Analítica | Eventos para CTA y envío de evaluación mediante `dataLayer` | Implementado |
+| Descubrimiento | Accesos desde homepage, footer y páginas contextuales de SWIP | Implementado |
+| Diseño | Revisión desktop y móvil, jerarquía uniforme y CTA sin botón verde | Validado |
+| Calidad técnica | Compilación estática y auditoría de enlaces sin errores | Validado |
+| CRM | Persistencia, clasificación y seguimiento automático | Pendiente |
+
+### Decisiones consolidadas
+
+- No abrir una Comunidad vacía.
+- No publicar el enlace de WhatsApp Communities.
+- No comunicar lugares restantes ni contadores artificiales.
+- La aprobación como fundador ocurre antes del acceso.
+- Los 52 reciben acceso simultáneamente cuando se cumple la puerta de
+  lanzamiento.
+- Después de la generación fundadora, cada fundador obtiene tres nominaciones;
+  ninguna garantiza admisión.
+- La landing no explica toda la operación interna. Su función es lograr que la
+  persona adecuada complete la evaluación.
+
 ## Definición
 
 Sociedad 52 es una comunidad privada, curada y por invitación para empresarios,
@@ -54,6 +87,28 @@ El número 52 no limita el tamaño futuro. Funciona como:
 
 Después de conformar la generación fundadora, cada uno de los 52 podrá proponer
 hasta tres personas para consideración. Una referencia no garantiza admisión.
+
+## Escalabilidad interna — no comunicar públicamente
+
+El límite de planeación de largo plazo es de **52,000 miembros**. Es una
+restricción interna de diseño, no una promesa comercial ni un mensaje para la
+landing.
+
+La escala se organiza mediante generaciones de 52:
+
+```text
+1 generación = 52 miembros
+1,000 generaciones = 52,000 miembros
+```
+
+Sociedad 52 nunca debe sentirse como un grupo de 52,000 personas. Cada miembro
+entra a una generación identificable y después puede participar en círculos por
+ciudad, industria o interés. La red global conecta esos círculos.
+
+WhatsApp sirve para la etapa inicial y para grupos pequeños. Antes de acercarse
+a una escala masiva será necesaria una plataforma privada con perfiles
+verificados, directorio controlado, capítulos, oportunidades, permisos y
+protección de datos.
 
 ## Principio de acceso
 
@@ -528,3 +583,11 @@ Estos pasos comienzan después de afinar y validar la landing:
 4. ¿Habrá cuota en el futuro?
 5. ¿Qué datos y consentimiento requiere la revisión legal?
 6. ¿Qué CRM recibirá y clasificará automáticamente las solicitudes?
+
+## Registro de avances
+
+| Fecha | Referencia | Cambio |
+|---|---|---|
+| 2026-07-27 | `4f59ada` | Primera landing pública y concepto inicial de Sociedad 52 |
+| 2026-07-27 | `a97d1e6` | Cambio a prelanzamiento Founding 52, puerta de lanzamiento y evaluación ampliada |
+| 2026-07-27 | `f77524c` | Landing aislada, conversión única y evaluación progresiva en tres pasos |

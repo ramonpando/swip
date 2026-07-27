@@ -437,45 +437,50 @@ const schema = [
     width: 100%;
     max-width: 100%;
     display: flex;
+    align-items: center;
     gap: 14px;
     margin-top: 38px;
   }
 
   .btn-primary,
-  .btn-ghost,
   .form-submit {
     min-height: 52px;
-    padding: 16px 28px;
+    padding: 16px 40px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(255, 255, 255, 0.28);
-    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: none;
     color: var(--white);
     font: inherit;
-    font-size: 11px;
-    letter-spacing: 0.2em;
+    font-size: 12px;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
-    transition: 0.2s ease;
-  }
-
-  .btn-primary,
-  .form-submit {
-    border-color: rgba(1, 254, 74, 0.48);
-    background: rgba(1, 254, 74, 0.06);
+    transition: all 0.2s;
   }
 
   .btn-primary:hover,
   .form-submit:hover {
-    background: rgba(1, 254, 74, 0.12);
-    border-color: rgba(1, 254, 74, 0.8);
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.6);
+  }
+
+  .btn-ghost {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    color: rgba(168, 168, 168, 0.6);
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.2s;
   }
 
   .btn-ghost:hover {
-    border-color: rgba(255, 255, 255, 0.56);
-    background: rgba(255, 255, 255, 0.04);
+    color: var(--white);
   }
 
   .pilot-note {
@@ -884,7 +889,7 @@ const schema = [
     .watch-hero h1 { font-size: clamp(46px, 14vw, 66px); }
     .hero-body { font-size: 15px; }
     .hero-actions { flex-direction: column; }
-    .btn-primary, .btn-ghost { width: 100%; }
+    .btn-primary, .btn-ghost { width: 100%; justify-content: center; }
     .watch-visual { min-height: 430px; }
     .watch-case { width: min(74vw, 310px); }
     .watch-strap { width: min(42vw, 170px); }

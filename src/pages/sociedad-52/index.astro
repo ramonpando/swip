@@ -1,0 +1,1040 @@
+---
+import Base from '../../layouts/Base.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+
+const WHATSAPP_NUMBER = '5215542317035';
+
+const spaces = [
+  {
+    number: '01',
+    icon: 'ANN',
+    title: 'Anuncios Oficiales',
+    access: 'Solo administradores',
+    description: 'Novedades, reglas, convocatorias y experiencias presenciales privadas. Información esencial, cero ruido.',
+  },
+  {
+    number: '02',
+    icon: '+52',
+    title: 'Lounge (+52)',
+    access: 'Conversación general',
+    description: 'Networking y recomendaciones de viajes, hospitalidad, aviación privada, bienestar y temas relevantes entre miembros.',
+  },
+  {
+    number: '03',
+    icon: 'RE',
+    title: 'Real Estate Off-Market',
+    access: 'Propiedad directa',
+    description: 'Residencias, terrenos, departamentos y ranchos que no se encuentran publicados masivamente en portales.',
+  },
+  {
+    number: '04',
+    icon: 'G+A',
+    title: 'Garage & Armoring',
+    access: 'Colección y alta especificación',
+    description: 'Hypercars, autos de colección, superdeportivos y vehículos con blindaje de alta especificación.',
+  },
+  {
+    number: '05',
+    icon: 'HH',
+    title: 'High Horology',
+    access: 'Piezas seleccionadas',
+    description: 'Alta relojería, referencias escasas, piezas de complicación y activos tangibles con mercado de colección.',
+  },
+];
+
+const faqs = [
+  {
+    q: '¿Puedo entrar directamente desde un enlace de WhatsApp?',
+    a: 'No. El enlace de la Comunidad nunca se publica. Cada ingreso requiere solicitud, revisión y una invitación enviada personalmente por un administrador.',
+  },
+  {
+    q: '¿Necesito ser cliente de SWIP?',
+    a: 'No necesariamente. Sociedad 52 forma parte del ecosistema SWIP, pero la admisión depende de reputación verificable, intención, afinidad con el estándar y capacidad de aportar a la comunidad.',
+  },
+  {
+    q: '¿Se aceptan brokers o intermediarios?',
+    a: 'No se aceptan cadenas de intermediación ni opciones recicladas. Solo propietarios, coleccionistas o representantes con autorización verificable pueden publicar un activo.',
+  },
+  {
+    q: '¿Enviar una solicitud garantiza el acceso?',
+    a: 'No. Todas las solicitudes se revisan individualmente. Sociedad 52 puede limitar, posponer o rechazar una admisión para proteger el estándar y la privacidad de sus miembros.',
+  },
+  {
+    q: '¿La comunidad garantiza las operaciones entre miembros?',
+    a: 'No. La pertenencia no sustituye contratos, verificación, asesoría profesional ni due diligence. Cada miembro es responsable de validar cualquier relación u operación antes de avanzar.',
+  },
+];
+
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: 'Sociedad 52 — Comunidad privada del ecosistema SWIP',
+    description: 'Comunidad privada y curada para relaciones de confianza, experiencias presenciales y oportunidades off-market en México.',
+    url: 'https://swip.mx/sociedad-52/',
+    inLanguage: 'es-MX',
+    isPartOf: { '@id': 'https://swip.mx/#website' },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Inicio',
+        item: 'https://swip.mx/',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Sociedad 52',
+        item: 'https://swip.mx/sociedad-52/',
+      },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.a,
+      },
+    })),
+  },
+];
+---
+
+<Base
+  title="Sociedad 52 | Comunidad Privada del Ecosistema SWIP"
+  description="Una comunidad privada y curada para relaciones de confianza, experiencias presenciales y oportunidades off-market en México. Acceso por consideración."
+  schema={schema}
+  disableChatWidget={true}
+>
+  <Nav context="community" />
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">SOCIEDAD 52 · COMUNIDAD PRIVADA · MÉXICO</p>
+        <h1>Una red de confianza,<br /><em>no otro grupo.</em></h1>
+        <p class="hero-body">
+          Sociedad 52 reúne personas con criterio, reputación y capacidad de
+          aportar. Relaciones de alto nivel, experiencias privadas y acceso
+          responsable a oportunidades que no necesitan exposición pública.
+        </p>
+        <div class="hero-actions">
+          <a href="#solicitud" class="btn-primary" data-cta="sociedad_hero_application">
+            Solicitar consideración
+          </a>
+          <a href="#estandar" class="btn-ghost">Conocer el estándar →</a>
+        </div>
+        <p class="hero-note">
+          Comunidad del ecosistema SWIP · Acceso por recomendación y revisión
+          individual · La solicitud no garantiza admisión.
+        </p>
+      </div>
+      <div class="hero-mark" aria-hidden="true">
+        <span class="mark-plus">+</span>
+        <span class="mark-number">52</span>
+        <p>ACCESO · CRITERIO · DISCRECIÓN</p>
+      </div>
+    </section>
+
+    <section class="signal-bar" aria-label="Principios de Sociedad 52">
+      <div><span>01</span><p>Acceso curado</p></div>
+      <div><span>02</span><p>Confidencialidad</p></div>
+      <div><span>03</span><p>Propiedad directa</p></div>
+      <div><span>04</span><p>Invitación personal</p></div>
+    </section>
+
+    <section class="content-section" id="estandar">
+      <div class="section-inner two-col">
+        <div>
+          <p class="section-eyebrow">EL ESTÁNDAR</p>
+          <h2>La calidad de la red depende de quién entra.</h2>
+        </div>
+        <div class="section-copy">
+          <p>
+            Los grupos privados pierden valor cuando aceptan a cualquiera,
+            mezclan conversación con inventario masivo y permiten que el
+            directorio se convierta en una lista de prospección.
+          </p>
+          <p>
+            Sociedad 52 opera al revés: revisión humana, espacios separados,
+            publicaciones con formato y consecuencias claras cuando alguien
+            rompe la confidencialidad o utiliza la red sin autorización.
+          </p>
+          <p>
+            No buscamos volumen. Buscamos miembros que aporten experiencia,
+            relaciones, acceso o criterio.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="espacios">
+      <div class="section-inner">
+        <p class="section-eyebrow">CINCO ESPACIOS · UNA COMUNIDAD</p>
+        <h2 class="section-title">Cada conversación<br />tiene su lugar.</h2>
+        <p class="section-lead">
+          La Comunidad se organiza para conservar señal, privacidad y contexto.
+          Cada espacio tiene una función y un estándar de publicación.
+        </p>
+        <div class="spaces-grid">
+          {spaces.map((space) => (
+            <article class="space-card">
+              <div class="space-top">
+                <span>{space.number}</span>
+                <span aria-hidden="true">{space.icon}</span>
+              </div>
+              <p class="space-access">{space.access}</p>
+              <h3>{space.title}</h3>
+              <p>{space.description}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section protocol-section">
+      <div class="section-inner protocol-grid">
+        <div class="protocol-copy">
+          <p class="section-eyebrow">PROTOCOLO DE PUBLICACIÓN</p>
+          <h2>Off-market no significa informal.</h2>
+          <p>
+            Una o dos imágenes representativas son suficientes. La ficha
+            completa, documentos y due diligence se comparten únicamente por
+            privado con una contraparte interesada.
+          </p>
+        </div>
+        <div class="protocol-card" aria-label="Ejemplo del formato de publicación">
+          <p class="protocol-status">[DISPONIBLE / OFF-MARKET]</p>
+          <dl>
+            <div><dt>Ubicación / Pieza</dt><dd>CDMX · Valle de Bravo · Miami</dd></div>
+            <div><dt>Detalle</dt><dd>Porsche 911 GT3 RS 2024</dd></div>
+            <div><dt>Precio</dt><dd>$XXX,XXX USD</dd></div>
+            <div><dt>Estatus</dt><dd>Directo de propietario</dd></div>
+            <div><dt>Contacto</dt><dd>Mensaje directo para dossier</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="section-inner">
+        <p class="section-eyebrow">REGLAS DE ORO</p>
+        <h2 class="section-title">La confianza necesita<br />límites claros.</h2>
+        <div class="rules-grid">
+          <article>
+            <span>01</span>
+            <h3>Cero intermediación opaca</h3>
+            <p>Propietarios, coleccionistas o representantes con autorización verificable. No cadenas de brokers ni inventario reciclado.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Confidencialidad absoluta</h3>
+            <p>Lo que se comparte dentro se queda dentro. Filtrar ofertas, datos o conversaciones es motivo de expulsión.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Privacidad y no prospección</h3>
+            <p>Está prohibido utilizar el directorio para campañas, extracción de contactos o ventas no solicitadas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="admision">
+      <div class="section-inner">
+        <p class="section-eyebrow">ADMISIÓN</p>
+        <h2 class="section-title">La invitación llega<br />después del filtro.</h2>
+        <div class="admission-grid">
+          <article>
+            <span>01</span>
+            <h3>Solicitud o recomendación</h3>
+            <p>Comparte quién eres, quién te recomienda y qué esperas aportar a la comunidad.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Revisión individual</h3>
+            <p>Validamos identidad pública, trayectoria, intención y afinidad con el estándar.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Conversación privada</h3>
+            <p>Una llamada breve permite alinear expectativas y resolver cualquier duda antes de admitir.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Invitación personal</h3>
+            <p>Si el perfil es aprobado, un administrador comparte directamente el acceso a la Comunidad.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="application-section" id="solicitud">
+      <div class="application-intro">
+        <p class="section-eyebrow">COHORTE FUNDADORA</p>
+        <h2>Solicita consideración.</h2>
+        <p>
+          Buscamos una primera cohorte pequeña y activa. No necesitas compartir
+          información patrimonial ni documentos sensibles. Necesitamos entender
+          quién eres, cómo llegaste y qué podrías aportar.
+        </p>
+        <div class="application-note">
+          <span>IMPORTANTE</span>
+          <p>El formulario inicia una revisión. No entrega acceso automático ni contiene el enlace privado de WhatsApp.</p>
+        </div>
+      </div>
+
+      <form class="application-form" id="sociedad-application-form">
+        <label>
+          Nombre completo
+          <input type="text" name="nombre" autocomplete="name" required />
+        </label>
+        <label>
+          Ciudad y país
+          <input type="text" name="ciudad" autocomplete="address-level2" required />
+        </label>
+        <label class="field-wide">
+          Actividad profesional o empresa
+          <input type="text" name="actividad" required />
+        </label>
+        <label>
+          ¿Quién te recomienda?
+          <input type="text" name="referido" placeholder="Nombre o relación" />
+        </label>
+        <label>
+          Código de invitación
+          <input type="text" name="codigo" placeholder="Opcional" />
+        </label>
+        <label class="field-wide">
+          Interés principal
+          <select name="interes" required>
+            <option value="" selected disabled>Selecciona una opción</option>
+            <option>Lounge y networking</option>
+            <option>Real Estate Off-Market</option>
+            <option>Garage & Armoring</option>
+            <option>High Horology</option>
+            <option>Experiencias privadas</option>
+            <option>Varios espacios</option>
+          </select>
+        </label>
+        <label class="field-wide">
+          ¿Qué podrías aportar a Sociedad 52?
+          <textarea name="aporte" rows="4" required></textarea>
+        </label>
+        <label class="field-wide">
+          ¿Qué esperas encontrar?
+          <textarea name="busca" rows="3" required></textarea>
+        </label>
+        <label class="consent field-wide">
+          <input type="checkbox" name="consentimiento" required />
+          <span>
+            Acepto el contacto para revisar mi solicitud y confirmo haber leído
+            el <a href="/aviso-de-privacidad/" target="_blank">aviso de privacidad</a>.
+            Entiendo que la solicitud no garantiza admisión.
+          </span>
+        </label>
+        <button type="submit" class="form-submit">Enviar solicitud para revisión →</button>
+        <p class="form-disclaimer field-wide">
+          No compartas identificaciones, estados de cuenta, domicilios exactos,
+          números de serie ni expedientes de activos en este formulario.
+        </p>
+      </form>
+    </section>
+
+    <section class="content-section faq-section">
+      <div class="section-inner faq-grid">
+        <div>
+          <p class="section-eyebrow">PREGUNTAS FRECUENTES</p>
+          <h2 class="section-title">Antes de solicitar<br />consideración.</h2>
+        </div>
+        <div class="faq-list">
+          {faqs.map((faq) => (
+            <details>
+              <summary>{faq.q}</summary>
+              <p>{faq.a}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <p class="section-eyebrow">SOCIEDAD 52 · COHORTE FUNDADORA</p>
+      <h2>La exclusividad no se declara.<br />Se protege.</h2>
+      <p>
+        Si compartes el estándar y puedes aportar a una red de confianza,
+        presenta tu solicitud para revisión.
+      </p>
+      <a href="#solicitud" class="btn-primary" data-cta="sociedad_final_application">
+        Solicitar consideración
+      </a>
+    </section>
+  </main>
+  <Footer context="community" />
+
+  <script define:vars={{ WHATSAPP_NUMBER }}>
+    const form = document.getElementById('sociedad-application-form');
+
+    document.querySelectorAll('[data-cta]').forEach((element) => {
+      element.addEventListener('click', () => {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'sociedad_52_cta',
+          cta: element.getAttribute('data-cta'),
+        });
+      });
+    });
+
+    form?.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const data = new FormData(form);
+      const message = [
+        'Hola Ramon, quiero solicitar consideración para la cohorte fundadora de Sociedad 52.',
+        '',
+        'Origen: landing Sociedad 52',
+        `Nombre: ${data.get('nombre')}`,
+        `Ciudad y país: ${data.get('ciudad')}`,
+        `Actividad: ${data.get('actividad')}`,
+        `Recomendado por: ${data.get('referido') || 'Sin recomendación indicada'}`,
+        `Código: ${data.get('codigo') || 'Sin código'}`,
+        `Interés principal: ${data.get('interes')}`,
+        `Qué puedo aportar: ${data.get('aporte')}`,
+        `Qué espero encontrar: ${data.get('busca')}`,
+        '',
+        'Entiendo que esta solicitud inicia una revisión y no garantiza admisión.',
+      ].join('\n');
+
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'sociedad_52_application_submitted',
+        primary_interest: data.get('interes'),
+        has_referral: Boolean(data.get('referido')),
+        has_invite_code: Boolean(data.get('codigo')),
+      });
+
+      window.open(
+        `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`,
+        '_blank',
+        'noopener'
+      );
+    });
+  </script>
+</Base>
+
+<style>
+  main { padding-top: 69px; }
+
+  :global(html),
+  :global(body) {
+    overflow-x: hidden;
+  }
+
+  #estandar,
+  #espacios,
+  #admision,
+  #solicitud {
+    scroll-margin-top: 72px;
+  }
+
+  .hero {
+    width: 100%;
+    max-width: 1440px;
+    min-height: 760px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.08fr 0.92fr;
+    border-left: 1px solid var(--line);
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .hero-copy {
+    min-width: 0;
+    padding: 112px 72px 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .eyebrow,
+  .section-eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.4em;
+    color: rgba(168, 168, 168, 0.42);
+    text-transform: uppercase;
+  }
+
+  .eyebrow { margin-bottom: 28px; }
+
+  .hero h1 {
+    max-width: 760px;
+    font-size: clamp(56px, 6.2vw, 94px);
+    font-weight: 300;
+    letter-spacing: -0.045em;
+    line-height: 0.94;
+    color: var(--white);
+  }
+
+  .hero h1 em {
+    display: inline-block;
+    color: rgba(168, 168, 168, 0.5);
+    font-style: normal;
+  }
+
+  .hero-body {
+    max-width: 660px;
+    margin-top: 32px;
+    font-size: 16px;
+    line-height: 1.85;
+    color: rgba(168, 168, 168, 0.76);
+  }
+
+  .hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-top: 38px;
+  }
+
+  .btn-primary,
+  .form-submit {
+    min-height: 52px;
+    padding: 16px 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: none;
+    color: var(--white);
+    font: inherit;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .btn-primary:hover,
+  .form-submit:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.6);
+  }
+
+  .btn-ghost {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    color: rgba(168, 168, 168, 0.6);
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .btn-ghost:hover { color: var(--white); }
+
+  .hero-note {
+    max-width: 620px;
+    margin-top: 20px;
+    font-size: 11px;
+    line-height: 1.7;
+    color: rgba(168, 168, 168, 0.38);
+  }
+
+  .hero-mark {
+    position: relative;
+    min-height: 100%;
+    overflow: hidden;
+    border-left: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.025), transparent 55%),
+      #090909;
+  }
+
+  .mark-plus,
+  .mark-number {
+    position: relative;
+    color: rgba(255, 255, 255, 0.94);
+    font-weight: 200;
+    line-height: 0.8;
+    letter-spacing: -0.08em;
+  }
+
+  .mark-plus {
+    align-self: flex-start;
+    margin-top: 225px;
+    font-size: clamp(64px, 7vw, 108px);
+    color: rgba(168, 168, 168, 0.34);
+  }
+
+  .mark-number {
+    font-size: clamp(180px, 22vw, 330px);
+  }
+
+  .hero-mark::before,
+  .hero-mark::after {
+    content: '';
+    position: absolute;
+    inset: 8%;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transform: rotate(45deg);
+  }
+
+  .hero-mark::after {
+    inset: 20%;
+    border-color: rgba(255, 255, 255, 0.035);
+  }
+
+  .hero-mark p {
+    position: absolute;
+    bottom: 34px;
+    font-size: 8px;
+    letter-spacing: 0.42em;
+    color: rgba(168, 168, 168, 0.2);
+  }
+
+  .signal-bar {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-left: 1px solid var(--line);
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .signal-bar div {
+    min-height: 112px;
+    padding: 28px 30px;
+    border-right: 1px solid var(--line);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .signal-bar div:last-child { border-right: 0; }
+  .signal-bar span {
+    font-size: 10px;
+    letter-spacing: 0.24em;
+    color: var(--green);
+  }
+  .signal-bar p {
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    color: rgba(168, 168, 168, 0.62);
+    text-transform: uppercase;
+  }
+
+  .content-section { border-bottom: 1px solid var(--line); }
+
+  .section-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 104px 64px;
+  }
+
+  .two-col,
+  .faq-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 100px;
+  }
+
+  .content-section h2,
+  .application-section h2,
+  .final-cta h2 {
+    font-size: clamp(36px, 4.5vw, 64px);
+    font-weight: 300;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    color: var(--white);
+  }
+
+  .section-title { margin-top: 20px; }
+
+  .section-lead {
+    max-width: 620px;
+    margin-top: 24px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgba(168, 168, 168, 0.7);
+  }
+
+  .section-copy p {
+    margin-bottom: 22px;
+    font-size: 16px;
+    line-height: 1.9;
+    color: rgba(168, 168, 168, 0.76);
+  }
+
+  .section-copy p:last-child { margin-bottom: 0; }
+
+  .spaces-grid {
+    margin-top: 58px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+
+  .space-card {
+    grid-column: span 2;
+    min-height: 310px;
+    padding: 36px 30px;
+    background: var(--black);
+  }
+
+  .space-card:nth-child(4) { grid-column: 2 / span 2; }
+
+  .space-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 34px;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    color: rgba(255, 255, 255, 0.48);
+  }
+
+  .space-top span:first-child {
+    font-size: 10px;
+    letter-spacing: 0.24em;
+    color: rgba(168, 168, 168, 0.28);
+  }
+
+  .space-access {
+    margin-bottom: 14px;
+    font-size: 9px !important;
+    letter-spacing: 0.24em;
+    color: rgba(168, 168, 168, 0.38) !important;
+    text-transform: uppercase;
+  }
+
+  .space-card h3,
+  .rules-grid h3,
+  .admission-grid h3 {
+    margin-bottom: 14px;
+    font-size: 21px;
+    font-weight: 300;
+    color: var(--white);
+  }
+
+  .space-card > p:last-child,
+  .rules-grid p,
+  .admission-grid p {
+    font-size: 13px;
+    line-height: 1.75;
+    color: rgba(168, 168, 168, 0.66);
+  }
+
+  .protocol-grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 96px;
+    align-items: center;
+  }
+
+  .protocol-copy h2 { margin-top: 20px; }
+  .protocol-copy > p:last-child {
+    max-width: 500px;
+    margin-top: 26px;
+    font-size: 15px;
+    line-height: 1.85;
+    color: rgba(168, 168, 168, 0.7);
+  }
+
+  .protocol-card {
+    padding: 42px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: #080808;
+  }
+
+  .protocol-status {
+    margin-bottom: 30px;
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    color: var(--green);
+  }
+
+  .protocol-card dl div {
+    padding: 16px 0;
+    border-top: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 20px;
+  }
+
+  .protocol-card dt {
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    color: rgba(168, 168, 168, 0.36);
+    text-transform: uppercase;
+  }
+
+  .protocol-card dd {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.78);
+  }
+
+  .rules-grid,
+  .admission-grid {
+    margin-top: 58px;
+    display: grid;
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+
+  .rules-grid { grid-template-columns: repeat(3, 1fr); }
+  .admission-grid { grid-template-columns: repeat(4, 1fr); }
+
+  .rules-grid article,
+  .admission-grid article {
+    min-height: 270px;
+    padding: 36px 30px;
+    background: var(--black);
+  }
+
+  .rules-grid article > span,
+  .admission-grid article > span {
+    display: block;
+    margin-bottom: 38px;
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    color: rgba(168, 168, 168, 0.28);
+  }
+
+  .application-section {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.82fr 1.18fr;
+    border-left: 1px solid var(--line);
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .application-intro,
+  .application-form {
+    padding: 88px 64px;
+  }
+
+  .application-intro {
+    border-right: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.012);
+  }
+
+  .application-intro h2 { margin-top: 20px; }
+  .application-intro > p:not(.section-eyebrow) {
+    margin-top: 28px;
+    font-size: 15px;
+    line-height: 1.85;
+    color: rgba(168, 168, 168, 0.7);
+  }
+
+  .application-note {
+    margin-top: 36px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+  }
+
+  .application-note span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 9px;
+    letter-spacing: 0.24em;
+    color: rgba(168, 168, 168, 0.36);
+  }
+
+  .application-note p {
+    font-size: 12px;
+    line-height: 1.7;
+    color: rgba(168, 168, 168, 0.52);
+  }
+
+  .application-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 18px;
+  }
+
+  .application-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 9px;
+    letter-spacing: 0.22em;
+    color: rgba(168, 168, 168, 0.5);
+    text-transform: uppercase;
+  }
+
+  .application-form input,
+  .application-form select,
+  .application-form textarea {
+    width: 100%;
+    min-height: 50px;
+    padding: 12px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0;
+    background: #0a0a0a;
+    color: var(--white);
+    font: inherit;
+    font-size: 14px;
+    letter-spacing: normal;
+    text-transform: none;
+    outline: none;
+    resize: vertical;
+  }
+
+  .application-form textarea { min-height: 100px; }
+
+  .application-form input:focus,
+  .application-form select:focus,
+  .application-form textarea:focus {
+    border-color: rgba(255, 255, 255, 0.42);
+  }
+
+  .field-wide { grid-column: 1 / -1; }
+
+  .application-form .consent {
+    display: grid;
+    grid-template-columns: 18px 1fr;
+    align-items: start;
+    gap: 12px;
+    font-size: 12px;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-transform: none;
+  }
+
+  .application-form .consent input {
+    min-height: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    accent-color: var(--green);
+  }
+
+  .application-form .consent a {
+    color: var(--white);
+    text-underline-offset: 3px;
+  }
+
+  .form-submit {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  .form-disclaimer {
+    font-size: 11px;
+    line-height: 1.65;
+    color: rgba(168, 168, 168, 0.38);
+  }
+
+  .faq-list details {
+    padding: 24px 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .faq-list details:last-child { border-bottom: 1px solid var(--line); }
+  .faq-list summary {
+    position: relative;
+    padding-right: 36px;
+    list-style: none;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.86);
+  }
+  .faq-list summary::-webkit-details-marker { display: none; }
+  .faq-list summary::after {
+    content: '+';
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgba(168, 168, 168, 0.45);
+  }
+  .faq-list details[open] summary::after { content: '−'; }
+  .faq-list details p {
+    padding: 16px 40px 0 0;
+    font-size: 13px;
+    line-height: 1.8;
+    color: rgba(168, 168, 168, 0.66);
+  }
+
+  .final-cta {
+    padding: 112px 24px;
+    text-align: center;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .final-cta h2 {
+    max-width: 900px;
+    margin: 20px auto 0;
+  }
+
+  .final-cta > p:not(.section-eyebrow) {
+    max-width: 580px;
+    margin: 24px auto 34px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgba(168, 168, 168, 0.64);
+  }
+
+  @media (max-width: 1120px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-copy { padding: 88px 48px 76px; }
+    .hero-mark { min-height: 520px; border-left: 0; border-top: 1px solid var(--line); }
+    .mark-plus { margin-top: 145px; }
+    .mark-number { font-size: 300px; }
+    .spaces-grid { grid-template-columns: repeat(2, 1fr); }
+    .space-card { grid-column: auto; }
+    .space-card:nth-child(4) { grid-column: auto; }
+    .rules-grid { grid-template-columns: 1fr 1fr; }
+    .admission-grid { grid-template-columns: 1fr 1fr; }
+    .application-section { grid-template-columns: 1fr; }
+    .application-intro { border-right: 0; border-bottom: 1px solid var(--line); }
+  }
+
+  @media (max-width: 760px) {
+    main { padding-top: 61px; }
+    .hero-copy { padding: 72px 24px 62px; }
+    .hero h1 { font-size: clamp(46px, 14vw, 66px); }
+    .hero-body { font-size: 15px; }
+    .hero-actions { flex-direction: column; align-items: stretch; }
+    .btn-primary, .btn-ghost { width: 100%; justify-content: center; }
+    .hero-mark { min-height: 390px; }
+    .mark-plus { margin-top: 120px; font-size: 64px; }
+    .mark-number { font-size: min(58vw, 250px); }
+    .signal-bar { grid-template-columns: 1fr; }
+    .signal-bar div {
+      min-height: 92px;
+      border-right: 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .signal-bar div:last-child { border-bottom: 0; }
+    .section-inner { padding: 76px 24px; }
+    .two-col, .faq-grid, .protocol-grid { grid-template-columns: 1fr; gap: 48px; }
+    .spaces-grid, .rules-grid, .admission-grid { grid-template-columns: 1fr; }
+    .space-card, .rules-grid article, .admission-grid article { min-height: 230px; }
+    .protocol-card { padding: 30px 24px; }
+    .protocol-card dl div { grid-template-columns: 1fr; gap: 7px; }
+    .application-intro, .application-form { padding: 64px 24px; }
+    .application-form { grid-template-columns: 1fr; }
+    .field-wide, .form-submit { grid-column: auto; }
+  }
+</style>

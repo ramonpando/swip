@@ -234,6 +234,22 @@ const schema = [
         </div>
         <span>Conocer el piloto →</span>
       </a>
+      <a
+        href="/sociedad-52/"
+        class="society-launch"
+        data-cta="home_sociedad_52"
+      >
+        <div class="society-mark" aria-hidden="true">+52</div>
+        <div class="society-copy">
+          <p class="society-tag">SOCIEDAD 52 · ACCESO PRIVADO</p>
+          <h3>Una red de confianza, no otro grupo.</h3>
+          <p>
+            Comunidad curada para relaciones de alto nivel, experiencias
+            privadas y oportunidades off-market con criterio y discreción.
+          </p>
+        </div>
+        <span>Conocer Sociedad 52 →</span>
+      </a>
     </div>
   </section>
 
@@ -835,6 +851,63 @@ const schema = [
     text-transform: uppercase;
   }
 
+  .society-launch {
+    margin-top: 24px;
+    padding: 40px;
+    border: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 36px;
+    color: inherit;
+    text-decoration: none;
+    background: var(--black);
+    transition: background 0.2s, border-color 0.2s;
+  }
+
+  .society-launch:hover {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.16);
+  }
+
+  .society-mark {
+    min-width: 104px;
+    font-size: 42px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.92);
+    letter-spacing: -0.04em;
+  }
+
+  .society-tag {
+    margin-bottom: 12px;
+    font-size: 9px;
+    letter-spacing: 0.34em;
+    color: rgba(168, 168, 168, 0.48);
+  }
+
+  .society-copy h3 {
+    margin-bottom: 8px;
+    font-size: clamp(24px, 2.7vw, 36px);
+    font-weight: 300;
+    color: var(--white);
+    letter-spacing: -0.02em;
+  }
+
+  .society-copy p:not(.society-tag) {
+    max-width: 680px;
+    font-size: 13px;
+    color: rgba(168, 168, 168, 0.68);
+    line-height: 1.75;
+  }
+
+  .society-launch > span {
+    flex-shrink: 0;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: rgba(255, 255, 255, 0.72);
+    text-transform: uppercase;
+  }
+
   /* ── VENTAJAS ── */
   .ventajas-grid {
     display: grid;
@@ -1067,6 +1140,12 @@ const schema = [
       align-items: flex-start;
       gap: 24px;
     }
+    .society-launch {
+      padding: 36px 24px;
+      grid-template-columns: 1fr;
+      gap: 22px;
+    }
+    .society-mark { min-width: 0; font-size: 34px; }
     .modal-grid { grid-template-columns: 1fr; }
     .cob-grid { grid-template-columns: 1fr; }
     .cta-section { padding: 80px 24px; }

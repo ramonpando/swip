@@ -2,7 +2,20 @@
 
 Última actualización: 2026-07-27  
 Responsable: Ramon Pando  
-Estado: Borrador V1 para validación
+Estado: Lanzamiento web
+
+## Estado de lanzamiento
+
+- **Posicionamiento público:** Comunidad privada del ecosistema SWIP.
+- **URL:** `https://swip.mx/sociedad-52/`
+- **Conversión principal:** Solicitar consideración.
+- **Destino de la solicitud:** WhatsApp directo de Ramon Pando.
+- **Acceso a la Comunidad:** Invitación personal después de revisión.
+- **Enlace público de WhatsApp Communities:** No se publica.
+- **Integración:** Navbar, footer, homepage, recorrido de relojes y página
+  institucional de SWIP.
+- **Pendiente operativo:** Crear/configurar la Comunidad en WhatsApp y comenzar
+  la selección de la cohorte fundadora.
 
 ## Definición
 
@@ -376,4 +389,3 @@ Secciones recomendadas:
 6. ¿Habrá cuota en el futuro?
 7. ¿La landing será pública e indexable o privada/noindex durante la cohorte?
 8. ¿Qué datos y consentimiento requiere la revisión legal?
-

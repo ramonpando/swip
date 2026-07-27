@@ -1,13 +1,30 @@
 ---
 export interface Props {
-  context?: 'vehicle' | 'watch';
+  context?: 'vehicle' | 'watch' | 'community';
 }
 
 const { context = 'vehicle' } = Astro.props;
 const isWatch = context === 'watch';
-const WHATSAPP = isWatch
-  ? 'https://wa.me/5215542317035?text=Hola%20Ramon%2C%20vi%20el%20piloto%20de%20relojes%20de%20SWIP%20y%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20privada'
-  : 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20de%20mi%20veh%C3%ADculo';
+const isCommunity = context === 'community';
+const preserveMessage = isWatch || isCommunity;
+const WHATSAPP = isCommunity
+  ? 'https://wa.me/5215542317035?text=Hola%20Ramon%2C%20quiero%20solicitar%20consideraci%C3%B3n%20para%20Sociedad%2052'
+  : isWatch
+    ? 'https://wa.me/5215542317035?text=Hola%20Ramon%2C%20vi%20el%20piloto%20de%20relojes%20de%20SWIP%20y%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20privada'
+    : 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20de%20mi%20veh%C3%ADculo';
+const brandLine1 = isCommunity ? 'Sociedad 52' : 'Liquidez inteligente';
+const brandLine2 = isCommunity
+  ? 'Conexiones con criterio.'
+  : isWatch
+    ? 'Con respaldo en activos premium.'
+    : 'Con respaldo en tu auto.';
+const contactNumber = isCommunity || isWatch ? '55 4231 7035' : '55 5405 5089';
+const contactHref = isCommunity || isWatch ? 'tel:+525542317035' : 'tel:+525554055089';
+const contactCta = isCommunity
+  ? 'Solicitar consideración'
+  : isWatch
+    ? 'Evalúa tu reloj'
+    : 'Cotiza tu préstamo';
 ---
 <footer class="swip-footer">
   <div class="footer-main">
@@ -16,8 +33,8 @@ const WHATSAPP = isWatch
         <img src="/assets/logos/logo-light.svg" alt="SWIP" width="77" height="30" />
       </a>
       <p class="tagline">
-        Liquidez inteligente<br />
-        con respaldo en {isWatch ? 'activos premium.' : 'tu auto.'}
+        {brandLine1}<br />
+        {brandLine2}
       </p>
     </div>
 
@@ -29,6 +46,7 @@ const WHATSAPP = isWatch
       <a href="/prestamo-con-garantia-de-autos-de-lujo/">Autos de lujo</a>
       <a href="/prestamo-con-garantia-de-autos-blindados/">Autos blindados</a>
       <a href="/prestamo-con-garantia-de-reloj/">Relojes de lujo · Piloto</a>
+      <a href="/sociedad-52/">Sociedad 52 · Acceso privado</a>
     </div>
 
     <div class="footer-col">
@@ -45,13 +63,13 @@ const WHATSAPP = isWatch
       <p class="col-title">Contacto</p>
       <a href="mailto:patricia_bernal@swip.mx" style="text-transform:none;letter-spacing:0;">patricia_bernal@swip.mx</a>
       <a
-        href={isWatch ? 'tel:+525542317035' : 'tel:+525554055089'}
+        href={contactHref}
         style="text-transform:none;letter-spacing:0;"
       >
-        {isWatch ? '55 4231 7035' : '55 5405 5089'}
+        {contactNumber}
       </a>
-      <a href={WHATSAPP} target="_blank" rel="noopener" data-preserve-message={isWatch || undefined}>WhatsApp</a>
-      <a href={WHATSAPP} target="_blank" rel="noopener" data-preserve-message={isWatch || undefined}>{isWatch ? 'Evalúa tu reloj' : 'Cotiza tu préstamo'}</a>
+      <a href={WHATSAPP} target="_blank" rel="noopener" data-preserve-message={preserveMessage || undefined}>WhatsApp</a>
+      <a href={WHATSAPP} target="_blank" rel="noopener" data-preserve-message={preserveMessage || undefined}>{contactCta}</a>
       <p class="footer-address">Pje. Interlomas 6, Naucalpan,<br />Estado de México, 52787</p>
     </div>
   </div>

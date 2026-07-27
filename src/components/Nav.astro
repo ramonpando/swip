@@ -1,26 +1,42 @@
 ---
 export interface Props {
-  context?: 'vehicle' | 'watch';
+  context?: 'vehicle' | 'watch' | 'community';
 }
 
 const { context = 'vehicle' } = Astro.props;
 const isWatch = context === 'watch';
-const WHATSAPP = isWatch
-  ? 'https://wa.me/5215542317035?text=Hola%20Ramon%2C%20vi%20el%20piloto%20de%20relojes%20de%20SWIP%20y%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20privada'
-  : 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20cotizar%20un%20pr%C3%A9stamo%20con%20garant%C3%ADa%20de%20mi%20veh%C3%ADculo';
-const ctaLabel = isWatch ? 'Evaluar mi reloj' : 'Cotiza tu préstamo';
-const navLinks: Array<{ href: string; label: string; badge?: string }> = isWatch
+const isCommunity = context === 'community';
+const preserveMessage = isWatch || isCommunity;
+const WHATSAPP = isCommunity
+  ? 'https://wa.me/5215542317035?text=Hola%20Ramon%2C%20quiero%20solicitar%20consideraci%C3%B3n%20para%20Sociedad%2052'
+  : isWatch
+    ? 'https://wa.me/5215542317035?text=Hola%20Ramon%2C%20vi%20el%20piloto%20de%20relojes%20de%20SWIP%20y%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20privada'
+    : 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20cotizar%20un%20pr%C3%A9stamo%20con%20garant%C3%ADa%20de%20mi%20veh%C3%ADculo';
+const ctaLabel = isCommunity
+  ? 'Solicitar consideración'
+  : isWatch
+    ? 'Evaluar mi reloj'
+    : 'Cotiza tu préstamo';
+const navLinks: Array<{ href: string; label: string; badge?: string }> = isCommunity
+  ? [
+      { href: '/sociedad-52/#estandar', label: 'El estándar' },
+      { href: '/sociedad-52/#espacios', label: 'Espacios' },
+      { href: '/sociedad-52/#admision', label: 'Admisión' },
+      { href: '/', label: 'SWIP' },
+    ]
+  : isWatch
   ? [
       { href: '/prestamo-con-garantia-de-reloj/#como-funciona', label: 'Cómo funciona' },
       { href: '/prestamo-con-garantia-de-reloj/#marcas', label: 'Marcas' },
       { href: '/blog/guia-relojes-de-lujo-mexico/', label: 'Guía de relojes' },
+      { href: '/sociedad-52/', label: 'Sociedad 52' },
       { href: '/prestamo-con-garantia-de-auto/', label: 'Autos' },
     ]
   : [
       { href: '/como-funciona/', label: 'Cómo funciona' },
       { href: '/vehiculos-que-aceptamos/', label: 'Vehículos' },
       { href: '/prestamo-con-garantia-de-reloj/', label: 'Relojes', badge: 'Piloto' },
-      { href: '/requisitos/', label: 'Requisitos' },
+      { href: '/sociedad-52/', label: 'Sociedad 52', badge: 'Privado' },
       { href: '/blog/', label: 'Blog' },
     ];
 
@@ -40,10 +56,10 @@ const currentPath = Astro.url.pathname;
         {link.badge && <span class="nav-badge">{link.badge}</span>}
       </a>
     ))}
-    <a href={WHATSAPP} target="_blank" rel="noopener" class="nav-mobile-cta" data-preserve-message={isWatch || undefined}>{ctaLabel}</a>
+    <a href={WHATSAPP} target="_blank" rel="noopener" class="nav-mobile-cta" data-preserve-message={preserveMessage || undefined}>{ctaLabel}</a>
   </div>
   <div class="nav-right">
-    <a href={WHATSAPP} target="_blank" rel="noopener" class="nav-cta" data-preserve-message={isWatch || undefined}>{ctaLabel}</a>
+    <a href={WHATSAPP} target="_blank" rel="noopener" class="nav-cta" data-preserve-message={preserveMessage || undefined}>{ctaLabel}</a>
     <button class="nav-hamburger" id="nav-hamburger" aria-label="Menú" aria-expanded="false" aria-controls="nav-links">
       <span></span><span></span><span></span>
     </button>

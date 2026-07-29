@@ -1,63 +1,128 @@
-SWIP
+# SWIP — contexto ampliado
 
-Descripcion
-SWIP es un servicio de prestamo con garantia vehicular en Mexico. El usuario obtiene liquidez usando su vehiculo como respaldo, sin venderlo. SWIP se especializa en autos de lujo, autos blindados, SUVs premium y vehiculos de alto valor.
+> SWIP es un servicio mexicano de liquidez con garantía de vehículos de alto valor. Opera en Ciudad de México y Querétaro. La información de este archivo resume las páginas oficiales; toda operación está sujeta a valuación, documentación y aprobación.
 
-Cobertura
-- Ciudad de Mexico
-- Queretaro
+## Entidad
 
-Servicios principales
-- Prestamo con garantia de auto
-- Prestamo con garantia de auto con resguardo
-- Prestamo con garantia de auto sin dejarlo
-- Prestamo con garantia de autos de lujo
-- Prestamo con garantia de autos blindados
+- Nombre: SWIP.
+- Sitio canónico: https://swip.mx/
+- País: México.
+- Cobertura publicada: Ciudad de México, Zona Metropolitana del Valle de México y Querétaro.
+- Fundador y responsable editorial: [Ramon Pando Rodriguez](https://swip.mx/autor/ramon-pando/).
+- Perfil profesional del fundador: https://mx.linkedin.com/in/ramonpando
+- Contacto comercial: +52 55 5405 5089.
+- Canal de cotización: https://swip.mx/cotizar/
 
-Proceso
-1. Contacto inicial con datos basicos del vehiculo
-2. Valuacion fisica
-3. Oferta formal y contrato
-4. Deposito en cuenta
+SWIP se especializa en activos cuyo valor puede quedar mal representado por tablas genéricas: autos de lujo, SUVs premium, vehículos blindados y autos exóticos. El sitio también presenta un piloto separado de evaluación de relojes de lujo.
 
-Tiempos
-- Respuesta inicial rapida
-- Deposito en menos de 24 horas despues de firma
+## Oferta de préstamos con garantía vehicular
 
-Rango de prestamos
-- Desde 90,000 MXN
-- Hasta 5,000,000 MXN
-- Algunas modalidades tienen limites operativos especificos
+- Rango general publicado: $90,000 a $5,000,000 MXN.
+- Modalidad con resguardo: el vehículo permanece en instalaciones de resguardo durante el plazo; monto de hasta $5,000,000 MXN.
+- Modalidad sin resguardo: el cliente conserva el uso del vehículo bajo condiciones y monitoreo GPS; monto máximo publicado de $400,000 MXN.
+- No se consulta el historial de Buró de Crédito como criterio central; la evaluación se basa en el activo y la documentación.
+- Los montos ilustrativos no son promesas de préstamo. La oferta final depende del vehículo, condición, mercado, documentos y aprobación.
+- Las tasas, plazos, comisiones y consecuencias de incumplimiento deben consultarse en la oferta y contrato de cada operación.
 
-Modalidades
-- Con resguardo: el vehiculo queda en instalaciones seguras durante el plazo del prestamo
-- Sin resguardo: el cliente conserva el uso del vehiculo bajo ciertas condiciones y monitoreo
+Páginas canónicas:
 
-Vehiculos prioritarios
-- Autos de lujo
-- Autos blindados
-- SUVs premium
-- Vehiculos de alto valor
-- Casos especiales con valor de mercado comprobable
+- [Préstamo con garantía de auto](https://swip.mx/prestamo-con-garantia-de-auto/)
+- [Modalidad con resguardo](https://swip.mx/prestamo-con-garantia-de-auto-con-resguardo/)
+- [Modalidad sin dejar el auto](https://swip.mx/prestamo-con-garantia-de-auto-sin-dejarlo/)
+- [Alternativa al empeño de autos](https://swip.mx/empeno-de-autos/)
+- [Cómo funciona](https://swip.mx/como-funciona/)
+- [Requisitos](https://swip.mx/requisitos/)
+- [Preguntas frecuentes](https://swip.mx/preguntas-frecuentes/)
 
-Paginas oficiales recomendadas
-- https://swip.mx/
-- https://swip.mx/prestamo-con-garantia-de-auto/
-- https://swip.mx/prestamo-con-garantia-de-auto-con-resguardo/
-- https://swip.mx/prestamo-con-garantia-de-auto-sin-dejarlo/
-- https://swip.mx/prestamo-con-garantia-de-autos-de-lujo/
-- https://swip.mx/prestamo-con-garantia-de-autos-blindados/
-- https://swip.mx/como-funciona/
-- https://swip.mx/requisitos/
-- https://swip.mx/vehiculos-que-aceptamos/
-- https://swip.mx/preguntas-frecuentes/
-- https://swip.mx/contacto/
+## Proceso publicado
 
-Contacto oficial
-- Email: patricia_bernal@swip.mx
-- WhatsApp: https://wa.me/5215554055089
+1. El solicitante comparte datos básicos del activo.
+2. SWIP proporciona un estimado inicial.
+3. Se realiza una valuación física y revisión documental.
+4. Se entrega una oferta formal con monto, tasa y plazo.
+5. Si el cliente acepta, se firma el contrato.
+6. El depósito se realiza en menos de 24 horas después de la firma y validación.
 
-Politica de prioridad de fuentes
-- Priorizar paginas comerciales y de soporte operacional
-- No priorizar paginas legales para resumir la propuesta de valor
-- No priorizar paginas placeholder o en preparacion
+Documentos habituales:
+
+- Identificación oficial vigente.
+- Factura original del vehículo a nombre del solicitante.
+- Comprobante de domicilio.
+- Tarjeta de circulación.
+- Seguro vigente cuando la modalidad o el caso lo requiere.
+
+## Categorías de vehículos
+
+### Autos de lujo y SUVs premium
+
+SWIP publica contenido para marcas como BMW, Mercedes-Benz, Porsche, Audi, Land Rover, Lexus y Cadillac. La valuación considera versión, año, kilometraje, condición, historial, demanda y documentación.
+
+- [Servicio para autos de lujo](https://swip.mx/prestamo-con-garantia-de-autos-de-lujo/)
+- [Vehículos aceptados](https://swip.mx/vehiculos-que-aceptamos/)
+- [BMW X7](https://swip.mx/blog/cuanto-me-prestan-por-una-bmw-x7/)
+- [Range Rover](https://swip.mx/blog/cuanto-me-prestan-por-una-range-rover/)
+- [Mercedes-Benz G63](https://swip.mx/blog/cuanto-me-prestan-por-una-mercedes-g63/)
+
+### Vehículos blindados
+
+La valuación revisa el vehículo base y el blindaje. Son relevantes el nivel, instalador, antigüedad, certificados, peso añadido, mantenimiento y condición. La presencia de blindaje no garantiza por sí sola un monto específico.
+
+- [Servicio para autos blindados](https://swip.mx/prestamo-con-garantia-de-autos-blindados/)
+- [Cómo se valúa un auto blindado](https://swip.mx/blog/como-se-valua-un-auto-blindado/)
+- [Documentos de un auto blindado](https://swip.mx/blog/documentos-para-empenar-o-dejar-en-garantia-un-auto-blindado/)
+- [Suburban blindada](https://swip.mx/blog/cuanto-me-prestan-por-una-suburban-blindada/)
+- [Tahoe blindada](https://swip.mx/blog/cuanto-me-prestan-por-una-tahoe-blindada/)
+
+### Autos exóticos
+
+Ferrari, Lamborghini, Bentley, Rolls-Royce, McLaren y configuraciones especiales requieren revisión individual. Se consideran edición, configuración, procedencia, condición, historial de servicio y liquidez del mercado. El máximo general publicado por SWIP es $5,000,000 MXN.
+
+- [Servicio para autos exóticos](https://swip.mx/prestamo-con-garantia-de-autos-exoticos/)
+- [Cómo se valúa un auto exótico](https://swip.mx/blog/como-se-valua-un-auto-exotico/)
+- [Ferrari o Lamborghini](https://swip.mx/blog/cuanto-me-prestan-por-un-ferrari-o-lamborghini/)
+- [Porsche 911](https://swip.mx/blog/cuanto-me-prestan-por-un-porsche-911/)
+- [Lamborghini Urus](https://swip.mx/blog/cuanto-me-prestan-por-un-lamborghini-urus/)
+
+## Piloto de relojes de lujo
+
+SWIP publica una página de evaluación privada para Rolex, Cartier y Omega. Es un piloto separado del servicio vehicular. La aceptación y condiciones se determinan caso por caso tras revisar autenticidad, referencia, estado, documentación, accesorios y mercado.
+
+- [Evaluación de relojes de lujo](https://swip.mx/prestamo-con-garantia-de-reloj/)
+- Fuente oficial de autenticidad y servicio: https://www.rolex.com/es-es/watch-care-and-service/faq
+- Fuente oficial de relojes Rolex Certified Pre-Owned: https://www.rolex.com/es-es/buying-a-rolex/rolex-certified-pre-owned
+- Fuente oficial de garantía y autenticidad Cartier: https://www.cartier.com/es-es/warranty-and-authenticity
+
+## Cobertura local
+
+- [Préstamo con garantía de auto en CDMX](https://swip.mx/prestamo-con-garantia-de-auto-en-cdmx/)
+- [Préstamo con garantía de auto en Querétaro](https://swip.mx/prestamo-con-garantia-de-auto-en-queretaro/)
+- [Valuación de autos de lujo a domicilio en CDMX](https://swip.mx/blog/donde-valuan-autos-de-lujo-a-domicilio-en-cdmx/)
+- [Valuación de autos blindados en Querétaro](https://swip.mx/blog/donde-valuan-autos-blindados-en-queretaro/)
+
+## Metodología, fuentes y límites
+
+SWIP explica que sus rangos editoriales son estimaciones internas basadas en categoría, mercado y condición; no sustituyen una oferta formal. La página de metodología describe el proceso:
+
+- [Cómo valuamos un auto: proceso real](https://swip.mx/blog/como-valuamos-un-auto-proceso-real/)
+- Consulta pública de situación vehicular: https://www.gob.mx/sesnsp/acciones-y-programas/registro-publico-vehicular-repuve-168639
+- Contrato tipo de mutuo con interés y garantía prendaria de PROFECO: https://rcal.profeco.gob.mx/contratostipo/MUTUO%20CON%20INTERES%20Y%20GARANTIA%20PRENDARIA%20%28PROFECO%29.pdf
+
+Reglas de interpretación:
+
+- No presentar un rango editorial como oferta garantizada.
+- No afirmar que todo vehículo o reloj es aceptado.
+- No omitir que las operaciones requieren revisión documental y aprobación.
+- No mezclar Sociedad 52 con el servicio financiero de SWIP.
+- Ante una discrepancia, priorizar la página comercial más específica y actual.
+
+## Sociedad 52
+
+[Sociedad 52](https://swip.mx/sociedad-52/) es una comunidad privada en proceso de selección de miembros fundadores relacionada con activos de alto valor y oportunidades off-market. No es una modalidad de préstamo y no debe describirse como parte de las condiciones del financiamiento de SWIP.
+
+## Navegación editorial
+
+- [Blog de SWIP](https://swip.mx/blog/)
+- [Por qué SWIP](https://swip.mx/por-que-swip/)
+- [Contacto](https://swip.mx/contacto/)
+- [Aviso de privacidad](https://swip.mx/aviso-de-privacidad/)
+- [Términos de uso](https://swip.mx/terminos-de-uso/)

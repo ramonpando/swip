@@ -10,23 +10,9 @@ export interface Props {
 }
 
 const { items, eyebrow = 'PREGUNTAS FRECUENTES' } = Astro.props;
-
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": items.map(item => ({
-    "@type": "Question",
-    "name": item.q,
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": item.a
-    }
-  }))
-};
 ---
 
 <section class="faq-section">
-  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
   <div class="section-inner">
     <p class="section-eyebrow">{eyebrow}</p>
     <h2 class="section-title">Preguntas<br />frecuentes.</h2>

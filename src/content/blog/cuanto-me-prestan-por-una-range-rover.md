@@ -63,7 +63,7 @@ Para entender cómo estos factores impactan el monto en el segmento de lujo: [em
 
 ## Qué modalidad conviene para una Range Rover
 
-Para Range Rovers de año reciente con valor superior a $1,000,000 MXN, la [modalidad con resguardo](/prestamo-con-garantia-de-auto-con-resguardo/) es la que entrega el monto real del activo. Sin límite de monto, instalaciones especializadas y seguro activo durante todo el plazo.
+Para Range Rovers de año reciente con valor superior a $1,000,000 MXN, la [modalidad con resguardo](/prestamo-con-garantia-de-auto-con-resguardo/) es la que permite solicitar los montos más altos, hasta $5,000,000 MXN, con instalaciones especializadas y seguro activo durante todo el plazo.
 
 Para Range Rovers de menor valor o cuando el monto requerido es inferior a $400,000 MXN y la movilidad es crítica, puede evaluarse la [modalidad sin resguardo](/prestamo-con-garantia-de-auto-sin-dejarlo/) con GPS activo.
 

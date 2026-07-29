@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "audit:links": "node scripts/audit-internal-links.mjs"
+    "audit:links": "node scripts/audit-internal-links.mjs",
+    "generate:og": "node scripts/generate-blog-og.mjs"
   },
   "dependencies": {
     "astro": "^5.7.0",

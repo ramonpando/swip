@@ -1,6 +1,7 @@
 ---
 title: "Precio publicado vs. valor de liquidación de un reloj de lujo"
 description: "Por qué el precio visto en Chrono24, Mercado Libre o una boutique no equivale al valor inmediato de venta de un reloj."
+seoDescription: "Conoce por qué el precio publicado de un reloj de lujo no equivale a su valor de liquidación y qué factores determinan una valuación realista."
 date: "2026-07-26"
 category: "Relojes de lujo"
 slug: "precio-publicado-vs-valor-liquidacion-reloj-lujo"

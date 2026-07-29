@@ -48,6 +48,15 @@ const schema = [
         "item": "https://swip.mx/empeno-de-autos/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(f => ({
+      "@type": "Question",
+      "name": f.q,
+      "acceptedAnswer": { "@type": "Answer", "text": f.a }
+    }))
   }
 ];
 ---
@@ -195,7 +204,7 @@ const schema = [
         </div>
         <div class="monto-block">
           <p class="monto-label">Modalidad con resguardo</p>
-          <p class="monto-val">Sin límite de monto</p>
+          <p class="monto-val">Hasta $5,000,000 MXN</p>
           <p class="monto-desc">Tu auto queda en instalaciones seguras durante el plazo. Esta modalidad puede permitir montos mayores, según la valuación y las condiciones aprobadas.</p>
         </div>
         <div class="monto-block monto-note">

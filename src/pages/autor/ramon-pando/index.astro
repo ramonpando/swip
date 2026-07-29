@@ -1,0 +1,78 @@
+---
+import Page from '../../../layouts/Page.astro';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": "https://swip.mx/autor/ramon-pando/#profile",
+  "url": "https://swip.mx/autor/ramon-pando/",
+  "name": "Ramon Pando Rodriguez — Fundador de SWIP",
+  "inLanguage": "es-MX",
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "https://swip.mx/autor/ramon-pando/#person",
+    "name": "Ramon Pando Rodriguez",
+    "alternateName": "Ramon Pando",
+    "jobTitle": "Fundador y Director General",
+    "url": "https://swip.mx/autor/ramon-pando/",
+    "sameAs": [
+      "https://mx.linkedin.com/in/ramonpando"
+    ],
+    "worksFor": {
+      "@id": "https://swip.mx/#organization"
+    },
+    "knowsAbout": [
+      "Préstamos con garantía vehicular",
+      "Valuación de autos de lujo",
+      "Valuación de vehículos blindados",
+      "Valuación de autos exóticos",
+      "Financiamiento alternativo"
+    ]
+  }
+};
+---
+
+<Page
+  title="Ramon Pando Rodriguez — Fundador de SWIP"
+  description="Conoce a Ramon Pando Rodriguez, fundador de SWIP y autor de las guías sobre valuación y préstamos con garantía de vehículos de alto valor."
+  schema={schema}
+>
+  <section class="profile-hero">
+    <div class="profile-inner">
+      <p class="eyebrow">AUTOR · SWIP</p>
+      <h1>Ramon Pando<br />Rodriguez.</h1>
+      <p class="lead">Fundador y Director General de SWIP.</p>
+    </div>
+  </section>
+
+  <section class="profile-body">
+    <div class="profile-inner prose">
+      <h2>Experiencia operativa en activos de alto valor</h2>
+      <p>Ramon fundó SWIP en 2023 para ofrecer liquidez respaldada por activos de alto valor mediante procesos claros, documentados y personalizados.</p>
+      <p>Participa directamente en la evaluación de vehículos donde una tabla genérica no es suficiente: autos premium, blindados, exóticos y unidades de producción limitada. También dirige el piloto de evaluación de relojes de lujo de SWIP.</p>
+
+      <h2>Criterio editorial</h2>
+      <p>Los artículos firmados por Ramon explican cómo se revisa un activo, qué documentación afecta su valor y qué diferencias existen entre una estimación inicial y una oferta formal. Los rangos publicados son orientativos y deben confirmarse mediante una revisión física y documental.</p>
+
+      <div class="profile-links">
+        <a href="/blog/">Consultar artículos de SWIP →</a>
+        <a href="https://mx.linkedin.com/in/ramonpando" target="_blank" rel="noopener noreferrer">Ver perfil profesional en LinkedIn →</a>
+      </div>
+    </div>
+  </section>
+</Page>
+
+<style>
+  .profile-hero,
+  .profile-body { border-bottom: 1px solid var(--line); }
+  .profile-inner { max-width: 900px; margin: 0 auto; padding: 96px 64px; }
+  .eyebrow { font-size: 9px; letter-spacing: .42em; color: rgba(168,168,168,.45); margin-bottom: 28px; }
+  h1 { font-size: clamp(48px, 7vw, 88px); font-weight: 300; line-height: 1; color: var(--white); }
+  .lead { margin-top: 24px; color: rgba(168,168,168,.76); font-size: 18px; }
+  .prose h2 { color: var(--white); font-weight: 300; font-size: 34px; margin: 0 0 20px; }
+  .prose h2:not(:first-child) { margin-top: 56px; }
+  .prose p { color: rgba(168,168,168,.76); font-size: 17px; line-height: 1.9; margin-bottom: 20px; }
+  .profile-links { display: flex; flex-direction: column; gap: 14px; margin-top: 48px; }
+  .profile-links a { color: var(--white); text-decoration: none; }
+  @media (max-width: 768px) { .profile-inner { padding: 72px 24px; } }
+</style>

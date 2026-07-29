@@ -62,7 +62,7 @@ La G63 tiene elementos estéticos de alto costo de reemplazo: faros LED de dise�
 
 ## La G63 como activo de garantía premium
 
-La G63 es uno de los activos que SWIP puede manejar a montos más altos dentro del segmento de lujo. Para operaciones de $1,500,000 MXN o más, la [modalidad con resguardo](/prestamo-con-garantia-de-auto-con-resguardo/) es la estructura estándar — sin límite de monto, instalaciones especializadas y seguro activo.
+La G63 es uno de los activos que SWIP puede manejar a montos más altos dentro del segmento de lujo. Para operaciones de $1,500,000 MXN o más, la [modalidad con resguardo](/prestamo-con-garantia-de-auto-con-resguardo/) es la estructura estándar, con montos de hasta $5,000,000 MXN, instalaciones especializadas y seguro activo.
 
 Para los clientes que quieren conservar el uso de su G63, la [modalidad sin resguardo](/prestamo-con-garantia-de-auto-sin-dejarlo/) tiene un tope de $400,000 MXN — que en el contexto de una G63 de $3,000,000 MXN es un monto muy pequeño relativo al valor del activo. La pregunta es si el monto que necesitas justifica no usar el vehículo durante el plazo.
 

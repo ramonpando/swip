@@ -56,7 +56,7 @@ Los exóticos son evaluados con criterios específicos:
 - Configuración y opcionales de fábrica
 - Kilometraje relativo al modelo y año
 
-Para un exótico bien documentado, el valor del activo justifica préstamos sin límite de monto en modalidad con resguardo.
+Para un exótico bien documentado, el valor del activo puede justificar préstamos de hasta $5,000,000 MXN en modalidad con resguardo.
 
 ### SUVs premium de año reciente
 

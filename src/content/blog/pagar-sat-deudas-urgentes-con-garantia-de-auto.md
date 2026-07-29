@@ -33,7 +33,7 @@ Un [préstamo con garantía vehicular](/prestamo-con-garantia-de-auto/) es una h
 | Auto de lujo (Mercedes Clase S, Porsche Panamera) | $500,000 – $1,500,000 MXN |
 | Suburban, BMW X7, Range Rover Autobiography | $600,000 – $2,000,000 MXN |
 | Auto blindado | $700,000 – $2,500,000 MXN |
-| Auto exótico (Ferrari, Lamborghini, Bentley) | $1,500,000 – $5,000,000+ MXN |
+| Auto exótico (Ferrari, Lamborghini, Bentley) | $1,500,000 – $5,000,000 MXN |
 
 Para una deuda con el SAT de $300,000 MXN, un BMW X5 en buen estado lo cubre con margen. El monto exacto se define en la valuación física.
 

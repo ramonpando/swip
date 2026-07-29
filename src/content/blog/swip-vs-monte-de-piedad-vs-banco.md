@@ -18,7 +18,7 @@ Si tienes un auto de valor y necesitas liquidez, tienes tres opciones principale
 | **Tiempo para obtener el dinero** | 1-2 días | 2-6 semanas | Menos de 24 h |
 | **Requiere buró limpio** | No | Sí | No |
 | **Requiere ingresos comprobables** | No | Sí | No |
-| **Monto máximo para un auto de lujo** | ~$500,000 MXN | Según perfil | Hasta $5,000,000+ MXN |
+| **Monto máximo para un auto de lujo** | ~$500,000 MXN | Según perfil | Hasta $5,000,000 MXN |
 | **Valuación del vehículo** | Tabla genérica | No aplica | Valuación física especializada |
 | **Especialización en lujo/blindados** | No | No | Sí |
 | **Proceso discreto** | No | Parcialmente | Sí |

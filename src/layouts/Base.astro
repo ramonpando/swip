@@ -42,8 +42,25 @@ const baseSchema = {
       "email": "patricia_bernal@swip.mx",
       "telephone": "+52-1-55-5405-5089",
       "sameAs": [
-        "https://wa.me/5215554055089"
-      ]
+        "https://www.linkedin.com/company/swip-mx"
+      ],
+      "founder": {
+        "@id": "https://swip.mx/autor/ramon-pando/#person"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://swip.mx/autor/ramon-pando/#person",
+      "name": "Ramon Pando Rodriguez",
+      "alternateName": "Ramon Pando",
+      "jobTitle": "Fundador y Director General",
+      "url": "https://swip.mx/autor/ramon-pando/",
+      "sameAs": [
+        "https://mx.linkedin.com/in/ramonpando"
+      ],
+      "worksFor": {
+        "@id": "https://swip.mx/#organization"
+      }
     },
     {
       "@type": "FinancialService",
@@ -122,7 +139,7 @@ const baseSchema = {
 };
 ---
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -137,7 +154,7 @@ const baseSchema = {
   <title>{title}</title>
   <meta name="description" content={description} />
   <link rel="canonical" href={canonicalUrl} />
-  {noindex && <meta name="robots" content="noindex, nofollow" />}
+  {noindex && <meta name="robots" content="noindex, follow" />}
 
   <!-- Open Graph -->
   <meta property="og:type" content={ogType} />
@@ -146,6 +163,9 @@ const baseSchema = {
   <meta property="og:description" content={description} />
   <meta property="og:url" content={canonicalUrl} />
   <meta property="og:image" content={ogImage} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content={title} />
   <meta property="og:locale" content="es_MX" />
   {publishedTime && <meta property="article:published_time" content={publishedTime} />}
   {modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}

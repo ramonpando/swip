@@ -36,7 +36,7 @@ Para un blindado, el seguro vigente es un requisito crítico — no opcional. Un
 
 ### Con resguardo
 
-- Sin límite de monto — el techo lo pone el valor real del vehículo
+- Hasta $5,000,000 MXN, sujeto al valor real del vehículo y a aprobación
 - El blindado queda en instalaciones con medidas de seguridad adicionales acordes al valor del activo
 - Cobertura de seguro activa durante todo el plazo, incluida en las condiciones del préstamo
 - Acceso controlado y monitoreo permanente

@@ -1,6 +1,7 @@
 ---
 title: "Requisitos para un préstamo con garantía de auto"
 description: "Qué documentación necesitas, qué no suelen pedirte y cómo preparar tu caso para avanzar más rápido en una valuación."
+seoDescription: "Conoce los documentos y requisitos para solicitar un préstamo con garantía de auto, preparar la valuación y avanzar sin trámites bancarios."
 date: "2026-04-21"
 category: "Requisitos"
 slug: "requisitos-para-un-prestamo-con-garantia-de-auto"

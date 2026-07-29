@@ -103,7 +103,7 @@ Para efectos de garantía vehicular, el Urus combina alta retención de valor co
 
 ## Modalidad que corresponde a un Urus
 
-Dado el valor de un Urus, la [modalidad con resguardo](/prestamo-con-garantia-de-auto-con-resguardo/) es casi siempre la estructura que permite obtener el monto real del activo. Sin límite de monto, instalaciones especializadas y seguro activo.
+Dado el valor de un Urus, la [modalidad con resguardo](/prestamo-con-garantia-de-auto-con-resguardo/) es casi siempre la estructura que permite solicitar los montos más altos, hasta $5,000,000 MXN, con instalaciones especializadas y seguro activo.
 
 El resguardo de un Urus en SWIP considera el valor del activo: almacenamiento en condiciones adecuadas, acceso restringido, proceso logístico discreto.
 

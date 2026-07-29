@@ -1,5 +1,17 @@
 {
+  "trailingSlash": true,
   "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.swip.mx"
+        }
+      ],
+      "destination": "https://swip.mx/:path*",
+      "permanent": true
+    },
     {
       "source": "/pre-owned/",
       "destination": "https://dashboard.bravix.com.mx/catalogo/swip-dealership",

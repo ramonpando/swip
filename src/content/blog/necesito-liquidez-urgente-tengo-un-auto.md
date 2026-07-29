@@ -21,7 +21,7 @@ El monto depende del valor comercial de tu vehículo:
 | Auto de lujo (Porsche, Mercedes S) | $500,000 – $1,500,000 MXN | < 24 h |
 | Range Rover, BMW X7, Suburban | $600,000 – $2,000,000 MXN | < 24 h |
 | Auto blindado | $700,000 – $2,500,000 MXN | < 24 h |
-| Auto exótico (Ferrari, Lamborghini) | $1,500,000 – $5,000,000+ MXN | < 24 h |
+| Auto exótico (Ferrari, Lamborghini) | $1,500,000 – $5,000,000 MXN | < 24 h |
 
 El proceso es: contacto → valuación en persona → contrato → depósito. Sin filas, sin comités de crédito, sin esperar semanas.
 

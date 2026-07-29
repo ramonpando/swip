@@ -9,7 +9,7 @@ const WHATSAPP = 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20cotizar%20
 const faqs = [
   { q: '¿Aceptan Ferrari, Lamborghini y Bentley?', a: 'Sí. SWIP evalúa vehículos de marcas exóticas y superdeportivas incluyendo Ferrari, Lamborghini, Bentley, Rolls-Royce, McLaren y Aston Martin. Cada operación requiere valuación física en persona dado el valor y especificidad del activo.' },
   { q: '¿Cómo se valúa un auto exótico?', a: 'Los autos exóticos no se valúan con tablas genéricas. Consideramos el mercado internacional de referencia, el historial de servicio en agencia, la condición mecánica y estética real, la configuración y opcionales de fábrica, y el kilometraje. Para autos como un Ferrari F8 o un Lamborghini Huracán, pequeñas diferencias en condición pueden representar millones de pesos de diferencia en valor.' },
-  { q: '¿Cuánto puedo obtener por mi Ferrari o Lamborghini?', a: 'Depende del modelo, año, kilometraje y condición. Un Ferrari 488 de año reciente en buenas condiciones puede respaldar préstamos desde $2,000,000 hasta $5,000,000+ MXN. Para modelos especiales, ediciones limitadas o autos con historia documentada, el monto se evalúa individualmente sin límite predefinido.' },
+  { q: '¿Cuánto puedo obtener por mi Ferrari o Lamborghini?', a: 'Depende del modelo, año, kilometraje y condición. Un Ferrari 488 de año reciente en buenas condiciones puede respaldar préstamos desde $2,000,000 hasta $5,000,000 MXN. El monto se evalúa individualmente y siempre queda sujeto a aprobación.' },
   { q: '¿El proceso es discreto?', a: 'Total. Entendemos que quien posee un auto exótico valora la privacidad. Valuación en tu domicilio o en nuestras instalaciones con acceso controlado. Sin exposición innecesaria del vehículo. Desde el primer contacto hasta la firma, el proceso puede completarse en el mismo día hábil.' },
   { q: '¿Qué pasa con el resguardo de un auto exótico?', a: 'En la modalidad con resguardo, los vehículos exóticos se almacenan en condiciones especializadas acordes al valor del activo. Temperatura controlada, acceso restringido y seguro activo durante todo el plazo. El vehículo recibe el tratamiento que corresponde a un activo de ese nivel.' },
   { q: '¿Aceptan Porsche 911 GT3 o Turbo S?', a: 'Sí. Los Porsche 911 en versiones GT3, GT3 RS, Turbo S y Carrera S tienen alta demanda en el mercado de garantía vehicular premium. También aceptamos Porsche 718, Boxster y Cayman en versiones de alto valor. Cada caso se evalúa con criterios específicos para el segmento superdeportivo.' },
@@ -20,7 +20,7 @@ const schema = [
     "@context": "https://schema.org",
     "@type": "FinancialService",
     "name": "Préstamo con Garantía de Autos Exóticos — SWIP",
-    "description": "Préstamo con garantía de autos exóticos en México. Ferrari, Lamborghini, Bentley, Rolls-Royce, McLaren. Valuación especializada sin límite de monto. CDMX y Querétaro.",
+    "description": "Préstamo con garantía de autos exóticos en México. Valuación de Ferrari, Lamborghini, Bentley, Rolls-Royce y McLaren, hasta $5,000,000 MXN.",
     "url": "https://swip.mx/prestamo-con-garantia-de-autos-exoticos/",
     "provider": { "@id": "https://swip.mx/#organization" },
     "areaServed": "MX"
@@ -29,7 +29,7 @@ const schema = [
     "@context": "https://schema.org",
     "@type": "LoanOrCredit",
     "name": "Préstamo con Garantía de Auto Exótico — SWIP",
-    "description": "Préstamo con garantía de autos exóticos: Ferrari, Lamborghini, Bentley, Rolls-Royce, McLaren. Valuación internacional, sin límite de monto.",
+    "description": "Préstamo con garantía de autos exóticos con valuación especializada y montos de hasta $5,000,000 MXN.",
     "url": "https://swip.mx/prestamo-con-garantia-de-autos-exoticos/",
     "provider": { "@id": "https://swip.mx/#organization" },
     "currency": "MXN",
@@ -55,7 +55,7 @@ const schema = [
 ---
 <Page
   title="Préstamo con Garantía de Autos Exóticos en México | SWIP"
-  description="Obtén liquidez con tu Ferrari, Lamborghini, Bentley, Rolls-Royce o McLaren. Valuación especializada sin límite de monto. Proceso completamente discreto. CDMX y Querétaro."
+  description="Obtén hasta $5,000,000 MXN con tu Ferrari, Lamborghini, Bentley, Rolls-Royce o McLaren. Valuación especializada en CDMX y Querétaro."
   schema={schema}
 >
 
@@ -162,7 +162,7 @@ const schema = [
         <p>El estimado inicial que obtienes por WhatsApp es un rango orientativo. La oferta formal — precisa y vinculante — viene después de la valuación en persona.</p>
         <div class="ref-note">
           <span>Rangos orientativos — sujetos a valuación física</span>
-          <span>Sin límite de monto en modalidad con resguardo</span>
+          <span>Hasta $5,000,000 MXN en modalidad con resguardo</span>
         </div>
       </div>
     </div>

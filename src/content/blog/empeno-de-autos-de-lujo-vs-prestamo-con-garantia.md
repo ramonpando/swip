@@ -88,7 +88,7 @@ En la [modalidad sin resguardo](/prestamo-con-garantia-de-auto-sin-dejarlo/) sí
 El blindaje certificado suma valor real a la operación. A diferencia del empeño convencional que lo ignora, en SWIP el blindaje se valúa como componente separado. Revisa el artículo sobre [préstamos con garantía de autos blindados](/prestamo-con-garantia-de-autos-blindados/) para más detalle.
 
 **¿Cuál es el monto mínimo y máximo?**
-SWIP opera desde $90,000 hasta $5,000,000 MXN. Para autos de lujo el rango habitual está entre $300,000 y $2,000,000 MXN dependiendo del vehículo. Sin límite de monto en modalidad con resguardo para activos de alto valor.
+SWIP opera desde $90,000 hasta $5,000,000 MXN. Para autos de lujo el rango habitual está entre $300,000 y $2,000,000 MXN dependiendo del vehículo. Los montos más altos normalmente requieren modalidad con resguardo y aprobación individual.
 
 **¿Se hace buró de crédito?**
 No. El préstamo se respalda en el vehículo, no en el historial crediticio del solicitante.

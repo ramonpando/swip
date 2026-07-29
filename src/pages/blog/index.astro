@@ -48,7 +48,7 @@ const schema = [
 ---
 <Page
   title="Blog — Guías sobre Autos y Relojes de Lujo | SWIP"
-  description="Guías y análisis sobre liquidez con activos de alto valor: autos, vehículos blindados y relojes de lujo en México."
+  description="Guías de SWIP sobre préstamos con garantía, valuación de autos de lujo, vehículos blindados, exóticos y relojes de alto valor en México."
   noindex={posts.length === 0}
   schema={schema}
 >
@@ -65,6 +65,7 @@ const schema = [
         Explora la <a href="/prestamo-con-garantia-de-auto/">guía de garantía vehicular</a>
         o empieza por nuestra
         <a href="/blog/guia-relojes-de-lujo-mexico/">guía de relojes de lujo</a>.
+        Conoce también al <a href="/autor/ramon-pando/">responsable editorial de SWIP</a>.
       </p>
     </div>
   </section>
@@ -75,11 +76,15 @@ const schema = [
         <div class="posts-grid">
           {posts.map(post => (
             <a href={`/blog/${post.data.slug}/`} class="post-card">
-              {post.data.image && (
-                <div class="post-img">
-                  <img src={post.data.image} alt={post.data.title} loading="lazy" />
-                </div>
-              )}
+              <div class="post-img">
+                <img
+                  src={post.data.image ?? `/assets/blog/${post.data.slug}.jpg`}
+                  alt={`Portada: ${post.data.title}`}
+                  width="1200"
+                  height="630"
+                  loading="lazy"
+                />
+              </div>
               <div class="post-body">
                 <p class="post-cat">{post.data.category}</p>
                 <h2 class="post-title">{post.data.title}</h2>

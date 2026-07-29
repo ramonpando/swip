@@ -7,7 +7,7 @@ slug: "con-resguardo-o-sin-dejarlo-para-auto-de-lujo"
 draft: false
 ---
 
-Para un auto de lujo, la modalidad con resguardo suele ser la opción que entrega el monto más alto. La razón es concreta: la [modalidad sin dejarlo](/prestamo-con-garantia-de-auto-sin-dejarlo/) tiene un tope de $400,000 MXN, mientras que la [modalidad con resguardo](/prestamo-con-garantia-de-auto-con-resguardo/) no tiene límite de monto — el techo lo pone el valor real del vehículo. Para un BMW X7, un Porsche 911 o una Range Rover Autobiography, esa diferencia puede ser de cientos de miles de pesos.
+Para un auto de lujo, la modalidad con resguardo suele ser la opción que entrega el monto más alto. La razón es concreta: la [modalidad sin dejarlo](/prestamo-con-garantia-de-auto-sin-dejarlo/) tiene un tope de $400,000 MXN, mientras que la [modalidad con resguardo](/prestamo-con-garantia-de-auto-con-resguardo/) permite solicitar hasta $5,000,000 MXN, sujeto al valor real del vehículo y a aprobación. Para un BMW X7, un Porsche 911 o una Range Rover Autobiography, esa diferencia puede ser de cientos de miles de pesos.
 
 En SWIP hacemos [préstamos con garantía de autos de lujo](/prestamo-con-garantia-de-autos-de-lujo/) con valuación especializada para el segmento premium. Este artículo explica qué determina la elección de modalidad y cuándo tiene sentido cada una.
 
@@ -26,7 +26,7 @@ Eso parece simple, pero hay un matiz importante: para muchos autos de lujo, el v
 
 En la modalidad con resguardo, el vehículo queda en instalaciones de SWIP durante todo el plazo:
 
-- **Sin límite de monto**: para autos de lujo de alto valor, los préstamos pueden superar $1,000,000 MXN
+- **Hasta $5,000,000 MXN**: para autos de lujo de alto valor, sujeto a valuación y aprobación
 - **Cobertura de seguro activa**: el vehículo está asegurado durante todo el plazo en las instalaciones
 - **Instalaciones especializadas**: autos de lujo en entorno controlado, no mezclados con vehículos de menor valor
 - **Proceso discreto**: desde el retiro del vehículo hasta la liquidación, sin exposición innecesaria

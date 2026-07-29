@@ -1,129 +1,39 @@
-# SWIP — Préstamos con Garantía Vehicular en México
+# SWIP
 
-## Qué es SWIP
+> SWIP es un servicio mexicano de préstamos con garantía de vehículos de alto valor. Atiende Ciudad de México y Querétaro, con operaciones sujetas a valuación, documentación y aprobación.
 
-SWIP es una empresa mexicana especializada en préstamos con garantía vehicular para vehículos de alto valor. Opera en Ciudad de México y Querétaro. Ofrece liquidez desde $90,000 hasta $5,000,000 MXN usando el auto como respaldo, sin necesidad de historial crediticio.
+SWIP ofrece liquidez de $90,000 a $5,000,000 MXN usando un vehículo como respaldo, sin venderlo y sin depender del historial de Buró de Crédito. Se especializa en autos de lujo, vehículos blindados, SUVs premium y autos exóticos. También opera un piloto de evaluación de relojes de lujo.
 
-SWIP se diferencia del empeño tradicional por su especialización en autos de lujo (BMW, Mercedes-Benz, Porsche, Audi, Land Rover, Lexus, Cadillac) y vehículos blindados (nivel II hasta NIJ IV+). El proceso completo puede completarse en el mismo día hábil; el depósito se realiza en menos de 24 horas tras la firma del contrato.
+## Servicios principales
 
-## Modalidades de préstamo
+- [Préstamo con garantía de auto](https://swip.mx/prestamo-con-garantia-de-auto/): servicio principal, de $90,000 a $5,000,000 MXN.
+- [Con resguardo](https://swip.mx/prestamo-con-garantia-de-auto-con-resguardo/): el vehículo permanece resguardado durante el préstamo; hasta $5,000,000 MXN.
+- [Sin dejar el auto](https://swip.mx/prestamo-con-garantia-de-auto-sin-dejarlo/): el cliente conserva el uso bajo condiciones y monitoreo GPS; hasta $400,000 MXN.
+- [Autos de lujo](https://swip.mx/prestamo-con-garantia-de-autos-de-lujo/), [autos blindados](https://swip.mx/prestamo-con-garantia-de-autos-blindados/) y [autos exóticos](https://swip.mx/prestamo-con-garantia-de-autos-exoticos/): valuación especializada.
+- [Evaluación de relojes](https://swip.mx/prestamo-con-garantia-de-reloj/): piloto para Rolex, Cartier y Omega; cada caso se revisa individualmente.
 
-### Con Resguardo
-El vehículo queda en instalaciones seguras con acceso controlado, seguro activo y monitoreo permanente. Esta modalidad no tiene límite de monto — el préstamo se determina en función del valor real del vehículo. Es la opción preferida para operaciones mayores a $400,000 MXN.
+## Datos operativos
 
-### Sin Resguardo
-El cliente conserva el uso del vehículo con monitoreo GPS activo durante el plazo del préstamo. El monto máximo es de $400,000 MXN. Requiere seguro vehicular vigente.
+- Cobertura: Ciudad de México, Zona Metropolitana y Querétaro.
+- Proceso: contacto, estimado inicial, valuación física, oferta formal, contrato y depósito.
+- Tiempo comunicado: depósito en menos de 24 horas después de firma y validación.
+- Requisitos habituales: identificación, factura original, comprobante de domicilio y tarjeta de circulación.
+- Todos los montos, tasas, plazos y aceptaciones están sujetos a revisión y aprobación.
+- Contacto oficial: [cotización por WhatsApp](https://swip.mx/cotizar/) y teléfono +52 55 5405 5089.
 
-## Especialidades
+## Fuentes canónicas
 
-### Autos de lujo
-SWIP valúa correctamente vehículos premium usando referencias especializadas para el segmento, no tablas genéricas. Un BMW Serie 7, Porsche Panamera, Mercedes-Benz GLE, Range Rover Autobiography o Cadillac Escalade puede generar préstamos significativamente más altos con SWIP que con empresas de empeño convencionales. Los montos pueden superar $1,000,000 MXN para vehículos de año reciente y buen kilometraje.
+- [Cómo funciona](https://swip.mx/como-funciona/)
+- [Requisitos](https://swip.mx/requisitos/)
+- [Vehículos aceptados](https://swip.mx/vehiculos-que-aceptamos/)
+- [Preguntas frecuentes](https://swip.mx/preguntas-frecuentes/)
+- [Cobertura en CDMX](https://swip.mx/prestamo-con-garantia-de-auto-en-cdmx/)
+- [Cobertura en Querétaro](https://swip.mx/prestamo-con-garantia-de-auto-en-queretaro/)
+- [Metodología de valuación](https://swip.mx/blog/como-valuamos-un-auto-proceso-real/)
+- [Autor y responsable editorial](https://swip.mx/autor/ramon-pando/)
+- [Blog](https://swip.mx/blog/)
 
-### Autos exóticos y superdeportivos
-SWIP también acepta vehículos de marcas como Ferrari, Lamborghini, Porsche 911, Bentley, Rolls-Royce y McLaren. Estos vehículos requieren valuación especializada en persona. Los montos para autos exóticos se determinan caso por caso, considerando el valor de mercado real, edición, configuración y condición.
+## Más información
 
-### Vehículos blindados
-El blindaje certificado representa valor adicional comprobable. SWIP valúa el vehículo base más el blindaje como componente separado con depreciación real. Acepta niveles II hasta NIJ IV y superiores instalados por armadoras certificadas (Solsegu, Epel y equivalentes).
-
-## Proceso
-
-1. Contacto por WhatsApp (+52 55 5405 5089) o desde swip.mx/cotizar/ para abrir WhatsApp
-2. Estimado inicial en minutos con datos básicos del vehículo
-3. Valuación física en domicilio del cliente o en instalaciones SWIP
-4. Oferta formal con monto, tasa y plazo
-5. Firma de contrato
-6. Depósito en cuenta bancaria en menos de 24 horas
-
-## Requisitos
-
-- Identificación oficial vigente
-- Factura original del vehículo a nombre del solicitante
-- Comprobante de domicilio
-- Tarjeta de circulación
-- No se requiere historial crediticio ni buró de crédito
-
-## Rangos de monto orientativos
-
-- Autos populares de año reciente: desde $90,000 MXN
-- SUVs premium (BMW X5, Audi Q7, Volvo XC90): $300,000–$800,000 MXN
-- Autos de lujo de alto valor (Porsche, Range Rover, Mercedes Clase S): $500,000–$2,000,000 MXN
-- Vehículos blindados (Suburban blindada, Tahoe NIJ III): $600,000–$3,000,000 MXN
-- Autos exóticos (Ferrari, Lamborghini, Bentley): valuación individual, sin límite
-
-## Cobertura
-
-- Ciudad de México (CDMX) — Zona Metropolitana del Valle de México
-- Querétaro
-
-## Contacto
-
-- WhatsApp: +52 55 5405 5089
-- Web: https://swip.mx
-- Cotizar por WhatsApp: https://swip.mx/cotizar/
-
-## Páginas principales
-
-- Inicio: https://swip.mx/
-- Préstamo con garantía de auto: https://swip.mx/prestamo-con-garantia-de-auto/
-- Préstamo con garantía de auto en CDMX: https://swip.mx/prestamo-con-garantia-de-auto-en-cdmx/
-- Préstamo con garantía de auto en Querétaro: https://swip.mx/prestamo-con-garantia-de-auto-en-queretaro/
-- Modalidad con resguardo: https://swip.mx/prestamo-con-garantia-de-auto-con-resguardo/
-- Modalidad sin resguardo: https://swip.mx/prestamo-con-garantia-de-auto-sin-dejarlo/
-- Autos de lujo: https://swip.mx/prestamo-con-garantia-de-autos-de-lujo/
-- Autos blindados: https://swip.mx/prestamo-con-garantia-de-autos-blindados/
-- Cómo funciona: https://swip.mx/como-funciona/
-- Requisitos: https://swip.mx/requisitos/
-- Vehículos que aceptamos: https://swip.mx/vehiculos-que-aceptamos/
-- Preguntas frecuentes: https://swip.mx/preguntas-frecuentes/
-- Blog: https://swip.mx/blog/
-- Contacto: https://swip.mx/contacto/
-
-## Cluster editorial: Autos Exóticos
-
-Artículos del blog sobre préstamos con garantía de autos exóticos:
-
-- ¿Cuánto me prestan por un Ferrari o Lamborghini?: https://swip.mx/blog/cuanto-me-prestan-por-un-ferrari-o-lamborghini/
-- ¿Cómo se valúa un auto exótico?: https://swip.mx/blog/como-se-valua-un-auto-exotico/
-- ¿Qué baja la valuación de un auto exótico o de lujo?: https://swip.mx/blog/que-baja-la-valuacion-de-un-auto-exotico-o-de-lujo/
-- ¿Cuánto me prestan por un Ferrari 488 o F8?: https://swip.mx/blog/cuanto-me-prestan-por-un-ferrari-488-o-f8/
-- ¿Cuánto me prestan por un Lamborghini Urus?: https://swip.mx/blog/cuanto-me-prestan-por-un-lamborghini-urus/
-- ¿Cuánto me prestan por un Porsche 911?: https://swip.mx/blog/cuanto-me-prestan-por-un-porsche-911/
-
-## Cluster editorial: Autos Blindados
-
-Artículos del blog sobre préstamos con garantía de autos blindados:
-
-- ¿Cuánto me prestan por un auto blindado?: https://swip.mx/blog/cuanto-me-prestan-por-un-auto-blindado/
-- ¿Cómo se valúa un auto blindado?: https://swip.mx/blog/como-se-valua-un-auto-blindado/
-- ¿Qué documentos necesito para un auto blindado?: https://swip.mx/blog/documentos-para-empenar-o-dejar-en-garantia-un-auto-blindado/
-- ¿Puedo seguir usando mi auto blindado durante el préstamo?: https://swip.mx/blog/puedo-seguir-usando-mi-auto-blindado-durante-el-prestamo/
-- ¿Cuánto me prestan por una Suburban blindada?: https://swip.mx/blog/cuanto-me-prestan-por-una-suburban-blindada/
-- ¿Cuánto me prestan por una Tahoe blindada?: https://swip.mx/blog/cuanto-me-prestan-por-una-tahoe-blindada/
-- ¿Cuánto me prestan por una Escalade blindada?: https://swip.mx/blog/cuanto-me-prestan-por-una-escalade-blindada/
-
-## Cluster editorial: Autos de Lujo
-
-Artículos del blog sobre préstamos con garantía de autos de lujo:
-
-- Empeño de autos de lujo vs préstamo con garantía: https://swip.mx/blog/empeno-de-autos-de-lujo-vs-prestamo-con-garantia/
-- Con resguardo o sin dejarlo para un auto de lujo: https://swip.mx/blog/con-resguardo-o-sin-dejarlo-para-auto-de-lujo/
-- ¿Cuánto me prestan por una Range Rover?: https://swip.mx/blog/cuanto-me-prestan-por-una-range-rover/
-- ¿Cuánto me prestan por una BMW X7?: https://swip.mx/blog/cuanto-me-prestan-por-una-bmw-x7/
-- ¿Cuánto me prestan por una Mercedes G63?: https://swip.mx/blog/cuanto-me-prestan-por-una-mercedes-g63/
-
-## Cluster editorial: Proceso y operación
-
-Artículos del blog sobre el proceso, tiempos y criterios de SWIP:
-
-- ¿Cuánto tarda el proceso para un auto premium, blindado o exótico?: https://swip.mx/blog/cuanto-tarda-el-proceso-para-auto-premium-blindado-exotico/
-- ¿Qué vehículos premium aplican para un préstamo con garantía?: https://swip.mx/blog/que-vehiculos-premium-aplican-para-prestamo-con-garantia/
-- ¿Puedo empeñar un auto de lujo si aún lo estoy pagando?: https://swip.mx/blog/puedo-empenar-un-auto-de-lujo-si-aun-lo-estoy-pagando/
-- ¿Qué pasa si no pago un préstamo con garantía de auto?: https://swip.mx/blog/que-pasa-si-no-pago-un-prestamo-con-garantia-de-auto/
-- ¿Qué tan recomendable es empeñar un auto de lujo o blindado?: https://swip.mx/blog/que-tan-recomendable-es-empenar-un-auto-de-lujo-o-blindado/
-
-## Cluster editorial: Cobertura local
-
-Artículos del blog sobre cobertura en CDMX y Querétaro:
-
-- ¿Dónde valúan autos de lujo a domicilio en CDMX?: https://swip.mx/blog/donde-valuan-autos-de-lujo-a-domicilio-en-cdmx/
-- ¿Dónde valúan autos blindados en Querétaro?: https://swip.mx/blog/donde-valuan-autos-blindados-en-queretaro/
+- [Contexto ampliado para modelos de lenguaje](https://swip.mx/llms-full.txt)
+- [Inicio](https://swip.mx/)

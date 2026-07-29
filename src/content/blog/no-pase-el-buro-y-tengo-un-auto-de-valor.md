@@ -50,7 +50,7 @@ Si tu vehículo entra en alguna de estas categorías, el buró es irrelevante pa
 | Auto de lujo (Porsche Panamera, Mercedes S) | $500,000 – $1,500,000 MXN |
 | Range Rover, BMW X7, Suburban | $600,000 – $2,000,000 MXN |
 | Auto blindado (NIJ III/IV) | $700,000 – $2,500,000 MXN |
-| Auto exótico (Ferrari, Lamborghini, Bentley) | $1,500,000 – $5,000,000+ MXN |
+| Auto exótico (Ferrari, Lamborghini, Bentley) | $1,500,000 – $5,000,000 MXN |
 
 El monto exacto se determina en la valuación física. El estimado inicial lo tienes en minutos.
 
@@ -58,7 +58,7 @@ El monto exacto se determina en la valuación física. El estimado inicial lo ti
 
 ## Modalidades disponibles
 
-**[Con resguardo](/prestamo-con-garantia-de-auto-con-resguardo/):** el auto queda en instalaciones seguras. Sin límite de monto. Es la modalidad que permite acceder a las mejores condiciones.
+**[Con resguardo](/prestamo-con-garantia-de-auto-con-resguardo/):** el auto queda en instalaciones seguras. Permite solicitar hasta $5,000,000 MXN y acceder a las condiciones aplicables al caso.
 
 **[Sin resguardo](/prestamo-con-garantia-de-auto-sin-dejarlo/):** conservas el auto con monitoreo GPS. Monto máximo $400,000 MXN.
 

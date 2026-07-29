@@ -11,6 +11,8 @@ export interface Props {
   category: string;
   slug: string;
   image?: string;
+  seoTitle?: string;
+  seoDescription?: string;
   relatedPosts?: Array<{
     title: string;
     description: string;
@@ -27,6 +29,8 @@ const {
   category,
   slug,
   image,
+  seoTitle,
+  seoDescription,
   relatedPosts = [],
 } = Astro.props;
 
@@ -34,6 +38,21 @@ const isWatchArticle = category.toLocaleLowerCase('es-MX').includes('relojes');
 
 const canonical = `https://swip.mx/blog/${slug}/`;
 const blogIndex = 'https://swip.mx/blog/';
+const defaultArticleImage = `https://swip.mx/assets/blog/${slug}.jpg`;
+const articleImage = image ?? defaultArticleImage;
+
+const truncateMeta = (value: string, maxLength: number) => {
+  if (value.length <= maxLength) return value;
+  const shortened = value.slice(0, maxLength - 1);
+  const lastSpace = shortened.lastIndexOf(' ');
+  return `${shortened.slice(0, lastSpace > 90 ? lastSpace : maxLength - 1).trim()}…`;
+};
+
+const brandedTitle = `${seoTitle ?? title} | SWIP`;
+const metaTitle = brandedTitle.length <= 65
+  ? brandedTitle
+  : truncateMeta(seoTitle ?? title, 65);
+const metaDescription = seoDescription ?? truncateMeta(description, 160);
 const dateFormatted = new Date(date).toLocaleDateString('es-MX', {
   year: 'numeric',
   month: 'long',
@@ -58,10 +77,10 @@ const articleSchema = {
   "mainEntityOfPage": canonical,
   "author": {
     "@type": "Person",
-    "@id": "https://swip.mx/#ramon-pando",
-    "name": "Ramon Pando",
+    "@id": "https://swip.mx/autor/ramon-pando/#person",
+    "name": "Ramon Pando Rodriguez",
     "jobTitle": "Fundador y Director General",
-    "url": "https://swip.mx",
+    "url": "https://swip.mx/autor/ramon-pando/",
     "worksFor": {
       "@id": "https://swip.mx/#organization",
     },
@@ -75,7 +94,12 @@ const articleSchema = {
       "url": "https://swip.mx/assets/logos/logo-light.svg",
     },
   },
-  ...(image ? { image } : {}),
+  "image": {
+    "@type": "ImageObject",
+    "url": articleImage,
+    "width": 1200,
+    "height": 630,
+  },
 };
 
 const WHATSAPP = 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20cotizar%20un%20pr%C3%A9stamo%20con%20garant%C3%ADa%20de%20mi%20veh%C3%ADculo';
@@ -108,10 +132,10 @@ const breadcrumbSchema = {
 ---
 
 <Base
-  title={`${title} | SWIP`}
-  description={description}
+  title={metaTitle}
+  description={metaDescription}
   canonical={canonical}
-  ogImage={image}
+  ogImage={articleImage}
   ogType="article"
   publishedTime={date}
   modifiedTime={updatedDate}
@@ -163,11 +187,36 @@ const breadcrumbSchema = {
       <div class="article-inner author-inner">
         <div class="author-card">
           <div class="author-text">
-            <p class="author-name">Ramon Pando</p>
+            <p class="author-name"><a href="/autor/ramon-pando/">Ramon Pando Rodriguez</a></p>
             <p class="author-role">Fundador y Director General, SWIP</p>
-            <p class="author-bio">Fundó SWIP en 2023 con el objetivo de ofrecer liquidez real a propietarios de vehículos de alto valor en México. Más de 10 años en estructuración de activos y financiamiento alternativo. Opera personalmente cada valuación de activos complejos — blindados, exóticos y vehículos de producción limitada.</p>
+            <p class="author-bio">Fundó SWIP en 2023 para estructurar liquidez respaldada por vehículos de alto valor. Participa directamente en la evaluación de activos complejos, incluidos blindados, exóticos y vehículos de producción limitada.</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="article-sources" aria-labelledby="sources-title">
+      <div class="article-inner">
+        <p class="article-category">METODOLOGÍA Y FUENTES</p>
+        <h2 id="sources-title">Cómo verificamos la información.</h2>
+        <p>
+          Los rangos publicados son estimaciones editoriales de SWIP basadas en experiencia operativa,
+          referencias observables de mercado, versión, condición, documentación y liquidez del activo.
+          No constituyen una oferta: el monto final se determina después de la revisión física y documental.
+        </p>
+        {isWatchArticle ? (
+          <ul>
+            <li><a href="https://www.rolex.com/es-es/buying-a-rolex/rolex-certified-pre-owned" target="_blank" rel="noopener noreferrer">Rolex Certified Pre-Owned: autenticidad y certificación oficial</a></li>
+            <li><a href="https://www.rolex.com/es/watch-care-and-service/faq" target="_blank" rel="noopener noreferrer">Rolex: mantenimiento, autenticidad y distribuidores oficiales</a></li>
+            <li><a href="https://www.cartier.com/es-es/warranty-and-authenticity" target="_blank" rel="noopener noreferrer">Cartier: garantía y autenticidad</a></li>
+          </ul>
+        ) : (
+          <ul>
+            <li><a href="https://www.gob.mx/sesnsp/acciones-y-programas/registro-publico-vehicular-repuve-168639" target="_blank" rel="noopener noreferrer">REPUVE: situación e información oficial del vehículo</a></li>
+            <li><a href="https://rcal.profeco.gob.mx/contratostipo/MUTUO%20CON%20INTERES%20Y%20GARANTIA%20PRENDARIA%20%28PROFECO%29.pdf" target="_blank" rel="noopener noreferrer">PROFECO: contrato tipo de mutuo con interés y garantía prendaria</a></li>
+            <li><a href="/blog/como-valuamos-un-auto-proceso-real/">Metodología operativa de valuación de SWIP</a></li>
+          </ul>
+        )}
       </div>
     </section>
 
@@ -354,6 +403,38 @@ const breadcrumbSchema = {
 
   .article-author {
     border-bottom: 1px solid var(--line);
+  }
+
+  .article-sources {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .article-sources h2 {
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0 0 20px;
+  }
+
+  .article-sources p,
+  .article-sources li {
+    color: rgba(168, 168, 168, 0.72);
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .article-sources ul {
+    margin: 24px 0 0 20px;
+  }
+
+  .article-sources li {
+    margin-bottom: 8px;
+  }
+
+  .article-sources a,
+  .author-name a {
+    color: var(--white);
+    text-underline-offset: 3px;
   }
 
   .related-inner {

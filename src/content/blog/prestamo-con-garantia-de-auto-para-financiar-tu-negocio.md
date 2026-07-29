@@ -73,7 +73,7 @@ El monto depende del valor comercial de tu vehículo, no de tus ingresos ni hist
 | Auto de lujo (Porsche Panamera, Mercedes Clase S) | $500,000 – $1,500,000 MXN |
 | Range Rover, BMW X7, Suburban | $600,000 – $2,000,000 MXN |
 | Auto blindado | $700,000 – $2,500,000 MXN |
-| Auto exótico (Ferrari, Lamborghini, Bentley) | $1,500,000 – $5,000,000+ MXN |
+| Auto exótico (Ferrari, Lamborghini, Bentley) | $1,500,000 – $5,000,000 MXN |
 
 Si necesitas capital de trabajo serio, un solo auto puede cubrirlo.
 

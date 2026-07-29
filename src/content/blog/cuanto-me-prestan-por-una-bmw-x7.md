@@ -60,7 +60,7 @@ La X7 tuvo un rediseño importante en el año 2023 (G07 facelift). La diferencia
 
 ## Modalidad para una BMW X7
 
-Para X7 de año reciente con valor superior a $1,000,000 MXN, la [modalidad con resguardo](/prestamo-con-garantia-de-auto-con-resguardo/) es la que permite obtener el monto real del activo. Sin límite de monto, instalaciones para vehículos premium y seguro activo.
+Para X7 de año reciente con valor superior a $1,000,000 MXN, la [modalidad con resguardo](/prestamo-con-garantia-de-auto-con-resguardo/) permite solicitar los montos más altos, hasta $5,000,000 MXN, con instalaciones para vehículos premium y seguro activo.
 
 Si el monto que necesitas está por debajo de $400,000 MXN y quieres conservar el uso del vehículo, la [modalidad sin resguardo](/prestamo-con-garantia-de-auto-sin-dejarlo/) puede evaluarse. Para decidir entre modalidades: [con resguardo o sin dejarlo para un auto de lujo](/blog/con-resguardo-o-sin-dejarlo-para-auto-de-lujo/).
 

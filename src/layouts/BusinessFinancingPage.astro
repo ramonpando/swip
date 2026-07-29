@@ -1,0 +1,527 @@
+---
+import Page from './Page.astro';
+import FAQ from '../components/FAQ.astro';
+import RelatedLinks from '../components/RelatedLinks.astro';
+
+interface Card {
+  title: string;
+  body: string;
+}
+
+interface LinkCard {
+  href: string;
+  label: string;
+  description: string;
+}
+
+interface FAQItem {
+  q: string;
+  a: string;
+}
+
+export interface Props {
+  title: string;
+  description: string;
+  canonicalPath: string;
+  eyebrow: string;
+  heading: string;
+  heroBody: string;
+  sectionEyebrow: string;
+  sectionTitle: string;
+  sectionBody: string[];
+  useCases: Card[];
+  qualificationTitle: string;
+  qualifications: string[];
+  steps: Card[];
+  guides: LinkCard[];
+  related: LinkCard[];
+  faqs: FAQItem[];
+  ctaTitle: string;
+  ctaBody: string;
+  whatsappText: string;
+  breadcrumbName: string;
+  breadcrumbParent?: { name: string; path: string };
+}
+
+const {
+  title,
+  description,
+  canonicalPath,
+  eyebrow,
+  heading,
+  heroBody,
+  sectionEyebrow,
+  sectionTitle,
+  sectionBody,
+  useCases,
+  qualificationTitle,
+  qualifications,
+  steps,
+  guides,
+  related,
+  faqs,
+  ctaTitle,
+  ctaBody,
+  whatsappText,
+  breadcrumbName,
+  breadcrumbParent,
+} = Astro.props;
+
+const canonical = `https://swip.mx${canonicalPath}`;
+const whatsapp = `https://wa.me/5215554055089?text=${encodeURIComponent(whatsappText)}`;
+const breadcrumbItems = [
+  {
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Inicio",
+    "item": "https://swip.mx/",
+  },
+  ...(breadcrumbParent ? [{
+    "@type": "ListItem",
+    "position": 2,
+    "name": breadcrumbParent.name,
+    "item": `https://swip.mx${breadcrumbParent.path}`,
+  }] : []),
+  {
+    "@type": "ListItem",
+    "position": breadcrumbParent ? 3 : 2,
+    "name": breadcrumbName,
+    "item": canonical,
+  },
+];
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${canonical}#service`,
+    "name": breadcrumbName,
+    "description": description,
+    "url": canonical,
+    "provider": { "@id": "https://swip.mx/#organization" },
+    "areaServed": ["Ciudad de México", "Querétaro"],
+    "serviceType": "Liquidez empresarial con garantía vehicular",
+    "category": "Capital de trabajo respaldado por inventario vehicular",
+    "audience": {
+      "@type": "BusinessAudience",
+      "audienceType": "Empresas propietarias de inventario o flotillas vehiculares",
+    },
+    "availableChannel": {
+      "@type": "ServiceChannel",
+      "serviceUrl": canonical,
+    },
+    "mainEntityOfPage": canonical,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": breadcrumbItems,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map((faq) => ({
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.a,
+      },
+    })),
+  },
+];
+---
+
+<Page title={title} description={description} canonical={canonical} schema={schema}>
+  <section class="business-hero">
+    <div class="hero-inner">
+      <nav class="breadcrumbs" aria-label="Ruta de navegación">
+        <a href="/">Inicio</a>
+        <span aria-hidden="true">/</span>
+        {breadcrumbParent && (
+          <>
+            <a href={breadcrumbParent.path}>{breadcrumbParent.name}</a>
+            <span aria-hidden="true">/</span>
+          </>
+        )}
+        <span aria-current="page">{breadcrumbName}</span>
+      </nav>
+      <p class="eyebrow">{eyebrow}</p>
+      <h1>{heading}</h1>
+      <p class="hero-body">{heroBody}</p>
+      <div class="hero-actions">
+        <a href={whatsapp} target="_blank" rel="noopener" class="btn-primary">Evaluar mi inventario</a>
+        <a href="/como-funciona/" class="btn-ghost">Conocer el proceso →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="section-inner two-col">
+      <div>
+        <p class="section-eyebrow">{sectionEyebrow}</p>
+        <h2>{sectionTitle}</h2>
+      </div>
+      <div class="section-copy">
+        {sectionBody.map((paragraph) => <p>{paragraph}</p>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">USOS DEL CAPITAL</p>
+      <h2>Capital para mover la operación.</h2>
+      <div class="card-grid">
+        {useCases.map((item) => (
+          <article class="info-card">
+            <h3>{item.title}</h3>
+            <p>{item.body}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="section-inner two-col">
+      <div>
+        <p class="section-eyebrow">QUÉ REVISAMOS</p>
+        <h2>{qualificationTitle}</h2>
+      </div>
+      <ul class="check-list">
+        {qualifications.map((item) => <li>{item}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">PROCESO EMPRESARIAL</p>
+      <h2>Una revisión concreta, activo por activo.</h2>
+      <div class="steps-grid">
+        {steps.map((step, index) => (
+          <article class="step-card">
+            <span>{String(index + 1).padStart(2, '0')}</span>
+            <h3>{step.title}</h3>
+            <p>{step.body}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">GUÍAS PARA TOMAR LA DECISIÓN</p>
+      <h2>Profundiza antes de solicitar una evaluación.</h2>
+      <div class="guide-grid">
+        {guides.map((guide) => (
+          <a href={guide.href} class="guide-card">
+            <span>{guide.label}</span>
+            <h3>{guide.description}</h3>
+            <p>Leer guía →</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <RelatedLinks
+    eyebrow="CLÚSTER DE CAPITAL EMPRESARIAL"
+    title="Conecta tu necesidad con la estructura correcta."
+    items={related}
+  />
+
+  <FAQ items={faqs} eyebrow="PREGUNTAS DE EMPRESAS" />
+
+  <section class="final-cta">
+    <div class="cta-inner">
+      <p class="section-eyebrow">EVALUACIÓN CONFIDENCIAL</p>
+      <h2>{ctaTitle}</h2>
+      <p>{ctaBody}</p>
+      <a href={whatsapp} target="_blank" rel="noopener" class="btn-primary">Revisar mi caso por WhatsApp</a>
+    </div>
+  </section>
+</Page>
+
+<style>
+  .business-hero,
+  .content-section,
+  .final-cta {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .hero-inner,
+  .section-inner,
+  .cta-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 96px 64px;
+  }
+
+  .hero-inner {
+    padding-top: 112px;
+    padding-bottom: 96px;
+  }
+
+  .eyebrow,
+  .section-eyebrow {
+    color: rgba(168, 168, 168, 0.42);
+    font-size: 9px;
+    letter-spacing: 0.42em;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+  }
+
+  .breadcrumbs {
+    align-items: center;
+    color: rgba(168, 168, 168, 0.38);
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+    gap: 9px;
+    letter-spacing: 0.12em;
+    margin-bottom: 34px;
+    text-transform: uppercase;
+  }
+
+  .breadcrumbs a {
+    color: rgba(168, 168, 168, 0.62);
+    text-decoration: none;
+  }
+
+  .breadcrumbs a:hover {
+    color: var(--white);
+  }
+
+  h1 {
+    color: var(--white);
+    font-size: clamp(42px, 6vw, 78px);
+    font-weight: 300;
+    letter-spacing: -0.035em;
+    line-height: 0.98;
+    max-width: 920px;
+    margin-bottom: 28px;
+  }
+
+  h2 {
+    color: var(--white);
+    font-size: clamp(30px, 3.5vw, 48px);
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    line-height: 1.05;
+  }
+
+  .hero-body {
+    color: rgba(168, 168, 168, 0.76);
+    font-size: 16px;
+    line-height: 1.85;
+    max-width: 700px;
+    margin-bottom: 36px;
+  }
+
+  .hero-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 22px;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 16px 36px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    color: var(--white);
+    font-family: inherit;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s;
+  }
+
+  .btn-primary:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.65);
+  }
+
+  .btn-ghost {
+    color: rgba(168, 168, 168, 0.62);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .two-col {
+    display: grid;
+    grid-template-columns: 0.9fr 1.2fr;
+    gap: 88px;
+    align-items: start;
+  }
+
+  .section-copy p {
+    color: rgba(168, 168, 168, 0.72);
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+  }
+
+  .card-grid,
+  .steps-grid,
+  .guide-grid {
+    display: grid;
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    margin-top: 52px;
+  }
+
+  .card-grid,
+  .steps-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .guide-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .info-card,
+  .step-card,
+  .guide-card {
+    background: var(--black);
+    padding: 34px 28px;
+  }
+
+  .info-card h3,
+  .step-card h3,
+  .guide-card h3 {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.45;
+    margin-bottom: 12px;
+  }
+
+  .info-card p,
+  .step-card p {
+    color: rgba(168, 168, 168, 0.62);
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  .step-card span,
+  .guide-card > span {
+    color: rgba(168, 168, 168, 0.32);
+    display: block;
+    font-size: 9px;
+    letter-spacing: 0.34em;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+  }
+
+  .guide-card {
+    display: block;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+
+  .guide-card:hover {
+    background: rgba(255, 255, 255, 0.025);
+  }
+
+  .guide-card p {
+    color: rgba(168, 168, 168, 0.46);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    margin-top: 22px;
+    text-transform: uppercase;
+  }
+
+  .check-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .check-list li {
+    border-bottom: 1px solid var(--line);
+    color: rgba(168, 168, 168, 0.72);
+    font-size: 14px;
+    line-height: 1.7;
+    padding: 18px 0 18px 28px;
+    position: relative;
+  }
+
+  .check-list li::before {
+    color: var(--green);
+    content: '—';
+    left: 0;
+    position: absolute;
+  }
+
+  .cta-inner {
+    text-align: center;
+  }
+
+  .cta-inner h2 {
+    margin: 0 auto 20px;
+    max-width: 720px;
+  }
+
+  .cta-inner > p:not(.section-eyebrow) {
+    color: rgba(168, 168, 168, 0.65);
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0 auto 36px;
+    max-width: 620px;
+  }
+
+  @media (max-width: 1024px) {
+    .two-col {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    .card-grid,
+    .steps-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .guide-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-inner,
+    .section-inner,
+    .cta-inner {
+      padding: 68px 24px;
+    }
+
+    .hero-actions {
+      align-items: stretch;
+      flex-direction: column;
+    }
+
+    .btn-primary {
+      width: 100%;
+    }
+
+    .card-grid,
+    .steps-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .info-card,
+    .step-card,
+    .guide-card {
+      padding: 28px 22px;
+    }
+  }
+</style>

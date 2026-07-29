@@ -2,6 +2,7 @@
 title: "¿Qué documentos necesito para un préstamo con garantía de auto blindado?"
 description: "Para un préstamo con garantía de auto blindado necesitas los documentos del vehículo base más el certificado de blindaje. Conoce qué necesitas, qué pasa si no tienes el certificado y qué acelera el proceso."
 date: "2026-05-08"
+updatedDate: "2026-07-29"
 category: "Autos Blindados"
 slug: "documentos-para-empenar-o-dejar-en-garantia-un-auto-blindado"
 draft: false
@@ -10,6 +11,8 @@ draft: false
 Los documentos para un [préstamo con garantía de auto blindado](/prestamo-con-garantia-de-autos-blindados/) son los mismos que para cualquier vehículo, más un documento adicional que cambia significativamente la valuación: el **certificado de blindaje**. Sin él, el componente de blindaje no puede acreditarse y el monto ofrecido solo refleja el valor del auto base.
 
 Tener el expediente completo antes de la valuación acelera el proceso y evita que la oferta quede por debajo del valor real del activo.
+
+Para una empresa que presenta varias unidades, primero debe separarse el inventario propio de los vehículos recibidos de clientes. La guía de [autos propios vs. unidades en consignación](/blog/autos-propios-vs-consignacion-como-garantia/) explica esa diferencia.
 
 ## Documentos del vehículo
 

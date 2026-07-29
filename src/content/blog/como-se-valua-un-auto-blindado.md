@@ -2,6 +2,7 @@
 title: "¿Cómo se valúa un auto blindado?"
 description: "La valuación de un auto blindado evalúa dos componentes por separado: el vehículo base y el blindaje. Conoce qué revisa el valuador, qué documentos cambian el resultado y qué errores reducen la oferta."
 date: "2026-05-08"
+updatedDate: "2026-07-29"
 category: "Autos Blindados"
 slug: "como-se-valua-un-auto-blindado"
 draft: false
@@ -10,6 +11,8 @@ draft: false
 Un auto blindado no se valúa como un auto convencional. El proceso correcto evalúa dos componentes por separado: el vehículo base con sus condiciones propias, y el blindaje como un activo adicional con criterios distintos. Cuando el valuador no sabe hacer esa separación, el resultado suele ser una oferta que no refleja el valor real del vehículo.
 
 Para un [préstamo con garantía de auto blindado](/prestamo-con-garantia-de-autos-blindados/) en SWIP, la valuación incluye revisión física del vehículo y análisis documental del blindaje. Los dos componentes deben estar bien acreditados para que el monto refleje el activo completo.
+
+Si la unidad forma parte del inventario propio de una empresa de blindaje, consulta también [cómo financiar una blindadora con vehículos propios](/blog/como-financiar-una-empresa-blindadora/) y la página de [capital de trabajo para blindadoras](/capital-de-trabajo-para-blindadoras/).
 
 ## Qué revisa el valuador
 

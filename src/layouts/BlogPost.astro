@@ -35,6 +35,7 @@ const {
 } = Astro.props;
 
 const isWatchArticle = category.toLocaleLowerCase('es-MX').includes('relojes');
+const isBusinessArticle = category.toLocaleLowerCase('es-MX').includes('capital empresarial');
 
 const canonical = `https://swip.mx/blog/${slug}/`;
 const blogIndex = 'https://swip.mx/blog/';
@@ -74,6 +75,26 @@ const articleSchema = {
   ...(updatedDate ? { "dateModified": updatedDate } : {}),
   "inLanguage": "es-MX",
   "articleSection": category,
+  "isPartOf": {
+    "@id": `${blogIndex}#webpage`,
+  },
+  ...(isBusinessArticle ? {
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "Capital de trabajo",
+      },
+      {
+        "@type": "Thing",
+        "name": "Inventario vehicular",
+      },
+      {
+        "@type": "Thing",
+        "name": "Financiamiento empresarial",
+      },
+    ],
+    "keywords": "capital de trabajo, inventario vehicular, financiamiento empresarial, garantía vehicular",
+  } : {}),
   "mainEntityOfPage": canonical,
   "author": {
     "@type": "Person",
@@ -104,6 +125,7 @@ const articleSchema = {
 
 const WHATSAPP = 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20cotizar%20un%20pr%C3%A9stamo%20con%20garant%C3%ADa%20de%20mi%20veh%C3%ADculo';
 const WATCH_WHATSAPP = 'https://wa.me/5215542317035?text=Hola%20Ramon%2C%20le%C3%AD%20un%20art%C3%ADculo%20de%20relojes%20en%20SWIP%20y%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20privada';
+const BUSINESS_WHATSAPP = 'https://wa.me/5215554055089?text=Hola%2C%20le%C3%AD%20las%20gu%C3%ADas%20de%20capital%20empresarial%20de%20SWIP%20y%20quiero%20evaluar%20inventario%20vehicular%20propio';
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -210,6 +232,13 @@ const breadcrumbSchema = {
             <li><a href="https://www.rolex.com/es/watch-care-and-service/faq" target="_blank" rel="noopener noreferrer">Rolex: mantenimiento, autenticidad y distribuidores oficiales</a></li>
             <li><a href="https://www.cartier.com/es-es/warranty-and-authenticity" target="_blank" rel="noopener noreferrer">Cartier: garantía y autenticidad</a></li>
           </ul>
+        ) : isBusinessArticle ? (
+          <ul>
+            <li><a href="https://www.gob.mx/nafin/acciones-y-programas/financiamiento-para-distribuidores-automotrices-plan-piso" target="_blank" rel="noopener noreferrer">NAFIN: definición oficial de financiamiento Plan Piso</a></li>
+            <li><a href="https://www.gob.mx/sesnsp/acciones-y-programas/registro-publico-vehicular-repuve-168639" target="_blank" rel="noopener noreferrer">REPUVE: situación e información oficial del vehículo</a></li>
+            <li><a href="/financiamiento-con-inventario-vehicular/">Criterios empresariales de inventario vehicular de SWIP</a></li>
+            <li><a href="/blog/como-valuamos-un-auto-proceso-real/">Metodología operativa de valuación de SWIP</a></li>
+          </ul>
         ) : (
           <ul>
             <li><a href="https://www.gob.mx/sesnsp/acciones-y-programas/registro-publico-vehicular-repuve-168639" target="_blank" rel="noopener noreferrer">REPUVE: situación e información oficial del vehículo</a></li>
@@ -234,6 +263,19 @@ const breadcrumbSchema = {
             <div class="cta-actions">
               <a href={WATCH_WHATSAPP} target="_blank" rel="noopener" data-preserve-message class="btn-primary">Evaluar mi reloj</a>
               <a href="/prestamo-con-garantia-de-reloj/" class="btn-ghost">Ver cómo funciona →</a>
+            </div>
+          </>
+        ) : isBusinessArticle ? (
+          <>
+            <h2 class="cta-title">Evalúa el inventario propio de tu empresa.</h2>
+            <p class="cta-body">
+              Comparte una lista inicial de unidades, quién acredita la propiedad
+              y cuánto capital necesita la operación. SWIP filtrará primero el
+              expediente antes de programar las valuaciones físicas.
+            </p>
+            <div class="cta-actions">
+              <a href={BUSINESS_WHATSAPP} target="_blank" rel="noopener" class="btn-primary">Evaluar mi inventario</a>
+              <a href="/financiamiento-con-inventario-vehicular/" class="btn-ghost">Ver el servicio empresarial →</a>
             </div>
           </>
         ) : (

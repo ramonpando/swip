@@ -34,6 +34,25 @@ Páginas canónicas:
 - [Requisitos](https://swip.mx/requisitos/)
 - [Preguntas frecuentes](https://swip.mx/preguntas-frecuentes/)
 
+## Capital empresarial respaldado por inventario vehicular
+
+SWIP puede evaluar varias unidades propias de un lote, agencia, blindadora o empresa para estructurar capital de trabajo. Esta propuesta parte de inventario existente y verificable; no debe describirse automáticamente como plan piso ni como una línea revolvente para adquirir vehículos nuevos.
+
+- [Hub de financiamiento con inventario vehicular](https://swip.mx/financiamiento-con-inventario-vehicular/)
+- [Financiamiento para lotes y agencias de autos](https://swip.mx/financiamiento-para-lotes-y-agencias-de-autos/)
+- [Capital de trabajo para blindadoras](https://swip.mx/capital-de-trabajo-para-blindadoras/)
+- [Cómo financiar inventario de un lote](https://swip.mx/blog/como-financiar-inventario-de-un-lote-de-autos/)
+- [Plan piso vs. garantía de inventario](https://swip.mx/blog/plan-piso-vs-garantia-de-inventario-vehicular/)
+- [Autos propios vs. consignación](https://swip.mx/blog/autos-propios-vs-consignacion-como-garantia/)
+- [Cómo financiar una blindadora](https://swip.mx/blog/como-financiar-una-empresa-blindadora/)
+
+Reglas de interpretación empresarial:
+
+- Un vehículo físicamente presente en un lote, taller o blindadora no se considera propiedad de la empresa por defecto.
+- Las unidades consignadas o propiedad de clientes requieren revisión jurídica y no se presumen elegibles.
+- No prometer sustitución, liberación o rotación de unidades salvo que la propuesta y el contrato lo establezcan.
+- El rango general publicado sigue siendo de $90,000 a $5,000,000 MXN, sujeto al conjunto de activos y expediente aprobados.
+
 ## Proceso publicado
 
 1. El solicitante comparte datos básicos del activo.

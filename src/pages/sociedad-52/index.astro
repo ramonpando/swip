@@ -3,70 +3,6 @@ import Base from '../../layouts/Base.astro';
 
 const WHATSAPP_NUMBER = '5215542317035';
 
-const participationProfiles = [
-  'Empresario o fundador',
-  'Ejecutivo',
-  'Inversionista',
-  'Propietario de activos',
-  'Comprador activo',
-  'Coleccionista',
-  'Especialista',
-  'Representante autorizado',
-  'Conector de personas',
-  'Profesionista independiente',
-];
-
-const connectionMotivations = [
-  'Construir relaciones de confianza',
-  'Explorar oportunidades de negocio',
-  'Crear alianzas o proyectos',
-  'Comprar o vender activos',
-  'Analizar inversiones',
-  'Compartir experiencia y contactos',
-  'Conocer personas sin una intención comercial inmediata',
-  'Participar en experiencias privadas',
-];
-
-const opportunityTypes = [
-  'Compraventas directas',
-  'Inversiones',
-  'Alianzas o nuevos proyectos',
-  'Real estate',
-  'Activos de colección',
-  'Servicios especializados',
-  'Referencias y conexiones',
-  'Mentoría o intercambio de experiencia',
-  'Relaciones personales',
-];
-
-const carTypes = [
-  'Deportivos',
-  'Exóticos',
-  'Clásicos',
-  'Premium',
-  'Blindados',
-  '4x4 y aventura',
-  'Competencia',
-  'Eléctricos',
-  'Ediciones especiales',
-];
-
-const otherInterests = [
-  'Viajes',
-  'Gastronomía',
-  'Vinos',
-  'Arte',
-  'Tecnología',
-  'Real estate',
-  'Aviación',
-  'Náutica',
-  'Golf',
-  'Deportes',
-  'Caballos',
-  'Filantropía',
-  'Experiencias familiares',
-];
-
 const faqs = [
   {
     q: '¿Cuándo abrirá Sociedad 52?',
@@ -253,252 +189,80 @@ const schema = [
     <section class="application-section" id="solicitud">
       <div class="application-intro">
         <p class="section-eyebrow">PERFIL DE FUNDADOR</p>
-        <h2>Queremos conocerte.</h2>
+        <h2>Una presentación breve.</h2>
         <p>
-          Cuéntanos quién eres, cómo te relacionas y qué te apasiona. Completar
-          este perfil toma aproximadamente cinco minutos.
+          Comparte lo esencial para solicitar consideración. Completar este
+          perfil toma menos de 90 segundos.
         </p>
         <div class="application-note">
           <span>QUÉ SIGUE</span>
-          <p>Revisaremos tu perfil personalmente. Si existe compatibilidad, recibirás una invitación para una conversación breve.</p>
+          <p>Ramón revisa personalmente cada perfil. Si existe compatibilidad, recibirás una invitación para una conversación breve.</p>
         </div>
       </div>
 
       <form class="application-form" id="sociedad-application-form">
-        <div class="form-progress field-wide" aria-label="Progreso de la evaluación">
-          <span class="progress-label">PASO <strong id="current-step">1</strong> DE 3</span>
-          <span class="progress-track"><span id="progress-fill"></span></span>
+        <div class="form-heading field-wide">
+          <span>PERFIL INICIAL</span>
+          <h3>Solicita consideración.</h3>
+          <p>Solo pedimos la información necesaria para decidir si tiene sentido conversar.</p>
         </div>
 
-        <div class="form-step active field-wide" data-step="1">
-          <div class="step-heading">
-            <span>01</span>
-            <div>
-              <h3>Quién eres</h3>
-              <p>Información básica para conocerte y poder contactarte.</p>
-            </div>
-          </div>
-          <div class="step-fields">
-            <label>
-              Nombre completo
-              <input type="text" name="nombre" autocomplete="name" required />
-            </label>
-            <label>
-              WhatsApp
-              <input type="tel" name="whatsapp" autocomplete="tel" required />
-            </label>
-            <label>
-              Correo
-              <input type="email" name="correo" autocomplete="email" required />
-            </label>
-            <label>
-              Ciudad
-              <input type="text" name="ciudad" autocomplete="address-level2" required />
-            </label>
-            <label class="field-wide">
-              ¿A qué te dedicas y qué negocio, empresa o proyecto ocupa actualmente la mayor parte de tu tiempo?
-              <textarea name="actividad" rows="4" maxlength="600" required></textarea>
-            </label>
-            <label>
-              LinkedIn, sitio web o perfil público
-              <input type="url" name="perfil" placeholder="https://" />
-              <small>Opcional. Nos ayuda a conocer mejor tu trayectoria.</small>
-            </label>
-            <label>
-              ¿Quién te recomendó o cómo conociste Sociedad 52?
-              <input type="text" name="referido" maxlength="160" placeholder="Nombre, relación o lugar" />
-            </label>
-          </div>
-        </div>
-
-        <div class="form-step field-wide" data-step="2" hidden>
-          <div class="step-heading">
-            <span>02</span>
-            <div>
-              <h3>Cómo conectas</h3>
-              <p>Queremos entender cómo te relacionas y qué negocios disfrutas.</p>
-            </div>
-          </div>
-          <div class="step-fields">
-            <fieldset class="field-wide">
-              <legend>¿Cuáles de estos perfiles te describen mejor?</legend>
-              <p class="field-help">Selecciona todos los que correspondan.</p>
-              <div class="checkbox-grid">
-                {participationProfiles.map((profile) => (
-                  <label class="check-option">
-                    <input type="checkbox" name="participacion" value={profile} />
-                    <span>{profile}</span>
-                  </label>
-                ))}
-              </div>
-            </fieldset>
-            <fieldset class="field-wide">
-              <legend>Cuando conoces personas interesantes, ¿qué disfrutas más?</legend>
-              <p class="field-help">Selecciona todas las opciones que se parezcan a ti.</p>
-              <div class="checkbox-grid">
-                {connectionMotivations.map((motivation) => (
-                  <label class="check-option">
-                    <input type="checkbox" name="motivaciones" value={motivation} />
-                    <span>{motivation}</span>
-                  </label>
-                ))}
-              </div>
-            </fieldset>
-            <fieldset class="field-wide">
-              <legend>¿Qué tipo de oportunidades te interesa explorar con otras personas?</legend>
-              <p class="field-help">Puedes elegir intereses comerciales y personales.</p>
-              <div class="checkbox-grid">
-                {opportunityTypes.map((opportunity) => (
-                  <label class="check-option">
-                    <input type="checkbox" name="tipo_oportunidad" value={opportunity} />
-                    <span>{opportunity}</span>
-                  </label>
-                ))}
-              </div>
-            </fieldset>
-            <label class="field-wide">
-              ¿En qué temas podría buscarte otro miembro de Sociedad 52?
-              <textarea
-                name="puede_buscarme"
-                rows="3"
-                maxlength="500"
-                placeholder="Experiencia, industria, conexiones o temas en los que disfrutas ayudar."
-                required
-              ></textarea>
-            </label>
-            <label class="field-wide">
-              ¿Qué conexión, persona u oportunidad te gustaría encontrar actualmente?
-              <textarea
-                name="busca_actualmente"
-                rows="3"
-                maxlength="500"
-                placeholder="Una búsqueda concreta nos ayuda a imaginar conexiones útiles."
-                required
-              ></textarea>
-            </label>
-          </div>
-        </div>
-
-        <div class="form-step field-wide" data-step="3" hidden>
-          <div class="step-heading">
-            <span>03</span>
-            <div>
-              <h3>Tus intereses</h3>
-              <p>Autos, relojes y los temas que disfrutas fuera del trabajo.</p>
-            </div>
-          </div>
-          <div class="step-fields">
-            <label class="field-wide">
-              ¿Qué relación tienes con el mundo de los autos?
-              <select name="relacion_autos" id="car-relationship" required>
-                <option value="" selected disabled>Selecciona una opción</option>
-                <option>Me gustan</option>
-                <option>Soy aficionado</option>
-                <option>Soy coleccionista</option>
-                <option>Compro o vendo</option>
-                <option>Trabajo en la industria</option>
-                <option>Estoy buscando algún vehículo</option>
-                <option>No es uno de mis intereses principales</option>
-              </select>
-            </label>
-
-            <div class="conditional-fields field-wide" id="car-details" hidden>
-              <fieldset>
-                <legend>¿Qué tipo de autos disfrutas más?</legend>
-                <p class="field-help">Selecciona todos los que correspondan.</p>
-                <div class="checkbox-grid">
-                  {carTypes.map((carType) => (
-                    <label class="check-option">
-                      <input type="checkbox" name="tipos_autos" value={carType} />
-                      <span>{carType}</span>
-                    </label>
-                  ))}
-                </div>
-              </fieldset>
-              <label>
-                ¿Cuáles son tus marcas, modelos o autos favoritos?
-                <textarea
-                  name="autos_favoritos"
-                  rows="3"
-                  maxlength="360"
-                  placeholder="Ej. Porsche 911, Ferrari clásicos, Defender, Mercedes-AMG..."
-                ></textarea>
-              </label>
-            </div>
-
-            <label class="field-wide">
-              ¿Qué relación tienes con el mundo de los relojes?
-              <select name="relacion_relojes" id="watch-relationship" required>
-                <option value="" selected disabled>Selecciona una opción</option>
-                <option>Me gustan</option>
-                <option>Estoy comenzando a conocerlos</option>
-                <option>Soy aficionado</option>
-                <option>Soy coleccionista</option>
-                <option>Compro o vendo</option>
-                <option>Trabajo en la industria</option>
-                <option>Estoy buscando alguna pieza</option>
-                <option>No es uno de mis intereses principales</option>
-              </select>
-            </label>
-
-            <div class="conditional-fields field-wide" id="watch-details" hidden>
-              <label>
-                ¿Cuáles son tus marcas, referencias o piezas favoritas?
-                <textarea
-                  name="relojes_favoritos"
-                  rows="3"
-                  maxlength="360"
-                  placeholder="Ej. Rolex, Cartier, Omega, Patek Philippe, vintage o independientes."
-                ></textarea>
-              </label>
-            </div>
-
-            <fieldset class="field-wide">
-              <legend>Además de negocios, autos y relojes, ¿qué otros temas disfrutas?</legend>
-              <p class="field-help">Opcional. Selecciona todos los que correspondan.</p>
-              <div class="checkbox-grid">
-                {otherInterests.map((interest) => (
-                  <label class="check-option">
-                    <input type="checkbox" name="otros_intereses" value={interest} />
-                    <span>{interest}</span>
-                  </label>
-                ))}
-              </div>
-            </fieldset>
-
-            <label class="field-wide">
-              ¿Qué tendría que suceder para que Sociedad 52 fuera realmente valiosa para ti?
-              <textarea name="valor_esperado" rows="4" maxlength="500" required></textarea>
-            </label>
-
-            <label class="consent field-wide">
-              <input type="checkbox" name="principios" required />
-              <span>
-                Entiendo que Sociedad 52 se basa en confianza, discreción y relaciones
-                de largo plazo. Acepto no utilizarla para prospección fría, cadenas
-                de intermediarios ni difusión de información fuera de la comunidad.
-              </span>
-            </label>
-            <label class="consent field-wide">
-              <input type="checkbox" name="consentimiento" required />
-              <span>
-                Acepto el contacto para revisar mi perfil y confirmo haber leído
-                el <a href="/aviso-de-privacidad/" target="_blank">aviso de privacidad</a>.
-                Entiendo que completar este perfil no garantiza admisión.
-              </span>
-            </label>
-            <p class="form-disclaimer field-wide">
-              No compartas identificaciones, estados de cuenta, domicilios exactos,
-              números de serie ni expedientes de activos.
-            </p>
-          </div>
-        </div>
-
-        <div class="form-navigation field-wide">
-          <button type="button" class="form-back" id="form-back" hidden>← Regresar</button>
-          <button type="button" class="form-next" id="form-next">Continuar →</button>
-          <button type="submit" class="form-submit" id="form-submit" hidden>Enviar mi perfil →</button>
-        </div>
+        <label>
+          Nombre completo
+          <input type="text" name="nombre" autocomplete="name" required />
+        </label>
+        <label>
+          WhatsApp
+          <input type="tel" name="whatsapp" autocomplete="tel" required />
+        </label>
+        <label>
+          Ciudad
+          <input type="text" name="ciudad" autocomplete="address-level2" required />
+        </label>
+        <label>
+          ¿A qué te dedicas?
+          <input
+            type="text"
+            name="actividad"
+            maxlength="160"
+            placeholder="Empresa, industria o proyecto principal"
+            required
+          />
+        </label>
+        <label>
+          LinkedIn, empresa o perfil público
+          <input type="text" name="perfil" maxlength="240" placeholder="URL o usuario" />
+          <small>Opcional. Nos ayuda a conocer tu trayectoria.</small>
+        </label>
+        <label>
+          ¿Quién te recomendó?
+          <input type="text" name="referido" maxlength="160" placeholder="Nombre o relación" />
+          <small>Opcional. También puedes indicar cómo nos conociste.</small>
+        </label>
+        <label class="field-wide">
+          En una frase, ¿qué buscas o qué podrías aportar a Sociedad 52?
+          <textarea
+            name="encaje"
+            rows="3"
+            maxlength="240"
+            placeholder="Una conexión específica, experiencia, acceso, oportunidades directas o criterio especializado."
+            required
+          ></textarea>
+        </label>
+        <label class="consent field-wide">
+          <input type="checkbox" name="consentimiento" required />
+          <span>
+            Acepto el contacto para revisar mi perfil y confirmo haber leído
+            el <a href="/aviso-de-privacidad/" target="_blank">aviso de privacidad</a>.
+            Entiendo que la solicitud no garantiza admisión.
+          </span>
+        </label>
+        <p class="form-disclaimer field-wide">
+          No compartas identificaciones, estados de cuenta, domicilios exactos
+          ni información patrimonial sensible. Al continuar se abrirá WhatsApp
+          para que confirmes el envío.
+        </p>
+        <button type="submit" class="form-submit field-wide">Solicitar consideración →</button>
       </form>
     </section>
 
@@ -539,142 +303,6 @@ const schema = [
 
   <script define:vars={{ WHATSAPP_NUMBER }}>
     const form = document.getElementById('sociedad-application-form');
-    const participationInputs = Array.from(
-      form?.querySelectorAll('input[name="participacion"]') || []
-    );
-    const motivationInputs = Array.from(
-      form?.querySelectorAll('input[name="motivaciones"]') || []
-    );
-    const opportunityInputs = Array.from(
-      form?.querySelectorAll('input[name="tipo_oportunidad"]') || []
-    );
-    const carTypeInputs = Array.from(
-      form?.querySelectorAll('input[name="tipos_autos"]') || []
-    );
-    const carRelationship = document.getElementById('car-relationship');
-    const watchRelationship = document.getElementById('watch-relationship');
-    const carDetails = document.getElementById('car-details');
-    const watchDetails = document.getElementById('watch-details');
-    const carFavorites = form?.querySelector('[name="autos_favoritos"]');
-    const watchFavorites = form?.querySelector('[name="relojes_favoritos"]');
-    const steps = Array.from(form?.querySelectorAll('.form-step') || []);
-    const backButton = document.getElementById('form-back');
-    const nextButton = document.getElementById('form-next');
-    const submitButton = document.getElementById('form-submit');
-    const currentStepLabel = document.getElementById('current-step');
-    const progressFill = document.getElementById('progress-fill');
-    let currentStep = 1;
-
-    const hasCategoryInterest = (select) =>
-      Boolean(select?.value) &&
-      select.value !== 'No es uno de mis intereses principales';
-
-    const updateConditionalFields = () => {
-      const showCarDetails = hasCategoryInterest(carRelationship);
-      const showWatchDetails = hasCategoryInterest(watchRelationship);
-
-      if (carDetails) carDetails.hidden = !showCarDetails;
-      if (watchDetails) watchDetails.hidden = !showWatchDetails;
-
-      carTypeInputs.forEach((input) => {
-        input.disabled = !showCarDetails;
-      });
-      if (carFavorites) {
-        carFavorites.disabled = !showCarDetails;
-        carFavorites.required = showCarDetails;
-      }
-      if (watchFavorites) {
-        watchFavorites.disabled = !showWatchDetails;
-        watchFavorites.required = showWatchDetails;
-      }
-    };
-
-    const showStep = (stepNumber) => {
-      currentStep = stepNumber;
-      steps.forEach((step) => {
-        const isCurrent = Number(step.getAttribute('data-step')) === currentStep;
-        step.hidden = !isCurrent;
-        step.classList.toggle('active', isCurrent);
-      });
-      if (currentStepLabel) currentStepLabel.textContent = String(currentStep);
-      if (progressFill) progressFill.style.width = `${(currentStep / steps.length) * 100}%`;
-      if (backButton) backButton.hidden = currentStep === 1;
-      if (nextButton) nextButton.hidden = currentStep === steps.length;
-      if (submitButton) submitButton.hidden = currentStep !== steps.length;
-    };
-
-    const validateCurrentStep = () => {
-      const step = steps.find(
-        (item) => Number(item.getAttribute('data-step')) === currentStep
-      );
-      if (!step) return true;
-
-      const fields = Array.from(step.querySelectorAll('input, select, textarea'));
-      for (const field of fields) {
-        if (!field.reportValidity()) return false;
-      }
-
-      if (currentStep === 2) {
-        const participation = participationInputs.filter((input) => input.checked);
-        const motivations = motivationInputs.filter((input) => input.checked);
-        const opportunities = opportunityInputs.filter((input) => input.checked);
-
-        if (participation.length === 0) {
-          participationInputs[0]?.setCustomValidity('Selecciona al menos un perfil.');
-          participationInputs[0]?.reportValidity();
-          return false;
-        }
-        if (motivations.length === 0) {
-          motivationInputs[0]?.setCustomValidity('Selecciona al menos una opción.');
-          motivationInputs[0]?.reportValidity();
-          return false;
-        }
-        if (opportunities.length === 0) {
-          opportunityInputs[0]?.setCustomValidity('Selecciona al menos un tipo de oportunidad.');
-          opportunityInputs[0]?.reportValidity();
-          return false;
-        }
-      }
-
-      if (currentStep === 3 && hasCategoryInterest(carRelationship)) {
-        const selectedCarTypes = carTypeInputs.filter((input) => input.checked);
-        if (selectedCarTypes.length === 0) {
-          carTypeInputs[0]?.setCustomValidity('Selecciona al menos un tipo de auto.');
-          carTypeInputs[0]?.reportValidity();
-          return false;
-        }
-      }
-
-      return true;
-    };
-
-    [...participationInputs, ...motivationInputs, ...opportunityInputs, ...carTypeInputs].forEach((input) => {
-      input.addEventListener('change', () => {
-        participationInputs[0]?.setCustomValidity('');
-        motivationInputs[0]?.setCustomValidity('');
-        opportunityInputs[0]?.setCustomValidity('');
-        carTypeInputs[0]?.setCustomValidity('');
-      });
-    });
-
-    carRelationship?.addEventListener('change', updateConditionalFields);
-    watchRelationship?.addEventListener('change', updateConditionalFields);
-
-    nextButton?.addEventListener('click', () => {
-      if (!validateCurrentStep()) return;
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({
-        event: 'sociedad_52_application_step',
-        completed_step: currentStep,
-      });
-      showStep(Math.min(currentStep + 1, steps.length));
-      form?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-
-    backButton?.addEventListener('click', () => {
-      showStep(Math.max(currentStep - 1, 1));
-      form?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
 
     document.querySelectorAll('[data-cta]').forEach((element) => {
       element.addEventListener('click', () => {
@@ -689,70 +317,26 @@ const schema = [
     form?.addEventListener('submit', (event) => {
       event.preventDefault();
       const data = new FormData(form);
-      const participation = data.getAll('participacion');
-      const motivations = data.getAll('motivaciones');
-      const opportunities = data.getAll('tipo_oportunidad');
-      const selectedCarTypes = data.getAll('tipos_autos');
-      const selectedOtherInterests = data.getAll('otros_intereses');
-
-      if (participation.length === 0) {
-        participationInputs[0]?.setCustomValidity('Selecciona al menos un perfil.');
-        participationInputs[0]?.reportValidity();
-        return;
-      }
-
-      if (motivations.length === 0 || opportunities.length === 0) {
-        showStep(2);
-        validateCurrentStep();
-        return;
-      }
-
-      if (hasCategoryInterest(carRelationship) && selectedCarTypes.length === 0) {
-        carTypeInputs[0]?.setCustomValidity('Selecciona al menos un tipo de auto.');
-        carTypeInputs[0]?.reportValidity();
-        return;
-      }
 
       const message = [
-        'Hola Ramon, quiero compartir mi perfil para la cohorte fundadora de Sociedad 52.',
+        'Hola Ramón, quiero solicitar consideración para la generación fundadora de Sociedad 52.',
         '',
-        'Origen: landing Sociedad 52',
         `Nombre: ${data.get('nombre')}`,
         `WhatsApp: ${data.get('whatsapp')}`,
-        `Correo: ${data.get('correo')}`,
         `Ciudad: ${data.get('ciudad')}`,
         `Actividad: ${data.get('actividad')}`,
         `Perfil verificable: ${data.get('perfil') || 'No indicado'}`,
         `Recomendación u origen: ${data.get('referido') || 'No indicado'}`,
+        `Encaje: ${data.get('encaje')}`,
         '',
-        'NEGOCIOS Y CONEXIONES',
-        `Perfiles: ${participation.join(', ')}`,
-        `Qué disfruto al conectar: ${motivations.join(', ')}`,
-        `Oportunidades que me interesan: ${opportunities.join(', ')}`,
-        `En qué temas pueden buscarme: ${data.get('puede_buscarme')}`,
-        `Qué conexión busco actualmente: ${data.get('busca_actualmente')}`,
-        '',
-        'INTERESES',
-        `Relación con autos: ${data.get('relacion_autos')}`,
-        `Tipos de autos: ${selectedCarTypes.length ? selectedCarTypes.join(', ') : 'No aplica'}`,
-        `Autos favoritos: ${data.get('autos_favoritos') || 'No aplica'}`,
-        `Relación con relojes: ${data.get('relacion_relojes')}`,
-        `Relojes favoritos: ${data.get('relojes_favoritos') || 'No aplica'}`,
-        `Otros intereses: ${selectedOtherInterests.length ? selectedOtherInterests.join(', ') : 'No indicados'}`,
-        `Qué haría valiosa a Sociedad 52: ${data.get('valor_esperado')}`,
-        '',
-        'Acepto los principios de confianza, discreción y cero prospección fría. Entiendo que compartir este perfil no garantiza admisión.',
+        'Entiendo que esta solicitud no garantiza admisión.',
       ].join('\n');
 
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({
         event: 'sociedad_52_application_submitted',
-        participation_profiles: participation.join('|'),
-        connection_motivations: motivations.join('|'),
-        opportunity_types: opportunities.join('|'),
-        car_relationship: data.get('relacion_autos'),
-        watch_relationship: data.get('relacion_relojes'),
         has_referral: Boolean(data.get('referido')),
+        has_public_profile: Boolean(data.get('perfil')),
       });
 
       window.open(
@@ -761,9 +345,6 @@ const schema = [
         'noopener'
       );
     });
-
-    updateConditionalFields();
-    showStep(1);
   </script>
 </Base>
 
@@ -879,9 +460,7 @@ const schema = [
   }
 
   .btn-primary,
-  .form-submit,
-  .form-next,
-  .form-back {
+  .form-submit {
     min-height: 52px;
     padding: 16px 40px;
     display: inline-flex;
@@ -900,9 +479,7 @@ const schema = [
   }
 
   .btn-primary:hover,
-  .form-submit:hover,
-  .form-next:hover,
-  .form-back:hover {
+  .form-submit:hover {
     background: rgba(255, 255, 255, 0.06);
     border-color: rgba(255, 255, 255, 0.6);
   }
@@ -1311,70 +888,29 @@ const schema = [
     gap: 24px 18px;
   }
 
-  .form-progress {
-    display: grid;
-    gap: 12px;
+  .form-heading {
+    margin-bottom: 8px;
   }
 
-  .progress-label {
+  .form-heading > span {
+    display: block;
+    margin-bottom: 12px;
     font-size: 9px;
     letter-spacing: 0.24em;
     color: rgba(168, 168, 168, 0.52);
   }
 
-  .progress-label strong {
-    color: rgba(255, 255, 255, 0.86);
-    font-weight: 400;
-  }
-
-  .progress-track {
-    width: 100%;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.1);
-  }
-
-  .progress-track span {
-    display: block;
-    width: 33.333%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.74);
-    transition: width 0.25s ease;
-  }
-
-  .form-step { scroll-margin-top: 24px; }
-
-  .step-heading {
-    margin: 12px 0 30px;
-    display: grid;
-    grid-template-columns: 38px 1fr;
-    gap: 18px;
-    align-items: start;
-  }
-
-  .step-heading > span {
-    padding-top: 5px;
-    font-size: 9px;
-    letter-spacing: 0.24em;
-    color: rgba(168, 168, 168, 0.42);
-  }
-
-  .step-heading h3 {
+  .form-heading h3 {
     font-size: 26px;
     font-weight: 300;
     color: var(--white);
   }
 
-  .step-heading p {
+  .form-heading p {
     margin-top: 8px;
     font-size: 13px;
     line-height: 1.6;
     color: rgba(168, 168, 168, 0.64);
-  }
-
-  .step-fields {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px 18px;
   }
 
   .application-form label {
@@ -1385,44 +921,6 @@ const schema = [
     letter-spacing: 0.22em;
     color: rgba(168, 168, 168, 0.62);
     text-transform: uppercase;
-  }
-
-  .application-form fieldset {
-    min-width: 0;
-    padding: 0;
-    border: 0;
-  }
-
-  .application-form legend {
-    margin-bottom: 12px;
-    font-size: 9px;
-    letter-spacing: 0.22em;
-    color: rgba(168, 168, 168, 0.62);
-    text-transform: uppercase;
-  }
-
-  .checkbox-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1px;
-    background: var(--line);
-    border: 1px solid var(--line);
-  }
-
-  .application-form .check-option {
-    min-height: 58px;
-    padding: 14px;
-    display: grid;
-    grid-template-columns: 18px 1fr;
-    align-items: center;
-    gap: 10px;
-    background: #0a0a0a;
-    font-size: 12px;
-    line-height: 1.4;
-    letter-spacing: normal;
-    color: rgba(255, 255, 255, 0.8);
-    text-transform: none;
-    cursor: pointer;
   }
 
   .application-form input,
@@ -1472,21 +970,12 @@ const schema = [
     accent-color: var(--green);
   }
 
-  .application-form .check-option input {
-    min-height: 0;
-    width: 16px;
-    height: 16px;
-    padding: 0;
-    accent-color: var(--green);
-  }
-
   .application-form .consent a {
     color: var(--white);
     text-underline-offset: 3px;
   }
 
-  .application-form label small,
-  .field-help {
+  .application-form label small {
     display: block;
     color: rgba(168, 168, 168, 0.6);
     font-size: 11px;
@@ -1496,42 +985,14 @@ const schema = [
     text-transform: none;
   }
 
-  .field-help {
-    margin: -4px 0 16px;
-  }
-
-  .conditional-fields {
-    display: grid;
-    gap: 26px;
-    padding: 28px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    background: rgba(255, 255, 255, 0.018);
-  }
-
   .form-submit {
-    flex: 1;
+    width: 100%;
   }
 
   .form-disclaimer {
     font-size: 11px;
     line-height: 1.65;
     color: rgba(168, 168, 168, 0.48);
-  }
-
-  .form-navigation {
-    display: flex;
-    justify-content: flex-end;
-    gap: 12px;
-  }
-
-  .form-next {
-    min-width: 250px;
-  }
-
-  .form-back {
-    padding-inline: 24px;
-    border-color: rgba(255, 255, 255, 0.12);
-    color: rgba(168, 168, 168, 0.62);
   }
 
   .faq-list details {
@@ -1647,11 +1108,9 @@ const schema = [
     .protocol-card { padding: 30px 24px; }
     .protocol-card dl div { grid-template-columns: 1fr; gap: 7px; }
     .application-intro, .application-form { padding: 64px 24px; }
-    .application-form, .step-fields { grid-template-columns: 1fr; }
-    .checkbox-grid { grid-template-columns: 1fr; }
+    .application-form { grid-template-columns: 1fr; }
     .field-wide, .form-submit { grid-column: auto; }
-    .form-navigation { flex-direction: column-reverse; }
-    .form-next, .form-back, .form-submit { width: 100%; }
+    .form-submit { width: 100%; }
     .landing-footer {
       padding: 30px 24px;
       grid-template-columns: 1fr;

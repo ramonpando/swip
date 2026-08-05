@@ -1,7 +1,10 @@
 ---
 title: "¿Cuánto me prestan por un Ferrari 488 o F8?"
 description: "Por un Ferrari F8 en buenas condiciones, SWIP puede ofrecer entre $1,500,000 y $3,500,000 MXN. Por un 488, entre $1,200,000 y $2,800,000 MXN. El monto depende de la versión, el kilometraje y el estado del vehículo. La valuación usa referencias del mercado internacional."
+seoTitle: "Ferrari 488 y F8: ¿Cuánto te Prestan en México?"
+seoDescription: "Consulta cuánto te prestan por un Ferrari 488 o F8: rangos de $1.2 a $3.5 millones según versión, año, kilometraje e historial de servicio."
 date: "2026-05-13"
+updatedDate: "2026-08-05"
 category: "Autos Exóticos"
 slug: "cuanto-me-prestan-por-un-ferrari-488-o-f8"
 draft: false

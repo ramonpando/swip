@@ -1,7 +1,10 @@
 ---
 title: "Cómo valuamos un auto en SWIP: el proceso real de una visita a domicilio"
 description: "Desde el primer mensaje por WhatsApp hasta el número en la oferta formal, esto es lo que pasa internamente cuando SWIP valúa un vehículo de lujo, blindado o exótico. El orden, qué revisamos, qué referencias usamos y cómo llegamos al monto."
+seoTitle: "Valuación de Autos de Lujo: el Proceso Real"
+seoDescription: "Conoce cómo hacemos una valuación de autos de lujo a domicilio: documentos, inspección, referencias de mercado y factores que determinan la oferta."
 date: "2026-05-25"
+updatedDate: "2026-08-05"
 category: "Proceso"
 slug: "como-valuamos-un-auto-proceso-real"
 draft: false

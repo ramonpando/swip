@@ -1,7 +1,10 @@
 ---
 title: "¿Cuánto Prestan por una Mercedes-AMG G63 en México?"
 description: "Consulta rangos estimados de $1 a $3 millones para una Mercedes-AMG G63, según año, kilometraje, historial y condición. Valuación especializada."
+seoTitle: "Mercedes-AMG G63: ¿Cuánto te Prestan en México?"
+seoDescription: "Consulta cuánto te prestan por una Mercedes-AMG G63: rangos de $1 a $3 millones según año, versión, kilometraje y condición. Valuación especializada."
 date: "2026-05-13"
+updatedDate: "2026-08-05"
 category: "Autos de lujo"
 slug: "cuanto-me-prestan-por-una-mercedes-g63"
 draft: false

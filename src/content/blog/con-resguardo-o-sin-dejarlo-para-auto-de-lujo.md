@@ -1,7 +1,10 @@
 ---
 title: "Con resguardo o sin dejarlo: qué conviene más para un auto de lujo"
 description: "Para un auto de lujo, la modalidad con resguardo casi siempre da el monto más alto. Sin dejarlo tiene sentido cuando el monto que necesitas cabe en el límite de $400,000 MXN y la movilidad es crítica. Conoce los criterios para elegir."
+seoTitle: "¿Préstamo con Resguardo o sin Dejar tu Auto?"
+seoDescription: "Compara un préstamo con resguardo y uno sin dejar tu auto: montos, condiciones y cuándo conviene cada modalidad para un vehículo de lujo."
 date: "2026-05-13"
+updatedDate: "2026-08-05"
 category: "Autos de lujo"
 slug: "con-resguardo-o-sin-dejarlo-para-auto-de-lujo"
 draft: false

@@ -1,7 +1,10 @@
 ---
 title: "¿Cuánto me prestan por un Audi Q8?"
 description: "Por un Audi Q8 en buenas condiciones, SWIP puede ofrecer entre $400,000 y $1,800,000 MXN. El rango varía según versión, año y si es Q8 estándar o RS Q8. Valuación especializada en domicilio, sin buró de crédito, depósito en menos de 24 horas."
+seoTitle: "Audi Q8 y RS Q8: ¿Cuánto te Prestan en México?"
+seoDescription: "Consulta cuánto te prestan por un Audi Q8, SQ8 o RS Q8: rangos de $400 mil a $1.8 millones según versión, año, kilometraje y condición."
 date: "2026-05-22"
+updatedDate: "2026-08-05"
 category: "Autos de lujo"
 slug: "cuanto-me-prestan-por-un-audi-q8"
 draft: false

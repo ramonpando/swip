@@ -112,7 +112,7 @@ Marginalmente. Colores estándar (negro, blanco, plata, gris) tienen el mercado 
 ---
 
 **SWIP**  
-Pje. Interlomas 6, Naucalpan de Juárez, Estado de México, C.P. 52787  
+Pje. Interlomas 6, Bosques de las Palmas, Huixquilucan, Estado de México, C.P. 52787<br />
 WhatsApp / Teléfono: 55 5405 5089  
 Atención en CDMX y Querétaro
 

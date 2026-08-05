@@ -1,14 +1,15 @@
 ---
 title: "Autos propios vs. consignación: cuáles pueden usarse como garantía"
-seoTitle: "Autos propios vs consignación como garantía"
-description: "Compara inventario propio, autos financiados y vehículos en consignación para saber cuáles pueden respaldar una solicitud de capital para tu lote en México."
+seoTitle: "¿Qué es Consignar un Auto? Propiedad y Garantía"
+description: "Conoce qué significa consignar un auto y por qué tenerlo en un lote no permite usarlo como garantía. Compara autos propios, financiados y consignados."
 date: "2026-07-29"
+updatedDate: "2026-08-05"
 category: "Capital empresarial"
 slug: "autos-propios-vs-consignacion-como-garantia"
 draft: false
 ---
 
-Tener un vehículo físicamente dentro de un lote no significa ser su propietario. Esta diferencia determina si una unidad puede siquiera considerarse dentro de una operación de [financiamiento con inventario vehicular](/financiamiento-con-inventario-vehicular/).
+Consignar un auto significa entregarlo a un tercero para que lo comercialice sin transferirle automáticamente la propiedad. Tener un vehículo físicamente dentro de un lote no significa ser su propietario. Esta diferencia determina si una unidad puede siquiera considerarse dentro de una operación de [financiamiento con inventario vehicular](/financiamiento-con-inventario-vehicular/).
 
 Antes de hablar de valuación o monto, hay que responder tres preguntas:
 

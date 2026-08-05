@@ -1,7 +1,9 @@
 ---
 title: "Empeño de Autos en Querétaro: Con o Sin Resguardo"
-description: "Obtén entre $90,000 y $5,000,000 con tu auto en Querétaro. Valuación a domicilio, con o sin resguardo y sin revisar buró. Conoce el proceso."
+seoTitle: "Empeño de Autos en Querétaro: Guía y Opciones"
+description: "Guía para entender el empeño de autos en Querétaro: requisitos, rangos orientativos y diferencias entre préstamo con garantía, con o sin resguardo."
 date: "2026-05-22"
+updatedDate: "2026-08-05"
 category: "Querétaro"
 slug: "empeno-de-autos-en-queretaro"
 draft: false
@@ -107,7 +109,7 @@ SWIP trabaja para encontrar soluciones antes de llegar a ese punto. Lo más impo
 ---
 
 **SWIP**
-Pje. Interlomas 6, Naucalpan de Juárez, Estado de México, C.P. 52787
+Pje. Interlomas 6, Bosques de las Palmas, Huixquilucan, Estado de México, C.P. 52787
 WhatsApp / Teléfono: 55 5405 5089
 Atención en Querétaro y CDMX
 

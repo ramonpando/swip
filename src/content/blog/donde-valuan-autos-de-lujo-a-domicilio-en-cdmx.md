@@ -73,7 +73,7 @@ Lista completa: [requisitos generales](/requisitos/).
 
 ## Alternativa: valuación en instalaciones SWIP
 
-Si prefieres la valuación en instalaciones de SWIP, también está disponible. Las instalaciones están en Pje. Interlomas 6, Naucalpan de Juárez — zona de acceso cómodo desde el poniente y norte de CDMX.
+Si prefieres la valuación en instalaciones de SWIP, también está disponible. Las instalaciones están en Pje. Interlomas 6, Bosques de las Palmas, Huixquilucan — zona de acceso cómodo desde el poniente y norte de CDMX.
 
 Para autos blindados de alto valor, en algunos casos la valuación en instalaciones facilita la logística del resguardo si la operación avanza a esa modalidad.
 
@@ -96,7 +96,7 @@ Sí. La valuación puede realizarse donde sea que esté el vehículo, dentro de 
 ---
 
 **SWIP**  
-Pje. Interlomas 6, Naucalpan de Juárez, Estado de México, C.P. 52787  
+Pje. Interlomas 6, Bosques de las Palmas, Huixquilucan, Estado de México, C.P. 52787<br />
 WhatsApp / Teléfono: 55 5405 5089  
 Atención en CDMX y Querétaro
 

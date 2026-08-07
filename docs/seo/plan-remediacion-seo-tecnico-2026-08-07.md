@@ -145,15 +145,15 @@ Criterio de aceptación:
 
 #### TEC-02 — Variantes `index.html` accesibles
 
-Estado: implementado en `vercel.json`; pendiente de deploy y verificación en
-producción.
+Estado: completado y verificado en producción el 7 de agosto de 2026.
 
 Evidencia comprobada:
 
-- `/index.html` responde `200`.
-- `/blog/index.html` responde `200`.
-- `/empeno-de-autos/index.html` responde `200`.
-- El mismo comportamiento aplica a otras rutas estáticas.
+- Antes del cambio, `/index.html`, `/blog/index.html` y
+  `/empeno-de-autos/index.html` respondían `200`.
+- Después del deploy, `/index.html` devuelve un único `308` hacia `/` y
+  `/empeno-de-autos/index.html` devuelve un único `308` hacia
+  `/empeno-de-autos/`.
 
 Acción:
 
@@ -611,7 +611,7 @@ Antes de marcar este plan como completado:
 
 ## 8. Definition of Done
 
-- [ ] `www` y `index.html` ya no entregan páginas duplicadas.
+- [x] `www` y `index.html` ya no entregan páginas duplicadas.
 - [ ] LCP, TBT y CLS cumplen los objetivos en la mediana de tres pruebas.
 - [ ] El widget no bloquea la carga ni genera controles inaccesibles.
 - [ ] Accessibility y Agentic Browsing no conservan fallas automáticas.

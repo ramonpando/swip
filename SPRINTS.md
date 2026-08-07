@@ -22,7 +22,8 @@
 >    ya está implementado localmente: redirects de `index.html`, hero WebP como
 >    imagen LCP, ChatFlow bajo demanda, Google tag mediante Partytown,
 >    accesibilidad y schema/NAP. La mediana local es Performance 99, LCP 1.40 s,
->    TBT 0 ms y CLS 0.062; falta deploy y validación de producción. El redirect
+>    TBT 0 ms y CLS 0.062. El deploy ya fue confirmado en producción; quedan
+>    pendientes Lighthouse de producción y validación de medición. El redirect
 >    de `www` ya fue configurado en Vercel y verificado con un único `308`,
 >    conservando ruta y query string. Línea base móvil de Google:
 >    Performance 54, LCP 9.6 s, TBT 600 ms y CLS 0.

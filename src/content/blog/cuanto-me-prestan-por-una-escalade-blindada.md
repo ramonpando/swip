@@ -4,7 +4,7 @@ description: "Consulta cuánto puedes obtener por una Cadillac Escalade estánda
 seoTitle: "Cadillac Escalade Blindada: ¿Cuánto te Prestan?"
 seoDescription: "Consulta cuánto te prestan por una Cadillac Escalade estándar o blindada: rangos de $500 mil a $1.8 millones según año, versión y blindaje."
 date: "2026-05-13"
-updatedDate: "2026-08-05"
+updatedDate: "2026-08-07"
 category: "Autos Blindados"
 slug: "cuanto-me-prestan-por-una-escalade-blindada"
 draft: false
@@ -12,7 +12,7 @@ draft: false
 
 SWIP puede evaluar una Cadillac Escalade estándar o blindada como garantía vehicular. El monto depende primero del valor del vehículo base: año, versión, kilometraje, historial de servicio y condición. Si tiene blindaje, también se revisan el nivel, la armadora, la antigüedad y la documentación.
 
-En una Escalade blindada nivel III en buenas condiciones, los rangos orientativos pueden ir de $900,000 a $1,800,000 MXN para modelos recientes. Una Escalade sin blindaje también puede aplicar: se valúa como [auto de lujo](/prestamo-con-garantia-de-autos-de-lujo/), sin exigir documentación de blindaje. Si la unidad está protegida, usamos una [valuación especializada para autos blindados](/prestamo-con-garantia-de-autos-blindados/).
+En una Escalade blindada nivel III en buenas condiciones, los rangos orientativos pueden ir de $900,000 a $1,800,000 MXN para modelos recientes. Una Escalade sin blindaje también puede aplicar: se valúa como [auto de lujo](/prestamo-con-garantia-de-autos-de-lujo/), sin exigir documentación de blindaje. Si la unidad está protegida, usamos una [valuación especializada para autos blindados](/prestamo-con-garantia-de-autos-blindados/). Consulta [empeño de autos](/empeno-de-autos/) para comparar las modalidades y condiciones generales.
 
 ## Escalade estándar o blindada: ambas pueden aplicar
 

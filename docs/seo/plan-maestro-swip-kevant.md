@@ -1,5 +1,13 @@
 # Plan maestro SEO — SWIP y Kevant
 
+> [!IMPORTANT]
+> La priorización comercial vehicular de SWIP contenida en este documento fue
+> sustituida el 7 de agosto de 2026 por
+> [`plan-rector-empeno-de-autos-2026-08.md`](./plan-rector-empeno-de-autos-2026-08.md).
+> La keyword principal es **“empeño de autos”** y su URL propietaria es
+> **`/empeno-de-autos/`**. Se conserva el resto de este documento para contexto,
+> especialmente la separación temática entre SWIP y Kevant.
+
 Estado: fase 1 completada con inventario público y local de ambos proyectos  
 Fecha de corte: 2026-07-13  
 Fuentes revisadas: repositorios `/root/swip` y `/root/kevant`, sitios públicos, `robots.txt` y sitemaps públicos  

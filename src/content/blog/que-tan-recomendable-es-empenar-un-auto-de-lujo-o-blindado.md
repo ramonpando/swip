@@ -2,6 +2,7 @@
 title: "¿Qué tan recomendable es empeñar un auto de lujo o blindado?"
 description: "Puede ser muy recomendable cuando la operación se hace correctamente: con valuación especializada, estructura transparente y una empresa que conozca el segmento. No es recomendable con casas de empeño convencionales que subestiman el activo con tablas genéricas."
 date: "2026-05-13"
+updatedDate: "2026-08-07"
 category: "Proceso"
 slug: "que-tan-recomendable-es-empenar-un-auto-de-lujo-o-blindado"
 draft: false
@@ -9,7 +10,7 @@ draft: false
 
 Puede ser muy recomendable — cuando la operación se hace correctamente. La diferencia entre una operación bien estructurada y una mal estructurada sobre un auto de lujo o blindado puede ser de $300,000 a $800,000 MXN de monto diferente sobre el mismo vehículo. La recomendabilidad depende casi por completo de con quién hagas la operación y cómo se valúa el activo.
 
-En SWIP hacemos [préstamos con garantía de autos de lujo](/prestamo-con-garantia-de-autos-de-lujo/) y [blindados](/prestamo-con-garantia-de-autos-blindados/) con valuación especializada. Este artículo explica cuándo y por qué este tipo de operación puede tener sentido, y cuándo no.
+En SWIP hacemos [préstamos con garantía de autos de lujo](/prestamo-con-garantia-de-autos-de-lujo/) y [blindados](/prestamo-con-garantia-de-autos-blindados/) con valuación especializada. La página de [empeño de autos](/empeno-de-autos/) concentra la oferta comercial, las modalidades, los requisitos y las condiciones generales. Este artículo explica cuándo este tipo de operación puede tener sentido y cuándo no.
 
 ## Cuándo sí es recomendable
 

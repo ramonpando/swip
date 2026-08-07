@@ -2,6 +2,7 @@
 title: "¿Cuánto me prestan por una Range Rover?"
 description: "Por una Range Rover en buenas condiciones, SWIP puede ofrecer entre $600,000 y $1,800,000 MXN. El monto depende del año, versión (Vogue, Autobiography, SVAutobiography) y el estado del vehículo. La valuación especializada reconoce el valor real del segmento premium."
 date: "2026-05-13"
+updatedDate: "2026-08-07"
 category: "Autos de lujo"
 slug: "cuanto-me-prestan-por-una-range-rover"
 draft: false
@@ -9,7 +10,7 @@ draft: false
 
 Por una Range Rover en buenas condiciones, SWIP puede ofrecer entre $600,000 y $1,800,000 MXN. El rango exacto depende del año, la versión (Vogue, Autobiography, SVAutobiography, LWB), el kilometraje y el estado del vehículo. La Range Rover tiene una de las mejores relaciones valor/prestación del segmento de lujo en México — lo que la hace un activo sólido para una operación de garantía vehicular.
 
-En SWIP hacemos [préstamos con garantía de autos de lujo](/prestamo-con-garantia-de-autos-de-lujo/) con valuación especializada que considera versión, equipamiento y estado real — no tablas genéricas que ignoran esas diferencias.
+En SWIP hacemos [préstamos con garantía de autos de lujo](/prestamo-con-garantia-de-autos-de-lujo/) con valuación especializada que considera versión, equipamiento y estado real. Si quieres comparar modalidades, requisitos y costos, consulta la guía principal de [empeño de autos](/empeno-de-autos/).
 
 ## Por qué la Range Rover es un activo sólido para garantía
 

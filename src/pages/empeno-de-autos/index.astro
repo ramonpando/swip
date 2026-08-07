@@ -23,11 +23,15 @@ const schema = [
   {
     "@context": "https://schema.org",
     "@type": "FinancialService",
+    "@id": "https://swip.mx/empeno-de-autos/#service",
     "name": "Empeño de Autos en México — SWIP",
     "description": "Préstamo con garantía vehicular de $90,000 a $5,000,000 MXN, con resguardo o sin dejar el auto. Valuación especializada en CDMX y Querétaro.",
     "url": "https://swip.mx/empeno-de-autos/",
-    "provider": { "@id": "https://swip.mx/#organization" },
-    "areaServed": "MX",
+    "provider": { "@id": "https://swip.mx/#financial-service" },
+    "areaServed": [
+      { "@type": "City", "name": "Ciudad de México" },
+      { "@type": "City", "name": "Querétaro" }
+    ],
     "serviceType": "Préstamo con garantía vehicular con o sin resguardo",
     "mainEntityOfPage": "https://swip.mx/empeno-de-autos/"
   },
@@ -77,8 +81,22 @@ const schema = [
         La valuación se realiza sobre el vehículo real en CDMX o Querétaro.
       </p>
       <div class="hero-actions">
-        <button onclick="openSwipModal()" class="btn-primary">Recibir un estimado</button>
+        <button onclick="openSwipModal()" class="btn-primary" data-cta="empeno_hero_quote">Cotizar mi auto</button>
         <a href="/requisitos/" class="btn-ghost">Ver requisitos →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COTIZACIÓN INICIAL -->
+  <section class="content-section quote-strip" aria-labelledby="quote-title">
+    <div class="section-inner quote-inner">
+      <div>
+        <p class="section-eyebrow">COTIZACIÓN INICIAL</p>
+        <h2 class="section-title" id="quote-title">Marca, modelo, año<br />y ciudad.</h2>
+      </div>
+      <div>
+        <p class="section-body-text">Con esos cuatro datos podemos darte una primera orientación. Después confirmamos kilometraje, versión, estado, documentación y si necesitas seguir usando el vehículo.</p>
+        <button onclick="openSwipModal()" class="btn-primary" data-cta="empeno_quote_start">Iniciar cotización</button>
       </div>
     </div>
   </section>
@@ -306,7 +324,7 @@ const schema = [
         <h2 class="section-title">¿Tu vehículo<br />tiene valor?</h2>
       </div>
       <div class="section-text">
-        <p>Swip está pensado para personas que tienen patrimonio vehicular y necesitan liquidez por razones concretas: capital para un negocio, resolver una urgencia, aprovechar una oportunidad de inversión o cubrir un desfase de flujo sin recurrir a créditos bancarios lentos o con requisitos difíciles de cumplir.</p>
+        <p>Swip está pensado para personas que tienen patrimonio vehicular y necesitan liquidez por razones concretas: conseguir $500,000 o $1 millón para capital de trabajo, cubrir nómina o impuestos, resolver una urgencia o aprovechar una oportunidad sin vender el auto.</p>
         <p>Si tu auto concentra una parte importante de tu patrimonio, conviene comparar la valuación, el costo total, la modalidad y las consecuencias del contrato antes de decidir. Swip entrega esas condiciones antes de la firma.</p>
         <p>Atendemos empresarios, profesionistas independientes, ejecutivos y cualquier persona con un vehículo de valor que necesita liquidez rápida y discreta.</p>
         <div class="tag-list">
@@ -321,12 +339,12 @@ const schema = [
   </section>
 
   <RelatedLinks
-    title="Desde empeño, muévete a la ruta correcta."
+    title="Elige la siguiente respuesta que necesitas."
     items={[
       {
         href: '/prestamo-con-garantia-de-auto/',
-        label: 'Servicio completo',
-        description: 'Pasa de la idea de empeño a la página madre del servicio con garantía vehicular.',
+        label: 'Préstamo con garantía',
+        description: 'Consulta el sinónimo financiero del servicio, sus condiciones y el uso del vehículo como respaldo.',
       },
       {
         href: '/como-funciona/',
@@ -341,7 +359,7 @@ const schema = [
       {
         href: '/prestamo-con-garantia-de-autos-de-lujo/',
         label: 'Autos de lujo',
-        description: 'Si vienes desde empeño pero tu activo es premium, esta es la landing comercial correcta.',
+        description: 'Revisa cómo cambia la valuación cuando el vehículo pertenece a un segmento premium.',
       },
       {
         href: '/blog/swip-vs-monte-de-piedad-vs-banco/',
@@ -365,7 +383,7 @@ const schema = [
   </section>
   <CTASection
     title="¿Cuánto puedes obtener\npor tu auto?"
-    body="Comparte marca, modelo, año y kilometraje. Te damos un estimado inicial y te explicamos si conviene con resguardo o sin dejarlo."
+    body="Comparte marca, modelo, año, kilometraje y ciudad. Recibirás un estimado inicial; después te explicamos la valuación y si conviene con resguardo o sin dejarlo."
   />
 
 </Page>
@@ -388,6 +406,8 @@ const schema = [
   .section-eyebrow { font-size: 9px; letter-spacing: 0.42em; color: rgba(168,168,168,0.4); text-transform: uppercase; margin-bottom: 20px; }
   .section-title { font-size: clamp(28px, 3.5vw, 48px); font-weight: 300; color: var(--white); letter-spacing: -0.02em; line-height: 1.05; }
   .section-text p { font-size: 15px; color: rgba(168,168,168,0.72); line-height: 1.85; margin-bottom: 20px; }
+  .quote-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+  .quote-strip .section-body-text { margin: 0 0 24px; }
 
   .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); margin-top: 56px; }
   .compare-col { background: var(--black); padding: 48px 40px; }
@@ -446,6 +466,7 @@ const schema = [
     .btn-ghost { display: inline-flex; align-items: center; min-height: 44px; }
     .compare-col, .step, .monto-block, .vehicle-cat { padding: 32px 24px; }
     .section-inner.two-col { grid-template-columns: 1fr; gap: 40px; }
+    .quote-inner { grid-template-columns: 1fr; gap: 32px; }
     .steps-grid, .compare-grid, .montos-grid, .vehicles-grid { grid-template-columns: 1fr; }
   }
 </style>

@@ -2,12 +2,13 @@
 title: "No pasé el buró y tengo un auto de lujo — puedo conseguir un préstamo"
 description: "Un préstamo con garantía vehicular no depende del buró de crédito. Si tienes un auto de valor, puedes obtener liquidez sin importar tu historial crediticio."
 date: "2026-05-20"
+updatedDate: "2026-08-07"
 category: "Casos de uso"
 slug: "no-pase-el-buro-y-tengo-un-auto-de-valor"
 draft: false
 ---
 
-El buró de crédito no determina si puedes obtener un [préstamo con garantía vehicular](/prestamo-con-garantia-de-auto/). La evaluación parte del valor de tu auto — no de tu historial financiero. Si tienes un vehículo de valor, tienes acceso a liquidez independientemente de lo que diga el buró.
+El historial en Buró de Crédito no es el criterio central de un [préstamo con garantía vehicular](/prestamo-con-garantia-de-auto/). La evaluación parte del valor y la documentación del auto. En la guía de [empeño de autos](/empeno-de-autos/) puedes revisar montos, modalidades, requisitos y riesgos antes de solicitar.
 
 ---
 

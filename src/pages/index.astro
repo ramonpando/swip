@@ -8,9 +8,9 @@ const schema = [
     "@context": "https://schema.org",
     "@type": "FinancialService",
     "@id": "https://swip.mx/#service",
-    "name": "SWIP — Préstamo con Garantía Vehicular",
+            "name": "SWIP — Empeño de Autos y Garantía Vehicular",
     "url": "https://swip.mx",
-    "description": "Liquidez inteligente con respaldo en tu auto. Especialistas en vehículos de lujo, blindados y de alto valor en México.",
+            "description": "Empeño de autos y liquidez con garantía vehicular para vehículos de lujo, blindados y de alto valor en México.",
     "areaServed": [
       { "@type": "City", "name": "Ciudad de México" },
       { "@type": "City", "name": "Querétaro" }
@@ -76,12 +76,11 @@ const schema = [
             <em>para autos que valen la pena.</em>
           </h1>
           <p class="hero-body">
-            Obtén liquidez usando tu vehículo como garantía — sin venderlo, sin
-            buró de crédito, con depósito en menos de 24 horas.
+            Si buscas <a href="/empeno-de-autos/"><strong>empeño de autos</strong></a>,
+            obtén liquidez usando tu vehículo como garantía, sin venderlo. La
+            operación queda sujeta a valuación, documentación y aprobación.
           </p>
           <p class="hero-spec">Especialistas en <a href="/prestamo-con-garantia-de-autos-de-lujo/">autos de lujo</a>, <a href="/prestamo-con-garantia-de-autos-blindados/">blindados</a> y vehículos de alto valor.</p>
-          <p class="hero-spec">Si buscas empeñar tu vehículo, revisa cómo funciona el <a href="/empeno-de-autos/">empeño de autos con o sin dejarlo</a>.</p>
-          <p class="hero-spec">Para empresas: conoce el <a href="/financiamiento-con-inventario-vehicular/">capital de trabajo respaldado por inventario vehicular</a>.</p>
           <div class="hero-actions">
             <button onclick="openSwipModal()" class="btn-primary">
               Cotiza tu préstamo
@@ -110,6 +109,25 @@ const schema = [
       <div class="stat-item">
         <div class="stat-number">$90k–$5M</div>
         <div class="stat-label">Rango de préstamo en MXN</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RUTA PRINCIPAL -->
+  <section class="primary-route" aria-labelledby="primary-route-title">
+    <div class="section-inner primary-route-inner">
+      <div>
+        <p class="section-eyebrow">SERVICIO VEHICULAR PRINCIPAL</p>
+        <h2 class="section-title" id="primary-route-title">Empeño de autos<br />con valuación especializada.</h2>
+      </div>
+      <div>
+        <p class="section-body">
+          Si necesitas liquidez sin vender tu vehículo, conoce el proceso de
+          <a href="/empeno-de-autos/"><strong>empeño de autos con o sin dejarlo</strong></a>.
+          SWIP evalúa la versión, el equipamiento, el historial, la condición y,
+          cuando aplica, el blindaje; después presenta monto, tasa y plazo antes de la firma.
+        </p>
+        <a href="/empeno-de-autos/" class="primary-route-link">Conocer el empeño de autos →</a>
       </div>
     </div>
   </section>
@@ -213,10 +231,10 @@ const schema = [
           <p class="spec-desc">Los vehículos blindados tienen un valor especial que requiere criterios específicos. Sabemos cómo evaluarlos correctamente.</p>
           <span class="spec-link">Ver más →</span>
         </a>
-        <a href="/prestamo-con-garantia-de-auto/" class="spec-card">
-          <p class="spec-tag">GENERAL</p>
-          <h3 class="spec-title">Garantía vehicular</h3>
-          <p class="spec-desc">Si tienes un vehículo de valor y necesitas liquidez, Swip es la alternativa seria al empeño tradicional.</p>
+        <a href="/empeno-de-autos/" class="spec-card">
+          <p class="spec-tag">SERVICIO PRINCIPAL</p>
+          <h3 class="spec-title">Empeño de autos</h3>
+          <p class="spec-desc">Usa tu vehículo como respaldo, con o sin resguardo, y recibe una oferta formal basada en una valuación real.</p>
           <span class="spec-link">Ver más →</span>
         </a>
       </div>
@@ -650,6 +668,23 @@ const schema = [
     color: rgba(168, 168, 168, 0.76);
     line-height: 1.8;
     max-width: 560px;
+  }
+
+  .primary-route-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .primary-route-link {
+    display: inline-flex;
+    margin-top: 24px;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: rgba(255, 255, 255, 0.78);
+    text-decoration: none;
+    text-transform: uppercase;
   }
 
   /* ── MODALIDADES ── */
@@ -1093,6 +1128,7 @@ const schema = [
   }
 
   @media (max-width: 768px) {
+    .primary-route-inner { grid-template-columns: 1fr; gap: 32px; }
     .hero {
       height: auto;
       min-height: calc(100svh - 61px);

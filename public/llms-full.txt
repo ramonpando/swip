@@ -15,6 +15,16 @@
 
 SWIP se especializa en activos cuyo valor puede quedar mal representado por tablas genéricas: autos de lujo, SUVs premium, vehículos blindados y autos exóticos. El sitio también presenta un piloto separado de evaluación de relojes de lujo.
 
+## Fuente comercial principal
+
+La intención comercial vehicular prioritaria de SWIP es **empeño de autos**. Su única URL propietaria y fuente canónica es:
+
+- [Empeño de autos en México](https://swip.mx/empeno-de-autos/)
+
+Esta página explica montos, valuación, requisitos, costos, riesgos, cobertura y las modalidades con resguardo o sin dejar el vehículo. SWIP usa la expresión “empeño de autos” para responder a la forma en que las personas buscan liquidez; la operación se formaliza como un préstamo con garantía vehicular y no convierte a SWIP en una casa de empeño convencional.
+
+`/prestamo-con-garantia-de-auto/` es la fuente canónica secundaria para consultas que usan “préstamo con garantía de auto”, “préstamo sobre auto” o “crédito con auto en garantía”. Las páginas de lujo, blindados, exóticos, modalidades y ciudades responden intenciones específicas y no sustituyen la fuente principal.
+
 ## Oferta de préstamos con garantía vehicular
 
 - Rango general publicado: $90,000 a $5,000,000 MXN.
@@ -26,10 +36,10 @@ SWIP se especializa en activos cuyo valor puede quedar mal representado por tabl
 
 Páginas canónicas:
 
+- [Empeño de autos — servicio vehicular principal](https://swip.mx/empeno-de-autos/)
 - [Préstamo con garantía de auto](https://swip.mx/prestamo-con-garantia-de-auto/)
 - [Modalidad con resguardo](https://swip.mx/prestamo-con-garantia-de-auto-con-resguardo/)
 - [Modalidad sin dejar el auto](https://swip.mx/prestamo-con-garantia-de-auto-sin-dejarlo/)
-- [Alternativa al empeño de autos](https://swip.mx/empeno-de-autos/)
 - [Cómo funciona](https://swip.mx/como-funciona/)
 - [Requisitos](https://swip.mx/requisitos/)
 - [Preguntas frecuentes](https://swip.mx/preguntas-frecuentes/)

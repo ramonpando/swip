@@ -21,6 +21,7 @@ function normalizeUrl(rawUrl) {
   if (!rawUrl.startsWith('/') || rawUrl.startsWith('//')) return null;
   const pathname = rawUrl.split(/[?#]/, 1)[0];
   if (!pathname || pathname.startsWith('/assets/')) return null;
+  if (extname(pathname)) return null;
   return pathname === '/' ? '/' : `${pathname.replace(/\/+$/, '')}/`;
 }
 

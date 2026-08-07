@@ -2,12 +2,13 @@
 title: "Necesito liquidez urgente y tengo un auto — qué puedo hacer"
 description: "Si necesitas dinero rápido y tienes un auto de valor, un préstamo con garantía vehicular puede darte entre $90,000 y $5,000,000 MXN en menos de 24 horas, sin buró y sin vender tu vehículo."
 date: "2026-05-20"
+updatedDate: "2026-08-07"
 category: "Casos de uso"
 slug: "necesito-liquidez-urgente-tengo-un-auto"
 draft: false
 ---
 
-Si necesitas dinero ya y tienes un auto de valor, ya tienes la solución. Un [préstamo con garantía vehicular](/prestamo-con-garantia-de-auto/) convierte tu auto en liquidez en menos de 24 horas — sin venderlo, sin buró de crédito y sin el proceso de semanas que implica un banco.
+Si necesitas dinero ya y tienes un auto de valor, ya tienes una alternativa para evaluar. El [empeño de autos con valuación especializada](/empeno-de-autos/) permite usarlo como respaldo sin venderlo. Un [préstamo con garantía vehicular](/prestamo-con-garantia-de-auto/) puede convertir ese valor en liquidez después de la revisión, documentación y aprobación.
 
 ---
 

@@ -1,5 +1,31 @@
 # SWIP — Sprints & Avances
 
+> [!IMPORTANT]
+> **Dirección SEO vigente desde el 7 de agosto de 2026:** la keyword principal
+> es **“empeño de autos”** y su URL propietaria es **`/empeno-de-autos/`**.
+> Cualquier referencia histórica que la describa como “puente semántico” queda
+> sustituida por el
+> [`plan rector de empeño de autos`](docs/seo/plan-rector-empeno-de-autos-2026-08.md).
+
+> **Estado vigente — 3 de agosto de 2026:** la bitácora histórica de sprints
+> que aparece debajo ya no refleja por sí sola el estado actual del sitio.
+> Las páginas comerciales, soporte, blog, analítica, dominio y WhatsApp real ya
+> están publicados. Los frentes activos son:
+>
+> 1. SEO: revisión de indexación del clúster empresarial el 5 de agosto y
+>    comparación de 28 días el 26 de agosto.
+>    La mejora visual de `/empeno-de-autos/` está programada para la semana del
+>    10 al 16 de agosto de 2026: hero e imágenes propias, mejor composición y
+>    validación móvil antes de considerarse terminada.
+> 2. Migración de WhatsApp: documentar número destino, cuentas, historial,
+>    respaldos, integraciones, plantillas, responsables, ventana de cambio y
+>    plan de reversa antes de modificar los enlaces del sitio.
+> 3. Sociedad 52: persistencia, CRM y bandeja interna de solicitudes.
+> 4. Reglas operativas definitivas para financiamiento empresarial.
+>
+> Validaciones disponibles: `npm run build`, `npm run audit:links` y
+> `npm run audit:seo`.
+
 ## Stack técnico
 | Servicio | Rol | Estado |
 |---|---|---|

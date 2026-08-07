@@ -154,6 +154,8 @@ const baseSchema = {
   <title>{title}</title>
   <meta name="description" content={description} />
   <link rel="canonical" href={canonicalUrl} />
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="SWIP para modelos de lenguaje" />
+  <link rel="alternate" type="text/plain" href="/llms-full.txt" title="Contexto ampliado de SWIP" />
   {noindex && <meta name="robots" content="noindex, follow" />}
 
   <!-- Open Graph -->

@@ -33,6 +33,7 @@ const navLinks: Array<{ href: string; label: string; badge?: string }> = isCommu
       { href: '/prestamo-con-garantia-de-auto/', label: 'Autos' },
     ]
   : [
+      { href: '/empeno-de-autos/', label: 'Empeño de autos' },
       { href: '/como-funciona/', label: 'Cómo funciona' },
       { href: '/vehiculos-que-aceptamos/', label: 'Vehículos' },
       { href: '/prestamo-con-garantia-de-reloj/', label: 'Relojes' },
@@ -41,6 +42,9 @@ const navLinks: Array<{ href: string; label: string; badge?: string }> = isCommu
     ];
 
 const currentPath = Astro.url.pathname;
+const isActive = (href: string) => href === '/'
+  ? currentPath === '/'
+  : currentPath.startsWith(href);
 ---
 <nav>
   <a href="/" class="nav-logo">
@@ -50,7 +54,7 @@ const currentPath = Astro.url.pathname;
     {navLinks.map(link => (
       <a
         href={link.href}
-        class:list={[{ active: currentPath.startsWith(link.href) }]}
+        class:list={[{ active: isActive(link.href) }]}
       >
         {link.label}
         {link.badge && <span class="nav-badge">{link.badge}</span>}

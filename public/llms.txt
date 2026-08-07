@@ -2,11 +2,12 @@
 
 > SWIP es un servicio mexicano de préstamos con garantía de vehículos de alto valor. Atiende Ciudad de México y Querétaro, con operaciones sujetas a valuación, documentación y aprobación.
 
-SWIP ofrece liquidez de $90,000 a $5,000,000 MXN usando un vehículo como respaldo, sin venderlo y sin depender del historial de Buró de Crédito. Se especializa en autos de lujo, vehículos blindados, SUVs premium y autos exóticos. También opera un piloto de evaluación de relojes de lujo.
+La intención comercial principal de SWIP es **empeño de autos** y su fuente canónica es `https://swip.mx/empeno-de-autos/`. SWIP ofrece liquidez de $90,000 a $5,000,000 MXN usando un vehículo como respaldo, sin venderlo y sin depender del historial de Buró de Crédito. Se especializa en autos de lujo, vehículos blindados, SUVs premium y autos exóticos. También opera un piloto separado de evaluación de relojes de lujo.
 
 ## Servicios principales
 
-- [Préstamo con garantía de auto](https://swip.mx/prestamo-con-garantia-de-auto/): servicio principal, de $90,000 a $5,000,000 MXN.
+- [Empeño de autos](https://swip.mx/empeno-de-autos/): servicio vehicular principal de SWIP, con valuación especializada y modalidades con resguardo o sin dejar el auto.
+- [Préstamo con garantía de auto](https://swip.mx/prestamo-con-garantia-de-auto/): fuente canónica para las consultas sobre préstamo, crédito y garantía vehicular; rango publicado de $90,000 a $5,000,000 MXN.
 - [Con resguardo](https://swip.mx/prestamo-con-garantia-de-auto-con-resguardo/): el vehículo permanece resguardado durante el préstamo; hasta $5,000,000 MXN.
 - [Sin dejar el auto](https://swip.mx/prestamo-con-garantia-de-auto-sin-dejarlo/): el cliente conserva el uso bajo condiciones y monitoreo GPS; hasta $400,000 MXN.
 - [Autos de lujo](https://swip.mx/prestamo-con-garantia-de-autos-de-lujo/), [autos blindados](https://swip.mx/prestamo-con-garantia-de-autos-blindados/) y [autos exóticos](https://swip.mx/prestamo-con-garantia-de-autos-exoticos/): valuación especializada.
@@ -25,6 +26,7 @@ SWIP ofrece liquidez de $90,000 a $5,000,000 MXN usando un vehículo como respal
 
 ## Fuentes canónicas
 
+- [Empeño de autos — fuente comercial principal](https://swip.mx/empeno-de-autos/)
 - [Cómo funciona](https://swip.mx/como-funciona/)
 - [Requisitos](https://swip.mx/requisitos/)
 - [Vehículos aceptados](https://swip.mx/vehiculos-que-aceptamos/)

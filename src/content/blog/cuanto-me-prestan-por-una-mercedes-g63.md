@@ -4,7 +4,7 @@ description: "Consulta rangos estimados de $1 a $3 millones para una Mercedes-AM
 seoTitle: "Mercedes-AMG G63: ¿Cuánto te Prestan en México?"
 seoDescription: "Consulta cuánto te prestan por una Mercedes-AMG G63: rangos de $1 a $3 millones según año, versión, kilometraje y condición. Valuación especializada."
 date: "2026-05-13"
-updatedDate: "2026-08-05"
+updatedDate: "2026-08-07"
 category: "Autos de lujo"
 slug: "cuanto-me-prestan-por-una-mercedes-g63"
 draft: false
@@ -12,7 +12,7 @@ draft: false
 
 Por una Mercedes-AMG G63, el rango orientativo de préstamo va de $1,000,000 a $3,000,000 MXN. El monto cambia según el año, kilometraje, historial de servicio, equipamiento y condición real del vehículo.
 
-La G63 conserva mejor su valor que muchos vehículos del segmento premium y requiere una valuación específica por versión. En SWIP hacemos [préstamos con garantía de autos de lujo](/prestamo-con-garantia-de-autos-de-lujo/) y revisamos el vehículo real antes de emitir una oferta formal. A continuación puedes comparar rangos por año y los factores que más afectan el monto.
+La G63 conserva mejor su valor que muchos vehículos del segmento premium y requiere una valuación específica por versión. En SWIP hacemos [préstamos con garantía de autos de lujo](/prestamo-con-garantia-de-autos-de-lujo/) y revisamos el vehículo real antes de emitir una oferta formal. La guía de [empeño de autos](/empeno-de-autos/) concentra las modalidades, requisitos, costos y cobertura. A continuación puedes comparar rangos por año y los factores que más afectan el monto.
 
 ## Por qué la G63 tiene una de las mejores retenciones de valor del segmento
 

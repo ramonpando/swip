@@ -3,12 +3,13 @@ title: "Requisitos para un préstamo con garantía de auto"
 description: "Qué documentación necesitas, qué no suelen pedirte y cómo preparar tu caso para avanzar más rápido en una valuación."
 seoDescription: "Conoce los documentos y requisitos para solicitar un préstamo con garantía de auto, preparar la valuación y avanzar sin trámites bancarios."
 date: "2026-04-21"
+updatedDate: "2026-08-07"
 category: "Requisitos"
 slug: "requisitos-para-un-prestamo-con-garantia-de-auto"
 draft: false
 ---
 
-Uno de los errores más comunes al buscar liquidez con un vehículo es asumir que el proceso será igual de burocrático que un crédito bancario. No tiene por qué ser así. En una operación de [préstamo con garantía de auto](/prestamo-con-garantia-de-auto/), el centro de la evaluación es el activo y su documentación, no una auditoría completa de tu vida financiera.
+Uno de los errores más comunes al buscar liquidez con un vehículo es asumir que el proceso será igual de burocrático que un crédito bancario. No tiene por qué ser así. En una operación de [préstamo con garantía de auto](/prestamo-con-garantia-de-auto/), el centro de la evaluación es el activo y su documentación. La guía de [empeño de autos](/empeno-de-autos/) reúne también montos, modalidades, costos y riesgos.
 
 ## Qué documentos sí necesitas
 

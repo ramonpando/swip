@@ -18,8 +18,8 @@ const schema = [
     "@context": "https://schema.org",
     "@type": "FinancialService",
     "@id": "https://swip.mx/prestamo-con-garantia-de-auto-en-queretaro/#service",
-    "name": "Préstamo con Garantía de Auto en Querétaro — SWIP",
-    "description": "Préstamo con garantía de auto en Querétaro, desde $90 mil hasta $5 millones MXN. Valuación para autos de lujo, premium y blindados.",
+    "name": "Empeño de Autos y Préstamo con Garantía en Querétaro — SWIP",
+    "description": "Servicio de préstamo con garantía vehicular para quienes buscan empeño de autos en Querétaro. Valuación sujeta al vehículo, documentos y condiciones de la operación.",
     "url": "https://swip.mx/prestamo-con-garantia-de-auto-en-queretaro/",
     "provider": { "@id": "https://swip.mx/#organization" },
     "areaServed": {
@@ -27,7 +27,7 @@ const schema = [
       "name": "Querétaro",
       "sameAs": "https://www.wikidata.org/wiki/Q16572"
     },
-    "serviceType": "Préstamo con garantía vehicular en Querétaro",
+    "serviceType": ["Préstamo con garantía vehicular en Querétaro", "Empeño de autos en Querétaro"],
     "currenciesAccepted": "MXN",
     "mainEntityOfPage": "https://swip.mx/prestamo-con-garantia-de-auto-en-queretaro/"
   },
@@ -67,8 +67,8 @@ const schema = [
 ];
 ---
 <Page
-  title="Préstamo con Garantía de Auto en Querétaro | Cotiza | SWIP"
-  description="Cotiza un préstamo con garantía de auto en Querétaro, desde $90 mil hasta $5 millones MXN. Valuación para autos de lujo, premium y blindados."
+  title="Empeño de Autos en Querétaro con Garantía | SWIP"
+  description="Solicita un préstamo con garantía si buscas empeño de autos en Querétaro. Valuamos autos premium, de lujo y blindados; condiciones sujetas a evaluación."
   schema={schema}
 >
   <link slot="head" rel="preload" as="image" href="/assets/images/hero.jpg" fetchpriority="high" />
@@ -81,17 +81,18 @@ const schema = [
         <div class="hero-copy">
           <p class="hero-eyebrow">SWIP · PRÉSTAMO CON GARANTÍA DE AUTO · QUERÉTARO</p>
           <h1 class="hero-title">
-            Liquidez en 24 horas<br />
-            <em>con tu auto en Querétaro.</em>
+            Préstamo con garantía de auto<br />
+            <em>en Querétaro.</em>
           </h1>
           <p class="hero-body">
-            Sin buró de crédito, sin vender tu vehículo. SWIP valúa tu auto en tu
-            domicilio y deposita en menos de 24 horas.
+            Si buscas empeño de autos en Querétaro, SWIP evalúa tu vehículo como
+            garantía. La propuesta, modalidad y tiempo de cierre dependen de la valuación,
+            los documentos y la aprobación del caso.
           </p>
           <p class="hero-spec">Autos de lujo, <a href="/prestamo-con-garantia-de-autos-blindados/">blindados</a> y vehículos de alto valor en Querétaro.</p>
           <div class="hero-actions">
-            <button onclick="openSwipModal()" class="btn-primary">Cotiza gratis — sin compromiso</button>
-            <a href="/contacto/" class="btn-ghost">Hablar con un asesor →</a>
+            <button onclick="openSwipModal()" class="btn-primary" data-cta="hero-cotizar-queretaro">Cotiza gratis — sin compromiso</button>
+            <a href="/contacto/" class="btn-ghost" data-cta="hero-contacto-queretaro">Hablar con un asesor →</a>
           </div>
           <p class="hero-trust">Sin buró de crédito &nbsp;·&nbsp; Sin vender tu auto &nbsp;·&nbsp; Depósito en 24 h</p>
         </div>
@@ -126,7 +127,7 @@ const schema = [
       <div class="section-text">
         <p>Si estás buscando un préstamo con garantía de auto en Querétaro, la pregunta correcta no es solo quién presta. Es quién entiende el valor del vehículo que estás poniendo como respaldo.</p>
         <p>SWIP opera en la plaza queretana con foco en autos de lujo, SUVs premium, blindados y otras unidades donde el segmento, la versión y la condición cambian materialmente el monto posible.</p>
-        <p>Si tu necesidad es más amplia, también puedes revisar la página de <a href="/empeno-de-autos/">empeño de autos con o sin dejarlo</a>, el servicio general de <a href="/prestamo-con-garantia-de-auto/">préstamo con garantía de auto</a> o la guía sobre <a href="/blog/donde-valuan-autos-blindados-en-queretaro/">dónde valúan autos blindados en Querétaro</a>.</p>
+        <p>Antes de decidir, consulta <a href="/blog/empeno-de-autos-en-queretaro/">cómo comparar opciones para empeñar un auto en Querétaro</a>. También puedes revisar el servicio general de <a href="/prestamo-con-garantia-de-auto/">préstamo con garantía de auto</a> o la guía sobre <a href="/blog/donde-valuan-autos-blindados-en-queretaro/">dónde valúan autos blindados en Querétaro</a>.</p>
       </div>
     </div>
   </section>
@@ -193,13 +194,13 @@ const schema = [
           <p class="modal-tag">CON RESGUARDO</p>
           <h3 class="modal-title">Para operaciones más altas</h3>
           <p class="modal-desc">En vehículos de mayor valor, esta modalidad suele permitir mejores condiciones y montos más ambiciosos.</p>
-          <button onclick="openSwipModal()" class="modal-cta">Cotizar con resguardo →</button>
+          <button onclick="openSwipModal()" class="modal-cta" data-cta="modal-resguardo-queretaro">Cotizar con resguardo →</button>
         </div>
         <div class="modal-card">
           <p class="modal-tag">SIN DEJARLO</p>
           <h3 class="modal-title">Para seguir usando el auto</h3>
           <p class="modal-desc">Si la movilidad es prioritaria, evaluamos la modalidad sin dejarlo dentro de los límites que el caso soporte.</p>
-          <button onclick="openSwipModal()" class="modal-cta">Cotizar sin dejarlo →</button>
+          <button onclick="openSwipModal()" class="modal-cta" data-cta="modal-sin-resguardo-queretaro">Cotizar sin dejarlo →</button>
         </div>
       </div>
     </div>

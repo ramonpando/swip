@@ -2,12 +2,13 @@
 title: "¿Cuánto te prestan por tu auto en México?"
 description: "Guía práctica para entender de qué depende el monto de un préstamo con garantía vehicular y por qué la valuación correcta cambia la oferta."
 date: "2026-04-21"
+updatedDate: "2026-08-07"
 category: "Montos"
 slug: "cuanto-te-prestan-por-tu-auto-en-mexico"
 draft: false
 ---
 
-La pregunta más común al evaluar un [préstamo con garantía de auto](/prestamo-con-garantia-de-auto/) es directa: **¿cuánto me pueden prestar por mi vehículo?** La respuesta nunca debería salir de una tabla genérica ni de una promesa rápida por mensaje. El monto real depende del valor comercial del auto, del segmento al que pertenece y de la modalidad de operación.
+La pregunta más común al evaluar un [préstamo con garantía de auto](/prestamo-con-garantia-de-auto/) o un [empeño de autos](/empeno-de-autos/) es directa: **¿cuánto me pueden prestar por mi vehículo?** La respuesta nunca debería salir de una tabla genérica ni de una promesa rápida por mensaje. El monto real depende del valor comercial del auto, del segmento al que pertenece y de la modalidad de operación.
 
 En SWIP trabajamos con operaciones desde **$90,000 hasta $5,000,000 MXN**, pero el rango aplicable a cada caso cambia según el activo. Un sedán premium, una SUV de lujo o un vehículo blindado no se evalúan igual que un auto de uso masivo. Por eso la valuación correcta es el punto que más afecta la oferta.
 

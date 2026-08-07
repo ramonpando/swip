@@ -1,5 +1,10 @@
 # Auditoría técnica SEO — 3 de agosto de 2026
 
+> Actualización del 7 de agosto de 2026: Google Lighthouse ya produjo una
+> medición móvil válida y se completó una revisión adicional de producción.
+> Los nuevos hallazgos, prioridades y criterios de aceptación están en el
+> [plan de remediación SEO técnico y rendimiento](./plan-remediacion-seo-tecnico-2026-08-07.md).
+
 ## Resultado ejecutivo
 
 El sitio no presenta bloqueos técnicos evidentes para rastreo o indexación en

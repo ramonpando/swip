@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import mdx from '@astrojs/mdx';
+import partytown from '@astrojs/partytown';
 import { readdirSync, readFileSync } from 'node:fs';
 
 const blogDirectory = new URL('./src/content/blog/', import.meta.url);
@@ -41,5 +42,10 @@ export default defineConfig({
       },
     }),
     mdx(),
+    partytown({
+      config: {
+        forward: ['gtag'],
+      },
+    }),
   ],
 });

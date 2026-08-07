@@ -329,9 +329,7 @@ const schema = [
 
     document.querySelectorAll('[data-cta]').forEach((element) => {
       element.addEventListener('click', () => {
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({
-          event: 'watch_landing_cta',
+        window.gtag('event', 'watch_landing_cta', {
           cta: element.getAttribute('data-cta'),
         });
       });
@@ -354,9 +352,7 @@ const schema = [
         'Entiendo que la evaluación inicial no garantiza una oferta ni aprobación.',
       ].join('\n');
 
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({
-        event: 'watch_evaluation_submitted',
+      window.gtag('event', 'watch_evaluation_submitted', {
         watch_brand: data.get('marca'),
         requested_amount: data.get('monto'),
       });

@@ -40,7 +40,7 @@ const baseSchema = {
       "logo": "https://swip.mx/assets/logos/logo-light.svg",
       "description": "Liquidez inteligente con respaldo en tu auto. Préstamos con garantía vehicular para autos de lujo, blindados y vehículos de alto valor en México.",
       "email": "patricia_bernal@swip.mx",
-      "telephone": "+52-1-55-5405-5089",
+      "telephone": "+525554055089",
       "sameAs": [
         "https://www.linkedin.com/company/swip-mx"
       ],
@@ -112,7 +112,7 @@ const baseSchema = {
       ],
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+52-1-55-5405-5089",
+        "telephone": "+525554055089",
         "email": "patricia_bernal@swip.mx",
         "contactType": "sales",
         "areaServed": "MX",
@@ -145,12 +145,34 @@ const baseSchema = {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="google-site-verification" content="nDe7eVG7YPXxzVl-mwhXLGCq6Hcjpla7mFxkSP47jKs" />
 
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-N7GP6M25');</script>
+  <!-- Google tag: una sola librería para GA4 y Google Ads -->
+  <script is:inline>
+    (function() {
+      document.addEventListener('click', function(event) {
+        var link = event.target.closest && event.target.closest('a[href*="wa.me"]');
+        if (!link) return;
+
+        window.gtag('event', 'whatsapp_click', {
+          link_url: link.href,
+          link_text: (link.textContent || '').trim(),
+          from_modal: link.id === 'swip-open-wa'
+        });
+        window.gtag('event', 'conversion', {
+          send_to: 'AW-11373033956/je0UCJjDxawcEOTziq8q',
+          value: 1,
+          currency: 'MXN'
+        });
+      }, true);
+    })();
+  </script>
+  <script type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-BD83023W5V"></script>
+  <script type="text/partytown">
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function() { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', 'G-BD83023W5V');
+    window.gtag('config', 'AW-11373033956');
+  </script>
   <title>{title}</title>
   <meta name="description" content={description} />
   <link rel="canonical" href={canonicalUrl} />
@@ -198,9 +220,6 @@ const baseSchema = {
 
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7GP6M25"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <slot />
   <script is:inline>
     (function() {
@@ -350,33 +369,41 @@ const baseSchema = {
     document.getElementById('swip-modal-overlay').addEventListener('click', function(e) {
       if (e.target === this) closeSwipModal();
     });
+
+    function loadChatFlowWidget() {
+      if (window.ChatFlowWidget) return Promise.resolve(window.ChatFlowWidget);
+      if (window.swipChatFlowPromise) return window.swipChatFlowPromise;
+
+      window.swipChatFlowPromise = new Promise(function(resolve, reject) {
+        var script = document.createElement('script');
+        script.src = 'https://chatapp.chatflow.mx/widget.js';
+        script.async = true;
+        script.dataset.agentId = 'a6b8378e-05dc-4bcc-a2a7-261c7ae146ec';
+        script.dataset.position = 'bottom-right';
+        script.dataset.primaryColor = '#2d2d2d';
+        script.dataset.greeting = 'Hola, soy SwipBot. Cuéntame: ¿qué auto tienes y cuánto necesitas? Te digo en un minuto si aplica.';
+        script.onload = function() { resolve(window.ChatFlowWidget); };
+        script.onerror = reject;
+        document.body.appendChild(script);
+      });
+
+      return window.swipChatFlowPromise;
+    }
+
     document.getElementById('swip-open-bot').addEventListener('click', function() {
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({ event: 'chatbot_started' });
+      window.gtag('event', 'chatbot_started');
       closeSwipModal();
-      setTimeout(function() {
-        if (window.ChatFlowWidget) window.ChatFlowWidget.open();
-      }, 300);
-    });
-    document.getElementById('swip-open-wa').addEventListener('click', function() {
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({ event: 'whatsapp_click', from_modal: true });
+      loadChatFlowWidget().then(function(widget) {
+        if (widget && widget.open) widget.open();
+      }).catch(function() {
+        window.location.href = document.getElementById('swip-open-wa').href;
+      });
     });
     document.addEventListener('keydown', function(e) {
       if (e.key === 'Escape') closeSwipModal();
     });
     </script>
     </Fragment>
-  )}
-  {!disableChatWidget && (
-    <script
-      defer
-      src="https://chatapp.chatflow.mx/widget.js"
-      data-agent-id="a6b8378e-05dc-4bcc-a2a7-261c7ae146ec"
-      data-position="bottom-right"
-      data-primary-color="#2d2d2d"
-      data-greeting="Hola, soy SwipBot. Cuéntame: ¿qué auto tienes y cuánto necesitas? Te digo en un minuto si aplica."
-    ></script>
   )}
 </body>
 </html>

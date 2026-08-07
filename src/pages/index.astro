@@ -6,20 +6,6 @@ const WHATSAPP = 'https://wa.me/5215554055089?text=Hola%2C%20quiero%20solicitar%
 const schema = [
   {
     "@context": "https://schema.org",
-    "@type": "FinancialService",
-    "@id": "https://swip.mx/#service",
-            "name": "SWIP — Empeño de Autos y Garantía Vehicular",
-    "url": "https://swip.mx",
-            "description": "Empeño de autos y liquidez con garantía vehicular para vehículos de lujo, blindados y de alto valor en México.",
-    "areaServed": [
-      { "@type": "City", "name": "Ciudad de México" },
-      { "@type": "City", "name": "Querétaro" }
-    ],
-    "currenciesAccepted": "MXN",
-    "priceRange": "$$$$"
-  },
-  {
-    "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
       {
@@ -61,11 +47,35 @@ const schema = [
   description="Obtén de $90 mil a $5 millones MXN usando tu auto como garantía. Valuación especializada para autos de lujo y blindados en CDMX y Querétaro."
   schema={schema}
 >
-  <link slot="head" rel="preload" as="image" href="/assets/images/hero.jpg" fetchpriority="high" />
+  <link
+    slot="head"
+    rel="preload"
+    as="image"
+    href="/assets/images/hero.webp"
+    imagesrcset="/assets/images/hero-768.webp 768w, /assets/images/hero.webp 1168w"
+    imagesizes="100vw"
+    type="image/webp"
+    fetchpriority="high"
+  />
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-bg"></div>
+    <picture class="hero-media">
+      <source
+        srcset="/assets/images/hero-768.webp 768w, /assets/images/hero.webp 1168w"
+        sizes="100vw"
+        type="image/webp"
+      />
+      <img
+        src="/assets/images/hero.jpg"
+        width="1168"
+        height="784"
+        alt=""
+        loading="eager"
+        fetchpriority="high"
+        decoding="async"
+      />
+    </picture>
     <div class="hero-overlay"></div>
     <div class="hero-statement">
       <div class="hero-grid">
@@ -452,13 +462,18 @@ const schema = [
     border-bottom: 1px solid var(--line);
   }
 
-  .hero-bg {
+  .hero-media {
     position: absolute;
     inset: -10%;
-    background: url('/assets/images/hero.jpg') center center / cover no-repeat;
-    transform: scale(1.2);
-    transform-origin: center center;
     z-index: 0;
+  }
+
+  .hero-media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
   .hero-overlay {
@@ -627,6 +642,10 @@ const schema = [
     text-decoration: none;
     text-transform: uppercase;
     font-family: inherit;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
     transition: color 0.2s, transform 0.2s;
   }
 
@@ -709,7 +728,7 @@ const schema = [
   .modal-tag {
     font-size: 9px;
     letter-spacing: 0.38em;
-    color: rgba(168, 168, 168, 0.3);
+    color: #8a8a8a;
     text-transform: uppercase;
     margin-bottom: 24px;
   }
@@ -734,7 +753,7 @@ const schema = [
   .modal-amount {
     font-size: 10px;
     letter-spacing: 0.26em;
-    color: rgba(255, 255, 255, 0.28);
+    color: #8a8a8a;
     text-transform: uppercase;
     border-top: 1px solid var(--line);
     padding-top: 16px;
@@ -744,7 +763,7 @@ const schema = [
   .modal-link {
     font-size: 11px;
     letter-spacing: 0.2em;
-    color: rgba(168, 168, 168, 0.62);
+    color: #9a9a9a;
     text-decoration: none;
     text-transform: uppercase;
     transition: color 0.2s;
@@ -769,7 +788,7 @@ const schema = [
   .step-num {
     font-size: 11px;
     letter-spacing: 0.3em;
-    color: rgba(168, 168, 168, 0.25);
+    color: #8a8a8a;
     margin-bottom: 20px;
   }
 
@@ -783,7 +802,7 @@ const schema = [
 
   .step-desc {
     font-size: 13px;
-    color: rgba(168, 168, 168, 0.68);
+    color: #858585;
     line-height: 1.7;
   }
 
@@ -809,7 +828,7 @@ const schema = [
   .spec-tag {
     font-size: 9px;
     letter-spacing: 0.38em;
-    color: rgba(168, 168, 168, 0.3);
+    color: #8a8a8a;
     text-transform: uppercase;
     margin-bottom: 20px;
   }
@@ -824,7 +843,7 @@ const schema = [
 
   .spec-desc {
     font-size: 13px;
-    color: rgba(168, 168, 168, 0.68);
+    color: #858585;
     line-height: 1.75;
     margin-bottom: 24px;
   }
@@ -832,7 +851,7 @@ const schema = [
   .spec-link {
     font-size: 11px;
     letter-spacing: 0.2em;
-    color: rgba(168, 168, 168, 0.58);
+    color: #929292;
     text-transform: uppercase;
     transition: color 0.2s;
   }
@@ -876,7 +895,7 @@ const schema = [
   .watch-pilot p:not(.watch-pilot-tag) {
     max-width: 650px;
     font-size: 13px;
-    color: rgba(168, 168, 168, 0.68);
+    color: #858585;
     line-height: 1.75;
   }
 
@@ -919,7 +938,7 @@ const schema = [
     margin-bottom: 12px;
     font-size: 9px;
     letter-spacing: 0.34em;
-    color: rgba(168, 168, 168, 0.48);
+    color: #8a8a8a;
   }
 
   .society-copy h3 {
@@ -933,7 +952,7 @@ const schema = [
   .society-copy p:not(.society-tag) {
     max-width: 680px;
     font-size: 13px;
-    color: rgba(168, 168, 168, 0.68);
+    color: #858585;
     line-height: 1.75;
   }
 
@@ -962,7 +981,7 @@ const schema = [
   .ventaja-tag {
     font-size: 9px;
     letter-spacing: 0.38em;
-    color: rgba(168, 168, 168, 0.28);
+    color: #8a8a8a;
     text-transform: uppercase;
     margin-bottom: 20px;
   }
@@ -977,7 +996,7 @@ const schema = [
 
   .ventaja-desc {
     font-size: 13px;
-    color: rgba(168, 168, 168, 0.68);
+    color: #858585;
     line-height: 1.75;
   }
 
@@ -1040,7 +1059,7 @@ const schema = [
   .cob-tag {
     font-size: 9px;
     letter-spacing: 0.38em;
-    color: rgba(168,168,168,0.3);
+    color: #8a8a8a;
     text-transform: uppercase;
     margin-bottom: 16px;
   }

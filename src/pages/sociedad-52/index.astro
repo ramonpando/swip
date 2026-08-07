@@ -306,9 +306,7 @@ const schema = [
 
     document.querySelectorAll('[data-cta]').forEach((element) => {
       element.addEventListener('click', () => {
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({
-          event: 'sociedad_52_cta',
+        window.gtag('event', 'sociedad_52_cta', {
           cta: element.getAttribute('data-cta'),
         });
       });
@@ -332,9 +330,7 @@ const schema = [
         'Entiendo que esta solicitud no garantiza admisión.',
       ].join('\n');
 
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({
-        event: 'sociedad_52_application_submitted',
+      window.gtag('event', 'sociedad_52_application_submitted', {
         has_referral: Boolean(data.get('referido')),
         has_public_profile: Boolean(data.get('perfil')),
       });

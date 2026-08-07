@@ -453,6 +453,13 @@ Implementación preparada y validada en el repositorio:
 
 La publicación efectiva en `swip.mx` depende del despliegue de estos cambios.
 
+La auditoría posterior de producción y el reporte móvil de Google Lighthouse
+quedan registrados en el
+[plan de remediación SEO técnico y rendimiento](./plan-remediacion-seo-tecnico-2026-08-07.md).
+Ese plan añade como prioridades la consolidación de `www`, las variantes
+`index.html`, el LCP móvil, el JavaScript de terceros, accesibilidad, schema y
+confianza legal. No modifica la propiedad semántica de `/empeno-de-autos/`.
+
 ### Pendiente prioritario de la landing
 
 Estado: **programado para la semana del 10 al 16 de agosto de 2026 — prioridad alta**.

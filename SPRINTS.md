@@ -17,14 +17,23 @@
 >    La mejora visual de `/empeno-de-autos/` está programada para la semana del
 >    10 al 16 de agosto de 2026: hero e imágenes propias, mejor composición y
 >    validación móvil antes de considerarse terminada.
+>    El primer lote del
+>    [`plan de remediación SEO técnico y rendimiento`](docs/seo/plan-remediacion-seo-tecnico-2026-08-07.md):
+>    ya está implementado localmente: redirects de `index.html`, hero WebP como
+>    imagen LCP, ChatFlow bajo demanda, Google tag mediante Partytown,
+>    accesibilidad y schema/NAP. La mediana local es Performance 99, LCP 1.40 s,
+>    TBT 0 ms y CLS 0.062; falta deploy y validación de producción. El redirect
+>    de `www` ya fue configurado en Vercel y verificado con un único `308`,
+>    conservando ruta y query string. Línea base móvil de Google:
+>    Performance 54, LCP 9.6 s, TBT 600 ms y CLS 0.
 > 2. Migración de WhatsApp: documentar número destino, cuentas, historial,
 >    respaldos, integraciones, plantillas, responsables, ventana de cambio y
 >    plan de reversa antes de modificar los enlaces del sitio.
 > 3. Sociedad 52: persistencia, CRM y bandeja interna de solicitudes.
 > 4. Reglas operativas definitivas para financiamiento empresarial.
 >
-> Validaciones disponibles: `npm run build`, `npm run audit:links` y
-> `npm run audit:seo`.
+> Validaciones disponibles: `npm run build`, `npm run audit:links`,
+> `npm run audit:seo` y `npm run audit:ai`.
 
 ## Stack técnico
 | Servicio | Rol | Estado |
@@ -32,6 +41,7 @@
 | Astro 5 | Framework del sitio (static) | ✅ Instalado |
 | @astrojs/sitemap | Sitemap automático | ✅ Configurado |
 | @astrojs/mdx | Blog en Markdown | ✅ Configurado |
+| @astrojs/partytown | Analytics y Ads fuera del hilo principal | ✅ Configurado |
 | GitHub | Repositorio de código | ⏳ Pendiente — autenticar `gh auth login` |
 | Vercel | Hosting y deploys automáticos | ⏳ Pendiente — conectar repo |
 | swip.mx | Dominio (Neubox) | ⏳ Pendiente — apuntar DNS a Vercel |

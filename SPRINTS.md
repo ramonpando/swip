@@ -26,7 +26,8 @@
 >    mediana de tres ejecuciones Lighthouse móviles sobre el deployment nuevo
 >    obtuvo Performance 91 en homepage y `/empeno-de-autos/`, con LCP de
 >    2.623 s y 2.758 s respectivamente. La homepage obtuvo Accessibility 100;
->    la landing marcó 96 por contraste y el ajuste local ya valida en 100.
+>    la landing marcó inicialmente 96 por contraste y, después del ajuste y
+>    deployment, la validación pública obtuvo 100.
 >    Queda pendiente validar la medición en Tag Assistant/DebugView. El redirect
 >    de `www` ya fue configurado en Vercel y verificado con un único `308`,
 >    conservando ruta y query string. Línea base móvil de Google:

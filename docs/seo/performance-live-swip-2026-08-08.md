@@ -38,9 +38,9 @@ Tipo de evidencia: laboratorio; no sustituye CrUX ni mide INP de campo.
 - Lighthouse no entrega INP en esta prueba. No se sustituye con TBT ni con una
   estimación. El cierre de CWV requiere datos de campo de CrUX o RUM.
 - `/empeno-de-autos/` marcó Accessibility 96 por contraste insuficiente. Los
-  nueve estilos únicos señalados se ajustaron localmente. Lighthouse sobre el
-  build local obtuvo Accessibility 100; el resultado live seguirá en 96 hasta
-  desplegar y repetir la prueba.
+  nueve estilos únicos señalados se ajustaron. Después del deployment,
+  Lighthouse sobre la URL pública obtuvo Accessibility 100 y aprobó la
+  comprobación de contraste el 8 de agosto de 2026 a las 00:24 UTC.
 
 ## Comparación con la corrida previa
 
@@ -53,6 +53,5 @@ una tendencia; el dato útil es el presupuesto pendiente y la variabilidad.
 ## Próximo control
 
 1. Revisar el elemento LCP y la cadena crítica de fuentes/hero en ambas URLs.
-2. Desplegar los ajustes de contraste y objetivos táctiles.
-3. Repetir tres corridas con el mismo comando después del deploy.
-4. Incorporar CrUX o RUM cuando exista acceso; reportar INP solo desde campo.
+2. Repetir tres corridas completas después de cualquier cambio de rendimiento.
+3. Incorporar CrUX o RUM cuando exista acceso; reportar INP solo desde campo.

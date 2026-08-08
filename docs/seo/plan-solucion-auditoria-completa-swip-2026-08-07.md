@@ -261,14 +261,14 @@ Este orden reduce riesgo y evita reescribir el sitio dos veces.
 |---|---|---|
 | CLAIM-01 | Completado | Inventario reproducible de 71 URLs en `scripts/audit-claims.mjs` y matriz en `inventario-claims-y-freshness-swip-2026-08-08.md`. |
 | PERF-05 | Medición completada; presupuesto abierto | Tres corridas live por URL documentadas en `performance-live-swip-2026-08-08.md`; mediana 91, LCP 2.623 s y 2.758 s. |
-| SCHEMA-03 | Implementado localmente | Homepage con `WebPage`, `@id`, `isPartOf`, `about`, `mainEntity` y `primaryImageOfPage`. |
-| SCHEMA-04 | Implementado localmente | Los `Service` existentes ya tenían `@id`; se añadieron identificadores a seis nodos `LoanOrCredit`. |
-| UX-01 | Implementado localmente | Menú y cierre de modal con área 48×48; contraste detectado por Lighthouse corregido en la landing y enlaces relacionados. |
-| QA de falsos positivos | Implementado localmente | Canonical y atributos se parsean sin depender del orden; se comprueban autor/fecha de posts, WebP del hero y entidades schema estables. |
+| SCHEMA-03 | Desplegado y verificado | Homepage con `WebPage`, `@id`, `isPartOf`, `about`, `mainEntity` y `primaryImageOfPage`. |
+| SCHEMA-04 | Desplegado y verificado | Los `Service` existentes ya tenían `@id`; se añadieron identificadores a seis nodos `LoanOrCredit`. |
+| UX-01 | Desplegado y verificado | Menú y cierre de modal con área 48×48; Lighthouse live obtuvo Accessibility 100 y contraste aprobado. |
+| QA de falsos positivos | Desplegado | Canonical y atributos se parsean sin depender del orden; se comprueban autor/fecha de posts, WebP del hero y entidades schema estables. |
 | CONTENT-02 | Priorización completada | Quince posts seleccionados; la edición de claims espera GOV-01/DATA-01. |
 | FRESH-01 | Inventario completado | Diecisiete fechas iguales identificadas; no se alteran sin confirmar actualización material. |
 | BLK-04 | Primera calificación completada | Diez P1 revisados: 2 `qualified`, 4 `research`, 4 `legal_review`; cero outreach. |
 
-Los cambios de código permanecen pendientes de despliegue. Las cifras live de
-producción no deben atribuirse a estos cambios hasta repetir QA después del
-deploy.
+El lote se desplegó mediante el commit `7dd278a` y Vercel lo marcó exitoso el 8
+de agosto de 2026. La verificación posterior confirmó schema, canonical,
+autoría, WebP, CSS de contraste y Accessibility 100 en producción.

@@ -7,7 +7,7 @@
 > sustituida por el
 > [`plan rector de empeño de autos`](docs/seo/plan-rector-empeno-de-autos-2026-08.md).
 
-> **Estado vigente — 3 de agosto de 2026:** la bitácora histórica de sprints
+> **Estado vigente — 7 de agosto de 2026:** la bitácora histórica de sprints
 > que aparece debajo ya no refleja por sí sola el estado actual del sitio.
 > Las páginas comerciales, soporte, blog, analítica, dominio y WhatsApp real ya
 > están publicados. Los frentes activos son:
@@ -22,11 +22,20 @@
 >    ya está implementado localmente: redirects de `index.html`, hero WebP como
 >    imagen LCP, ChatFlow bajo demanda, Google tag mediante Partytown,
 >    accesibilidad y schema/NAP. La mediana local es Performance 99, LCP 1.40 s,
->    TBT 0 ms y CLS 0.062. El deploy ya fue confirmado en producción; quedan
->    pendientes Lighthouse de producción y validación de medición. El redirect
+>    TBT 0 ms y CLS 0.062. El deploy ya fue confirmado en producción. Una
+>    mediana de tres ejecuciones Lighthouse móviles sobre el deployment nuevo
+>    obtuvo Performance 91 en homepage y `/empeno-de-autos/`, con LCP de
+>    2.623 s y 2.758 s respectivamente. La homepage obtuvo Accessibility 100;
+>    la landing marcó 96 por contraste y el ajuste local ya valida en 100.
+>    Queda pendiente validar la medición en Tag Assistant/DebugView. El redirect
 >    de `www` ya fue configurado en Vercel y verificado con un único `308`,
 >    conservando ruta y query string. Línea base móvil de Google:
 >    Performance 54, LCP 9.6 s, TBT 600 ms y CLS 0.
+>    La revisión cruzada con SEOptimer confirmó HTTP/2, atributos `alt`,
+>    keyword mapping y schema `FinancialService`; los pendientes reales nuevos
+>    son SPF/DMARC y ejecutar autoridad externa legítima. El sistema inicial de
+>    backlinks ya cuenta con tracker, auditor automático y 30 candidatos; no se
+>    han enviado contactos ni realizado registros.
 > 2. Migración de WhatsApp: documentar número destino, cuentas, historial,
 >    respaldos, integraciones, plantillas, responsables, ventana de cambio y
 >    plan de reversa antes de modificar los enlaces del sitio.
@@ -35,6 +44,36 @@
 >
 > Validaciones disponibles: `npm run build`, `npm run audit:links`,
 > `npm run audit:seo` y `npm run audit:ai`.
+
+## Backlinks — sprint activo desde el 7 de agosto de 2026
+
+Objetivo: obtener menciones y enlaces editoriales, sectoriales y locales
+legítimos que fortalezcan `/empeno-de-autos/` y las páginas especializadas sin
+crear patrones artificiales.
+
+Fuente operativa:
+[`backlinks-operacion-2026-08.md`](docs/marketing/seo/backlinks-operacion-2026-08.md).
+
+| ID | Tarea | Responsable | Estado | Criterio de cierre |
+|---|---|---|---|---|
+| BLK-01 | Crear tracker versionado y auditor automático | Codex | ✅ | 30 registros válidos; 0 errores estructurales |
+| BLK-02 | Comprobar URLs de prospectos y destinos | Codex | ✅ | 29 candidatos en `200`; AMIA documentado para revisión manual; destinos SWIP en `200` |
+| BLK-03 | Obtener línea base de dominios referentes en Search Console | SWIP | ⏳ | Exportar “Enlaces” y registrar dominios, páginas destino y anchors existentes |
+| BLK-04 | Calificar los diez candidatos P1 | Compartido | ✅ | 2 `qualified`, 4 `research` y 4 `legal_review`, con evidencia y sin outreach |
+| BLK-05 | Confirmar o reclamar perfiles locales | SWIP | ⏳ | Google Business Profile, Apple Business Connect y Bing Places sin duplicados y con NAP consistente |
+| BLK-06 | Definir un activo original citable | Compartido | ⏳ | Tema, metodología, datos autorizados, responsable y URL destino aprobados |
+| BLK-07 | Preparar colaboración con ecosistema automotor | SWIP | ⏳ | Tres oportunidades reales entre blindadoras, talleres, valuadores, lotes o agencias |
+| BLK-08 | Conseguir menciones editoriales | SWIP | ⏳ | Primera mención publicada por aporte experto, datos o caso verificable; URL registrada en tracker |
+| BLK-09 | Revisar elegibilidad institucional | Legal/SWIP | ⏳ | Decisión documentada para ASOFOM, AMDA, SIEM y SIPRES; sin claims no autorizados |
+| BLK-10 | Verificar enlaces obtenidos semanalmente | Codex | ⏳ | `backlink_url`, estado HTTP y atributo `rel` revisados con `npm run audit:backlinks:live` |
+
+Reglas del sprint:
+
+- no comprar enlaces ni paquetes de publicación;
+- no automatizar comentarios, perfiles falsos o envíos masivos;
+- no exigir anchors exactos;
+- no registrar afiliaciones o perfiles sin autorización;
+- priorizar relevancia, relación real y utilidad editorial sobre volumen.
 
 ## Stack técnico
 | Servicio | Rol | Estado |

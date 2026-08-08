@@ -2,6 +2,13 @@
 
 Fecha: 2026-05-20
 
+> [!IMPORTANT]
+> Esta guía es histórica y contiene candidatos todavía no verificados. La
+> operación vigente, los estados y el tracker se encuentran en
+> [`backlinks-operacion-2026-08.md`](backlinks-operacion-2026-08.md). Ninguna
+> afiliación, alta, contacto o afirmación regulatoria se ejecuta directamente
+> desde este documento.
+
 El objetivo es conseguir links externos que incrementen el crawl budget de Google y la autoridad de dominio. Prioridad: calidad sobre cantidad. Un link de Forbes México vale 100x más que 50 directorios genéricos.
 
 ---

@@ -9,6 +9,9 @@
     "audit:links": "node scripts/audit-internal-links.mjs",
     "audit:seo": "node scripts/audit-seo.mjs",
     "audit:ai": "node scripts/audit-ai-visibility.mjs",
+    "audit:claims": "node scripts/audit-claims.mjs",
+    "audit:backlinks": "node scripts/backlinks/audit-opportunities.mjs",
+    "audit:backlinks:live": "node scripts/backlinks/audit-opportunities.mjs --live",
     "generate:og": "node scripts/generate-blog-og.mjs"
   },
   "dependencies": {

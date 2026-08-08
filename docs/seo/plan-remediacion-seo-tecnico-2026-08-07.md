@@ -460,6 +460,36 @@ Criterio de aceptación:
 - `npm audit --omit=dev` no conserva vulnerabilidades high corregibles.
 - Lighthouse y las conversiones mantienen los resultados aprobados.
 
+#### MAIL-01 — SPF y DMARC ausentes
+
+Estado: pendiente de configuración DNS y validación de todos los remitentes.
+
+Evidencia del 7 de agosto de 2026:
+
+- `swip.mx` usa Google como receptor de correo mediante su registro MX;
+- la consulta TXT de `swip.mx` no devuelve un registro que comience con
+  `v=spf1`;
+- `_dmarc.swip.mx` no devuelve un registro TXT;
+- no se concluye que DKIM esté ausente porque primero debe identificarse el
+  selector configurado en Google Workspace.
+
+Impacto:
+
+- no bloquea rastreo ni indexación y no debe presentarse como un arreglo de
+  ranking;
+- sí afecta autenticación, protección contra suplantación y entregabilidad del
+  correo corporativo.
+
+Acción:
+
+1. Inventariar Google Workspace y cualquier otro servicio autorizado para
+   enviar correo con `@swip.mx`.
+2. Publicar un único SPF que incluya todos los remitentes legítimos.
+3. Activar DKIM en Google Workspace y verificar el selector publicado.
+4. Publicar DMARC inicialmente en modo de monitoreo, revisar reportes y avanzar
+   gradualmente a una política de cuarentena o rechazo.
+5. Probar mensajes reales y sus encabezados antes de endurecer la política.
+
 ### P2 — Sitemap, contenido y recursos visuales
 
 #### SITEMAP-01 — 22 páginas comerciales sin `lastmod`
@@ -583,7 +613,7 @@ Definir un control periódico para homepage y `/empeno-de-autos/`:
 2. PERF-01: reconstruir el LCP del hero.
 3. PERF-02 y PERF-03: reducir GTM y cargar ChatFlow bajo demanda.
 4. PERF-04, ACC-01, ACC-02 y AGENT-01.
-5. TRUST-01, TRUST-02, SCHEMA-01 y SCHEMA-02.
+5. TRUST-01, TRUST-02, SCHEMA-01, SCHEMA-02 y MAIL-01.
 6. SITEMAP-01, CONTENT-01, LINKS-01 y MEDIA-01.
 7. QA-01 a QA-04 para prevenir regresiones.
 
@@ -616,8 +646,64 @@ Antes de marcar este plan como completado:
 - [ ] El widget no bloquea la carga ni genera controles inaccesibles.
 - [ ] Accessibility y Agentic Browsing no conservan fallas automáticas.
 - [ ] Schema no duplica servicios y utiliza NAP consistente.
+- [ ] SPF, DKIM y DMARC autentican todos los remitentes legítimos de SWIP.
 - [ ] El aviso de privacidad fue revisado por responsable jurídico.
 - [ ] Las fuentes externas críticas funcionan.
 - [ ] Las comparativas tienen intenciones diferenciadas.
 - [ ] Sitemap y auditorías cubren las regresiones detectadas.
 - [ ] Los cambios están desplegados y verificados en producción.
+
+## 9. Revisión cruzada con SEOptimer — 7 de agosto de 2026
+
+La lista externa fue contrastada contra el código, las 74 páginas del build,
+DNS público y el deployment posterior al primer lote. No se adoptan
+recomendaciones automáticas sin evidencia porque varias no distinguen entre la
+homepage y la URL propietaria de cada intención.
+
+### Confirmado como resuelto o falso positivo
+
+| Recomendación externa | Evidencia | Decisión |
+|---|---|---|
+| Usar keywords en etiquetas importantes | `/empeno-de-autos/` alinea keyword, URL, title y H1; la homepage conserva una intención distinta | No duplicar la keyword principal en todas las páginas |
+| Aumentar longitud del title | Homepage: 48 caracteres; la auditoría interna no reporta titles problemáticos | No alargar por una regla genérica |
+| Agregar `alt` a todas las imágenes | 74 HTML revisados y 0 imágenes sin atributo `alt`; el hero decorativo usa `alt=""` deliberadamente | Cerrado |
+| Usar HTTP/2+ | Producción responde `HTTP/2 200` y mantiene HSTS | Cerrado |
+| Eliminar estilos inline | Solo existen cuatro atributos `style`; no explican el rendimiento actual | Limpieza opcional, sin prioridad SEO |
+| Agregar Local Business Schema | El sitio ya usa `FinancialService`, subtipo específico de `LocalBusiness`, con NAP normalizado | No duplicar entidad |
+| Ocultar correos visibles | El correo cumple una función de contacto y confianza | No tratar como problema SEO |
+| Crear perfiles sociales | Solo LinkedIn está confirmado y enlazado | Añadir únicamente perfiles reales y activos |
+| Instalar Facebook Pixel | Es una decisión de paid media y privacidad, no SEO | No instalar sin campaña y plan de consentimiento |
+
+### Pendientes reales o parciales
+
+#### Rendimiento móvil
+
+Primera ejecución Lighthouse móvil sobre producción después del deploy:
+
+- Performance: 91;
+- Accessibility: 100;
+- SEO: 100;
+- FCP: 1.6 s;
+- LCP: 1.6 s;
+- TBT: 320 ms;
+- CLS: 0.062.
+
+La mejora frente a la línea base es material, especialmente en LCP. El TBT de
+esta ejecución todavía supera el presupuesto de 200 ms. No se cierra QA-04
+hasta obtener la mediana de tres ejecuciones y revisar las tareas largas si la
+mediana confirma la regresión.
+
+#### Autoridad externa
+
+La recomendación de link building es válida, pero no constituye un error de
+código. Existe una guía de outreach en
+`docs/marketing/seo/backlinks-outreach-2026-05-20.md` y el plan rector ya
+prioriza menciones editoriales legítimas durante los meses dos y tres. Antes de
+ejecutarla se deben verificar organizaciones, medios, condiciones regulatorias
+y contactos actuales. No se comprarán paquetes masivos ni enlaces artificiales.
+
+#### Autenticación de correo
+
+SPF y DMARC sí están ausentes según DNS público. Se incorporan como MAIL-01.
+Este trabajo protege correo y reputación de dominio, aunque no sea un arreglo
+directo de posicionamiento orgánico.

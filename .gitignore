@@ -11,3 +11,5 @@ node_modules/
 .agents/
 .claude/
 skills-lock.json
+.seo-cache/
+/output/
